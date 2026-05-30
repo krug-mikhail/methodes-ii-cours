@@ -1,0 +1,72 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Méthodes II — Cours (théorie)"
+  description: "Résumé pédagogique du cours BA Méthodes II — Prof. Feddersen, SP 2026"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Accueil
+      - text: "Séances"
+        menu:
+          - href: 00_S1_Introduction.qmd
+            text: "S1 · Introduction"
+          - href: 01_S2_Donnees_quantitatives.qmd
+            text: "S2 · Données quantitatives"
+          - href: 02_S3_Sources_donnees.qmd
+            text: "S3 · Sources de données"
+          - href: 03_S4_Preparation_donnees.qmd
+            text: "S4 · Préparation des données"
+          - href: 04_S5_Analyse_contenu.qmd
+            text: "S5 · Analyse de contenu"
+          - href: 05_S6_Uni_bi_multi.qmd
+            text: "S6 · Uni-/bi-/multivariées"
+          - href: 06_S7_Inferentielles_I.qmd
+            text: "S7 · Inférentielles I"
+          - href: 07_S8_Inferentielles_II.qmd
+            text: "S8 · Inférentielles II"
+          - href: 08_S9_Qualite_communication.qmd
+            text: "S9 · Qualité & communication"
+          - href: 09_S10_Conclusion.qmd
+            text: "S10 · Conclusion"
+      - href: synthese.qmd
+        text: "Synthèse"
+      - href: glossaire.qmd
+        text: Glossaire
+  sidebar:
+    style: docked
+    search: true
+    contents:
+      - index.qmd
+      - section: "Séances du cours"
+        contents:
+          - 00_S1_Introduction.qmd
+          - 01_S2_Donnees_quantitatives.qmd
+          - 02_S3_Sources_donnees.qmd
+          - 03_S4_Preparation_donnees.qmd
+          - 04_S5_Analyse_contenu.qmd
+          - 05_S6_Uni_bi_multi.qmd
+          - 06_S7_Inferentielles_I.qmd
+          - 07_S8_Inferentielles_II.qmd
+          - 08_S9_Qualite_communication.qmd
+          - 09_S10_Conclusion.qmd
+      - section: "Outils de révision"
+        contents:
+          - synthese.qmd
+          - glossaire.qmd
+
+execute:
+  enabled: false
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    link-external-newwindow: true

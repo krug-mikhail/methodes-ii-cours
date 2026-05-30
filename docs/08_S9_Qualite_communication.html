@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>S9 - Qualité et communication des résultats – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./08_S9_Qualite_communication.html">S9 - Qualité et communication des résultats</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bloc-a-reproductibilité" id="toc-bloc-a-reproductibilité" class="nav-link active" data-scroll-target="#bloc-a-reproductibilité"><span class="header-section-number">1</span> Bloc A — Reproductibilité</a>
+  <ul class="collapse">
+  <li><a href="#pourquoi-rendre-ses-résultats-reproductibles" id="toc-pourquoi-rendre-ses-résultats-reproductibles" class="nav-link" data-scroll-target="#pourquoi-rendre-ses-résultats-reproductibles"><span class="header-section-number">1.1</span> Pourquoi rendre ses résultats reproductibles ?</a></li>
+  <li><a href="#trois-notions-parfois-confondues" id="toc-trois-notions-parfois-confondues" class="nav-link" data-scroll-target="#trois-notions-parfois-confondues"><span class="header-section-number">1.2</span> Trois notions parfois confondues</a></li>
+  <li><a href="#bonnes-pratiques" id="toc-bonnes-pratiques" class="nav-link" data-scroll-target="#bonnes-pratiques"><span class="header-section-number">1.3</span> Bonnes pratiques</a></li>
+  </ul></li>
+  <li><a href="#bloc-b-validité-interne-et-externe" id="toc-bloc-b-validité-interne-et-externe" class="nav-link" data-scroll-target="#bloc-b-validité-interne-et-externe"><span class="header-section-number">2</span> Bloc B — Validité interne et externe</a>
+  <ul class="collapse">
+  <li><a href="#définition-krippendorff-2013" id="toc-définition-krippendorff-2013" class="nav-link" data-scroll-target="#définition-krippendorff-2013"><span class="header-section-number">2.1</span> Définition (Krippendorff, 2013)</a></li>
+  <li><a href="#validité-interne-vs.-externe" id="toc-validité-interne-vs.-externe" class="nav-link" data-scroll-target="#validité-interne-vs.-externe"><span class="header-section-number">2.2</span> Validité interne vs.&nbsp;externe</a></li>
+  <li><a href="#bonnes-pratiques-générales" id="toc-bonnes-pratiques-générales" class="nav-link" data-scroll-target="#bonnes-pratiques-générales"><span class="header-section-number">2.3</span> Bonnes pratiques générales</a></li>
+  </ul></li>
+  <li><a href="#bloc-c-causalité-vs.-corrélation" id="toc-bloc-c-causalité-vs.-corrélation" class="nav-link" data-scroll-target="#bloc-c-causalité-vs.-corrélation"><span class="header-section-number">3</span> Bloc C — Causalité vs.&nbsp;corrélation</a>
+  <ul class="collapse">
+  <li><a href="#le-piège-de-coluche" id="toc-le-piège-de-coluche" class="nav-link" data-scroll-target="#le-piège-de-coluche"><span class="header-section-number">3.1</span> Le piège de Coluche</a></li>
+  <li><a href="#causalité-au-cœur-de-la-science" id="toc-causalité-au-cœur-de-la-science" class="nav-link" data-scroll-target="#causalité-au-cœur-de-la-science"><span class="header-section-number">3.2</span> Causalité : au cœur de la science</a></li>
+  <li><a href="#questions-pour-évaluer-une-relation-causale" id="toc-questions-pour-évaluer-une-relation-causale" class="nav-link" data-scroll-target="#questions-pour-évaluer-une-relation-causale"><span class="header-section-number">3.3</span> 4 questions pour évaluer une relation causale</a></li>
+  <li><a href="#bonnes-pratiques-pour-étayer-la-causalité" id="toc-bonnes-pratiques-pour-étayer-la-causalité" class="nav-link" data-scroll-target="#bonnes-pratiques-pour-étayer-la-causalité"><span class="header-section-number">3.4</span> Bonnes pratiques pour étayer la causalité</a></li>
+  </ul></li>
+  <li><a href="#bloc-d-incertitude" id="toc-bloc-d-incertitude" class="nav-link" data-scroll-target="#bloc-d-incertitude"><span class="header-section-number">4</span> Bloc D — Incertitude</a>
+  <ul class="collapse">
+  <li><a href="#quest-ce-que-lincertitude-scientifique" id="toc-quest-ce-que-lincertitude-scientifique" class="nav-link" data-scroll-target="#quest-ce-que-lincertitude-scientifique"><span class="header-section-number">4.1</span> Qu’est-ce que l’incertitude scientifique ?</a></li>
+  <li><a href="#bonnes-pratiques-toujours-indiquer" id="toc-bonnes-pratiques-toujours-indiquer" class="nav-link" data-scroll-target="#bonnes-pratiques-toujours-indiquer"><span class="header-section-number">4.2</span> Bonnes pratiques : toujours indiquer</a></li>
+  </ul></li>
+  <li><a href="#bloc-e-objectivité-vs.-objectivation" id="toc-bloc-e-objectivité-vs.-objectivation" class="nav-link" data-scroll-target="#bloc-e-objectivité-vs.-objectivation"><span class="header-section-number">5</span> Bloc E — Objectivité vs.&nbsp;objectivation</a>
+  <ul class="collapse">
+  <li><a href="#deux-postures" id="toc-deux-postures" class="nav-link" data-scroll-target="#deux-postures"><span class="header-section-number">5.1</span> Deux postures</a></li>
+  <li><a href="#danger-de-lobjectivité-naïve" id="toc-danger-de-lobjectivité-naïve" class="nav-link" data-scroll-target="#danger-de-lobjectivité-naïve"><span class="header-section-number">5.2</span> Danger de l’objectivité naïve</a></li>
+  <li><a href="#bonnes-pratiques-1" id="toc-bonnes-pratiques-1" class="nav-link" data-scroll-target="#bonnes-pratiques-1"><span class="header-section-number">5.3</span> Bonnes pratiques</a></li>
+  </ul></li>
+  <li><a href="#bloc-f-présentation-des-résultats" id="toc-bloc-f-présentation-des-résultats" class="nav-link" data-scroll-target="#bloc-f-présentation-des-résultats"><span class="header-section-number">6</span> Bloc F — Présentation des résultats</a>
+  <ul class="collapse">
+  <li><a href="#structure-type-dun-papier-de-recherche" id="toc-structure-type-dun-papier-de-recherche" class="nav-link" data-scroll-target="#structure-type-dun-papier-de-recherche"><span class="header-section-number">6.1</span> Structure type d’un papier de recherche</a></li>
+  <li><a href="#conseils-généraux" id="toc-conseils-généraux" class="nav-link" data-scroll-target="#conseils-généraux"><span class="header-section-number">6.2</span> Conseils généraux</a></li>
+  <li><a href="#règles-pour-les-tableaux" id="toc-règles-pour-les-tableaux" class="nav-link" data-scroll-target="#règles-pour-les-tableaux"><span class="header-section-number">6.3</span> Règles pour les tableaux</a></li>
+  <li><a href="#tableaux-types" id="toc-tableaux-types" class="nav-link" data-scroll-target="#tableaux-types"><span class="header-section-number">6.4</span> Tableaux types</a></li>
+  <li><a href="#règles-pour-les-graphiques" id="toc-règles-pour-les-graphiques" class="nav-link" data-scroll-target="#règles-pour-les-graphiques"><span class="header-section-number">6.5</span> Règles pour les graphiques</a></li>
+  </ul></li>
+  <li><a href="#bloc-g-le-pipeline-de-recherche-vue-densemble" id="toc-bloc-g-le-pipeline-de-recherche-vue-densemble" class="nav-link" data-scroll-target="#bloc-g-le-pipeline-de-recherche-vue-densemble"><span class="header-section-number">7</span> Bloc G — Le pipeline de recherche, vue d’ensemble</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./08_S9_Qualite_communication.html">S9 - Qualité et communication des résultats</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">S9 - Qualité et communication des résultats</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ce chapitre en 1 ligne
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Une bonne analyse est <strong>reproductible</strong>, <strong>valide</strong> (interne et externe), prudente sur la <strong>causalité</strong>, transparente sur l’<strong>incertitude</strong>, consciente de l’<strong>objectivation</strong>, et <strong>communiquée clairement</strong> au lecteur·ice.</p>
+</div>
+</div>
+<p>Le <strong>point à retenir</strong> : <em>il est important de s’assurer de la qualité des résultats d’une analyse quantitative. Le processus de production et d’interprétation doit être documenté. Lors de la présentation, pense en premier lieu au·à la lecteur·ice et rends ton raisonnement le plus clair et transparent possible.</em></p>
+<section id="bloc-a-reproductibilité" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="bloc-a-reproductibilité"><span class="header-section-number">1</span> Bloc A — Reproductibilité</h2>
+<section id="pourquoi-rendre-ses-résultats-reproductibles" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="pourquoi-rendre-ses-résultats-reproductibles"><span class="header-section-number">1.1</span> Pourquoi rendre ses résultats reproductibles ?</h3>
+<p>Karl Popper le disait : <em>« Nous ne prenons même pas nos propres observations au sérieux tant que nous ne les avons pas répétées et testées. Ce n’est que par de telles répétitions que nous pouvons nous convaincre qu’il ne s’agit pas d’une coïncidence isolée. »</em></p>
+<p>La reproductibilité <strong>renforce la fiabilité</strong> des résultats et la confiance dans la science. Sans elle, un résultat reste un « événement isolé », pas une vraie connaissance.</p>
+</section>
+<section id="trois-notions-parfois-confondues" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="trois-notions-parfois-confondues"><span class="header-section-number">1.2</span> Trois notions parfois confondues</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Notion</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Reproductibilité</strong></td>
+<td>Les <strong>mêmes données</strong> + le <strong>même code</strong> = les <strong>mêmes résultats</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Réplicabilité</strong></td>
+<td>Refaire l’étude avec <strong>de nouvelles données</strong> sur le même protocole = résultats similaires</td>
+</tr>
+<tr class="odd">
+<td><strong>Robustesse</strong></td>
+<td>Les résultats tiennent avec des <strong>méthodes alternatives</strong> ou des choix différents</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bonnes-pratiques" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="bonnes-pratiques"><span class="header-section-number">1.3</span> Bonnes pratiques</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pratique</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Document méta</strong></td>
+<td>Note tes réflexions et décisions à chaque étape</td>
+</tr>
+<tr class="even">
+<td><strong>Code statistique annoté</strong></td>
+<td>Un fichier par étape (nettoyage, univariée, multivariée) avec commentaires clairs</td>
+</tr>
+<tr class="odd">
+<td><strong>Versions</strong></td>
+<td>Garder plusieurs versions du papier final, idéalement avec track-changes</td>
+</tr>
+<tr class="even">
+<td><strong>Mise à disposition</strong></td>
+<td>Code annoté + données + questionnaires + tout document permettant la reproduction</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="bloc-b-validité-interne-et-externe" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="bloc-b-validité-interne-et-externe"><span class="header-section-number">2</span> Bloc B — Validité interne et externe</h2>
+<section id="définition-krippendorff-2013" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="définition-krippendorff-2013"><span class="header-section-number">2.1</span> Définition (Krippendorff, 2013)</h3>
+<blockquote class="blockquote">
+<p>« La validité réside dans le fait que la qualité des résultats de la recherche nous conduit à les accepter comme vrais, comme parlant du monde réel. Un instrument de mesure est valide s’il mesure ce que son utilisateur prétend qu’il mesure. »</p>
+</blockquote>
+</section>
+<section id="validité-interne-vs.-externe" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="validité-interne-vs.-externe"><span class="header-section-number">2.2</span> Validité interne vs.&nbsp;externe</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Question</th>
+<th>Bonne pratique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Interne</strong></td>
+<td>Le design est-il assez rigoureux pour soutenir les conclusions sur <strong>cette étude</strong> ?</td>
+<td>Diversifier les sources, tester les explications alternatives</td>
+</tr>
+<tr class="even">
+<td><strong>Externe</strong></td>
+<td>Les résultats sont-ils <strong>généralisables</strong> à d’autres contextes ?</td>
+<td>Comparer avec d’autres données ou études</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+La validité, c’est multiple
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Validité de contenu</strong> : la mesure couvre-t-elle bien tous les aspects du concept ?</li>
+<li><strong>Validité de construit</strong> : la mesure se rapporte-t-elle bien au concept théorique ?</li>
+<li><strong>Validité interne</strong> : le design exclut-il les explications alternatives ?</li>
+<li><strong>Validité externe</strong> : les résultats se généralisent-ils ?</li>
+</ul>
+<p>À chaque étape de ta recherche, demande-toi quelle validité est en jeu.</p>
+</div>
+</div>
+</section>
+<section id="bonnes-pratiques-générales" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="bonnes-pratiques-générales"><span class="header-section-number">2.3</span> Bonnes pratiques générales</h3>
+<ul>
+<li>S’assurer que les variables <strong>mesurent bien</strong> les concepts visés.</li>
+<li><strong>Tester les explications alternatives</strong>.</li>
+<li>Comparer ses mesures à des mesures obtenues par <strong>d’autres sources</strong> (triangulation).</li>
+<li>Utiliser des <strong>mesures déjà établies</strong> (échelles validées de la littérature).</li>
+</ul>
+</section>
+</section>
+<section id="bloc-c-causalité-vs.-corrélation" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="bloc-c-causalité-vs.-corrélation"><span class="header-section-number">3</span> Bloc C — Causalité vs.&nbsp;corrélation</h2>
+<section id="le-piège-de-coluche" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="le-piège-de-coluche"><span class="header-section-number">3.1</span> Le piège de Coluche</h3>
+<blockquote class="blockquote">
+<p><em>« Quand on est malade, il ne faut surtout pas aller à l’hôpital : la probabilité de mourir dans un lit d’hôpital est dix fois plus grande que dans son lit à la maison. »</em></p>
+</blockquote>
+<p>L’humour de Coluche illustre toute la difficulté : la <strong>corrélation</strong> entre « être à l’hôpital » et « mourir » ne dit <strong>rien</strong> sur la causalité. Cause cachée : on va à l’hôpital quand on est gravement malade — c’est la maladie qui tue, pas l’hôpital.</p>
+</section>
+<section id="causalité-au-cœur-de-la-science" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="causalité-au-cœur-de-la-science"><span class="header-section-number">3.2</span> Causalité : au cœur de la science</h3>
+<p>La démarche scientifique vise à établir des <strong>liens causaux</strong> : X <strong>cause</strong> Y. Mais :</p>
+<ul>
+<li>Les causes sont <strong>multiples</strong> ;</li>
+<li>Ce qu’on observe dans les données est une <strong>corrélation</strong> ;</li>
+<li>Le <strong>risque d’interprétation causale abusive</strong> est permanent.</li>
+</ul>
+</section>
+<section id="questions-pour-évaluer-une-relation-causale" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="questions-pour-évaluer-une-relation-causale"><span class="header-section-number">3.3</span> 4 questions pour évaluer une relation causale</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Question</th>
+<th>Concept</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td><strong>Sens de la relation</strong> : X cause-t-il Y, ou est-ce l’inverse ? Ou une influence réciproque ?</td>
+<td>Causalité inversée</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td><strong>Causes concurrentes</strong> : existe-t-il une variable Z qui influence à la fois X et Y ?</td>
+<td>Variable confondante (cofondante)</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td><strong>Sélection de l’échantillon</strong> : la sélection des cas est-elle liée à la VD ?</td>
+<td>Biais de sélection</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td><strong>Niveau d’analyse</strong> : le niveau auquel on analyse correspond-il à celui de la théorie ?</td>
+<td><strong>Erreur écologique</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Causalité inversée</strong> : « Les pompiers causent les incendies » (parce qu’on les voit toujours là). Non : c’est l’incendie qui les fait venir.</li>
+<li><strong>Cause concurrente</strong> : « Les ventes de glaces causent les noyades. » Non : c’est la <strong>chaleur</strong> qui fait grimper les deux.</li>
+<li><strong>Biais de sélection</strong> : étudier la dépression chez les personnes en psychiatrie ne dit rien de la population — l’échantillon est sélectionné par la VD.</li>
+<li><strong>Erreur écologique</strong> : « Les pays riches ont plus de divorces, donc les riches divorcent plus. » Pas forcément : c’est peut-être une moyenne agrégée trompeuse.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="bonnes-pratiques-pour-étayer-la-causalité" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="bonnes-pratiques-pour-étayer-la-causalité"><span class="header-section-number">3.4</span> Bonnes pratiques pour étayer la causalité</h3>
+<ol type="1">
+<li><strong>Modèle théorique solide</strong> basé sur la littérature.</li>
+<li><strong>Hypothèses bien formulées et justifiées</strong>.</li>
+<li><strong>Condition temporelle</strong> : X doit <strong>précéder</strong> Y dans le temps.</li>
+<li><strong>Exclure les autres causes</strong> : variables omises, biais de sélection, niveau d’analyse erroné.</li>
+<li><strong>Modèle d’analyse approprié</strong> : régression avec variables de contrôle, ou design expérimental.</li>
+</ol>
+</section>
+</section>
+<section id="bloc-d-incertitude" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="bloc-d-incertitude"><span class="header-section-number">4</span> Bloc D — Incertitude</h2>
+<section id="quest-ce-que-lincertitude-scientifique" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="quest-ce-que-lincertitude-scientifique"><span class="header-section-number">4.1</span> Qu’est-ce que l’incertitude scientifique ?</h3>
+<p>L’incertitude est une <strong>mesure quantitative de la variabilité des données</strong>. Toutes les mesures contiennent une erreur. Toutes les données ont une <strong>gamme de valeurs attendues</strong>, jamais une valeur ponctuelle parfaite.</p>
+<p><strong>Incertitude ≠ doute sur les résultats.</strong> Indiquer l’incertitude, c’est <strong>être transparent</strong> sur la confiance qu’on accorde à la mesure.</p>
+</section>
+<section id="bonnes-pratiques-toujours-indiquer" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="bonnes-pratiques-toujours-indiquer"><span class="header-section-number">4.2</span> Bonnes pratiques : toujours indiquer</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mesure</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Niveau de confiance</strong></td>
+<td>Probabilité que l’échantillon reflète la population (souvent 95 % ou 99 %)</td>
+</tr>
+<tr class="even">
+<td><strong>Marge d’erreur</strong></td>
+<td>Écart toléré entre échantillon et population (souvent en %)</td>
+</tr>
+<tr class="odd">
+<td><strong>Écart-type</strong></td>
+<td>Dispersion autour de la moyenne (S6)</td>
+</tr>
+<tr class="even">
+<td><strong>Intervalle de confiance (IC)</strong></td>
+<td>Étendue contenant le paramètre de population à un certain degré de certitude (souvent 95 %)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lecture d’un IC
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un IC à 95 % de [3.2 ; 5.8] signifie : <em>si je répète l’étude un grand nombre de fois, 95 % des intervalles calculés contiendront la vraie valeur du paramètre.</em></p>
+<p><strong>Astuce</strong> : si l’IC d’une différence contient <strong>0</strong>, la différence n’est <strong>pas significative</strong> (0 = « pas de différence » reste plausible).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="bloc-e-objectivité-vs.-objectivation" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="bloc-e-objectivité-vs.-objectivation"><span class="header-section-number">5</span> Bloc E — Objectivité vs.&nbsp;objectivation</h2>
+<section id="deux-postures" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="deux-postures"><span class="header-section-number">5.1</span> Deux postures</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Posture</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Objectivité (état)</strong></td>
+<td>Le monde a des propriétés objectives en attente d’être dévoilées. La recherche <strong>détecte du réel</strong>.</td>
+</tr>
+<tr class="even">
+<td><strong>Objectivation (processus)</strong></td>
+<td>La recherche <strong>construit</strong> sa représentation du monde en construisant le sujet connaissant. C’est une <strong>construction sociale</strong> de la réalité.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="danger-de-lobjectivité-naïve" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="danger-de-lobjectivité-naïve"><span class="header-section-number">5.2</span> Danger de l’objectivité naïve</h3>
+<p>Quand on traite des catégories sociales comme « objectives » (genre, classe, ethnie), on risque de :</p>
+<ul>
+<li><strong>Naturaliser</strong> ce qui résulte des relations de pouvoir.</li>
+<li>Exercer une <strong>violence symbolique</strong> sur les individus catégorisés (les enfermer dans une case).</li>
+</ul>
+</section>
+<section id="bonnes-pratiques-1" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="bonnes-pratiques-1"><span class="header-section-number">5.3</span> Bonnes pratiques</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pratique</th>
+<th>Logique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Noter ses a priori</strong> au début de la recherche</td>
+<td>Conscience réflexive</td>
+</tr>
+<tr class="even">
+<td><strong>Questionner ses concepts</strong>, hypothèses, mesures</td>
+<td>Remise en question</td>
+</tr>
+<tr class="odd">
+<td><strong>Discuter et collaborer</strong></td>
+<td>Triangulation des points de vue</td>
+</tr>
+<tr class="even">
+<td><strong>Se re-mettre en question</strong> sans s’auto-saboter</td>
+<td>Équilibre</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="bloc-f-présentation-des-résultats" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="bloc-f-présentation-des-résultats"><span class="header-section-number">6</span> Bloc F — Présentation des résultats</h2>
+<section id="structure-type-dun-papier-de-recherche" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="structure-type-dun-papier-de-recherche"><span class="header-section-number">6.1</span> Structure type d’un papier de recherche</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Univariée</strong></td>
+<td>Description de la VD (et VI) : tableau ou graphique + explication claire</td>
+</tr>
+<tr class="even">
+<td><strong>2. Bi-/multivariée</strong></td>
+<td>Tableau ou graphique + explication + interprétation des hypothèses au fil ou en bloc</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Réponse à la QR</strong></td>
+<td>Synthèse : la QR est-elle résolue ? Avec quelles nuances ?</td>
+</tr>
+</tbody>
+</table>
+<p>Deux <strong>options</strong> d’organisation :</p>
+<ul>
+<li><strong>Option I</strong> : interpréter au fur et à mesure (hypothèses validées/invalidées à mesure de la présentation).</li>
+<li><strong>Option II</strong> : présenter tous les résultats, puis revenir sur chaque hypothèse pour conclure.</li>
+</ul>
+</section>
+<section id="conseils-généraux" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="conseils-généraux"><span class="header-section-number">6.2</span> Conseils généraux</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conseil</th>
+<th>Détail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Penser au·à la lecteur·ice</strong></td>
+<td>Message clair, précis, compréhensible</td>
+</tr>
+<tr class="even">
+<td><strong>Seulement les résultats importants</strong></td>
+<td>Le reste va en <strong>annexes</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Référer aux concepts</strong>, pas aux noms de variables</td>
+<td>Pas de <code>VAR1</code>, <code>VAR2</code> — parler de « l’attitude populiste »</td>
+</tr>
+<tr class="even">
+<td><strong>Indiquer l’incertitude</strong> systématiquement</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Numéroter et titrer</strong> tous les tableaux et graphiques</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="règles-pour-les-tableaux" class="level3" data-number="6.3">
+<h3 data-number="6.3" class="anchored" data-anchor-id="règles-pour-les-tableaux"><span class="header-section-number">6.3</span> Règles pour les tableaux</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Règle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Indiquer les <strong>totaux 100 %</strong> pour les proportions</td>
+</tr>
+<tr class="even">
+<td>Indiquer l’<strong>incertitude</strong> (SE, IC, écart-type)</td>
+</tr>
+<tr class="odd">
+<td><strong>Pas</strong> de noms de variables techniques</td>
+</tr>
+<tr class="even">
+<td><strong>Note</strong> sous le tableau avec seuils de significativité : <code>* p &lt; .05, ** p &lt; .01, *** p &lt; .001</code></td>
+</tr>
+<tr class="odd">
+<td>Style sobre : pas d’effets 3D, usage <strong>restrictif</strong> des couleurs</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tableaux-types" class="level3" data-number="6.4">
+<h3 data-number="6.4" class="anchored" data-anchor-id="tableaux-types"><span class="header-section-number">6.4</span> Tableaux types</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type d’analyse</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Univariée — fréquences</strong></td>
+<td>Catégorie, Fréquence (N), Pourcentage (%), Total</td>
+</tr>
+<tr class="even">
+<td><strong>Univariée — description quanti</strong></td>
+<td>Concept, Moyenne, Écart-type, Étendue, Observations</td>
+</tr>
+<tr class="odd">
+<td><strong>Bivariée — croisé</strong></td>
+<td>VI en colonnes, VD en lignes, % en colonnes</td>
+</tr>
+<tr class="even">
+<td><strong>Bivariée — moyennes</strong></td>
+<td>VI en colonnes, Moyenne, Écart-type, Observations</td>
+</tr>
+<tr class="odd">
+<td><strong>Régression linéaire</strong></td>
+<td>Modèles en colonnes, VI en lignes, Coefficients (SE), Niveau de signif., Constante, N, R²</td>
+</tr>
+<tr class="even">
+<td><strong>Régression logistique</strong></td>
+<td>Idem + colonne <strong>Odds Ratio</strong>, Pseudo-R²</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="règles-pour-les-graphiques" class="level3" data-number="6.5">
+<h3 data-number="6.5" class="anchored" data-anchor-id="règles-pour-les-graphiques"><span class="header-section-number">6.5</span> Règles pour les graphiques</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Règle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Graphique adapté</strong> à l’analyse (barres pour quali, histogramme pour quanti, scatterplot pour 2 quanti)</td>
+</tr>
+<tr class="even">
+<td><strong>Représenter l’incertitude</strong> (barres d’erreur, IC)</td>
+</tr>
+<tr class="odd">
+<td><strong>Pas</strong> de noms de variables</td>
+</tr>
+<tr class="even">
+<td><strong>Échelle entière</strong> : représenter toute l’étendue (sinon distorsion)</td>
+</tr>
+<tr class="odd">
+<td><strong>Distance constante</strong> entre points de l’axe</td>
+</tr>
+<tr class="even">
+<td><strong>Sens de lecture usuel</strong> (plus petit au plus grand, plus ancien au plus récent)</td>
+</tr>
+<tr class="odd">
+<td>Style sobre</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Les pièges visuels classiques
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Axe Y tronqué</strong> : faire commencer à 80 au lieu de 0 → un déclin de 5 % paraît dramatique.</li>
+<li><strong>Axe Y inversé</strong> : montrer la mortalité de haut en bas → une <strong>baisse</strong> apparaît comme une <strong>hausse</strong>.</li>
+<li><strong>Axe X disproportionnel</strong> : compresser ou étirer le temps → un événement récent semble représenter une tendance longue.</li>
+</ul>
+<p>À l’examen, sois capable de <strong>repérer ces manipulations</strong> dans un graphique présenté.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="bloc-g-le-pipeline-de-recherche-vue-densemble" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="bloc-g-le-pipeline-de-recherche-vue-densemble"><span class="header-section-number">7</span> Bloc G — Le pipeline de recherche, vue d’ensemble</h2>
+<p>Le cours boucle sur le pipeline du S1, en associant chaque étape à une séance :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Séances du cours</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Identification de l’objet</td>
+<td>(Méthodes I)</td>
+</tr>
+<tr class="even">
+<td>2. Problématisation + QR</td>
+<td>S1</td>
+</tr>
+<tr class="odd">
+<td>2 bis. Hypothèses</td>
+<td>S1</td>
+</tr>
+<tr class="even">
+<td>3. Opérationnalisation</td>
+<td>S2</td>
+</tr>
+<tr class="odd">
+<td>4. Collecte</td>
+<td>S3 – S5</td>
+</tr>
+<tr class="even">
+<td>5. Analyse</td>
+<td>S6 – S8</td>
+</tr>
+<tr class="odd">
+<td>6. Dissémination</td>
+<td><strong>S9</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Récapitulatif Ch.9
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Reproductibilité</strong> ≠ réplicabilité ≠ robustesse. Document méta, code annoté, données partagées.</li>
+<li><strong>Validité interne</strong> (rigueur du design) vs.&nbsp;<strong>externe</strong> (généralisation).</li>
+<li><strong>Corrélation ≠ causalité</strong>. 4 questions à se poser : sens, causes concurrentes, sélection, niveau d’analyse.</li>
+<li><strong>Incertitude</strong> : toujours indiquer niveau de confiance, marge d’erreur, IC, écart-type.</li>
+<li><strong>Objectivité (état) vs.&nbsp;objectivation (processus)</strong> : être conscient·e que la recherche <strong>construit</strong> sa réalité.</li>
+<li><strong>Présenter ses résultats</strong> : penser au lecteur, structurer (uni → bi/multi → conclusion), tableaux/graphiques sobres avec incertitude.</li>
+<li>Pipeline complet : objet → QR → hypothèses → opérationnalisation → collecte → analyse → dissémination.</li>
+</ul>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

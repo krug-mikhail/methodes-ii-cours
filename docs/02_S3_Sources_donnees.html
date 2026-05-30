@@ -1,0 +1,1596 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>S3 - Sources de données – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./02_S3_Sources_donnees.html">S3 - Sources de données</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#bloc-a-sources-documentaires-et-numériques-script-1" id="toc-bloc-a-sources-documentaires-et-numériques-script-1" class="nav-link active" data-scroll-target="#bloc-a-sources-documentaires-et-numériques-script-1"><span class="header-section-number">1</span> Bloc A : Sources documentaires et numériques (script 1)</a>
+  <ul class="collapse">
+  <li><a href="#quatre-vérifications-avant-toute-collecte" id="toc-quatre-vérifications-avant-toute-collecte" class="nav-link" data-scroll-target="#quatre-vérifications-avant-toute-collecte"><span class="header-section-number">1.1</span> Quatre vérifications avant toute collecte</a></li>
+  <li><a href="#sources-documentaires-presse-audiovisuel-réseaux-sociaux" id="toc-sources-documentaires-presse-audiovisuel-réseaux-sociaux" class="nav-link" data-scroll-target="#sources-documentaires-presse-audiovisuel-réseaux-sociaux"><span class="header-section-number">1.2</span> Sources documentaires : presse, audiovisuel, réseaux sociaux</a></li>
+  <li><a href="#unité-de-collecte-vs.-unité-danalyse" id="toc-unité-de-collecte-vs.-unité-danalyse" class="nav-link" data-scroll-target="#unité-de-collecte-vs.-unité-danalyse"><span class="header-section-number">1.3</span> Unité de collecte vs.&nbsp;unité d’analyse</a></li>
+  <li><a href="#échantillonnage-probabiliste-sources-documentaires" id="toc-échantillonnage-probabiliste-sources-documentaires" class="nav-link" data-scroll-target="#échantillonnage-probabiliste-sources-documentaires"><span class="header-section-number">1.4</span> Échantillonnage probabiliste (sources documentaires)</a></li>
+  <li><a href="#web-scraping-api-vs.-parsing" id="toc-web-scraping-api-vs.-parsing" class="nav-link" data-scroll-target="#web-scraping-api-vs.-parsing"><span class="header-section-number">1.5</span> Web scraping : API vs.&nbsp;parsing</a></li>
+  <li><a href="#avantagesinconvénients-des-données-numériques" id="toc-avantagesinconvénients-des-données-numériques" class="nav-link" data-scroll-target="#avantagesinconvénients-des-données-numériques"><span class="header-section-number">1.6</span> Avantages/inconvénients des données numériques</a></li>
+  <li><a href="#autres-sources-open-data-applications-don-de-données" id="toc-autres-sources-open-data-applications-don-de-données" class="nav-link" data-scroll-target="#autres-sources-open-data-applications-don-de-données"><span class="header-section-number">1.7</span> Autres sources : open data, applications, don de données</a></li>
+  </ul></li>
+  <li><a href="#bloc-b-enquêtes-quantitatives-standardisées" id="toc-bloc-b-enquêtes-quantitatives-standardisées" class="nav-link" data-scroll-target="#bloc-b-enquêtes-quantitatives-standardisées"><span class="header-section-number">2</span> Bloc B : Enquêtes quantitatives standardisées</a>
+  <ul class="collapse">
+  <li><a href="#définition-et-moyens" id="toc-définition-et-moyens" class="nav-link" data-scroll-target="#définition-et-moyens"><span class="header-section-number">2.1</span> Définition et moyens</a></li>
+  <li><a href="#échantillonnage-pourquoi-et-comment" id="toc-échantillonnage-pourquoi-et-comment" class="nav-link" data-scroll-target="#échantillonnage-pourquoi-et-comment"><span class="header-section-number">2.2</span> Échantillonnage : pourquoi et comment</a></li>
+  <li><a href="#formulation-des-questions" id="toc-formulation-des-questions" class="nav-link" data-scroll-target="#formulation-des-questions"><span class="header-section-number">2.3</span> Formulation des questions</a></li>
+  <li><a href="#types-de-questions" id="toc-types-de-questions" class="nav-link" data-scroll-target="#types-de-questions"><span class="header-section-number">2.4</span> Types de questions</a></li>
+  <li><a href="#structure-dun-questionnaire" id="toc-structure-dun-questionnaire" class="nav-link" data-scroll-target="#structure-dun-questionnaire"><span class="header-section-number">2.5</span> Structure d’un questionnaire</a></li>
+  <li><a href="#sources-derreur" id="toc-sources-derreur" class="nav-link" data-scroll-target="#sources-derreur"><span class="header-section-number">2.6</span> Sources d’erreur</a></li>
+  <li><a href="#pré-test" id="toc-pré-test" class="nav-link" data-scroll-target="#pré-test"><span class="header-section-number">2.7</span> Pré-test</a></li>
+  </ul></li>
+  <li><a href="#sources-de-données-secondaires-pré-existantes" id="toc-sources-de-données-secondaires-pré-existantes" class="nav-link" data-scroll-target="#sources-de-données-secondaires-pré-existantes"><span class="header-section-number">3</span> Sources de données secondaires (pré-existantes)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./02_S3_Sources_donnees.html">S3 - Sources de données</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">S3 - Sources de données</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ce chapitre en 1 ligne
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Les sources de données quantitatives sont multiples (enquêtes, documents, web, open data, don de données), mais chacune oblige le·la chercheur·euse à <strong>planifier</strong> : choix de la source, échantillonnage, formulation des questions, et justification de chaque décision.</p>
+</div>
+</div>
+<p>Le <strong>point à retenir</strong> : <em>les sources de données quantitatives sont multiples, mais leur récolte demande un savoir-faire spécifique et une planification poussée. De nombreux choix doivent être justifiés en commençant par le choix des sources jusqu’à l’unité d’analyse en passant par un éventuel échantillonnage.</em></p>
+<p>Cette séance couvre <strong>deux blocs</strong> :</p>
+<ol type="1">
+<li>les <strong>sources documentaires et numériques</strong> (script 1, lecture obligatoire) ;</li>
+<li>les <strong>enquêtes par sondage</strong> (questionnement, échantillonnage).</li>
+</ol>
+<section id="bloc-a-sources-documentaires-et-numériques-script-1" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="bloc-a-sources-documentaires-et-numériques-script-1"><span class="header-section-number">1</span> Bloc A : Sources documentaires et numériques (script 1)</h2>
+<section id="quatre-vérifications-avant-toute-collecte" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="quatre-vérifications-avant-toute-collecte"><span class="header-section-number">1.1</span> Quatre vérifications avant toute collecte</h3>
+<p>Quelle que soit la source, il faut se demander :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vérification</th>
+<th>Question concrète</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Accessibilité</strong></td>
+<td>Les données sont-elles disponibles ? En entier ou en partie ? Quelle fraction de la population est représentée ?</td>
+</tr>
+<tr class="even">
+<td><strong>Coûts</strong></td>
+<td>Temps, argent, infrastructure ?</td>
+</tr>
+<tr class="odd">
+<td><strong>Possibilités de collecte / analyse</strong></td>
+<td>Quels outils techniques ? Données individuelles ou agrégées ?</td>
+</tr>
+<tr class="even">
+<td><strong>Adéquation</strong></td>
+<td>Les données permettent-elles vraiment d’opérationnaliser le concept étudié ?</td>
+</tr>
+</tbody>
+</table>
+<p>Et <strong>deux questions critiques</strong> :</p>
+<ul>
+<li>Comment les données ont-elles été produites (par qui, avec quel but, quels biais possibles) ?</li>
+<li>Y a-t-il des <strong>enjeux éthiques</strong> (consentement, anonymat, protection des données) ?</li>
+</ul>
+</section>
+<section id="sources-documentaires-presse-audiovisuel-réseaux-sociaux" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="sources-documentaires-presse-audiovisuel-réseaux-sociaux"><span class="header-section-number">1.2</span> Sources documentaires : presse, audiovisuel, réseaux sociaux</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Accès</th>
+<th>Risques</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Presse écrite / en ligne</strong></td>
+<td>Bases de données (Swissdox, Nexis Uni, Factiva) via biblio universitaire ou VPN. Recherche par mots-clés + opérateurs booléens (AND, OR), troncatures (<code>*</code>), expressions exactes (<code>"..."</code>)</td>
+<td>Contenu en ligne modifiable → garder copies hors ligne, noter la date de récolte</td>
+</tr>
+<tr class="even">
+<td><strong>Audiovisuel</strong></td>
+<td>Médiathèques RTS/SRF, streaming, archives, enregistrement personnel</td>
+<td>Disponibilité temporaire seulement</td>
+</tr>
+<tr class="odd">
+<td><strong>Réseaux sociaux</strong></td>
+<td>Captures d’écran, extensions de navigateur, <strong>API</strong>, parsing</td>
+<td>Éthique : consentement des utilisateur·ice·s</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="unité-de-collecte-vs.-unité-danalyse" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="unité-de-collecte-vs.-unité-danalyse"><span class="header-section-number">1.3</span> Unité de collecte vs.&nbsp;unité d’analyse</h3>
+<p>Distinction <strong>fondamentale</strong> à connaître à l’examen :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Définition</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Unité de collecte</strong> (sampling unit)</td>
+<td>Le matériel récupéré, défini par la QR</td>
+<td>Un article de presse, un post TikTok</td>
+</tr>
+<tr class="even">
+<td><strong>Unité d’analyse</strong> (coding unit)</td>
+<td>L’unité statistique codée, une ligne dans la base</td>
+<td>Un paragraphe, un mot, une revendication</td>
+</tr>
+<tr class="odd">
+<td><strong>Unité de contexte</strong></td>
+<td>Ce qui entoure l’unité d’analyse pour l’interpréter</td>
+<td>La vidéo entière du post</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>L’unité de collecte, c’est <strong>ce que tu attrapes</strong> avec ton filet (articles, posts, vidéos). L’unité d’analyse, c’est <strong>ce que tu mesures</strong> à l’intérieur (un acteur, une émotion, un thème). L’unité de contexte, c’est <strong>le décor</strong> qui t’aide à comprendre (la vidéo entière, l’article complet). Tu peux avoir 100 articles (collecte) mais 700 revendications codées (analyse).</p>
+</div>
+</div>
+</div>
+<section id="découpage-parallèle-vs.-hiérarchique" class="level4" data-number="1.3.1">
+<h4 data-number="1.3.1" class="anchored" data-anchor-id="découpage-parallèle-vs.-hiérarchique"><span class="header-section-number">1.3.1</span> Découpage parallèle vs.&nbsp;hiérarchique</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Découpage</th>
+<th>Logique</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Parallèle</strong></td>
+<td>Plusieurs unités d’analyse autonomes par unité de collecte, chacune avec son codebook</td>
+<td>Un post TikTok → analyse musique + texte + action séparément</td>
+</tr>
+<tr class="even">
+<td><strong>Hiérarchique</strong></td>
+<td>Décomposition en niveaux imbriqués</td>
+<td>Article → §1, §2, §3 ; chaque § analysé en lien avec l’article</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="échantillonnage-probabiliste-sources-documentaires" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="échantillonnage-probabiliste-sources-documentaires"><span class="header-section-number">1.4</span> Échantillonnage probabiliste (sources documentaires)</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technique</th>
+<th>Principe</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Aléatoire</strong></td>
+<td>Tirage au sort dans la population</td>
+<td>Tirer 50 articles parmi 5 000 au hasard</td>
+</tr>
+<tr class="even">
+<td><strong>Stratifié</strong></td>
+<td>Diviser en strates (langue, type), puis tirer au sort dans chaque strate. Proportionnel (respect des poids réels) ou disproportionnel (égalité par strate)</td>
+<td>60 % en allemand + 40 % en français ; ou 50/50</td>
+</tr>
+<tr class="odd">
+<td><strong>Systématique / par liste</strong></td>
+<td>Chaque n-ième unité (tous les 10)</td>
+<td>1 article sur 10 sur la liste</td>
+</tr>
+<tr class="even">
+<td><strong>Par grappes</strong></td>
+<td>Tirage de sous-groupes naturels, puis tout le groupe est inclus</td>
+<td>Tirer 4 « semaines naturelles » dans l’année, coder tous les articles de ces 4 semaines</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le pré-requis de l’échantillonnage probabiliste
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour qu’un échantillon soit probabiliste, il faut <strong>connaître la population totale</strong> (ou avoir une base d’échantillonnage = une liste complète). Sans ça, on tombe en <strong>non-probabiliste</strong> (volontaires, quotas, boule de neige) → impossible de calculer marges d’erreur.</p>
+</div>
+</div>
+</section>
+<section id="web-scraping-api-vs.-parsing" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="web-scraping-api-vs.-parsing"><span class="header-section-number">1.5</span> Web scraping : API vs.&nbsp;parsing</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technique</th>
+<th>Principe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>API</strong> (Application Programming Interface)</td>
+<td>Tu simules une application qui dialogue avec un service (TikTok, Wikipedia). Tu obtiens des clés et tokens, puis tu interroges directement les données.</td>
+</tr>
+<tr class="even">
+<td><strong>Parsing</strong></td>
+<td>Tu décomposes le code HTML d’une page web pour extraire le texte des nœuds qui t’intéressent. Tu suis des « paths » (chemins) dans l’arborescence du document.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>À l’examen</strong> : il ne faut pas connaître la marche à suivre détaillée, mais la <strong>différence de logique</strong> entre les deux. API = dialogue applicatif structuré ; parsing = scrapping du code HTML brut.</p>
+</section>
+<section id="avantagesinconvénients-des-données-numériques" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="avantagesinconvénients-des-données-numériques"><span class="header-section-number">1.6</span> Avantages/inconvénients des données numériques</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>+</th>
+<th>−</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Accessibilité</td>
+<td>Accès parfois restreint (quota de requêtes, limites)</td>
+</tr>
+<tr class="even">
+<td>Faible coût</td>
+<td>Algorithmes biaisent ce que tu vois</td>
+</tr>
+<tr class="odd">
+<td>Variété et amplitude</td>
+<td>Risque de se perdre dans la masse</td>
+</tr>
+<tr class="even">
+<td>Mise à jour quasi-temps réel</td>
+<td>Durée de vie variable → archiver hors ligne ! (Wayback Machine)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="autres-sources-open-data-applications-don-de-données" class="level3" data-number="1.7">
+<h3 data-number="1.7" class="anchored" data-anchor-id="autres-sources-open-data-applications-don-de-données"><span class="header-section-number">1.7</span> Autres sources : open data, applications, don de données</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Logique</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Open Data</strong> (et <strong>Open Government Data</strong>, OGD)</td>
+<td>Données publiques mises à disposition gratuitement. Données agrégées pour préserver l’anonymat</td>
+<td>opendata.swiss</td>
+</tr>
+<tr class="even">
+<td><strong>Applications</strong></td>
+<td>App créée pour collecter données (capteurs + sondages). Coûteux à développer</td>
+<td>Étude longitudinale via appli santé</td>
+</tr>
+<tr class="odd">
+<td><strong>Don de données</strong></td>
+<td>RGPD oblige les plateformes à donner aux user·ice·s leurs propres données → ils peuvent les transmettre à des chercheur·euse·s</td>
+<td>Donner ses données Spotify pour étude des préférences musicales</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Don de données et représentativité
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>L’échantillon obtenu par don est <strong>petit et auto-sélectionné</strong> (seuls les motivé·e·s participent). Cela restreint la portée des conclusions et oblige à clarifier l’éthique (consentement, anonymisation, stockage sécurisé).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="bloc-b-enquêtes-quantitatives-standardisées" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="bloc-b-enquêtes-quantitatives-standardisées"><span class="header-section-number">2</span> Bloc B : Enquêtes quantitatives standardisées</h2>
+<section id="définition-et-moyens" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="définition-et-moyens"><span class="header-section-number">2.1</span> Définition et moyens</h3>
+<p>Une <strong>enquête standardisée</strong> (par sondage) sert à la recherche scientifique, mais aussi à l’administration, au marketing et aux médias. Elle se distingue de l’enquête qualitative par :</p>
+<ul>
+<li>un <strong>but descriptif ou explicatif</strong> (pas exploratoire) ;</li>
+<li>un <strong>nombre d’observations élevé</strong> ;</li>
+<li>une <strong>structuration haute</strong> (questions fixes, mêmes catégories pour tout le monde) ;</li>
+<li>une <strong>influence minimale de l’enquêteur·ice</strong>.</li>
+</ul>
+<p>Quatre <strong>moyens</strong> de récolte :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Moyen</th>
+<th>+</th>
+<th>−</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Face-à-face</td>
+<td>Fiable, suivi</td>
+<td>Cher, biais d’enquêteur</td>
+</tr>
+<tr class="even">
+<td>Téléphone</td>
+<td>Couverture large</td>
+<td>Refus, biais de génération</td>
+</tr>
+<tr class="odd">
+<td>Par écrit (auto-administré)</td>
+<td>Anonyme, pas cher</td>
+<td>Taux de réponse faible</td>
+</tr>
+<tr class="even">
+<td>En ligne (auto-administré)</td>
+<td>Rapide, économique</td>
+<td>Biais de couverture (seuls les connectés répondent)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="échantillonnage-pourquoi-et-comment" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="échantillonnage-pourquoi-et-comment"><span class="header-section-number">2.2</span> Échantillonnage : pourquoi et comment</h3>
+<p><strong>Pourquoi échantillonner ?</strong> Une enquête <strong>exhaustive</strong> (interroger toute la population) est coûteuse ou impossible. On utilise une <strong>fraction représentative</strong> = échantillon. C’est l’idée centrale de l’inférence statistique.</p>
+<section id="mode-de-prélèvement" class="level4" data-number="2.2.1">
+<h4 data-number="2.2.1" class="anchored" data-anchor-id="mode-de-prélèvement"><span class="header-section-number">2.2.1</span> Mode de prélèvement</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>Type</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Probabiliste</strong></td>
+<td>Aléatoire</td>
+<td>Tirage au sort dans la liste complète</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Stratifié</td>
+<td>Division en strates importantes (langue, âge), puis tirage</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Par grappes</td>
+<td>Tirage de groupes naturels (classes, quartiers) entiers</td>
+</tr>
+<tr class="even">
+<td><strong>Non-probabiliste</strong></td>
+<td>De commodité</td>
+<td>Volontaires</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Par quotas</td>
+<td>Recrutement des X premiers volontaires par catégorie</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Boule de neige</td>
+<td>Les participant·e·s en recrutent d’autres</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Probabiliste</strong> = chaque membre de la population a une chance <strong>connue, non nulle</strong> d’être tiré au sort. Tu peux calculer marges d’erreur et inférer.</li>
+<li><strong>Non-probabiliste</strong> = pas de tirage au sort vrai. Plus rapide et moins cher, mais pas de marges d’erreur, et l’échantillon peut être très biaisé.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="taille-de-léchantillon" class="level4" data-number="2.2.2">
+<h4 data-number="2.2.2" class="anchored" data-anchor-id="taille-de-léchantillon"><span class="header-section-number">2.2.2</span> Taille de l’échantillon</h4>
+<p>Pour un échantillon probabiliste parfaitement aléatoire, la taille dépend de :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Paramètre</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Taille de la population</strong></td>
+<td>Ex. 9 mio. d’habitants en Suisse</td>
+</tr>
+<tr class="even">
+<td><strong>Niveau de confiance</strong></td>
+<td>Probabilité que l’échantillon reflète bien la population (souvent 95 % ou 99 %)</td>
+</tr>
+<tr class="odd">
+<td><strong>Marge d’erreur</strong></td>
+<td>Écart toléré entre échantillon et population (souvent 3 %)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemple</strong> : sur 1 070 personnes représentatives interrogées, 60 % disent vouloir voter oui. Avec une marge d’erreur de 3 % et 95 % de confiance, <strong>57-63 % de la population</strong> veut voter oui.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Échantillon net vs.&nbsp;brut
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Brut</strong> = ce que tu vises (échantillon net) <strong>+ non-réponses</strong> anticipées.</li>
+<li><strong>Net</strong> = ce que tu obtiens réellement après non-réponses.</li>
+</ul>
+<p>Toujours surévaluer le brut pour atteindre le net visé.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="formulation-des-questions" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="formulation-des-questions"><span class="header-section-number">2.3</span> Formulation des questions</h3>
+<section id="trois-critères-de-qualité-qui-valent-aussi-pour-les-catégories-de-réponse" class="level4" data-number="2.3.1">
+<h4 data-number="2.3.1" class="anchored" data-anchor-id="trois-critères-de-qualité-qui-valent-aussi-pour-les-catégories-de-réponse"><span class="header-section-number">2.3.1</span> Trois critères de qualité (qui valent <strong>aussi</strong> pour les catégories de réponse)</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Objectivité</strong></td>
+<td>La question est comprise de la même manière par tout le monde</td>
+</tr>
+<tr class="even">
+<td><strong>Fiabilité</strong></td>
+<td>À mesures répétées, la question produit le même résultat</td>
+</tr>
+<tr class="odd">
+<td><strong>Validité</strong></td>
+<td>On mesure bien ce qu’on prétend mesurer</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="degré-douverture" class="level4" data-number="2.3.2">
+<h4 data-number="2.3.2" class="anchored" data-anchor-id="degré-douverture"><span class="header-section-number">2.3.2</span> Degré d’ouverture</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Réponses</th>
+<th>Avantage</th>
+<th>Inconvénient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fermée</strong></td>
+<td>Catégories fixes ou échelle</td>
+<td>Objectivité d’évaluation</td>
+<td>Perte d’info, format imposé</td>
+</tr>
+<tr class="even">
+<td><strong>Semi-ouverte</strong></td>
+<td>Catégories + « autre : ____ »</td>
+<td>Compromis</td>
+<td>Codage supplémentaire</td>
+</tr>
+<tr class="odd">
+<td><strong>Ouverte</strong></td>
+<td>Pas de réponse prédéfinie</td>
+<td>Réponses authentiques</td>
+<td>Faible objectivité (sauf pour caractéristiques métriques : âge, revenu)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="catégories-de-réponse-niveau-de-mesure" class="level4" data-number="2.3.3">
+<h4 data-number="2.3.3" class="anchored" data-anchor-id="catégories-de-réponse-niveau-de-mesure"><span class="header-section-number">2.3.3</span> Catégories de réponse → niveau de mesure</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Niveau</th>
+<th>Catégories de réponse</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominale</td>
+<td>Nominal</td>
+<td>Échelle nominale ou question (semi-)ouverte</td>
+</tr>
+<tr class="even">
+<td>Ordinale</td>
+<td>Ordinal</td>
+<td>Échelle ordinale (5 ou 7 catégories, ou 0 à 10)</td>
+</tr>
+<tr class="odd">
+<td>Quantitative</td>
+<td>Continu / discret</td>
+<td>Échelle à X catégories ou question ouverte sur métrique</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="questions-seules-vs.-batteries-ditems-échelle-de-likert" class="level4" data-number="2.3.4">
+<h4 data-number="2.3.4" class="anchored" data-anchor-id="questions-seules-vs.-batteries-ditems-échelle-de-likert"><span class="header-section-number">2.3.4</span> Questions « seules » vs.&nbsp;batteries d’items + échelle de Likert</h4>
+<p>Pour mesurer une <strong>attitude</strong> (concept abstrait), une seule question ne suffit pas. On utilise une <strong>batterie d’items</strong> :</p>
+<ul>
+<li>Plusieurs propositions concernant l’objet d’attitude (certaines favorables, d’autres défavorables) ;</li>
+<li>Réponses sur une <strong>échelle de Likert</strong> (souvent 5 échelons : fortement en désaccord → fortement d’accord) ;</li>
+<li>On peut additionner les scores pour obtenir un <strong>index</strong> par individu ;</li>
+<li>La cohérence de l’échelle se mesure avec l’<strong>alpha de Cronbach</strong> (seuil acceptable : 0.7, vu en S4).</li>
+</ul>
+</section>
+</section>
+<section id="types-de-questions" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="types-de-questions"><span class="header-section-number">2.4</span> Types de questions</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Logique</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Attitude</strong></td>
+<td>« Veuillez indiquer dans quelle mesure vous êtes d’accord avec… »</td>
+<td>Affirmation + échelle de Likert (sans négations !)</td>
+</tr>
+<tr class="even">
+<td><strong>Comportement rétrospectif</strong></td>
+<td>« Avez-vous voté lors des dernières élections ? »</td>
+<td>Oui / Non / Je ne sais plus</td>
+</tr>
+<tr class="odd">
+<td><strong>Comportement prospectif</strong></td>
+<td>« Pour quel parti voterez-vous ? »</td>
+<td>Liste de partis</td>
+</tr>
+<tr class="even">
+<td><strong>Fréquence</strong></td>
+<td>« Combien d’heures avez-vous passé sur les réseaux sociaux ? »</td>
+<td>Tranches OU question ouverte (heures/jour)</td>
+</tr>
+<tr class="odd">
+<td><strong>Socio-démographique</strong></td>
+<td>Âge, sexe, revenu, formation</td>
+<td>Plutôt à la fin du questionnaire</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="structure-dun-questionnaire" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="structure-dun-questionnaire"><span class="header-section-number">2.5</span> Structure d’un questionnaire</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bloc</th>
+<th>Contenu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Introduction</strong></td>
+<td>But de l’étude (sans dévoiler les hypothèses !), durée, anonymat, contact</td>
+</tr>
+<tr class="even">
+<td><strong>2. Partie principale</strong></td>
+<td>Quelques questions faciles d’abord, puis blocs thématiques, questions filtres</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Socio-démographiques</strong></td>
+<td>Vers la fin</td>
+</tr>
+<tr class="even">
+<td><strong>4. Remerciement</strong></td>
+<td>Éventuellement question ouverte pour commentaires</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sources-derreur" class="level3" data-number="2.6">
+<h3 data-number="2.6" class="anchored" data-anchor-id="sources-derreur"><span class="header-section-number">2.6</span> Sources d’erreur</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Erreur</th>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>D’échantillonnage</strong></td>
+<td>Écart entre paramètre observé et paramètre vrai</td>
+<td>Augmenter taille échantillon, pondération</td>
+</tr>
+<tr class="even">
+<td><strong>De validité (spécification)</strong></td>
+<td>La question ne mesure pas vraiment le concept</td>
+<td>Améliorer opérationnalisation</td>
+</tr>
+<tr class="odd">
+<td><strong>Non-réponse</strong> (survey ou item)</td>
+<td>Refus de participer ou de répondre à une question</td>
+<td>Raccourcir, éviter questions sensibles</td>
+</tr>
+<tr class="even">
+<td><strong>Désirabilité sociale</strong></td>
+<td>Réponses « socialement acceptables »</td>
+<td>Enquête en ligne/écrit, formulation neutre</td>
+</tr>
+<tr class="odd">
+<td><strong>Centriste</strong></td>
+<td>Choisir l’option du milieu</td>
+<td>Catégories alternatives, inverser le sens</td>
+</tr>
+<tr class="even">
+<td><strong>Acquiescence</strong></td>
+<td>Dire oui à tout</td>
+<td>Questions à sens inverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Effet d’ordre</strong></td>
+<td>Une question influence la suivante</td>
+<td>Ordre logique réfléchi</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Théorie du satisficing
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Les participant·e·s ne cherchent pas la <strong>meilleure</strong> réponse, ils cherchent une réponse <strong>suffisante</strong> avec un minimum d’effort. Plus le questionnaire est long et complexe, plus le satisficing augmente → réponses superficielles, biais centriste, abandons.</p>
+</div>
+</div>
+</section>
+<section id="pré-test" class="level3" data-number="2.7">
+<h3 data-number="2.7" class="anchored" data-anchor-id="pré-test"><span class="header-section-number">2.7</span> Pré-test</h3>
+<p>Avant de lancer une enquête à grande échelle, <strong>toujours</strong> faire un pré-test (règle générale : 10 % des participant·e·s visé·e·s). Objectifs :</p>
+<ul>
+<li>Les questions sont-elles <strong>comprises</strong> ?</li>
+<li>Y a-t-il de la <strong>variance</strong> dans les réponses (sinon question inutile) ?</li>
+<li>Ai-je <strong>oublié</strong> quelque chose d’important ?</li>
+<li>Quel est le <strong>taux de réponse</strong> et le <strong>temps moyen</strong> ?</li>
+</ul>
+<p>Pour une recherche expérimentale, c’est une <strong>étude pilote</strong> (le design fonctionne-t-il ?).</p>
+</section>
+</section>
+<section id="sources-de-données-secondaires-pré-existantes" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sources-de-données-secondaires-pré-existantes"><span class="header-section-number">3</span> Sources de données secondaires (pré-existantes)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Exemples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Suisses (sciences sociales)</strong></td>
+<td>FORS (forscenter.ch) : Panel Suisse des Ménages, Selects, Vox/Voto</td>
+</tr>
+<tr class="even">
+<td><strong>Internationales</strong></td>
+<td>World Value Survey, European Social Survey</td>
+</tr>
+<tr class="odd">
+<td><strong>Statistiques officielles</strong></td>
+<td>OCDE, Eurostat, OFS (Office fédéral de la statistique)</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Récapitulatif Ch.3
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Avant collecte : vérifier <strong>accessibilité, coûts, possibilités, adéquation</strong> ; questionner production et éthique.</li>
+<li><strong>Unité de collecte</strong> ≠ <strong>unité d’analyse</strong>.</li>
+<li>Échantillonnage <strong>probabiliste</strong> (aléatoire, stratifié, grappes, systématique) vs.&nbsp;<strong>non-probabiliste</strong> (commodité, quotas, boule de neige).</li>
+<li>Une enquête standardisée se définit par sa <strong>structuration haute</strong> et son <strong>influence minimale</strong> de l’enquêteur·ice.</li>
+<li>Une bonne question : <strong>objective, fiable, valide</strong>. Catégories de réponse : <strong>disjointes, exhaustives</strong>.</li>
+<li>Échelle de Likert = batterie d’items mesurant une attitude → score additionné = index.</li>
+<li>Sources d’erreur principales : échantillonnage, validité, non-réponse, <strong>désirabilité sociale</strong>, centriste, acquiescence, ordre.</li>
+<li>Toujours faire un <strong>pré-test</strong>.</li>
+</ul>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

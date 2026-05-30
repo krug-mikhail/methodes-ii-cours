@@ -1,0 +1,166 @@
+---
+title: "S8 - Analyses inférentielles II"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+S8 met en pratique les régressions vues en S7 sur des **articles de recherche réels**. L'objectif : savoir **lire un tableau de régression**, identifier la méthode utilisée, et formuler une **lecture critique**.
+:::
+
+## De la théorie à la lecture critique d'études
+
+La séance S7 a posé les fondations : équations, coefficients, R², p-values, odds ratios, interactions. La séance S8 t'entraîne sur des cas réels : tu ouvres un article, tu repères la méthode, tu lis le tableau, tu interprètes.
+
+**À l'examen** : on peut te donner un extrait de régression (linéaire ou logistique) et te demander :
+
+1. Quel type de régression est-ce ?
+2. Le modèle dans son ensemble explique-t-il bien la VD ?
+3. Quels facteurs sont significatifs ? Dans quel sens ? Avec quelle force ?
+4. Quelle est la conclusion sur l'hypothèse testée ?
+
+## Schéma de lecture d'un tableau de régression
+
+### Étape 1 — Identifier le type
+
+| Indice | Type |
+|---|---|
+| Y est quanti (échelle, score, % de population) | **Linéaire** |
+| Y est dichotomique (0/1, oui/non) | **Logistique binaire** |
+| Y a 3+ catégories nominales | Logistique **multinomiale** |
+| Y est ordinale traitée comme telle | Logistique **ordinale** |
+| Y compte des événements | Poisson (hors cours) |
+
+Présence d'**odds ratios** dans le tableau → c'est logistique.
+
+### Étape 2 — Évaluer le modèle global
+
+| Élément | Critère |
+|---|---|
+| **R²** (linéaire) | Quelle part de la variance de Y est expliquée ? |
+| **Pseudo-R²** (logistique) | Comparer avec d'autres modèles, pas comme % |
+| **N** (observations) | Assez d'observations pour la complexité du modèle ? |
+| **F-test global** (parfois) | Le modèle est-il utile en bloc ? |
+
+### Étape 3 — Lire chaque coefficient
+
+Pour chaque ligne, regarde **dans cet ordre** :
+
+1. **Signe** (+/−) → sens de l'effet ;
+2. **Magnitude** → taille de l'effet ;
+3. **Significativité** (étoiles / p-value) → l'effet est-il fiable ?
+4. **Catégorie de référence** (pour les dummies) → l'effet est par rapport à quoi ?
+
+### Étape 4 — Formuler la conclusion
+
+Réponds à l'hypothèse posée : **rejetée**, **non-rejetée**, ou **partiellement validée**. Mentionne le sens, la force, la significativité — sans jamais sauter à la causalité **pure** sans le justifier (S9).
+
+## Exemple : lecture d'une régression linéaire (Adam et al. 2026 sur les théories du complot)
+
+Adam et ses collègues étudient les facteurs prédisant l'**adhésion aux théories du complot** (échelle de Likert 1-5) en Suisse et Allemagne. Tableau de régression linéaire :
+
+| Facteur prédictif | b | SE | p |
+|---|---|---|---|
+| (Constante) | −0.34 | 0.23 | .149 |
+| **Attitude populiste** | **0.43** | 0.05 | **< .001** |
+| **Méfiance politique** | **0.21** | 0.03 | **< .001** |
+| Âge | −0.00 | 0.00 | .087 |
+| Femme | 0.03 | 0.06 | .560 |
+| Allemand·e | 0.15 | 0.06 | **.014** |
+| Utilisation médias traditionnels | −0.07 | 0.04 | .125 |
+| **Utilisation médias sociaux** | **0.19** | 0.04 | **< .001** |
+| **Vote droite populiste** | **0.13** | 0.02 | **< .001** |
+| Intérêt politique | −0.08 | 0.03 | **.004** |
+| Exposition médias grand public | 0.01 | 0.01 | .468 |
+| **N** | 865 |  |  |
+| **R²** | **.296** |  |  |
+
+### Lecture critique
+
+- Le modèle explique **29.6 %** de la variance de l'adhésion aux théories du complot. C'est un score correct en sciences sociales.
+- **Effets significatifs et positifs** (p < .001) : attitude populiste (+0.43), méfiance politique (+0.21), usage des médias sociaux (+0.19), vote pour parti de droite populiste (+0.13). → Ces facteurs **augmentent** l'adhésion.
+- **Effet significatif et négatif** : intérêt politique (−0.08, p = .004). Plus tu t'intéresses à la politique, **moins** tu adhères.
+- **Non significatifs** : âge, genre (femme), médias traditionnels, exposition aux médias grand public. → Pas de preuve qu'ils jouent un rôle.
+- **Allemand·e** : positif (+0.15, p = .014) → les Allemand·e·s adhèrent légèrement plus que les Suisse·sse·s alémaniques.
+
+### Pour répondre à une question d'examen
+
+*Discutez l'influence de trois facteurs en détail* :
+
+1. **Attitude populiste** : effet **positif fort** (+0.43), **très hautement significatif** (p < .001). C'est le prédicteur le plus puissant : une augmentation d'1 unité sur l'échelle d'attitude populiste augmente le score de complot de 0.43 point.
+2. **Usage médias sociaux** : effet **positif modéré** (+0.19), p < .001. Confirme l'hypothèse que les réseaux sociaux **véhiculent** ou **renforcent** les théories du complot, contrairement aux médias traditionnels (non significatifs).
+3. **Intérêt politique** : effet **négatif** (−0.08), p = .004. Une littératie politique plus forte **protège** contre l'adhésion conspirationniste. Effet petit mais robuste.
+
+## Exemple : lecture d'une régression logistique
+
+Reprenant l'exemple S7 (admission à l'université) :
+
+| **Y = Admis (Oui/Non)** | Coefficient | Odds Ratio |
+|---|---|---|
+| Score GRE | 0.002* | **1.002*** |
+| Score GPA | 0.804* | **2.234*** |
+| Rang 2 (vs. 1) | −0.675* | **0.508*** |
+| Rang 3 (vs. 1) | −1.340*** | **0.261*** |
+| Rang 4 (vs. 1) | −1.551*** | **0.211*** |
+| Constante | −3.989 | — |
+| Pseudo-R² | 0.082 | |
+
+### Lecture
+
+- **GPA = +0.804***, OR = 2.234 → chaque point de GPA en plus **multiplie par 2.23** les chances d'admission (+123 %).
+- **GRE = +0.002**, OR = 1.002 → effet positif mais très faible (chaque point GRE ≈ +0.2 % de chances).
+- **Rang 2 vs. 1** : OR = 0.508 → être dans un institut de rang 2 plutôt que 1 **divise par 2** les chances.
+- **Rang 4 vs. 1** : OR = 0.211 → divise par ~5 les chances.
+- **Pseudo-R² = 0.082** : à ne pas lire comme « 8 % de variance expliquée » (impossible en logistique) ; on l'utilise pour **comparer** des modèles emboîtés.
+
+::: {.callout-warning}
+## Avec un pseudo-R² faible, le modèle reste utile ?
+Oui — un pseudo-R² faible ne signifie pas un mauvais modèle. Il faut combiner avec la significativité des coefficients et l'**adéquation théorique**. Beaucoup d'études en sciences sociales ont des pseudo-R² de 0.05-0.15 mais des résultats robustes.
+:::
+
+## Articles de référence (lecture conseillée)
+
+Plusieurs articles utilisant ces méthodes sont mentionnés dans le cours et peuvent illustrer des lectures critiques :
+
+| Article | Apport |
+|---|---|
+| **Adam et al. (2026)** — *How Do Media Contribute to the Dissemination of Conspiracy Beliefs?* | Régression linéaire avec contrôles multiples ; lecture comparée des effets |
+| **Bergström & Jervelycke Belfrage (2018)** | Usage des médias sociaux et consommation d'info |
+| **Hampton (2019)** | Réseaux sociaux et capital social |
+| **Zimmermann & Kohring (2020)** | Confiance dans les médias et démocratie |
+
+::: {.callout-tip collapse="true"}
+## Comment lire un article empirique sans paniquer
+1. Va d'abord aux **figures et tableaux** (sections « Results »).
+2. Repère **la** régression principale.
+3. Identifie la **VD** et le type (linéaire ? logistique ?).
+4. Lis les **3 coefficients les plus importants** (significatifs avec gros effets).
+5. Reviens à l'**abstract** et à la **discussion** pour la conclusion des auteurs.
+
+L'introduction et la revue de littérature peuvent attendre — l'examen teste surtout la **lecture méthodologique**.
+:::
+
+## Bonnes pratiques d'interprétation
+
+| Pratique | Détail |
+|---|---|
+| **Toujours mentionner le N** | Avec 50 obs, même un gros coefficient peut être instable |
+| **Reporter l'IC ou la SE** | Pour montrer l'incertitude (S9) |
+| **Comparer modèles emboîtés** | Tester l'ajout/retrait d'une variable ; regarder Δ R² ou Δ pseudo-R² |
+| **Vérifier les hypothèses du modèle** | Linéarité, normalité des résidus, homoscédasticité (linéaire) ; multicolinéarité, indépendance (les deux) |
+| **Ne pas extrapoler hors du domaine des données** | Si X varie de 0 à 10 dans l'échantillon, ne pas prédire pour X = 100 |
+| **Distinguer significativité statistique et importance pratique** | Un effet significatif peut être trop petit pour avoir un impact concret |
+
+::: {.callout-warning}
+## Le piège du grand N
+Avec **N = 100 000**, tout devient significatif (même les effets minuscules). À l'inverse, avec **N = 30**, même un gros effet peut être non significatif (manque de puissance). Toujours interpréter en **contexte** de la taille de l'échantillon.
+:::
+
+::: {.callout-note}
+## Récapitulatif Ch.8
+- S8 = mise en pratique de S7 sur des **études empiriques réelles**.
+- **Schéma de lecture** : (1) type de régression, (2) qualité globale (R²/N), (3) chaque coefficient (signe, magnitude, p), (4) conclusion sur l'hypothèse.
+- **Linéaire** → coefficient = effet sur Y en unité ; **logistique** → OR = facteur multiplicatif sur les chances.
+- Toujours lire **3 dimensions** ensemble : significativité, sens, taille de l'effet.
+- En sciences sociales, un R² de **0.20-0.30** est très acceptable ; un pseudo-R² de **0.05-0.15** aussi.
+- À l'examen : pratique la lecture de tableaux. Les questions de réflexion attendent une **lecture argumentée**, pas une récitation.
+:::

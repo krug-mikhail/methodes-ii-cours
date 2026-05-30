@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>S5 - Analyse de contenu quantitative – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./04_S5_Analyse_contenu.html">S5 - Analyse de contenu quantitative</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#analyse-de-contenu-quanti-vs.-quali" id="toc-analyse-de-contenu-quanti-vs.-quali" class="nav-link active" data-scroll-target="#analyse-de-contenu-quanti-vs.-quali"><span class="header-section-number">1</span> Analyse de contenu : quanti vs.&nbsp;quali</a></li>
+  <li><a href="#définition-janis-1965" id="toc-définition-janis-1965" class="nav-link" data-scroll-target="#définition-janis-1965"><span class="header-section-number">2</span> Définition (Janis, 1965)</a></li>
+  <li><a href="#les-4-étapes-de-lanalyse-de-contenu-quantitative" id="toc-les-4-étapes-de-lanalyse-de-contenu-quantitative" class="nav-link" data-scroll-target="#les-4-étapes-de-lanalyse-de-contenu-quantitative"><span class="header-section-number">3</span> Les 4 étapes de l’analyse de contenu quantitative</a>
+  <ul class="collapse">
+  <li><a href="#étape-1-définir-les-unités-de-codage" id="toc-étape-1-définir-les-unités-de-codage" class="nav-link" data-scroll-target="#étape-1-définir-les-unités-de-codage"><span class="header-section-number">3.1</span> Étape 1 — Définir les unités de codage</a></li>
+  <li><a href="#étape-2-établir-la-grille-de-codage-codebook" id="toc-étape-2-établir-la-grille-de-codage-codebook" class="nav-link" data-scroll-target="#étape-2-établir-la-grille-de-codage-codebook"><span class="header-section-number">3.2</span> Étape 2 — Établir la grille de codage (codebook)</a></li>
+  <li><a href="#étape-3-réaliser-le-codage" id="toc-étape-3-réaliser-le-codage" class="nav-link" data-scroll-target="#étape-3-réaliser-le-codage"><span class="header-section-number">3.3</span> Étape 3 — Réaliser le codage</a></li>
+  <li><a href="#étape-4-vérifier-la-qualité-du-codage" id="toc-étape-4-vérifier-la-qualité-du-codage" class="nav-link" data-scroll-target="#étape-4-vérifier-la-qualité-du-codage"><span class="header-section-number">3.4</span> Étape 4 — Vérifier la qualité du codage</a></li>
+  </ul></li>
+  <li><a href="#si-la-qualité-nest-pas-au-rendez-vous" id="toc-si-la-qualité-nest-pas-au-rendez-vous" class="nav-link" data-scroll-target="#si-la-qualité-nest-pas-au-rendez-vous"><span class="header-section-number">4</span> Si la qualité n’est pas au rendez-vous</a></li>
+  <li><a href="#exemple-concret-feddersen-2015" id="toc-exemple-concret-feddersen-2015" class="nav-link" data-scroll-target="#exemple-concret-feddersen-2015"><span class="header-section-number">5</span> Exemple concret : Feddersen (2015)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./04_S5_Analyse_contenu.html">S5 - Analyse de contenu quantitative</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">S5 - Analyse de contenu quantitative</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ce chapitre en 1 ligne
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>L’<strong>analyse de contenu quantitative</strong> transforme des sources textuelles ou audiovisuelles en données chiffrées via un <strong>codage systématique</strong>. Tu définis des unités, tu construis une <strong>grille de codage</strong> (codebook), tu codes, et tu <strong>vérifies la qualité</strong> (fiabilité + validité).</p>
+</div>
+</div>
+<p>Le <strong>point à retenir</strong> : <em>l’analyse de contenu quantitative permet de quantifier des sources textuelles et audio-visuelles. Elle requiert une grande systématicité dans les choix opérés avant le codage, pendant son exécution, et lors du contrôle de qualité.</em></p>
+<section id="analyse-de-contenu-quanti-vs.-quali" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="analyse-de-contenu-quanti-vs.-quali"><span class="header-section-number">1</span> Analyse de contenu : quanti vs.&nbsp;quali</h2>
+<p>Une fois tes sources documentaires récoltées, deux grandes options de traitement :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Analyse <strong>qualitative</strong></th>
+<th>Analyse <strong>quantitative</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>But principal</strong></td>
+<td>Analyse des thèmes, concepts, constructions de sens</td>
+<td>Réduction de la complexité, <strong>quantification</strong> des éléments de contenu</td>
+</tr>
+<tr class="even">
+<td><strong>Rapport aux hypothèses</strong></td>
+<td>Travail de <strong>vérification</strong> (falsifier/vérifier des hypothèses)</td>
+<td>Travail d’<strong>exploration</strong> (puis éventuellement formulation d’hypothèses)</td>
+</tr>
+<tr class="odd">
+<td><strong>Niveau d’analyse</strong></td>
+<td>Analyse <strong>directe</strong> : sens manifeste du texte</td>
+<td>Analyse <strong>indirecte</strong> : sens latent ou caché</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le tableau est trompeur
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La distinction quali/quanti n’est pas si étanche. Une analyse <strong>quali doit aussi être systématique</strong> ; une analyse <strong>quanti exige de la classification et de l’interprétation</strong>. Le tableau ci-dessus simplifie pour comprendre, mais en pratique les deux se nourrissent (mixed methods, voir S10).</p>
+</div>
+</div>
+</section>
+<section id="définition-janis-1965" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="définition-janis-1965"><span class="header-section-number">2</span> Définition (Janis, 1965)</h2>
+<blockquote class="blockquote">
+<p>« L’analyse de contenu peut être définie comme se référant à toute technique (a) de classification des véhicules de signes (b) qui repose uniquement sur les jugements […] d’un analyste ou d’un groupe d’analystes quant à l’appartenance des véhicules de signes à telle ou telle catégorie, (c) à condition que les jugements de l’analyste soient considérés comme le rapport d’un observateur scientifique. »</p>
+</blockquote>
+<p>Trois éléments clés :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Signification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>(a) Véhicules de signes</strong></td>
+<td>Toute convention qui véhicule un message : texte, mots, image, sons</td>
+</tr>
+<tr class="even">
+<td><strong>(b) Jugement de l’analyste</strong></td>
+<td>C’est le·la chercheur·euse qui classe les véhicules dans des catégories (= <strong>codage</strong>)</td>
+</tr>
+<tr class="odd">
+<td><strong>(c) Scientifique</strong></td>
+<td>Pas un jugement personnel ponctuel : <strong>systématique</strong> et reproductible</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="les-4-étapes-de-lanalyse-de-contenu-quantitative" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="les-4-étapes-de-lanalyse-de-contenu-quantitative"><span class="header-section-number">3</span> Les 4 étapes de l’analyse de contenu quantitative</h2>
+<section id="étape-1-définir-les-unités-de-codage" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="étape-1-définir-les-unités-de-codage"><span class="header-section-number">3.1</span> Étape 1 — Définir les unités de codage</h3>
+<p>Reprendre les distinctions du S3 :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Unité</th>
+<th>Définition</th>
+<th>Exemple (étude Feddersen 2015 sur le discours médiatique sur les étranger·ère·s)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Collecte</strong></td>
+<td>Le matériel récolté</td>
+<td>Articles NZZ, Blick, Le Temps, Le Matin sur 3 votations (2000, 2004, 2009)</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse</strong></td>
+<td>L’unité statistique codée</td>
+<td>Une <strong>revendication</strong> dans l’article (acteur + cadrage + objet)</td>
+</tr>
+<tr class="odd">
+<td><strong>Codage</strong></td>
+<td>Une <strong>variable</strong> à coder pour chaque unité d’analyse</td>
+<td>Acteur (WHO), cible (AT WHOM), forme (HOW), contenu (WHAT), évaluation positive/neutre/négative</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Une pré-analyse aide à définir
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Avant de figer les unités, <strong>lis flottant</strong> (lecture rapide d’un échantillon) pour te familiariser avec le matériel. Tu repèreras des nuances, des catégories à prévoir, des cas limites. Ne saute jamais cette étape.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="étape-2-établir-la-grille-de-codage-codebook" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="étape-2-établir-la-grille-de-codage-codebook"><span class="header-section-number">3.2</span> Étape 2 — Établir la grille de codage (codebook)</h3>
+<p>Pour chaque <strong>unité de codage</strong> (variable), tu définis :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Détail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nom de la variable</td>
+<td>Court mais compréhensible</td>
+</tr>
+<tr class="even">
+<td>Définition</td>
+<td>Que mesure-t-elle exactement ?</td>
+</tr>
+<tr class="odd">
+<td><strong>Catégories</strong> (valeurs)</td>
+<td>Listées avec leur code numérique</td>
+</tr>
+<tr class="even">
+<td>Exemples</td>
+<td>Tirés du corpus, pour les cas limites</td>
+</tr>
+</tbody>
+</table>
+<section id="trois-manières-de-définir-les-catégories" class="level4" data-number="3.2.1">
+<h4 data-number="3.2.1" class="anchored" data-anchor-id="trois-manières-de-définir-les-catégories"><span class="header-section-number">3.2.1</span> Trois manières de définir les catégories</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Approche</th>
+<th>Logique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Déductive</strong></td>
+<td>À partir des <strong>concepts théoriques</strong> existants</td>
+</tr>
+<tr class="even">
+<td><strong>Inductive</strong></td>
+<td>À partir du <strong>matériel</strong> observé (pré-analyse)</td>
+</tr>
+<tr class="odd">
+<td><strong>Hybride</strong></td>
+<td>Combinaison des deux</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Les 3 critères des catégories
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Mutuellement exclusives</strong> : aucune confusion possible entre deux catégories.</li>
+<li><strong>Exhaustives</strong> : couvrent toutes les possibilités (sinon perte d’info).</li>
+<li><strong>Adaptées aux analyses statistiques envisagées</strong> : respecter les <strong>niveaux de mesure</strong> voulus.</li>
+</ol>
+<p>Et un équilibre : ni <strong>trop</strong> de catégories (perte de vue d’ensemble), ni <strong>trop peu</strong> (perte d’information).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="étape-3-réaliser-le-codage" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="étape-3-réaliser-le-codage"><span class="header-section-number">3.3</span> Étape 3 — Réaliser le codage</h3>
+<p>Le codage est <strong>systématique</strong> : unité d’analyse après unité d’analyse, unité de codage après unité de codage.</p>
+<section id="trois-techniques" class="level4" data-number="3.3.1">
+<h4 data-number="3.3.1" class="anchored" data-anchor-id="trois-techniques"><span class="header-section-number">3.3.1</span> Trois techniques</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Technique</th>
+<th>Définition</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>À la main</strong></td>
+<td>Codeur·euse humain·e applique la grille</td>
+<td>Étudiant·e qui code 100 articles</td>
+</tr>
+<tr class="even">
+<td><strong>Automatisée</strong></td>
+<td>Algorithme</td>
+<td><strong>Sentiment analysis</strong> (chaque mot classé positif/négatif via dictionnaire), <strong>topic modelling</strong> (textes classés par similarité de vocabulaire)</td>
+</tr>
+<tr class="odd">
+<td><strong>Semi-automatisée</strong></td>
+<td>Analyse manuelle puis automatisation</td>
+<td>Codage d’un échantillon → entraînement d’un modèle → application au reste</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bonnes-pratiques" class="level4" data-number="3.3.2">
+<h4 data-number="3.3.2" class="anchored" data-anchor-id="bonnes-pratiques"><span class="header-section-number">3.3.2</span> Bonnes pratiques</h4>
+<ul>
+<li><strong>Formation des codeur·euse·s</strong> si plusieurs personnes.</li>
+<li><strong>Documenter les décisions</strong> au fur et à mesure (cas litigieux, conventions de codage).</li>
+<li>Utiliser des <strong>schémas de décision</strong> (arbres « est-ce que … ? » → catégorie X / Y).</li>
+<li>Garder des <strong>exemples illustratifs</strong> issus du corpus pour les catégories importantes (utiles pour la partie opérationnalisation du papier final).</li>
+</ul>
+</section>
+</section>
+<section id="étape-4-vérifier-la-qualité-du-codage" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="étape-4-vérifier-la-qualité-du-codage"><span class="header-section-number">3.4</span> Étape 4 — Vérifier la qualité du codage</h3>
+<p>Deux indicateurs <strong>complémentaires</strong> : <strong>fiabilité</strong> et <strong>validité</strong>.</p>
+<section id="fiabilité-reliability-kaplan-goldsen-1965" class="level4" data-number="3.4.1">
+<h4 data-number="3.4.1" class="anchored" data-anchor-id="fiabilité-reliability-kaplan-goldsen-1965"><span class="header-section-number">3.4.1</span> Fiabilité (reliability) — Kaplan &amp; Goldsen (1965)</h4>
+<blockquote class="blockquote">
+<p>« La fiabilité assure que les données sont obtenues indépendamment de l’instrument ou de la personne qui effectue la mesure. »</p>
+</blockquote>
+<p><strong>Trois tests</strong> possibles :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Test</th>
+<th>Procédure</th>
+<th>Mesure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intra-codeur</strong></td>
+<td>Le·la même codeur·euse recode une partie après un délai</td>
+<td><strong>Stabilité</strong> (cohérence dans le temps)</td>
+</tr>
+<tr class="even">
+<td><strong>Inter-codeur</strong></td>
+<td>Un·e autre codeur·euse recode une partie</td>
+<td><strong>Reproductibilité</strong> (cohérence entre personnes)</td>
+</tr>
+<tr class="odd">
+<td><strong>Comparaison à un standard</strong></td>
+<td>Comparaison à un codage de référence</td>
+<td><strong>Précision</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="comment-chiffrer-la-fiabilité" class="level4" data-number="3.4.2">
+<h4 data-number="3.4.2" class="anchored" data-anchor-id="comment-chiffrer-la-fiabilité"><span class="header-section-number">3.4.2</span> Comment chiffrer la fiabilité ?</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mesure</th>
+<th>Définition</th>
+<th>Seuil acceptable</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Concordance (%)</strong></td>
+<td>Proportion d’unités codées de la même manière</td>
+<td>Indicatif</td>
+</tr>
+<tr class="even">
+<td><strong>Alpha de Krippendorff</strong></td>
+<td>Pour toute variable</td>
+<td><strong>0.7</strong> (sciences sociales)</td>
+</tr>
+<tr class="odd">
+<td><strong>Kappa de Cohen</strong></td>
+<td>Variantes selon niveau de mesure</td>
+<td><strong>0.7</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Alpha de Cronbach</strong> (S4) = la cohésion <strong>entre items</strong> d’une échelle (questions qui mesurent la même chose).</li>
+<li><strong>Alpha de Krippendorff</strong> (S5) = la cohésion <strong>entre codeur·euse·s</strong> sur une même variable codée.</li>
+</ul>
+<p>Deux alphas, deux fonctions différentes. Le seuil de <strong>0.7</strong> est commun aux deux par convention.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="validité-krippendorff-2013" class="level4" data-number="3.4.3">
+<h4 data-number="3.4.3" class="anchored" data-anchor-id="validité-krippendorff-2013"><span class="header-section-number">3.4.3</span> Validité (Krippendorff, 2013)</h4>
+<blockquote class="blockquote">
+<p>« La validité réside dans le fait que la qualité des résultats nous conduit à les accepter comme vrais. Un instrument de mesure est valide s’il mesure ce que son utilisateur prétend qu’il mesure. »</p>
+</blockquote>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Validité interne</strong></td>
+<td>Le codage mesure-t-il bien ce qu’il est censé mesurer ? → Assurer une <strong>bonne diversité des sources</strong> codées</td>
+</tr>
+<tr class="even">
+<td><strong>Validité externe</strong></td>
+<td>Le codage est-il généralisable au monde réel ? → <strong>Comparer</strong> avec d’autres codages sur d’autres sources</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fiabilité et validité, c’est différent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Fiable mais non valide</strong> : ton mètre mesure toujours la même chose (constant) mais il est faussé de 5 cm → tu mesures <strong>précisément autre chose</strong> que ce que tu veux.</li>
+<li><strong>Valide mais non fiable</strong> : ton mètre vise la bonne taille mais varie d’une mesure à l’autre → l’instrument est trop instable.</li>
+<li><strong>Fiable ET valide</strong> : ton mètre est précis ET il mesure la bonne taille.</li>
+</ul>
+<p>L’objectif est toujours <strong>les deux</strong>.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="si-la-qualité-nest-pas-au-rendez-vous" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="si-la-qualité-nest-pas-au-rendez-vous"><span class="header-section-number">4</span> Si la qualité n’est pas au rendez-vous</h2>
+<p><strong>Recodage obligatoire</strong>. Tu peux ajuster la grille de codage (préciser des cas litigieux, ajouter une catégorie, fusionner deux qui se confondent), puis recommencer le codage.</p>
+</section>
+<section id="exemple-concret-feddersen-2015" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="exemple-concret-feddersen-2015"><span class="header-section-number">5</span> Exemple concret : Feddersen (2015)</h2>
+<p>Étude du discours médiatique suisse sur étranger·ère·s et musulman·e·s autour de trois votations :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Élément</th>
+<th>Détail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>QR</strong></td>
+<td>Comment le discours diffère-t-il entre 2000 et 2009 ?</td>
+</tr>
+<tr class="even">
+<td><strong>Cas</strong></td>
+<td>3 campagnes (initiative « 18 % », naturalisation facilitée, anti-minarets)</td>
+</tr>
+<tr class="odd">
+<td><strong>Unité de collecte</strong></td>
+<td>Articles NZZ, Blick, Le Temps, Le Matin (2 semaines avant à 1 semaine après le vote) — 484 articles</td>
+</tr>
+<tr class="even">
+<td><strong>Mots-clés</strong></td>
+<td>étrang<em>, musulman</em>, islam* / ausländ<em>, muslim</em>, moslem<em>, islam</em></td>
+</tr>
+<tr class="odd">
+<td><strong>Unité d’analyse</strong></td>
+<td>Une <strong>revendication</strong> = acteur + acteur adressé + forme + contenu + objet + cadrage (765 revendications au total, théorie de Koopmans &amp; Statham 1999)</td>
+</tr>
+<tr class="even">
+<td><strong>Unités de codage</strong></td>
+<td>Source, date, population visée, niveau de généralisation, thématique, framing, évaluation</td>
+</tr>
+</tbody>
+</table>
+<p>Une étude solide se présente toujours ainsi : on lit, on comprend immédiatement ce qui a été collecté, comment, à quel niveau on a codé, et avec quelles variables.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Récapitulatif Ch.5
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Quanti vs.&nbsp;quali</strong> : but de quantification vs.&nbsp;de compréhension du sens ; mais frontière poreuse.</li>
+<li>L’analyse de contenu est <strong>systématique</strong> et basée sur le <strong>jugement scientifique</strong> (Janis 1965).</li>
+<li><strong>4 étapes</strong> : (1) définir les unités de codage, (2) construire la grille, (3) coder, (4) vérifier la qualité.</li>
+<li><strong>3 manières</strong> de définir les catégories : déductive, inductive, hybride.</li>
+<li>Catégories : <strong>mutuellement exclusives, exhaustives, adaptées</strong>.</li>
+<li>Coder à la main, automatique (sentiment analysis, topic modelling), ou semi-automatique.</li>
+<li><strong>Fiabilité</strong> = constance (intra, inter, comparée). <strong>Validité</strong> = on mesure bien le bon truc.</li>
+<li>Seuils acceptables : <strong>Krippendorff ≥ 0.7</strong> ; <strong>Kappa ≥ 0.7</strong>.</li>
+<li>Fiable ≠ valide. Il faut <strong>les deux</strong>.</li>
+</ul>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

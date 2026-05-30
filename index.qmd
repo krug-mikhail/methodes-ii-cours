@@ -1,0 +1,48 @@
+---
+title: "Méthodes II — Cours (théorie)"
+toc: false
+---
+
+::: {.callout-tip}
+## À propos
+Résumé pédagogique du cours **BA Méthodes II** (Prof. Dr. Alexandra Feddersen) — Sciences de la communication et des médias, UNIFR, SP 2026. Il complète le repo [`methodes-ii-resume`](https://krug-mikhail.github.io/methodes-ii-resume/) consacré à la partie exercices R.
+:::
+
+## Navigation rapide
+
+### Les 10 séances
+
+- [S1 · Introduction](00_S1_Introduction.html)
+- [S2 · Données quantitatives](01_S2_Donnees_quantitatives.html)
+- [S3 · Sources de données](02_S3_Sources_donnees.html)
+- [S4 · Préparation des données d'enquête](03_S4_Preparation_donnees.html)
+- [S5 · Analyse de contenu quantitative](04_S5_Analyse_contenu.html)
+- [S6 · Analyses uni-, bi- et multivariées](05_S6_Uni_bi_multi.html)
+- [S7 · Analyses inférentielles I](06_S7_Inferentielles_I.html)
+- [S8 · Analyses inférentielles II](07_S8_Inferentielles_II.html)
+- [S9 · Qualité et communication des résultats](08_S9_Qualite_communication.html)
+- [S10 · Conclusion](09_S10_Conclusion.html)
+
+### Outils de révision
+
+- [Synthèse](synthese.html) — les concepts clés en un coup d'œil
+- [Glossaire](glossaire.html) — chaque terme en langage simple
+
+## L'examen
+
+- **Format** : examen écrit, 60 minutes, session d'été 2026
+- **Matière** : cours + lectures obligatoires (3 scripts + chapitres dédiés)
+- **Note** : 100 % de l'examen écrit
+- **Matériel autorisé** : aucun, sauf dictionnaires bilingues non annotés pour étudiant·e·s non francophones
+
+## Le fil conducteur du cours
+
+Le cours suit les **étapes d'un projet de recherche empirique quantitative** :
+
+1. **Identifier l'objet** de recherche → question de recherche
+2. **Cadre théorique** et formulation des hypothèses
+3. **Opérationnalisation** : passer d'un concept à des indicateurs mesurables
+4. **Collecte des données** : choix de la source (enquête, contenu, données existantes)
+5. **Préparation et codage** des données
+6. **Analyse** descriptive (uni-/bi-/multivariée) puis inférentielle (tests, régression)
+7. **Communication** des résultats : qualité, transparence, réplicabilité

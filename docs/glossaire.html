@@ -1,0 +1,3208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Glossaire – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./synthese.html">Outils de révision</a></li><li class="breadcrumb-item"><a href="./glossaire.html">Glossaire</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#a" id="toc-a" class="nav-link active" data-scroll-target="#a"><span class="header-section-number">1</span> A</a></li>
+  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b"><span class="header-section-number">2</span> B</a></li>
+  <li><a href="#c" id="toc-c" class="nav-link" data-scroll-target="#c"><span class="header-section-number">3</span> C</a></li>
+  <li><a href="#d" id="toc-d" class="nav-link" data-scroll-target="#d"><span class="header-section-number">4</span> D</a></li>
+  <li><a href="#e" id="toc-e" class="nav-link" data-scroll-target="#e"><span class="header-section-number">5</span> E</a></li>
+  <li><a href="#f" id="toc-f" class="nav-link" data-scroll-target="#f"><span class="header-section-number">6</span> F</a></li>
+  <li><a href="#g" id="toc-g" class="nav-link" data-scroll-target="#g"><span class="header-section-number">7</span> G</a></li>
+  <li><a href="#h" id="toc-h" class="nav-link" data-scroll-target="#h"><span class="header-section-number">8</span> H</a></li>
+  <li><a href="#i" id="toc-i" class="nav-link" data-scroll-target="#i"><span class="header-section-number">9</span> I</a></li>
+  <li><a href="#k" id="toc-k" class="nav-link" data-scroll-target="#k"><span class="header-section-number">10</span> K</a></li>
+  <li><a href="#l" id="toc-l" class="nav-link" data-scroll-target="#l"><span class="header-section-number">11</span> L</a></li>
+  <li><a href="#m" id="toc-m" class="nav-link" data-scroll-target="#m"><span class="header-section-number">12</span> M</a></li>
+  <li><a href="#n" id="toc-n" class="nav-link" data-scroll-target="#n"><span class="header-section-number">13</span> N</a></li>
+  <li><a href="#o" id="toc-o" class="nav-link" data-scroll-target="#o"><span class="header-section-number">14</span> O</a></li>
+  <li><a href="#p" id="toc-p" class="nav-link" data-scroll-target="#p"><span class="header-section-number">15</span> P</a></li>
+  <li><a href="#q" id="toc-q" class="nav-link" data-scroll-target="#q"><span class="header-section-number">16</span> Q</a></li>
+  <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r"><span class="header-section-number">17</span> R</a></li>
+  <li><a href="#s" id="toc-s" class="nav-link" data-scroll-target="#s"><span class="header-section-number">18</span> S</a></li>
+  <li><a href="#t" id="toc-t" class="nav-link" data-scroll-target="#t"><span class="header-section-number">19</span> T</a></li>
+  <li><a href="#u" id="toc-u" class="nav-link" data-scroll-target="#u"><span class="header-section-number">20</span> U</a></li>
+  <li><a href="#v" id="toc-v" class="nav-link" data-scroll-target="#v"><span class="header-section-number">21</span> V</a></li>
+  <li><a href="#w" id="toc-w" class="nav-link" data-scroll-target="#w"><span class="header-section-number">22</span> W</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./synthese.html">Outils de révision</a></li><li class="breadcrumb-item"><a href="./glossaire.html">Glossaire</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Glossaire</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Ce glossaire définit <strong>en langage simple</strong> tous les termes techniques rencontrés dans les 10 séances. Clique sur un terme pour dérouler son explication. À chaque entrée : une <strong>définition simple</strong> + un <strong>exemple</strong>.</p>
+<section id="a" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="a"><span class="header-section-number">1</span> A</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Acquiescence (biais d’)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : tendance des répondant·e·s à dire <strong>oui</strong> à tout par réflexe, sans vraiment lire la question.</p>
+<p><strong>Exemple</strong> : si toutes tes questions sont formulées « êtes-vous d’accord avec… », tu vas avoir un excès de « oui ». Solution : <strong>alterner</strong> des items à sens inverse pour repérer ceux qui acquiescent par réflexe.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Agrégées (données)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données présentées au niveau d’un <strong>groupe</strong> (pays, région, ville) plutôt qu’au niveau <strong>individuel</strong>.</p>
+<p><strong>Exemple</strong> : « Le taux de chômage du canton de Fribourg » est agrégé ; « Pierre est chômeur » est individuel. Risque : l’<strong>erreur écologique</strong> (conclure sur les individus à partir d’une moyenne).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aléatoire (échantillonnage)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : chaque membre de la population a la <strong>même probabilité</strong> d’être tiré au sort dans l’échantillon. C’est le standard de référence.</p>
+<p><strong>Exemple</strong> : tirer 500 numéros parmi tous les électeur·ice·s suisses inscrit·e·s. Pré-requis : avoir la <strong>liste complète</strong> de la population (base d’échantillonnage).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alpha de Cronbach
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : coefficient mesurant la <strong>cohérence interne</strong> d’une échelle additive — les items mesurent-ils tous le même concept ?</p>
+<p><strong>Exemple</strong> : si tu construis une échelle « anxiété » avec 7 items, l’alpha te dit si ces 7 items pointent vers la même chose. <strong>Seuil acceptable : 0.7</strong>. En dessous, retire un item peu cohérent.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alpha de Krippendorff
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : coefficient mesurant la <strong>fiabilité inter-codeur</strong> dans une analyse de contenu — deux codeur·euse·s codent-ils la même chose de la même façon ?</p>
+<p><strong>Exemple</strong> : deux étudiant·e·s codent les mêmes 50 articles. Si leurs codages convergent, alpha est élevé. <strong>Seuil acceptable : 0.7</strong>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+ANOVA (Analyse de variance)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : test qui compare les moyennes de <strong>3 groupes ou plus</strong> en une seule fois. Réponse : « au moins un groupe diffère-t-il des autres ? ».</p>
+<p><strong>Exemple</strong> : comparer la confiance sociale moyenne entre 6 statuts matrimoniaux (marié, séparé, divorcé, veuf, en union, autre). Si F-test significatif → on rejette H0, mais l’ANOVA ne dit pas <strong>quels</strong> groupes diffèrent → comparaisons par paires (Tukey).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+API (Application Programming Interface)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : un système qui permet à deux applications de <strong>dialoguer entre elles</strong> en utilisant un langage standardisé. En recherche, tu peux récupérer des données d’une plateforme via son API.</p>
+<p><strong>Exemple</strong> : tu obtiens une clé d’accès à l’API de TikTok pour récupérer des milliers de posts pour ton étude. Demande souvent un compte « développeur » et des autorisations.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aplatissement (kurtosis)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : indicateur de la forme d’une distribution : <strong>pointue</strong> (kurtosis élevé) ou <strong>aplatie</strong> (kurtosis bas).</p>
+<p><strong>Exemple</strong> : une loi normale a kurtosis = 3. Une distribution avec beaucoup d’observations centrées et peu d’extrêmes a kurtosis &gt; 3 (leptokurtique). Avec beaucoup d’extrêmes : kurtosis &lt; 3 (platikurtique).</p>
+</div>
+</div>
+</div>
+</section>
+<section id="b" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="b"><span class="header-section-number">2</span> B</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Base d’échantillonnage
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : la <strong>liste complète</strong> de la population qu’on souhaite étudier, nécessaire pour un échantillonnage probabiliste.</p>
+<p><strong>Exemple</strong> : pour un sondage électoral suisse, la base est le registre des électeur·ice·s inscrit·e·s. Sans cette liste, tu ne peux pas faire d’échantillonnage aléatoire.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Batterie d’items
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : groupe de <strong>plusieurs questions</strong> mesurant <strong>un même concept</strong> sous différents angles. On combine les réponses en un score global.</p>
+<p><strong>Exemple</strong> : pour mesurer la « satisfaction au travail », on pose 5 affirmations (« Mon travail est intéressant », « Je me sens reconnu·e », etc.) sur une échelle de Likert et on somme.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Biais centriste
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : tendance à choisir l’option <strong>du milieu</strong> sur une échelle, pour ne pas s’engager.</p>
+<p><strong>Exemple</strong> : sur une échelle 1-5, beaucoup de gens cochent « 3 ». Solution : utiliser une échelle <strong>paire</strong> (1-4) qui force le choix d’un côté.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Biais de désirabilité sociale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : tendance à répondre selon ce qui est <strong>socialement acceptable</strong> plutôt qu’honnêtement.</p>
+<p><strong>Exemple</strong> : à « Faites-vous du sport régulièrement ? », les répondant·e·s gonflent leur réponse. Pire pour les sujets sensibles (revenus, racisme, sexualité). Solution : enquête en ligne / anonyme.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Biais de sélection
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : ton échantillon est biaisé parce que les cas qui le composent ont une caractéristique liée à la VD.</p>
+<p><strong>Exemple</strong> : étudier la dépression chez les patient·e·s en psychiatrie. L’échantillon n’est pas représentatif : il est <strong>sélectionné</strong> par la dépression elle-même.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="c" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="c"><span class="header-section-number">3</span> C</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cadre théorique
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : ensemble des concepts, mécanismes et hypothèses qui <strong>ancrent</strong> ta recherche dans la littérature existante.</p>
+<p><strong>Exemple</strong> : pour étudier Instagram → dépression, ton cadre théorique définit ce qu’est l’« usage d’Instagram », ce qu’est la « dépression », et pourquoi le premier influencerait le second.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Causalité
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : X <strong>cause</strong> Y signifie que modifier X <strong>change</strong> Y. Bien plus difficile à prouver qu’une simple <strong>corrélation</strong>.</p>
+<p><strong>Exemple</strong> : un essai clinique randomisé (X = traitement / placebo) peut prouver une causalité ; un sondage observationnel non. <em>Corrélation ≠ causalité</em>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Causalité inversée
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : tu penses que X cause Y, mais c’est Y qui cause X.</p>
+<p><strong>Exemple</strong> : « Les pompiers causent les incendies » (parce qu’on les voit toujours sur place). Non, c’est l’incendie qui les fait venir.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Chi-carré (test du χ²)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : test qui compare les fréquences <strong>observées</strong> à celles <strong>attendues</strong> sous H0 (indépendance des deux variables). Si l’écart est trop grand, on rejette H0.</p>
+<p><strong>Exemple</strong> : tester si « vote pour X » dépend de « usage RTS ». Si χ² calculé &gt; seuil critique → les deux variables sont <strong>associées</strong>.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Codebook
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : le <strong>manuel</strong> de ta base de données. Une ligne par variable, avec sa description, ses valeurs possibles et leurs labels.</p>
+<p><strong>Exemple</strong> : <code>ipol</code> = intérêt politique, valeurs 1-4, labels « pas du tout intéressé·e » à « très intéressé·e ». Sans codebook, personne (toi non plus) ne peut comprendre tes données dans 6 mois.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Coefficient de régression (β)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : indique de combien Y change quand X augmente d’<strong>une unité</strong>, les autres variables restant constantes.</p>
+<p><strong>Exemple</strong> : β = −5.3 pour le poids dans une régression sur la consommation → chaque tonne en plus fait baisser la consommation de 5.3 mpg.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Concept (en recherche)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : notion <strong>abstraite</strong> qu’on veut étudier (anxiété, populisme, capital social). On doit la <strong>définir</strong>, l’opérationnaliser (S2) et la mesurer.</p>
+<p><strong>Exemple</strong> : « populisme » → définition (Mudde) → dimensions (anti-élitisme, peuple homogène) → indicateurs (questions de sondage).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Confiance (niveau de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : la probabilité que ton échantillon <strong>reflète</strong> fidèlement la population. Souvent 95 % ou 99 %.</p>
+<p><strong>Exemple</strong> : à 95 % de confiance, on accepte un risque de 5 % de se tromper en généralisant.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Constante (intercept, α)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : dans une régression, c’est la valeur prédite de Y quand <strong>toutes les variables X = 0</strong>.</p>
+<p><strong>Exemple</strong> : si tu prédis le salaire en fonction de l’expérience, la constante = salaire prédit pour 0 année d’expérience. Pas toujours interprétable seule.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Corrélation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : mesure du <strong>lien entre deux variables</strong>. Coefficient r entre −1 et +1.</p>
+<p><strong>Exemple</strong> : r = 0.7 entre temps d’étude et notes → forte corrélation positive. r = 0 = pas de lien.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cronbach (alpha de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Alpha de Cronbach ».</p>
+</div>
+</div>
+</div>
+</section>
+<section id="d" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="d"><span class="header-section-number">4</span> D</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Degrés de liberté (df)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : nombre de valeurs « libres » dans le calcul d’une statistique. Utile pour lire les tables de χ², t, F.</p>
+<p><strong>Exemple</strong> : dans un t-test à un échantillon avec n = 25, df = n − 1 = 24. Pour un tableau croisé : df = (L−1) × (C−1).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Désirabilité sociale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Biais de désirabilité sociale ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Diagramme en bâtons
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : graphique avec des barres <strong>séparées</strong>, pour les variables <strong>qualitatives</strong>.</p>
+<p><strong>Exemple</strong> : nombre de répondant·e·s par parti politique → diagramme en bâtons.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dichotomique (variable)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable à <strong>deux</strong> catégories seulement (oui/non, 0/1).</p>
+<p><strong>Exemple</strong> : a voté / s’est abstenu·e. C’est le type de variable que prédit la régression logistique binaire.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dichotomiser
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : transformer une variable à 3+ catégories en plusieurs variables 0/1 (dummies) pour pouvoir l’utiliser dans une régression.</p>
+<p><strong>Exemple</strong> : « source d’info » (journal, Instagram, RTS, amis) → 3 dummies (journal = référence ; Instagram_oui/non ; RTS_oui/non ; amis_oui/non).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Discrète (variable)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable quantitative dont les valeurs possibles sont <strong>finies</strong> (souvent entières).</p>
+<p><strong>Exemple</strong> : nombre d’enfants dans un ménage (0, 1, 2, 3, …). Pas de 2.5 enfants.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dispersion
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : mesure de l’<strong>étalement</strong> des observations autour de la tendance centrale.</p>
+<p><strong>Exemple</strong> : deux groupes ont la même moyenne (75), mais l’un est très resserré (60-90) et l’autre très étalé (20-130). Outils : étendue, IQR, écart-type.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Distribution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : façon dont les valeurs d’une variable sont <strong>réparties</strong> dans l’échantillon.</p>
+<p><strong>Exemple</strong> : distribution normale = cloche symétrique. Distribution asymétrique = queue longue d’un côté.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Don de données (data donation)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : transmission <strong>volontaire</strong> par les utilisateur·ice·s de leurs propres données à des chercheur·euse·s.</p>
+<p><strong>Exemple</strong> : tu télécharges tes données Spotify (que la RGPD oblige Spotify à te fournir) et tu les donnes à une étude sur les goûts musicaux.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dummy (variable)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-34" class="callout-34-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable binaire (0/1) créée à partir d’une catégorie d’une variable nominale, pour l’utiliser en régression.</p>
+<p><strong>Exemple</strong> : à partir de « parti voté », créer <code>voted_PS</code> (oui/non), <code>voted_PLR</code> (oui/non), etc. On laisse de côté une catégorie de <strong>référence</strong>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="e" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="e"><span class="header-section-number">5</span> E</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Écart interquartile (IQR)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : différence entre le 3e quartile (Q3, 75e percentile) et le 1er quartile (Q1, 25e percentile). Donne la <strong>dispersion</strong> autour de la médiane.</p>
+<p><strong>Exemple</strong> : si Q1 = 50, Q3 = 80, IQR = 30. La moitié centrale des observations se situe sur 30 unités.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Écart-type (SD)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : distance moyenne entre chaque observation et la moyenne. Plus c’est grand, plus le groupe est <strong>hétérogène</strong>.</p>
+<p><strong>Exemple</strong> : moyenne = 70, SD = 5 → les obs sont resserrées autour de 70. SD = 25 → très étalées. Formule : racine de la variance.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Échantillon
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-37" class="callout-37-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : sous-ensemble <strong>représentatif</strong> d’une population, utilisé pour faire des inférences statistiques.</p>
+<p><strong>Exemple</strong> : interroger 1 070 Suisse·sse·s pour estimer l’opinion de toute la population (9 mio).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Échantillon brut vs.&nbsp;net
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-38" class="callout-38-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : brut = ce que tu cibles (échantillon visé + non-réponses anticipées). Net = ce que tu obtiens réellement.</p>
+<p><strong>Exemple</strong> : tu cibles 1000 réponses, tu sais que 30 % ne répondront pas → envoie 1430 invitations (brut).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Échantillonnage probabiliste vs.&nbsp;non-probabiliste
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : probabiliste = chacun a une chance connue d’être tiré au sort. Non-probabiliste = sélection par opportunité (volontaires, quotas, boule de neige).</p>
+<p><strong>Exemple</strong> : Selects = probabiliste (tirage dans le registre). Sondage en ligne sur un site = non-probabiliste (volontaires).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Échelle de Likert
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : échelle ordinale à plusieurs degrés (souvent 5 ou 7) pour mesurer un degré d’accord, créée par Rensis Likert en 1932.</p>
+<p><strong>Exemple</strong> : « 1 = pas du tout d’accord … 5 = tout à fait d’accord ». On peut additionner les scores d’une batterie pour créer un index.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erreur de type I (faux positif)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : conclure qu’il y a un effet alors qu’il n’y en a pas. Risque = seuil α (souvent 5 %).</p>
+<p><strong>Exemple</strong> : conclure qu’un médicament marche alors qu’il ne fait rien. Acquitter un innocent du nom de H0.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erreur de type II (faux négatif)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-42" class="callout-42-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : ne pas détecter un effet qui existe vraiment. Souvent dû à un échantillon trop petit (manque de puissance).</p>
+<p><strong>Exemple</strong> : un médicament marche, mais avec 20 patient·e·s on ne le voit pas.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-43-contents" aria-controls="callout-43" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Erreur écologique
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-43" class="callout-43-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : conclure sur des <strong>individus</strong> à partir d’une <strong>moyenne agrégée</strong>.</p>
+<p><strong>Exemple</strong> : « Les pays riches ont plus de divorces, donc les personnes riches divorcent plus. » Pas forcément — peut-être que ce sont les pauvres dans ces pays qui divorcent.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-44-contents" aria-controls="callout-44" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+État vs.&nbsp;processus (objectivité)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-44" class="callout-44-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : « objectivité » = le monde réel est en attente d’être détecté. « Objectivation » = la recherche construit sa représentation du monde.</p>
+<p><strong>Exemple</strong> : la catégorie « femme » comme propriété objective vs.&nbsp;comme construction sociale. Voir Bourdieu sur la violence symbolique.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-45-contents" aria-controls="callout-45" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Étendue (range)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-45" class="callout-45-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : max − min. Mesure simple de la dispersion.</p>
+<p><strong>Exemple</strong> : notes de 4 à 18 → étendue = 14. Très sensible aux outliers.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-46-contents" aria-controls="callout-46" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exhaustive (enquête)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-46" class="callout-46-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : on interroge <strong>toute</strong> la population, pas un échantillon. Rare et coûteux.</p>
+<p><strong>Exemple</strong> : recensement de la population suisse ; sondage des 30 étudiant·e·s d’une classe.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-47-contents" aria-controls="callout-47" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Expérimentales (données)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-47" class="callout-47-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données produites avec un <strong>traitement contrôlé</strong> (groupe contrôle vs.&nbsp;groupe traité).</p>
+<p><strong>Exemple</strong> : test A/B sur deux versions d’un site web. C’est le seul design qui prouve solidement la causalité.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="f" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="f"><span class="header-section-number">6</span> F</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-48-contents" aria-controls="callout-48" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Falsifiabilité
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-48" class="callout-48-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : une hypothèse est falsifiable si elle peut être <strong>réfutée</strong> par des observations.</p>
+<p><strong>Exemple</strong> : « plus de sport → meilleure santé » est falsifiable (on peut mesurer et tester). « Les gens heureux sourient parce qu’ils sont heureux » ne l’est pas (tautologie).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-49-contents" aria-controls="callout-49" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+F-test
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-49" class="callout-49-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : statistique de test produite par l’ANOVA ou la régression. Mesure si la variance expliquée est plus grande que la variance résiduelle.</p>
+<p><strong>Exemple</strong> : F = 39.88, p &lt; 0.001 → on rejette H0 (au moins un groupe diffère).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-50-contents" aria-controls="callout-50" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fiabilité
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-50" class="callout-50-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : un instrument est fiable s’il produit le <strong>même résultat</strong> lorsqu’on répète la mesure (dans le temps ou entre personnes).</p>
+<p><strong>Exemple</strong> : une balance qui donne 70 kg, puis 71 kg, puis 69 kg pour la même personne en 5 minutes n’est pas fiable.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-51-contents" aria-controls="callout-51" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Fréquence vs.&nbsp;fréquence relative vs.&nbsp;cumulée
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-51" class="callout-51-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : - <strong>Fréquence (N)</strong> : nombre d’observations dans une catégorie ; - <strong>Fréquence relative (%)</strong> : N / total ; - <strong>Cumulée</strong> : N total des catégories précédentes + courante.</p>
+<p><strong>Exemple</strong> : 30 romands, soit 37.5 %, cumulé 30 sur la première ligne du tableau.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="g" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="g"><span class="header-section-number">7</span> G</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-52-contents" aria-controls="callout-52" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Grappes (échantillonnage par)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-52" class="callout-52-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : on tire au sort des <strong>groupes naturels</strong> (classes, quartiers) et on inclut <strong>tous</strong> les individus du groupe.</p>
+<p><strong>Exemple</strong> : pour étudier la perf en maths à la matu : tirer 5 lycées, prendre toutes leurs classes. Moins cher qu’un tirage individuel.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="h" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="h"><span class="header-section-number">8</span> H</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-53-contents" aria-controls="callout-53" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothèse de différence
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-53" class="callout-53-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : « Si X → alors Y ». X catégoriel, Y de tout type.</p>
+<p><strong>Exemple</strong> : « Si l’usage est passif (vs.&nbsp;actif), alors le manque d’énergie est plus important. »</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-54-contents" aria-controls="callout-54" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothèse d’interaction
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-54" class="callout-54-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : « L’effet de X sur Y dépend de Z. »</p>
+<p><strong>Exemple</strong> : « L’effet du temps Instagram sur le manque d’énergie est plus fort pour les extraverti·e·s que pour les introverti·e·s. »</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-55-contents" aria-controls="callout-55" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothèse de relation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-55" class="callout-55-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : « Plus / moins X → plus / moins Y ». X et Y quantitatives (ou ordinales sous conditions).</p>
+<p><strong>Exemple</strong> : « Plus de temps sur Instagram → plus de manque d’énergie. »</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-56-contents" aria-controls="callout-56" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hypothèse nulle (H0)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-56" class="callout-56-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : l’hypothèse qu’on cherche à <strong>rejeter</strong> : « il n’y a rien à voir » (aucun effet, aucune différence, aucun lien).</p>
+<p><strong>Exemple</strong> : H0 « la moyenne des deux groupes est identique ». H1 « les moyennes diffèrent ». Si p &lt; 0.05, on rejette H0.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-57-contents" aria-controls="callout-57" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Histogramme
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-57" class="callout-57-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : graphique à barres <strong>collées</strong> pour visualiser la distribution d’une variable <strong>quantitative</strong>.</p>
+<p><strong>Exemple</strong> : distribution des âges dans un échantillon. Permet de voir si la distribution est normale, asymétrique, multimodale.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="i" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="i"><span class="header-section-number">9</span> I</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-58-contents" aria-controls="callout-58" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Inclinaison (skewness)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-58" class="callout-58-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : indicateur d’<strong>asymétrie</strong> d’une distribution.</p>
+<p><strong>Exemple</strong> : revenus = skewness positive (queue à droite, quelques très hauts revenus). Loi normale = skewness 0.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-59-contents" aria-controls="callout-59" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Indicateur
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-59" class="callout-59-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable <strong>mesurable</strong> qui sert à capturer une dimension d’un concept abstrait.</p>
+<p><strong>Exemple</strong> : pour la dimension « durée d’usage d’Instagram » du concept « usage d’Instagram » → indicateur = nombre d’heures déclarées par jour.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-60-contents" aria-controls="callout-60" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Inférence statistique
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-60" class="callout-60-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : tirer des conclusions sur une <strong>population</strong> à partir d’un <strong>échantillon</strong>.</p>
+<p><strong>Exemple</strong> : à partir des 1070 sondé·e·s, conclure que 60 % de la population veut voter oui.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-61-contents" aria-controls="callout-61" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Inférentielle (question)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-61" class="callout-61-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : question qui s’intéresse à l’<strong>influence</strong> d’un phénomène X sur un phénomène Y.</p>
+<p><strong>Exemple</strong> : « Dans quelle mesure les usages d’Instagram influencent-ils la dépression ? ». Opposé : descriptive.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-62-contents" aria-controls="callout-62" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Intercept
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-62" class="callout-62-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Constante ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-63-contents" aria-controls="callout-63" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Intervalle de confiance (IC)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-63" class="callout-63-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : fourchette de valeurs qui contient probablement la <strong>vraie</strong> valeur du paramètre. À 95 %, signifie : « si je répète l’étude, 95 % des IC contiendront la vraie valeur ».</p>
+<p><strong>Exemple</strong> : IC à 95 % = [101.6 ; 109.5] pour un QI moyen. Si l’IC ne contient pas la valeur testée (par ex. 100), c’est significatif.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="k" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="k"><span class="header-section-number">10</span> K</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-64-contents" aria-controls="callout-64" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Kappa de Cohen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-64" class="callout-64-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : mesure d’accord <strong>inter-codeur</strong> dans une analyse de contenu, alternative à Krippendorff.</p>
+<p><strong>Exemple</strong> : deux codeur·euse·s codent les mêmes textes, Kappa = 0.75 → bon accord. Seuil acceptable : 0.7.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-65-contents" aria-controls="callout-65" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Krippendorff (alpha de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-65" class="callout-65-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Alpha de Krippendorff ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-66-contents" aria-controls="callout-66" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Kurtosis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-66" class="callout-66-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Aplatissement ».</p>
+</div>
+</div>
+</div>
+</section>
+<section id="l" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="l"><span class="header-section-number">11</span> L</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-67-contents" aria-controls="callout-67" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Likert (échelle de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-67" class="callout-67-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Échelle de Likert ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-68-contents" aria-controls="callout-68" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Logit
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-68" class="callout-68-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : fonction utilisée en régression logistique pour transformer une probabilité (entre 0 et 1) en log des odds (non borné).</p>
+<p><strong>Exemple</strong> : <code>logit(p) = ln(p / (1-p))</code>. C’est ça qui rend la régression logistique mathématiquement utilisable.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-69-contents" aria-controls="callout-69" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Longitudinales (données)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-69" class="callout-69-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données mesurées à <strong>plusieurs dates</strong> sur les mêmes individus. Opposé : transversales.</p>
+<p><strong>Exemple</strong> : Panel Suisse des Ménages suit les mêmes ménages chaque année depuis 1999.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="m" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="m"><span class="header-section-number">12</span> M</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-70-contents" aria-controls="callout-70" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Marge d’erreur
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-70" class="callout-70-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : écart toléré (en %) entre la réponse de l’échantillon et la « vraie » réponse de la population.</p>
+<p><strong>Exemple</strong> : sondage donnant 60 % avec marge d’erreur de 3 % → la vraie valeur est entre 57 % et 63 %.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-71-contents" aria-controls="callout-71" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Médiane
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-71" class="callout-71-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : valeur qui <strong>partage</strong> les observations en deux moitiés égales (50 % en dessous, 50 % au-dessus). Robuste aux outliers.</p>
+<p><strong>Exemple</strong> : pour la série 1, 2, 3, 4, 100 → médiane = 3 (vs.&nbsp;moyenne = 22, déformée par 100).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-72-contents" aria-controls="callout-72" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Médiation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-72" class="callout-72-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : X influence Y <strong>à travers</strong> une variable intermédiaire M.</p>
+<p><strong>Exemple</strong> : éducation → revenu (via le type d’emploi M). L’effet est indirect.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-73-contents" aria-controls="callout-73" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mixed methods
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-73" class="callout-73-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : combinaison de méthodes <strong>qualitatives</strong> et <strong>quantitatives</strong> dans une même recherche.</p>
+<p><strong>Exemple</strong> : focus groups (quali) pour construire une échelle, puis sondage (quanti) pour la tester à grande échelle.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-74-contents" aria-controls="callout-74" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mode
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-74" class="callout-74-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : valeur la <strong>plus fréquente</strong> dans l’échantillon. Le seul indicateur de tendance centrale qui fonctionne pour les variables nominales.</p>
+<p><strong>Exemple</strong> : sur 80 étudiant·e·s, 30 viennent de Suisse romande → la Suisse romande est le mode.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-75-contents" aria-controls="callout-75" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Multivariée (analyse)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-75" class="callout-75-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : analyse qui considère <strong>3 variables ou plus</strong> simultanément, typiquement par régression.</p>
+<p><strong>Exemple</strong> : prédire le revenu par l’âge, l’éducation, le genre, la région.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="n" class="level2" data-number="13">
+<h2 data-number="13" class="anchored" data-anchor-id="n"><span class="header-section-number">13</span> N</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-76-contents" aria-controls="callout-76" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Niveau de mesure
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-76" class="callout-76-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : type d’information codée dans une variable. <strong>4 niveaux</strong> : nominal, ordinal, continu, discret. Détermine les statistiques applicables.</p>
+<p><strong>Exemple</strong> : langue = nominal ; intérêt politique 1-4 = ordinal ; âge en années = continu ; nb d’enfants = discret.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-77-contents" aria-controls="callout-77" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Nominal (niveau de mesure)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-77" class="callout-77-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : catégories sans ordre logique.</p>
+<p><strong>Exemple</strong> : langue maternelle (français, allemand, italien). Aucune n’est « supérieure ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-78-contents" aria-controls="callout-78" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Non-probabiliste
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-78" class="callout-78-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Échantillonnage probabiliste vs.&nbsp;non-probabiliste ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-79-contents" aria-controls="callout-79" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Non-réponse
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-79" class="callout-79-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : refus de participer (« survey non-response ») ou de répondre à une question (« item non-response »).</p>
+<p><strong>Exemple</strong> : tu envoies 1000 questionnaires, 600 sont remplis → 40 % de non-réponse. Risque : biais si les non-répondant·e·s diffèrent systématiquement.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="o" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="o"><span class="header-section-number">14</span> O</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-80-contents" aria-controls="callout-80" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Objectivité vs.&nbsp;objectivation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-80" class="callout-80-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « État vs.&nbsp;processus (objectivité) ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-81-contents" aria-controls="callout-81" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Odds (cote)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-81" class="callout-81-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : rapport entre P(événement) et P(non-événement).</p>
+<p><strong>Exemple</strong> : pour tirer un pique (13/52 = 0.25) → odds = 0.25 / 0.75 = 0.33 (« 1 contre 3 »).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-82-contents" aria-controls="callout-82" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Odds Ratio (OR)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-82" class="callout-82-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : rapport de deux odds. En régression logistique, mesure de combien les chances d’un événement sont <strong>multipliées</strong> quand X augmente d’une unité.</p>
+<p><strong>Exemple</strong> : OR = 2 → les chances doublent. OR = 0.5 → les chances sont divisées par 2. OR = 1 → pas d’effet.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-83-contents" aria-controls="callout-83" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+OLS (Ordinary Least Squares)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-83" class="callout-83-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : méthode des <strong>moindres carrés ordinaires</strong> utilisée par la régression linéaire pour trouver la « meilleure » droite.</p>
+<p><strong>Exemple</strong> : on minimise la somme des erreurs au carré entre les points réels et la droite prédite.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-84-contents" aria-controls="callout-84" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Open Data
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-84" class="callout-84-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données mises à disposition gratuitement par leurs producteur·ice·s (souvent l’État) pour libre réutilisation.</p>
+<p><strong>Exemple</strong> : opendata.swiss agrège des données ouvertes des administrations suisses.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-85-contents" aria-controls="callout-85" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Opérationnalisation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-85" class="callout-85-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : passer d’un <strong>concept abstrait</strong> à des <strong>indicateurs mesurables</strong>.</p>
+<p><strong>Exemple</strong> : concept = « usage actif d’Instagram » → indicateur = « j’ai liké au moins 5 posts par jour » (oui/non).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-86-contents" aria-controls="callout-86" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ordinal (niveau de mesure)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-86" class="callout-86-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : catégories <strong>ordonnées</strong>, mais sans distance quantifiée entre elles.</p>
+<p><strong>Exemple</strong> : niveau d’études (sans formation &lt; CFC &lt; apprentissage &lt; université). On sait l’ordre, pas l’écart précis.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="p" class="level2" data-number="15">
+<h2 data-number="15" class="anchored" data-anchor-id="p"><span class="header-section-number">15</span> P</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-87-contents" aria-controls="callout-87" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Panel (données de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-87" class="callout-87-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : type de données longitudinales où on suit les <strong>mêmes individus</strong> dans le temps.</p>
+<p><strong>Exemple</strong> : Panel Suisse des Ménages.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-88-contents" aria-controls="callout-88" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Paramètre
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-88" class="callout-88-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : valeur <strong>vraie</strong> dans la population, inconnue. Opposé : statistique (calculée sur l’échantillon).</p>
+<p><strong>Exemple</strong> : la moyenne réelle du QI de toute la population (inconnue) = paramètre. Le QI moyen de tes 200 sondé·e·s = statistique.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-89-contents" aria-controls="callout-89" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Parsing
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-89" class="callout-89-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : technique de web scraping consistant à <strong>décomposer</strong> le code HTML d’une page pour en extraire les éléments d’intérêt.</p>
+<p><strong>Exemple</strong> : sur une page de recettes, parser tous les <code>&lt;h2&gt;</code> pour récupérer les noms de plats.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-90-contents" aria-controls="callout-90" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pearson (corrélation de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-90" class="callout-90-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : coefficient mesurant le lien <strong>linéaire</strong> entre deux variables <strong>quantitatives</strong>. Valeur entre −1 et +1.</p>
+<p><strong>Exemple</strong> : r = 0.85 entre taille et poids → forte corrélation linéaire positive.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-91-contents" aria-controls="callout-91" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Phi (φ) / V de Cramér
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-91" class="callout-91-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : coefficients d’association pour des tableaux croisés. Phi pour 2 × 2 ; V de Cramér pour les plus grands.</p>
+<p><strong>Exemple</strong> : V de Cramér = 0.3 dans un 3 × 3 → association modérée.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-92-contents" aria-controls="callout-92" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pondération (weighting)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-92" class="callout-92-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : technique consistant à donner plus de poids à certaines observations pour corriger un biais d’inclusion.</p>
+<p><strong>Exemple</strong> : si les 18-30 sont sous-représentés (9 % vs.&nbsp;13 % en population), on leur donne un poids de 1.44.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-93-contents" aria-controls="callout-93" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Population
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-93" class="callout-93-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : ensemble total qu’on veut étudier. Souvent inaccessible → on étudie un <strong>échantillon</strong>.</p>
+<p><strong>Exemple</strong> : toute la population suisse (~9 mio). Tu interroges 1 070 personnes pour faire des inférences.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-94-contents" aria-controls="callout-94" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pré-test
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-94" class="callout-94-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : test préliminaire d’un questionnaire sur un petit échantillon pour vérifier qu’il fonctionne. Règle : 10 % des participant·e·s visé·e·s.</p>
+<p><strong>Exemple</strong> : envoyer ton sondage à 30 ami·e·s avant les 300 sondé·e·s cibles, pour repérer les questions mal comprises.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-95-contents" aria-controls="callout-95" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Primaires (données)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-95" class="callout-95-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données <strong>récoltées</strong> directement par le·la chercheur·euse pour son étude.</p>
+<p><strong>Exemple</strong> : tu lances ton sondage Qualtrics. Opposé : secondaires.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-96-contents" aria-controls="callout-96" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Probit (régression)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-96" class="callout-96-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variante de la régression logistique, basée sur la fonction normale cumulée plutôt que logit.</p>
+<p><strong>Exemple</strong> : utilisée en économétrie. Signe et significativité = interprétation identique à logit. Mais pas d’odds ratios.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-97-contents" aria-controls="callout-97" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+P-value
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-97" class="callout-97-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : probabilité d’observer un résultat aussi extrême que le tien <strong>si H0 était vraie</strong>. p &lt; 0.05 → on rejette H0.</p>
+<p><strong>Exemple</strong> : p = 0.03 → on rejette H0, le résultat est significatif. p = 0.20 → on ne rejette pas. Attention : ce n’est PAS la probabilité que H0 soit vraie.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-98-contents" aria-controls="callout-98" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pseudo-R²
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-98" class="callout-98-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : équivalent du R² pour la régression logistique. <strong>Ne s’interprète pas</strong> comme un pourcentage de variance expliquée.</p>
+<p><strong>Exemple</strong> : pseudo-R² = 0.082 → utile pour comparer des modèles, pas pour dire « le modèle explique 8 %… »</p>
+</div>
+</div>
+</div>
+</section>
+<section id="q" class="level2" data-number="16">
+<h2 data-number="16" class="anchored" data-anchor-id="q"><span class="header-section-number">16</span> Q</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-99-contents" aria-controls="callout-99" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quantitative (donnée / méthode)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-99" class="callout-99-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : approche qui <strong>quantifie</strong> des phénomènes en chiffres et utilise des analyses statistiques.</p>
+<p><strong>Exemple</strong> : sondage avec 1000 répondant·e·s + analyse de régression. Opposé : qualitative (entretiens, ethnographie).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-100-contents" aria-controls="callout-100" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question de recherche (QR)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-100" class="callout-100-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : la question centrale qui guide ton étude. Doit être <strong>claire, faisable, pertinente</strong>.</p>
+<p><strong>Exemple</strong> : « Dans quelle mesure différents usages d’Instagram influencent-ils les symptômes de dépression chez les étudiant·e·s ? »</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-101-contents" aria-controls="callout-101" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Question fermée / semi-ouverte / ouverte
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-101" class="callout-101-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : - <strong>Fermée</strong> : catégories de réponse imposées ; - <strong>Semi-ouverte</strong> : catégories + « autre : _____ » ; - <strong>Ouverte</strong> : pas de catégories prédéfinies.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="r" class="level2" data-number="17">
+<h2 data-number="17" class="anchored" data-anchor-id="r"><span class="header-section-number">17</span> R</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-102-contents" aria-controls="callout-102" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+R² (R-carré)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-102" class="callout-102-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : proportion de la variance de Y <strong>expliquée</strong> par le modèle de régression. Entre 0 et 1.</p>
+<p><strong>Exemple</strong> : R² = 0.296 → le modèle explique 29.6 % de la variance. C’est correct en sciences sociales.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-103-contents" aria-controls="callout-103" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+R² ajusté
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-103" class="callout-103-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : version corrigée du R² qui pénalise les variables superflues. À utiliser pour <strong>comparer</strong> des modèles.</p>
+<p><strong>Exemple</strong> : R² brut monte toujours quand on ajoute une variable, même inutile. Le R² ajusté ne monte que si la variable apporte vraiment.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-104-contents" aria-controls="callout-104" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Recodage
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-104" class="callout-104-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : modification du codage d’une variable (regrouper des catégories, inverser l’ordre, créer du vrai/faux).</p>
+<p><strong>Exemple</strong> : « âge » continu → tranches d’âge (18-30 / 31-60 / 60+). Toujours créer une <strong>nouvelle</strong> version, ne jamais écraser.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-105-contents" aria-controls="callout-105" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Régression linéaire
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-105" class="callout-105-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : modèle qui prédit une variable Y <strong>quantitative</strong> en fonction d’une ou plusieurs variables X. Y = α + β₁X₁ + … + e.</p>
+<p><strong>Exemple</strong> : prédire la consommation de carburant d’une voiture en fonction de son poids et de sa puissance.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-106-contents" aria-controls="callout-106" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Régression logistique
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-106" class="callout-106-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : modèle qui prédit une variable Y <strong>dichotomique</strong> (0/1) en fonction d’une ou plusieurs variables X.</p>
+<p><strong>Exemple</strong> : prédire « voté ou pas » en fonction de l’âge, du revenu, du niveau d’études. Coefficients lus en odds ratios.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-107-contents" aria-controls="callout-107" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Régression multinomiale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-107" class="callout-107-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : régression logistique pour une Y nominale à <strong>3+ catégories</strong>.</p>
+<p><strong>Exemple</strong> : prédire le « parti voté » (PS, PLR, UDC, autre) en fonction des caractéristiques de l’électeur·ice.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-108-contents" aria-controls="callout-108" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Régression ordinale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-108" class="callout-108-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : régression logistique pour une Y ordinale.</p>
+<p><strong>Exemple</strong> : prédire la satisfaction (1-5) à partir de variables explicatives, en gardant l’ordre.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-109-contents" aria-controls="callout-109" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Reproductibilité
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-109" class="callout-109-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : avec les <strong>mêmes données</strong> et le <strong>même code</strong>, on retrouve les mêmes résultats.</p>
+<p><strong>Exemple</strong> : un·e collègue lance ton script R et obtient exactement le même tableau. Pré-requis du travail scientifique sérieux.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-110-contents" aria-controls="callout-110" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Réplicabilité
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-110" class="callout-110-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : refaire <strong>la même étude</strong> sur de <strong>nouvelles données</strong> et obtenir des résultats similaires.</p>
+<p><strong>Exemple</strong> : Tandoc et al.&nbsp;(2015) trouvent que Facebook ↔︎ envie. Si tu refais l’étude en 2026 sur Instagram, trouves-tu pareil ? C’est la réplicabilité.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="s" class="level2" data-number="18">
+<h2 data-number="18" class="anchored" data-anchor-id="s"><span class="header-section-number">18</span> S</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-111-contents" aria-controls="callout-111" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Satisficing (théorie du)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-111" class="callout-111-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : les répondant·e·s ne cherchent pas la <strong>meilleure</strong> réponse, mais une réponse <strong>suffisante</strong> avec un minimum d’effort.</p>
+<p><strong>Exemple</strong> : ils cliquent rapidement, choisissent le milieu, copient leurs précédentes réponses. Plus fréquent quand le questionnaire est long ou ennuyeux.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-112-contents" aria-controls="callout-112" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Scatterplot (diagramme de dispersion)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-112" class="callout-112-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : graphique avec un point par observation, X en abscisse, Y en ordonnée. Visualise une corrélation.</p>
+<p><strong>Exemple</strong> : taille (X) vs.&nbsp;poids (Y) → nuage de points qui monte → corrélation positive.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-113-contents" aria-controls="callout-113" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Score (index)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-113" class="callout-113-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable construite en <strong>additionnant</strong> (ou moyennant) les réponses d’une batterie d’items.</p>
+<p><strong>Exemple</strong> : 9 items de Likert (1-5) → score total de 9 à 45 mesurant l’attitude « internationalisme ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-114-contents" aria-controls="callout-114" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Secondaires (données)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-114" class="callout-114-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données <strong>déjà existantes</strong>, récoltées par d’autres pour d’autres buts.</p>
+<p><strong>Exemple</strong> : utiliser le Panel Suisse des Ménages pour ton étude. Opposé : primaires.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-115-contents" aria-controls="callout-115" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sélection (biais de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-115" class="callout-115-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Biais de sélection ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-116-contents" aria-controls="callout-116" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sentiment analysis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-116" class="callout-116-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : technique automatisée de codage où chaque mot est classé positif/négatif selon un dictionnaire.</p>
+<p><strong>Exemple</strong> : analyser 10 000 tweets pour mesurer l’humeur générale envers une marque.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-117-contents" aria-controls="callout-117" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Significativité statistique
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-117" class="callout-117-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : un résultat est significatif si p &lt; α (souvent 0.05) → on peut <strong>rejeter H0</strong> avec un risque contrôlé d’erreur.</p>
+<p><strong>Exemple</strong> : p = 0.001 → très hautement significatif. Attention : significatif ≠ important pratiquement.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-118-contents" aria-controls="callout-118" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Skewness
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-118" class="callout-118-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Inclinaison ».</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-119-contents" aria-controls="callout-119" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Spearman (corrélation de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-119" class="callout-119-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : coefficient mesurant le lien <strong>monotone</strong> entre deux variables <strong>ordinales</strong> (ou non-normales). Calculé sur les <strong>rangs</strong>.</p>
+<p><strong>Exemple</strong> : intérêt politique (1-4) vs.&nbsp;participation électorale (rang) → ρ Spearman = 0.6.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-120-contents" aria-controls="callout-120" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Stratifié (échantillonnage)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-120" class="callout-120-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : on divise la population en <strong>strates</strong> (langue, âge), puis on tire au sort dans chaque strate.</p>
+<p><strong>Exemple</strong> : pour un sondage suisse, tirer 70 % en allemand + 25 % en français + 5 % en italien.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-121-contents" aria-controls="callout-121" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Systématique (échantillonnage)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-121" class="callout-121-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : on prend chaque <strong>n-ième</strong> unité dans une liste.</p>
+<p><strong>Exemple</strong> : prendre 1 article sur 10 dans un journal.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="t" class="level2" data-number="19">
+<h2 data-number="19" class="anchored" data-anchor-id="t"><span class="header-section-number">19</span> T</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-122-contents" aria-controls="callout-122" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tableau croisé (table de contingence)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-122" class="callout-122-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : tableau croisant deux variables <strong>catégorielles</strong>. VI en colonnes, VD en lignes.</p>
+<p><strong>Exemple</strong> : vote (en faveur / opposé) × âge (jeune / vieux). On peut calculer % en colonnes, en lignes, ou totaux.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-123-contents" aria-controls="callout-123" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tendance centrale
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-123" class="callout-123-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : mesure qui résume le « milieu » d’une distribution. <strong>3 outils</strong> : mode, médiane, moyenne.</p>
+<p><strong>Exemple</strong> : moyenne de notes = 12 ; médiane = 11 ; mode = 10. Selon le niveau de mesure de la variable, on choisit l’outil approprié.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-124-contents" aria-controls="callout-124" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Test t
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-124" class="callout-124-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : test comparant les <strong>moyennes</strong> de <strong>2 groupes</strong> (ou 1 groupe vs.&nbsp;une valeur de référence).</p>
+<p><strong>Exemple</strong> : tester si la confiance moyenne des hommes diffère de celle des femmes. t = 2.5, p = 0.006 → différence significative.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-125-contents" aria-controls="callout-125" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Topic modelling
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-125" class="callout-125-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : technique automatisée qui regroupe les textes selon leur <strong>similarité de vocabulaire</strong>, sans étiquetage humain.</p>
+<p><strong>Exemple</strong> : analyser 100 000 articles → identifier les 10 thèmes dominants automatiquement.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-126-contents" aria-controls="callout-126" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Transversales (données)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-126" class="callout-126-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : données mesurées à <strong>une seule date</strong> (un instantané).</p>
+<p><strong>Exemple</strong> : sondage post-électoral d’octobre 2023. Opposé : longitudinales.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-127-contents" aria-controls="callout-127" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Triangulation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-127" class="callout-127-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : croiser plusieurs sources ou méthodes pour renforcer la confiance dans un résultat.</p>
+<p><strong>Exemple</strong> : confirmer un résultat de sondage par des entretiens, ou par des données de capteurs.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-128-contents" aria-controls="callout-128" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tukey (test de)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-128" class="callout-128-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : test post-hoc qui suit une ANOVA significative pour identifier <strong>quelles paires de groupes</strong> diffèrent vraiment.</p>
+<p><strong>Exemple</strong> : ANOVA sur 4 statuts matrimoniaux → significative. Tukey HSD → c’est marié vs.&nbsp;célibataire qui diffèrent, pas marié vs.&nbsp;divorcé.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="u" class="level2" data-number="20">
+<h2 data-number="20" class="anchored" data-anchor-id="u"><span class="header-section-number">20</span> U</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-129-contents" aria-controls="callout-129" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Unité d’analyse
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-129" class="callout-129-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : ce que tu <strong>codes</strong> réellement, une ligne dans la base. Souvent plus fin que l’unité de collecte.</p>
+<p><strong>Exemple</strong> : tu collectes des articles (collecte) mais codes chaque <strong>revendication</strong> dans l’article (analyse).</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-130-contents" aria-controls="callout-130" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Unité de collecte
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-130" class="callout-130-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : le matériel de <strong>base</strong> que tu récupères pour ta recherche.</p>
+<p><strong>Exemple</strong> : un article de presse, un post TikTok, un répondant·e à un sondage.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-131-contents" aria-controls="callout-131" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Univariée (analyse)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-131" class="callout-131-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : analyse d’<strong>une seule variable</strong> à la fois. Distribution, tendance centrale, dispersion.</p>
+<p><strong>Exemple</strong> : décrire la distribution des âges dans l’échantillon avec un histogramme et une moyenne.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="v" class="level2" data-number="21">
+<h2 data-number="21" class="anchored" data-anchor-id="v"><span class="header-section-number">21</span> V</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-132-contents" aria-controls="callout-132" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Validité externe
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-132" class="callout-132-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : capacité des résultats à se <strong>généraliser</strong> au-delà de l’échantillon étudié.</p>
+<p><strong>Exemple</strong> : tes résultats sur 200 étudiant·e·s de l’UNIFR valent-ils pour les jeunes suisses en général ?</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-133-contents" aria-controls="callout-133" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Validité interne
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-133" class="callout-133-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : qualité du design qui exclut les explications alternatives pour les résultats de <strong>ton</strong> étude.</p>
+<p><strong>Exemple</strong> : ton groupe contrôle est-il vraiment comparable au groupe traité ? Des variables omises peuvent-elles expliquer ton effet ?</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-134-contents" aria-controls="callout-134" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-134" class="callout-134-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : caractéristique qui <strong>varie</strong> d’une observation à l’autre.</p>
+<p><strong>Exemple</strong> : âge, langue, parti voté, score de satisfaction. Une colonne dans ton tableau de données.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-135-contents" aria-controls="callout-135" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable dépendante (VD) / indépendante (VI)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-135" class="callout-135-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : VD = ce que tu veux <strong>expliquer</strong> (Y). VI = ce qui <strong>explique</strong> (X).</p>
+<p><strong>Exemple</strong> : Y = satisfaction au travail, X = salaire. La régression mesure l’effet de X sur Y.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-136-contents" aria-controls="callout-136" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable confondante (Z)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-136" class="callout-136-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable qui influence à la fois X et Y, créant une corrélation <strong>fallacieuse</strong>.</p>
+<p><strong>Exemple</strong> : « ventes de glaces » et « noyades » sont corrélées, mais c’est la <strong>chaleur</strong> (Z) qui cause les deux.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-137-contents" aria-controls="callout-137" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variable de contrôle
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-137" class="callout-137-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : variable ajoutée à une régression pour neutraliser son effet et <strong>isoler</strong> l’effet propre des variables d’intérêt.</p>
+<p><strong>Exemple</strong> : en mesurant l’effet du genre sur le salaire, on contrôle pour l’expérience pour éviter de confondre les deux.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-138-contents" aria-controls="callout-138" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Variance
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-138" class="callout-138-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : carré de l’écart-type. Mesure de <strong>dispersion</strong>.</p>
+<p><strong>Exemple</strong> : si SD = 5, variance = 25. Plus utile en formules (additionnable) qu’en interprétation.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="w" class="level2" data-number="22">
+<h2 data-number="22" class="anchored" data-anchor-id="w"><span class="header-section-number">22</span> W</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-139-contents" aria-controls="callout-139" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Web scraping
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-139" class="callout-139-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : technique de récupération automatisée de données sur le web. <strong>Deux</strong> approches : API ou parsing.</p>
+<p><strong>Exemple</strong> : récupérer 10 000 tweets sur un sujet via l’API Twitter, ou parser le code HTML d’un site d’actualité.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-140-contents" aria-controls="callout-140" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Weighting
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-140" class="callout-140-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>En simple</strong> : voir « Pondération ».</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,183 @@
+---
+title: "S5 - Analyse de contenu quantitative"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+L'**analyse de contenu quantitative** transforme des sources textuelles ou audiovisuelles en données chiffrées via un **codage systématique**. Tu définis des unités, tu construis une **grille de codage** (codebook), tu codes, et tu **vérifies la qualité** (fiabilité + validité).
+:::
+
+Le **point à retenir** : *l'analyse de contenu quantitative permet de quantifier des sources textuelles et audio-visuelles. Elle requiert une grande systématicité dans les choix opérés avant le codage, pendant son exécution, et lors du contrôle de qualité.*
+
+## Analyse de contenu : quanti vs. quali
+
+Une fois tes sources documentaires récoltées, deux grandes options de traitement :
+
+| Critère | Analyse **qualitative** | Analyse **quantitative** |
+|---|---|---|
+| **But principal** | Analyse des thèmes, concepts, constructions de sens | Réduction de la complexité, **quantification** des éléments de contenu |
+| **Rapport aux hypothèses** | Travail de **vérification** (falsifier/vérifier des hypothèses) | Travail d'**exploration** (puis éventuellement formulation d'hypothèses) |
+| **Niveau d'analyse** | Analyse **directe** : sens manifeste du texte | Analyse **indirecte** : sens latent ou caché |
+
+::: {.callout-warning}
+## Le tableau est trompeur
+La distinction quali/quanti n'est pas si étanche. Une analyse **quali doit aussi être systématique** ; une analyse **quanti exige de la classification et de l'interprétation**. Le tableau ci-dessus simplifie pour comprendre, mais en pratique les deux se nourrissent (mixed methods, voir S10).
+:::
+
+## Définition (Janis, 1965)
+
+> « L'analyse de contenu peut être définie comme se référant à toute technique (a) de classification des véhicules de signes (b) qui repose uniquement sur les jugements [...] d'un analyste ou d'un groupe d'analystes quant à l'appartenance des véhicules de signes à telle ou telle catégorie, (c) à condition que les jugements de l'analyste soient considérés comme le rapport d'un observateur scientifique. »
+
+Trois éléments clés :
+
+| Élément | Signification |
+|---|---|
+| **(a) Véhicules de signes** | Toute convention qui véhicule un message : texte, mots, image, sons |
+| **(b) Jugement de l'analyste** | C'est le·la chercheur·euse qui classe les véhicules dans des catégories (= **codage**) |
+| **(c) Scientifique** | Pas un jugement personnel ponctuel : **systématique** et reproductible |
+
+## Les 4 étapes de l'analyse de contenu quantitative
+
+### Étape 1 — Définir les unités de codage
+
+Reprendre les distinctions du S3 :
+
+| Unité | Définition | Exemple (étude Feddersen 2015 sur le discours médiatique sur les étranger·ère·s) |
+|---|---|---|
+| **Collecte** | Le matériel récolté | Articles NZZ, Blick, Le Temps, Le Matin sur 3 votations (2000, 2004, 2009) |
+| **Analyse** | L'unité statistique codée | Une **revendication** dans l'article (acteur + cadrage + objet) |
+| **Codage** | Une **variable** à coder pour chaque unité d'analyse | Acteur (WHO), cible (AT WHOM), forme (HOW), contenu (WHAT), évaluation positive/neutre/négative |
+
+::: {.callout-tip collapse="true"}
+## Une pré-analyse aide à définir
+Avant de figer les unités, **lis flottant** (lecture rapide d'un échantillon) pour te familiariser avec le matériel. Tu repèreras des nuances, des catégories à prévoir, des cas limites. Ne saute jamais cette étape.
+:::
+
+### Étape 2 — Établir la grille de codage (codebook)
+
+Pour chaque **unité de codage** (variable), tu définis :
+
+| Élément | Détail |
+|---|---|
+| Nom de la variable | Court mais compréhensible |
+| Définition | Que mesure-t-elle exactement ? |
+| **Catégories** (valeurs) | Listées avec leur code numérique |
+| Exemples | Tirés du corpus, pour les cas limites |
+
+#### Trois manières de définir les catégories
+
+| Approche | Logique |
+|---|---|
+| **Déductive** | À partir des **concepts théoriques** existants |
+| **Inductive** | À partir du **matériel** observé (pré-analyse) |
+| **Hybride** | Combinaison des deux |
+
+::: {.callout-important}
+## Les 3 critères des catégories
+1. **Mutuellement exclusives** : aucune confusion possible entre deux catégories.
+2. **Exhaustives** : couvrent toutes les possibilités (sinon perte d'info).
+3. **Adaptées aux analyses statistiques envisagées** : respecter les **niveaux de mesure** voulus.
+
+Et un équilibre : ni **trop** de catégories (perte de vue d'ensemble), ni **trop peu** (perte d'information).
+:::
+
+### Étape 3 — Réaliser le codage
+
+Le codage est **systématique** : unité d'analyse après unité d'analyse, unité de codage après unité de codage.
+
+#### Trois techniques
+
+| Technique | Définition | Exemple |
+|---|---|---|
+| **À la main** | Codeur·euse humain·e applique la grille | Étudiant·e qui code 100 articles |
+| **Automatisée** | Algorithme | **Sentiment analysis** (chaque mot classé positif/négatif via dictionnaire), **topic modelling** (textes classés par similarité de vocabulaire) |
+| **Semi-automatisée** | Analyse manuelle puis automatisation | Codage d'un échantillon → entraînement d'un modèle → application au reste |
+
+#### Bonnes pratiques
+
+- **Formation des codeur·euse·s** si plusieurs personnes.
+- **Documenter les décisions** au fur et à mesure (cas litigieux, conventions de codage).
+- Utiliser des **schémas de décision** (arbres « est-ce que ... ? » → catégorie X / Y).
+- Garder des **exemples illustratifs** issus du corpus pour les catégories importantes (utiles pour la partie opérationnalisation du papier final).
+
+### Étape 4 — Vérifier la qualité du codage
+
+Deux indicateurs **complémentaires** : **fiabilité** et **validité**.
+
+#### Fiabilité (reliability) — Kaplan & Goldsen (1965)
+
+> « La fiabilité assure que les données sont obtenues indépendamment de l'instrument ou de la personne qui effectue la mesure. »
+
+**Trois tests** possibles :
+
+| Test | Procédure | Mesure |
+|---|---|---|
+| **Intra-codeur** | Le·la même codeur·euse recode une partie après un délai | **Stabilité** (cohérence dans le temps) |
+| **Inter-codeur** | Un·e autre codeur·euse recode une partie | **Reproductibilité** (cohérence entre personnes) |
+| **Comparaison à un standard** | Comparaison à un codage de référence | **Précision** |
+
+#### Comment chiffrer la fiabilité ?
+
+| Mesure | Définition | Seuil acceptable |
+|---|---|---|
+| **Concordance (%)** | Proportion d'unités codées de la même manière | Indicatif |
+| **Alpha de Krippendorff** | Pour toute variable | **0.7** (sciences sociales) |
+| **Kappa de Cohen** | Variantes selon niveau de mesure | **0.7** |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- **Alpha de Cronbach** (S4) = la cohésion **entre items** d'une échelle (questions qui mesurent la même chose).
+- **Alpha de Krippendorff** (S5) = la cohésion **entre codeur·euse·s** sur une même variable codée.
+
+Deux alphas, deux fonctions différentes. Le seuil de **0.7** est commun aux deux par convention.
+:::
+
+#### Validité (Krippendorff, 2013)
+
+> « La validité réside dans le fait que la qualité des résultats nous conduit à les accepter comme vrais. Un instrument de mesure est valide s'il mesure ce que son utilisateur prétend qu'il mesure. »
+
+| Type | Question |
+|---|---|
+| **Validité interne** | Le codage mesure-t-il bien ce qu'il est censé mesurer ? → Assurer une **bonne diversité des sources** codées |
+| **Validité externe** | Le codage est-il généralisable au monde réel ? → **Comparer** avec d'autres codages sur d'autres sources |
+
+::: {.callout-important}
+## Fiabilité et validité, c'est différent
+- **Fiable mais non valide** : ton mètre mesure toujours la même chose (constant) mais il est faussé de 5 cm → tu mesures **précisément autre chose** que ce que tu veux.
+- **Valide mais non fiable** : ton mètre vise la bonne taille mais varie d'une mesure à l'autre → l'instrument est trop instable.
+- **Fiable ET valide** : ton mètre est précis ET il mesure la bonne taille.
+
+L'objectif est toujours **les deux**.
+:::
+
+## Si la qualité n'est pas au rendez-vous
+
+**Recodage obligatoire**. Tu peux ajuster la grille de codage (préciser des cas litigieux, ajouter une catégorie, fusionner deux qui se confondent), puis recommencer le codage.
+
+## Exemple concret : Feddersen (2015)
+
+Étude du discours médiatique suisse sur étranger·ère·s et musulman·e·s autour de trois votations :
+
+| Élément | Détail |
+|---|---|
+| **QR** | Comment le discours diffère-t-il entre 2000 et 2009 ? |
+| **Cas** | 3 campagnes (initiative « 18 % », naturalisation facilitée, anti-minarets) |
+| **Unité de collecte** | Articles NZZ, Blick, Le Temps, Le Matin (2 semaines avant à 1 semaine après le vote) — 484 articles |
+| **Mots-clés** | étrang*, musulman*, islam* / ausländ*, muslim*, moslem*, islam* |
+| **Unité d'analyse** | Une **revendication** = acteur + acteur adressé + forme + contenu + objet + cadrage (765 revendications au total, théorie de Koopmans & Statham 1999) |
+| **Unités de codage** | Source, date, population visée, niveau de généralisation, thématique, framing, évaluation |
+
+Une étude solide se présente toujours ainsi : on lit, on comprend immédiatement ce qui a été collecté, comment, à quel niveau on a codé, et avec quelles variables.
+
+::: {.callout-note}
+## Récapitulatif Ch.5
+- **Quanti vs. quali** : but de quantification vs. de compréhension du sens ; mais frontière poreuse.
+- L'analyse de contenu est **systématique** et basée sur le **jugement scientifique** (Janis 1965).
+- **4 étapes** : (1) définir les unités de codage, (2) construire la grille, (3) coder, (4) vérifier la qualité.
+- **3 manières** de définir les catégories : déductive, inductive, hybride.
+- Catégories : **mutuellement exclusives, exhaustives, adaptées**.
+- Coder à la main, automatique (sentiment analysis, topic modelling), ou semi-automatique.
+- **Fiabilité** = constance (intra, inter, comparée). **Validité** = on mesure bien le bon truc.
+- Seuils acceptables : **Krippendorff ≥ 0.7** ; **Kappa ≥ 0.7**.
+- Fiable ≠ valide. Il faut **les deux**.
+:::

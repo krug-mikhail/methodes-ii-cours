@@ -1,0 +1,328 @@
+---
+title: "S6 - Analyses uni-, bi- et multivariées"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Tu analyses **une** variable à la fois (univariée) pour la décrire, **deux** variables (bivariée) pour explorer leur lien, **trois ou plus** (multivariée) pour contrôler des facteurs concurrents. Le bon outil dépend toujours du **niveau de mesure**.
+:::
+
+Le **point à retenir** : *l'analyse univariée décrit la distribution d'une seule variable. L'analyse bivariée s'intéresse à la relation entre deux variables. Différentes mesures sont admises selon les niveaux de mesure.*
+
+## Bloc A — Analyses univariées (script 3)
+
+L'analyse univariée (= **descriptive**) sert à **connaître ses données** et à anticiper les problèmes. Elle se concentre sur **trois aspects** : **distribution**, **tendance centrale**, **dispersion**.
+
+### Distribution
+
+La distribution d'une variable montre **comment elle est répartie**. Outils disponibles :
+
+| Variable | Niveau | Tableau de fréquence | Graphique | Indicateurs |
+|---|---|---|---|---|
+| Qualitative | Nominal | OK | Diagramme en bâtons | Incohérent |
+| Qualitative | Ordinal | OK | Diagramme en bâtons | Incohérent (sauf si traité comme quanti) |
+| Quantitative | Continue | Incohérent | **Histogramme** | OK |
+| Quantitative | Discrète | Incohérent (sauf petite étendue) | Histogramme | OK |
+
+::: {.callout-important}
+## Diagramme en bâtons vs. histogramme
+- **Diagramme en bâtons** : pour les variables **qualitatives** (catégorielles). Les barres sont séparées (rien entre les catégories).
+- **Histogramme** : pour les variables **quantitatives**. Les barres se touchent (continuité des valeurs). C'est ce qui permet de voir la **forme** de la distribution (normale, asymétrique, multimodale).
+:::
+
+#### Le tableau de fréquences
+
+Contient : les **fréquences absolues** (N), les **pourcentages** (fréquences relatives), et les **fréquences cumulées**. Dernière ligne = total.
+
+**Exemple** : provenance des étudiant·e·s du cours
+
+| Provenance | Fréquence (N) | Pourcentage (%) | Cumulée |
+|---|---|---|---|
+| Suisse romande | 30 | 37.5 | 30 |
+| Suisse alémanique | 20 | 25.0 | 50 |
+| Tessin | 20 | 25.0 | 70 |
+| Étranger | 10 | 12.5 | 80 |
+| **Total** | **80** | **100** | — |
+
+#### Indicateurs sur la **forme** de la distribution
+
+Deux mesures importantes pour les variables quantitatives :
+
+| Indicateur | Anglais | Que mesure-t-il ? | Valeur pour une loi normale |
+|---|---|---|---|
+| **Aplatissement** | Kurtosis | Forme de la courbe : pointue vs. aplatie | **3** |
+| **Inclinaison** | Skewness | Symétrie : queue plus longue à gauche ou à droite | **0** (symétrique) |
+
+- Skewness **positive** → queue à droite (longue traîne de grandes valeurs).
+- Skewness **négative** → queue à gauche.
+- Kurtosis **> 3** → distribution plus pointue (concentration autour de la moyenne).
+- Kurtosis **< 3** → plus aplatie.
+
+::: {.callout-warning}
+## Vérifier la normalité, pourquoi ?
+Beaucoup de procédés statistiques (régression linéaire, test t, ANOVA) **supposent** une distribution **normale** (en cloche). Si tes données s'en écartent fortement (skewness ou kurtosis trop élevés), tu dois soit transformer la variable, soit utiliser un test non-paramétrique.
+:::
+
+### Tendance centrale
+
+La **tendance centrale** résume le « milieu » d'une distribution. **Trois mesures**, chacune avec des conditions de validité.
+
+| Mesure | Définition | Niveau de mesure requis |
+|---|---|---|
+| **Mode** | Valeur la plus fréquente | Tous (nominal, ordinal, quanti) |
+| **Médiane** | Valeur du milieu quand les obs sont triées | Ordinal et plus (besoin d'un ordre) |
+| **Moyenne** | Somme des valeurs / nombre d'obs ($\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$) | Quantitatif (continu) |
+
+| Niveau | Mode | Médiane | Moyenne |
+|---|---|---|---|
+| Nominal | OK | Incohérent | Incohérent |
+| Ordinal | OK | OK | Incohérent (sauf si traité comme quanti) |
+| Continu | OK | OK | OK |
+| Discret | OK | OK | Incohérent (mais utilisé quand même) |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- Le **mode** = la réponse la plus populaire (utile pour les catégories).
+- La **médiane** = la valeur qui partage l'échantillon en deux moitiés égales (utile quand il y a des valeurs extrêmes).
+- La **moyenne** = la « valeur typique » mais sensible aux valeurs extrêmes (un milliardaire dans un échantillon de 100 personnes fait exploser la moyenne du revenu).
+:::
+
+### Dispersion
+
+La **dispersion** mesure à quel point les observations sont **éloignées** de la tendance centrale.
+
+| Mesure | Définition | Niveau requis |
+|---|---|---|
+| **Étendue (range)** | Max − Min | Quanti |
+| **Écart interquartile (IQR)** | Q3 − Q1 (75e − 25e percentile) | Quanti |
+| **Écart type (SD)** | Racine carrée de la variance ; dispersion autour de la moyenne | Quanti |
+
+L'écart type se calcule via :
+$$SD = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2}$$
+
+::: {.callout-important}
+## Le boxplot (boîte à moustaches)
+Visualise simultanément : la **médiane** (ligne dans la boîte), l'**IQR** (la boîte = Q1 à Q3), les **moustaches** (jusqu'à 1.5 × IQR de la boîte), et les **outliers** (points au-delà). Idéal pour comparer la dispersion entre groupes.
+:::
+
+::: {.callout-tip collapse="true"}
+## En simple
+L'**écart type** = la **distance moyenne** entre chaque obs et la moyenne du groupe. SD élevé = les obs sont dispersées (groupe hétérogène). SD bas = elles sont proches de la moyenne (groupe homogène). Avec moyenne + écart type, tu décris déjà 90 % de l'utile sur une variable quantitative.
+:::
+
+## Bloc B — Analyses bivariées
+
+### Définition et objectifs
+
+Analyse de la **relation entre deux variables**. Buts :
+
+- **Descriptif** : distribution d'une variable **en relation à l'autre** dans l'échantillon.
+- **Causal** : différences entre groupes (sans contrôle de causes concurrentes — c'est la limite).
+
+Souvent une **étape préparatoire** avant une analyse multivariée.
+
+### 3 informations à extraire d'une analyse bivariée
+
+1. La **nature** de l'association (positive, négative, en U...).
+2. La **force** de l'association → coefficient d'association.
+3. La **significativité statistique** (vu en S7).
+
+### Choix de la méthode selon les niveaux de mesure
+
+C'est **la** table à connaître par cœur pour l'examen.
+
+| | Variable nominale | Variable ordinale | Variable quantitative |
+|---|---|---|---|
+| **Variable nominale** | Tableau croisé | Tableau croisé | **Analyse de moyenne** (t-test, ANOVA) |
+| **Variable ordinale** | Tableau croisé | **Corrélation de Spearman** | Analyse de moyenne |
+| **Variable quantitative** | Analyse de moyenne | Analyse de moyenne | **Corrélation de Pearson** |
+
+### Lien avec les types d'hypothèses
+
+- **Hypothèse de différence** (« si X alors Y ») → typiquement tableau croisé ou analyse de moyenne.
+- **Hypothèse de relation** (« plus X → plus/moins Y ») → typiquement corrélation.
+
+### Le tableau croisé (table de contingence)
+
+#### Principe
+
+Croisement entre deux variables catégorielles. Convention :
+
+- Variable **indépendante** en **colonnes**.
+- Variable **dépendante** en **lignes**.
+
+#### Exemple : Vote pour initiative X × Usage de la RTS
+
+**Valeurs observées (N et %)**
+
+| Vote / Usage RTS | Oui | Non | Total |
+|---|---|---|---|
+| En faveur | 138 (27.6) | 64 (12.8) | 202 (40.4) |
+| Indifférent | 83 (16.6) | 67 (13.4) | 150 (30.0) |
+| Opposé | 64 (12.8) | 84 (16.8) | 148 (29.6) |
+| **Total** | 285 (57.0) | 215 (43.0) | 500 (100) |
+
+#### Pourcentages : ligne, colonne, total ?
+
+| % en | Lecture | Quand l'utiliser |
+|---|---|---|
+| **Lignes** | Pour chaque ligne, somme = 100 % | Décrire la composition d'un groupe (ex. : parmi les « en faveur », X % utilisent RTS) |
+| **Colonnes** | Pour chaque colonne, somme = 100 % | **Standard** quand la VI est en colonnes (ex. : parmi les usagers de RTS, X % sont en faveur) |
+| **Total** | Toutes cellules / N total | Vue d'ensemble |
+
+::: {.callout-important}
+## Quel pourcentage choisir ?
+**Toujours selon la variable indépendante**. Si la VI est en colonnes (convention), tu fais les pourcentages **en colonnes**. Ainsi, en lisant le tableau, tu compares directement les deux modalités de la VI sur la VD.
+:::
+
+### Le test du chi-carré (χ²)
+
+#### Principe
+
+Le chi-carré teste si les valeurs **observées** s'écartent des valeurs **théoriques** attendues si les deux variables étaient **indépendantes** (H0).
+
+#### Calculs
+
+**Fréquences théoriques** pour chaque cellule :
+$$E = \frac{\text{total ligne} \times \text{total colonne}}{\text{total échantillon}}$$
+
+**Statistique χ²** :
+$$\chi^2 = \sum \frac{(O - E)^2}{E}$$
+
+avec O = fréquence observée et E = fréquence théorique.
+
+**Degrés de liberté** : $(L-1) \times (C-1)$ où L = nb lignes, C = nb colonnes.
+
+#### Décision
+
+On compare le χ² calculé à une **valeur critique** (table) à df degrés de liberté. Si χ² > valeur critique → on **rejette H0** : les variables sont associées.
+
+::: {.callout-tip collapse="true"}
+## En simple
+Le chi-carré, c'est l'**écart entre ce qu'on observe et ce qu'on s'attendrait à voir si les deux variables n'étaient pas liées**. Si l'écart est trop grand pour être dû au hasard, on conclut qu'il y a un lien.
+:::
+
+#### Coefficients d'association (force du lien)
+
+| Coefficient | Quand |
+|---|---|
+| **Phi (φ)** | Tableau 2 × 2 |
+| **V de Cramér** | Tableaux plus grands |
+| **Tau de Kendall, Spearman** | Variables ordinales |
+
+### Analyse de moyenne
+
+#### Comparaison de 2 groupes
+
+Calcul de la **moyenne** dans chaque groupe + test de la différence avec un **t-test** (p-value).
+
+**Exemple** : confiance sociale par sexe
+
+| Sexe | N | Moyenne | Écart-type |
+|---|---|---|---|
+| Homme | 746 | 5.819 | 2.012 |
+| Femme | 747 | 5.548 | 2.129 |
+| **Total** | **1493** | **5.638** | **2.075** |
+| **Différence** |  | **0.270** | t = 2.519, p = 0.006 |
+
+p < 0.05 → la différence est **statistiquement significative**.
+
+#### Comparaison de 3+ groupes : ANOVA
+
+L'**ANOVA** (Analyse de Variance) décompose la variance totale en :
+
+- **Variance intra-groupes** : dispersion à l'intérieur de chaque groupe ;
+- **Variance inter-groupes** : différences entre groupes.
+
+Le **F-test** mesure si la variance inter > variance intra. Si oui (p faible), au moins un groupe diffère.
+
+**Exemple** : confiance sociale par statut matrimonial → F = 39.88, p < 0.001 → on rejette H0. **Mais l'ANOVA ne dit pas QUELS groupes diffèrent** → **comparaisons par paires** (pairwise / Tukey HSD).
+
+### La corrélation
+
+#### Définition
+
+Rapport de **simultanéité** entre deux variables : varient-elles ensemble ?
+
+#### Coefficient r
+
+- $r = -1$ : corrélation parfaite **négative**.
+- $r = 0$ : pas de corrélation linéaire (= H0).
+- $r = +1$ : corrélation parfaite **positive**.
+
+#### Pearson vs. Spearman
+
+| Coefficient | Pour quoi ? | Mesure |
+|---|---|---|
+| **Pearson** | 2 variables **quantitatives** | Relation **linéaire** sur les **valeurs** |
+| **Spearman** | 2 variables **ordinales** (ou non-normales) | Relation **monotone** sur les **rangs** |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- **Pearson** mesure si une droite traverse bien le nuage de points.
+- **Spearman** mesure juste si quand l'une monte, l'autre monte aussi (pas forcément linéairement).
+:::
+
+#### Significativité
+
+Le coefficient seul ne dit rien sur la significativité → il faut une **p-value** pour conclure (vu en S7).
+
+::: {.callout-warning}
+## Corrélation ≠ causalité
+Voir [tylervigen.com/spurious-correlations](https://tylervigen.com/spurious-correlations) pour des exemples absurdes. Deux variables peuvent varier ensemble :
+- Par **causalité directe** (X → Y) ;
+- Par **causalité inverse** (Y → X) ;
+- Par une **variable tierce** Z qui influence les deux ;
+- Par **pur hasard** (corrélations « fallacieuses »).
+
+Une corrélation ne permet jamais à elle seule de conclure à un lien de cause à effet.
+:::
+
+#### Le diagramme de dispersion (scatterplot)
+
+Visualisation standard d'une corrélation : un point par observation, X en abscisse, Y en ordonnée. Permet de voir la forme du lien (linéaire ? courbe ?), la force, et les outliers. Le site [guessthecorrelation.com](http://www.guessthecorrelation.com) entraîne à estimer r à l'œil.
+
+## Bloc C — Analyses trivariées / multivariées
+
+### Pourquoi aller au-delà du bivarié ?
+
+Le bivarié **ne contrôle pas** les causes concurrentes. On veut tester si la relation X → Y :
+
+| Question | Concept |
+|---|---|
+| Existe-t-elle vraiment ou est-elle **fallacieuse** ? | Test d'une **variable tierce Z** confondante |
+| S'exerce-t-elle **directement** ou via une autre variable ? | **Médiation** |
+| Varie-t-elle selon la valeur d'une autre variable ? | **Interaction** (voir S7) |
+
+### Exemple : tableau croisé contrôlé par l'âge
+
+Vote pour initiative X × Usage RTS, **en contrôlant pour l'âge** (< 60 vs. ≥ 60).
+
+| | Âge < 60 |  | Âge ≥ 60 |  |
+|---|---|---|---|---|
+| **Vote / Usage RTS** | Oui (N=144) | Non (N=133) | Oui (N=141) | Non (N=82) |
+| En faveur (%) | 40.3 | 36.1 | 56.7 | 19.5 |
+| Indifférent (%) | 38.2 | 33.8 | 19.9 | 26.8 |
+| Opposé (%) | 21.5 | 30.1 | 23.4 | 53.7 |
+
+Le lien Usage RTS → Vote est **plus fort chez les ≥ 60** que chez les < 60 → preuve d'une **interaction** : l'effet de l'usage RTS dépend de l'âge.
+
+::: {.callout-important}
+## Multivariée = au moins 3 variables
+Avec 3+ variables et une question explicative (X → Y avec contrôles), on passe en général à la **régression** (S7-S8). Le tableau croisé contrôlé est une première étape pédagogique.
+:::
+
+::: {.callout-note}
+## Récapitulatif Ch.6
+- **Univariée** = décrire une variable seule (distribution, tendance centrale, dispersion).
+- Distribution : tableau de fréquences (quali), histogramme (quanti), diag. en bâtons (quali).
+- Tendance centrale : **mode** (tous niveaux), **médiane** (ordinal+), **moyenne** (quanti).
+- Dispersion : **étendue, IQR, écart-type** (quanti uniquement).
+- Indicateurs de forme : **kurtosis** (3 si normale), **skewness** (0 si symétrique).
+- **Bivariée** : choix de la méthode = matrice nominal/ordinal/quanti.
+- Tableau croisé : valeurs observées vs. théoriques → **χ²** et coefficients (φ, V de Cramér).
+- Analyse de moyenne : **t-test** (2 groupes), **ANOVA** + Tukey (3+ groupes).
+- Corrélation : **Pearson** (linéaire, quanti) vs. **Spearman** (monotone, ordinal/rangs). r ∈ [−1, +1].
+- Corrélation **n'est pas** causalité.
+- **Multivariée** = contrôler les variables tierces (vu en régression, S7-S8).
+:::

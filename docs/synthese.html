@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Synthèse – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./synthese.html">Outils de révision</a></li><li class="breadcrumb-item"><a href="./synthese.html">Synthèse</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#le-pipeline-de-recherche-en-7-étapes" id="toc-le-pipeline-de-recherche-en-7-étapes" class="nav-link active" data-scroll-target="#le-pipeline-de-recherche-en-7-étapes"><span class="header-section-number">1</span> 1. Le pipeline de recherche en 7 étapes</a></li>
+  <li><a href="#types-de-questions-de-recherche" id="toc-types-de-questions-de-recherche" class="nav-link" data-scroll-target="#types-de-questions-de-recherche"><span class="header-section-number">2</span> 2. Types de questions de recherche</a>
+  <ul class="collapse">
+  <li><a href="#formule-magique-dune-qr-inférentielle" id="toc-formule-magique-dune-qr-inférentielle" class="nav-link" data-scroll-target="#formule-magique-dune-qr-inférentielle"><span class="header-section-number">2.1</span> Formule magique d’une QR inférentielle</a></li>
+  </ul></li>
+  <li><a href="#sources-de-données-tableau-comparatif" id="toc-sources-de-données-tableau-comparatif" class="nav-link" data-scroll-target="#sources-de-données-tableau-comparatif"><span class="header-section-number">3</span> 3. Sources de données : tableau comparatif</a></li>
+  <li><a href="#niveaux-de-mesure-et-statistiques-applicables" id="toc-niveaux-de-mesure-et-statistiques-applicables" class="nav-link" data-scroll-target="#niveaux-de-mesure-et-statistiques-applicables"><span class="header-section-number">4</span> 4. Niveaux de mesure et statistiques applicables</a>
+  <ul class="collapse">
+  <li><a href="#distribution" id="toc-distribution" class="nav-link" data-scroll-target="#distribution"><span class="header-section-number">4.1</span> Distribution</a></li>
+  <li><a href="#tendance-centrale" id="toc-tendance-centrale" class="nav-link" data-scroll-target="#tendance-centrale"><span class="header-section-number">4.2</span> Tendance centrale</a></li>
+  <li><a href="#dispersion" id="toc-dispersion" class="nav-link" data-scroll-target="#dispersion"><span class="header-section-number">4.3</span> Dispersion</a></li>
+  </ul></li>
+  <li><a href="#quel-test-pour-quel-cas" id="toc-quel-test-pour-quel-cas" class="nav-link" data-scroll-target="#quel-test-pour-quel-cas"><span class="header-section-number">5</span> 5. Quel test pour quel cas ?</a>
+  <ul class="collapse">
+  <li><a href="#analyse-bivariée-selon-les-niveaux-de-mesure" id="toc-analyse-bivariée-selon-les-niveaux-de-mesure" class="nav-link" data-scroll-target="#analyse-bivariée-selon-les-niveaux-de-mesure"><span class="header-section-number">5.1</span> Analyse bivariée selon les niveaux de mesure</a></li>
+  <li><a href="#analyse-multivariée-choix-de-la-régression" id="toc-analyse-multivariée-choix-de-la-régression" class="nav-link" data-scroll-target="#analyse-multivariée-choix-de-la-régression"><span class="header-section-number">5.2</span> Analyse multivariée : choix de la régression</a></li>
+  <li><a href="#flowchart-de-décision-pour-le-test" id="toc-flowchart-de-décision-pour-le-test" class="nav-link" data-scroll-target="#flowchart-de-décision-pour-le-test"><span class="header-section-number">5.3</span> Flowchart de décision pour le test</a></li>
+  </ul></li>
+  <li><a href="#critères-de-qualité" id="toc-critères-de-qualité" class="nav-link" data-scroll-target="#critères-de-qualité"><span class="header-section-number">6</span> 6. Critères de qualité</a></li>
+  <li><a href="#les-4-questions-pour-évaluer-la-causalité" id="toc-les-4-questions-pour-évaluer-la-causalité" class="nav-link" data-scroll-target="#les-4-questions-pour-évaluer-la-causalité"><span class="header-section-number">7</span> 7. Les 4 questions pour évaluer la causalité</a></li>
+  <li><a href="#sources-derreur-dans-une-enquête-et-solutions" id="toc-sources-derreur-dans-une-enquête-et-solutions" class="nav-link" data-scroll-target="#sources-derreur-dans-une-enquête-et-solutions"><span class="header-section-number">8</span> 8. Sources d’erreur dans une enquête (et solutions)</a></li>
+  <li><a href="#lire-un-tableau-de-régression-en-4-étapes" id="toc-lire-un-tableau-de-régression-en-4-étapes" class="nav-link" data-scroll-target="#lire-un-tableau-de-régression-en-4-étapes"><span class="header-section-number">9</span> 9. Lire un tableau de régression en 4 étapes</a></li>
+  <li><a href="#workflow-examen" id="toc-workflow-examen" class="nav-link" data-scroll-target="#workflow-examen"><span class="header-section-number">10</span> 10. Workflow examen</a>
+  <ul class="collapse">
+  <li><a href="#face-à-un-tableau-de-régression-à-interpréter" id="toc-face-à-un-tableau-de-régression-à-interpréter" class="nav-link" data-scroll-target="#face-à-un-tableau-de-régression-à-interpréter"><span class="header-section-number">10.4</span> Face à un tableau de régression à interpréter</a></li>
+  <li><a href="#face-à-une-question-sur-léthique-ou-la-qualité" id="toc-face-à-une-question-sur-léthique-ou-la-qualité" class="nav-link" data-scroll-target="#face-à-une-question-sur-léthique-ou-la-qualité"><span class="header-section-number">10.5</span> Face à une question sur l’éthique ou la qualité</a></li>
+  <li><a href="#face-à-une-question-sur-la-causalité" id="toc-face-à-une-question-sur-la-causalité" class="nav-link" data-scroll-target="#face-à-une-question-sur-la-causalité"><span class="header-section-number">10.6</span> Face à une question sur la causalité</a></li>
+  </ul></li>
+  <li><a href="#vocabulaire-dexamen-à-connaître-par-cœur" id="toc-vocabulaire-dexamen-à-connaître-par-cœur" class="nav-link" data-scroll-target="#vocabulaire-dexamen-à-connaître-par-cœur"><span class="header-section-number">11</span> 11. Vocabulaire d’examen à connaître par cœur</a></li>
+  <li><a href="#synthèse-en-une-phrase-par-séance" id="toc-synthèse-en-une-phrase-par-séance" class="nav-link" data-scroll-target="#synthèse-en-une-phrase-par-séance"><span class="header-section-number">12</span> 12. Synthèse en une phrase par séance</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./synthese.html">Outils de révision</a></li><li class="breadcrumb-item"><a href="./synthese.html">Synthèse</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Synthèse</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ce que cette page apporte
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Toute la matière du cours condensée en <strong>tableaux</strong> et <strong>schémas</strong> : pipeline, types de questions, sources, niveaux de mesure, choix de test, critères de qualité, workflow d’examen. À utiliser pour les <strong>dernières heures de révision</strong>.</p>
+</div>
+</div>
+<section id="le-pipeline-de-recherche-en-7-étapes" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="le-pipeline-de-recherche-en-7-étapes"><span class="header-section-number">1</span> 1. Le pipeline de recherche en 7 étapes</h2>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│  1. IDENTIFICATION DE L'OBJET                                   │
+│     "Sur quoi je travaille ?" (intérêt, faisabilité)            │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  2. PROBLÉMATISATION &amp; QUESTION DE RECHERCHE                    │
+│     "Que sait-on déjà ? Que veut-on savoir en plus ?"           │
+│     -&gt; QR claire, faisable, pertinente                          │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  2 bis. CADRE THÉORIQUE &amp; HYPOTHÈSES                            │
+│     Concepts, dimensions, mécanismes causaux                    │
+│     -&gt; H1, H2... (vraisemblables, précises, falsifiables)       │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  3. OPÉRATIONNALISATION                                         │
+│     Concept -&gt; Dimensions -&gt; Indicateurs -&gt; Variables           │
+│     -&gt; Choix des méthodes d'analyse                             │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  4. COLLECTE DES DONNÉES                                        │
+│     Enquête / Contenu / Données existantes                      │
+│     Échantillonnage, mesures, questionnaires                    │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  5. ANALYSE                                                     │
+│     Préparation -&gt; Univariée -&gt; Bi/Multivariée -&gt; Tests         │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  6. DISSÉMINATION                                               │
+│     Tableaux, graphiques, transparence, incertitude             │
+└─────────────────────────────────────────────────────────────────┘</code></pre>
+</section>
+<section id="types-de-questions-de-recherche" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="types-de-questions-de-recherche"><span class="header-section-number">2</span> 2. Types de questions de recherche</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Logique</th>
+<th>Méthode typique</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Descriptive</strong></td>
+<td>Décrire un seul phénomène ou son évolution</td>
+<td>Univariée, bivariée (description)</td>
+<td>« Comment évolue la consommation de presse écrite en Suisse ? »</td>
+</tr>
+<tr class="even">
+<td><strong>Inférentielle (causale)</strong></td>
+<td>Influence de X sur Y</td>
+<td>Bi- et multivariée, régression</td>
+<td>« Les usages d’Instagram influencent-ils la dépression ? »</td>
+</tr>
+<tr class="odd">
+<td><strong>Exploratoire</strong></td>
+<td>Comprendre un domaine peu théorisé</td>
+<td>Mixed methods (quali d’abord)</td>
+<td>« Quels motifs poussent au binge-watching ? »</td>
+</tr>
+</tbody>
+</table>
+<section id="formule-magique-dune-qr-inférentielle" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="formule-magique-dune-qr-inférentielle"><span class="header-section-number">2.1</span> Formule magique d’une QR inférentielle</h3>
+<blockquote class="blockquote">
+<p><em>Dans quelle mesure est-ce que le phénomène X influence le phénomène Y ?</em></p>
+</blockquote>
+<p>Trois sous-questions : 1. Y a-t-il <strong>vraiment</strong> une influence ? 2. <strong>Quelle est sa force</strong> ? 3. Quel est son <strong>sens</strong> (positif/négatif) ?</p>
+</section>
+</section>
+<section id="sources-de-données-tableau-comparatif" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sources-de-données-tableau-comparatif"><span class="header-section-number">3</span> 3. Sources de données : tableau comparatif</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Type</th>
+<th>Avantages</th>
+<th>Inconvénients</th>
+<th>Échantillonnage typique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Enquête par sondage</strong></td>
+<td>Primaires, individuelles</td>
+<td>Conçue pour ta QR ; contrôle sur les questions</td>
+<td>Cher ; non-réponses ; désirabilité</td>
+<td>Probabiliste (aléatoire, stratifié, grappes) ou non-probabiliste</td>
+</tr>
+<tr class="even">
+<td><strong>Analyse de contenu</strong></td>
+<td>Primaires, individuelles</td>
+<td>Accès à des données non déclarées (presse, RS)</td>
+<td>Codage long ; fiabilité à mesurer</td>
+<td>Probabiliste sur le corpus</td>
+</tr>
+<tr class="odd">
+<td><strong>Données documentaires</strong></td>
+<td>Primaires/secondaires</td>
+<td>Source officielle, archivable</td>
+<td>Format brut ; choix critiques</td>
+<td>Par date, par mots-clés</td>
+</tr>
+<tr class="even">
+<td><strong>Web scraping (API / parsing)</strong></td>
+<td>Primaires, individuelles</td>
+<td>Volume, rapidité, faible coût</td>
+<td>Restrictions techniques ; éthique</td>
+<td>Selon critères de la plateforme</td>
+</tr>
+<tr class="odd">
+<td><strong>Données secondaires</strong> (FORS, OFS, ESS)</td>
+<td>Secondaires</td>
+<td>Échantillons grands et validés</td>
+<td>Pas conçues pour ta QR ; opérationnalisation imposée</td>
+<td>Déjà fait par les producteur·ice·s</td>
+</tr>
+<tr class="even">
+<td><strong>Open Data</strong></td>
+<td>Secondaires, souvent agrégées</td>
+<td>Gratuit, public, large</td>
+<td>Niveau agrégé → risque d’erreur écologique</td>
+<td>Pas d’échantillonnage à faire</td>
+</tr>
+<tr class="odd">
+<td><strong>Application</strong></td>
+<td>Primaires</td>
+<td>Mesures longitudinales, capteurs</td>
+<td>Coût de développement</td>
+<td>Volontaires (souvent)</td>
+</tr>
+<tr class="even">
+<td><strong>Don de données</strong></td>
+<td>Primaires</td>
+<td>Données personnelles riches</td>
+<td>Échantillon auto-sélectionné</td>
+<td>Volontaires</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="niveaux-de-mesure-et-statistiques-applicables" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="niveaux-de-mesure-et-statistiques-applicables"><span class="header-section-number">4</span> 4. Niveaux de mesure et statistiques applicables</h2>
+<section id="distribution" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="distribution"><span class="header-section-number">4.1</span> Distribution</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Tableau de fréquences</th>
+<th>Graphique</th>
+<th>Indicateurs (kurtosis, skewness)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>OK</td>
+<td>Diagramme en bâtons</td>
+<td>Incohérent</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>OK</td>
+<td>Diagramme en bâtons</td>
+<td>Incohérent (sauf si traité comme quanti)</td>
+</tr>
+<tr class="odd">
+<td>Continu</td>
+<td>Incohérent</td>
+<td><strong>Histogramme</strong></td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<td>Discret</td>
+<td>Incohérent (sauf petite étendue)</td>
+<td>Histogramme</td>
+<td>OK</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tendance-centrale" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="tendance-centrale"><span class="header-section-number">4.2</span> Tendance centrale</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Mode</th>
+<th>Médiane</th>
+<th>Moyenne</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>OK</td>
+<td>Incohérent</td>
+<td>Incohérent</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>OK</td>
+<td>OK</td>
+<td>Incohérent (sauf si traité comme quanti)</td>
+</tr>
+<tr class="odd">
+<td>Continu</td>
+<td>OK</td>
+<td>OK</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<td>Discret</td>
+<td>OK</td>
+<td>OK</td>
+<td>Incohérent (mais utilisé)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="dispersion" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="dispersion"><span class="header-section-number">4.3</span> Dispersion</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Niveau</th>
+<th>Étendue</th>
+<th>IQR</th>
+<th>Écart-type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>Incohérent</td>
+<td>Incohérent</td>
+<td>Incohérent</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>Incohérent (sauf si quanti)</td>
+<td>Incohérent (sauf si quanti)</td>
+<td>Incohérent (sauf si quanti)</td>
+</tr>
+<tr class="odd">
+<td>Continu</td>
+<td>OK</td>
+<td>OK</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<td>Discret</td>
+<td>OK</td>
+<td>OK</td>
+<td>Incohérent (mais utilisé)</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="quel-test-pour-quel-cas" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="quel-test-pour-quel-cas"><span class="header-section-number">5</span> 5. Quel test pour quel cas ?</h2>
+<section id="analyse-bivariée-selon-les-niveaux-de-mesure" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="analyse-bivariée-selon-les-niveaux-de-mesure"><span class="header-section-number">5.1</span> Analyse bivariée selon les niveaux de mesure</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Variable nominale</th>
+<th>Variable ordinale</th>
+<th>Variable quantitative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Variable nominale</strong></td>
+<td><strong>Tableau croisé</strong> + χ² + φ/V de Cramér</td>
+<td><strong>Tableau croisé</strong> + χ²</td>
+<td><strong>Analyse de moyenne</strong> : t-test (2 grp) ou ANOVA (3+ grp)</td>
+</tr>
+<tr class="even">
+<td><strong>Variable ordinale</strong></td>
+<td>Tableau croisé</td>
+<td><strong>Corrélation de Spearman</strong></td>
+<td>Analyse de moyenne</td>
+</tr>
+<tr class="odd">
+<td><strong>Variable quantitative</strong></td>
+<td>Analyse de moyenne</td>
+<td>Analyse de moyenne</td>
+<td><strong>Corrélation de Pearson</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="analyse-multivariée-choix-de-la-régression" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="analyse-multivariée-choix-de-la-régression"><span class="header-section-number">5.2</span> Analyse multivariée : choix de la régression</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>VD (Y)</th>
+<th>Type de régression</th>
+<th>Particularité</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Quantitative</strong></td>
+<td><strong>Linéaire</strong></td>
+<td>OLS, coefficients en unités de Y, R²</td>
+</tr>
+<tr class="even">
+<td><strong>Dichotomique (0/1)</strong></td>
+<td><strong>Logistique binaire / binomiale</strong></td>
+<td>Logit ou probit, odds ratios</td>
+</tr>
+<tr class="odd">
+<td><strong>Nominale 3+ catégories</strong></td>
+<td><strong>Multinomiale</strong></td>
+<td>Logits multiples par rapport à une référence</td>
+</tr>
+<tr class="even">
+<td><strong>Ordinale</strong></td>
+<td><strong>Ordinale</strong> ou linéaire si traitée comme quanti</td>
+<td>Conserve l’ordre</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="flowchart-de-décision-pour-le-test" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="flowchart-de-décision-pour-le-test"><span class="header-section-number">5.3</span> Flowchart de décision pour le test</h3>
+<pre><code>Combien de variables ?
+│
+├── 1 variable : ANALYSE UNIVARIÉE
+│   │
+│   └── Décrire distribution / tendance centrale / dispersion
+│       Quel niveau de mesure ? -&gt; table ci-dessus
+│
+├── 2 variables : ANALYSE BIVARIÉE
+│   │
+│   ├── 2 nominales        -&gt; Tableau croisé + chi-carré
+│   ├── 1 nominale + 1 quanti -&gt; t-test (2 grp) ou ANOVA (3+ grp)
+│   ├── 2 ordinales       -&gt; Corrélation de Spearman
+│   └── 2 quantitatives   -&gt; Corrélation de Pearson + scatterplot
+│
+└── 3+ variables : MULTIVARIÉE / RÉGRESSION
+    │
+    ├── Y quanti        -&gt; Régression linéaire (OLS)
+    ├── Y dichotomique  -&gt; Régression logistique (logit / probit)
+    ├── Y nominale 3+  -&gt; Multinomiale
+    └── Y ordinale     -&gt; Ordinale (ou linéaire si traitée comme quanti)</code></pre>
+</section>
+</section>
+<section id="critères-de-qualité" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="critères-de-qualité"><span class="header-section-number">6</span> 6. Critères de qualité</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Critère</th>
+<th>Définition</th>
+<th>Comment l’évaluer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fiabilité (reliability)</strong></td>
+<td>Mesure cohérente quand on la répète</td>
+<td>Test intra-codeur, inter-codeur (alpha de Krippendorff, kappa de Cohen ≥ 0.7) ; alpha de Cronbach pour les échelles ≥ 0.7</td>
+</tr>
+<tr class="even">
+<td><strong>Validité interne</strong></td>
+<td>Mesure ce qu’elle prétend mesurer</td>
+<td>Diversité des sources, tester explications alternatives, mesures établies</td>
+</tr>
+<tr class="odd">
+<td><strong>Validité externe</strong></td>
+<td>Généralisable au-delà de l’échantillon</td>
+<td>Comparer avec d’autres données, autres contextes</td>
+</tr>
+<tr class="even">
+<td><strong>Reproductibilité</strong></td>
+<td>Mêmes données + même code = mêmes résultats</td>
+<td>Code annoté, données partagées, document méta</td>
+</tr>
+<tr class="odd">
+<td><strong>Réplicabilité</strong></td>
+<td>Refaire l’étude avec nouvelles données = résultats similaires</td>
+<td>Protocole publié, design transparent</td>
+</tr>
+<tr class="even">
+<td><strong>Robustesse</strong></td>
+<td>Résultats tiennent sous méthodes alternatives</td>
+<td>Analyses de sensibilité, modèles emboîtés</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="les-4-questions-pour-évaluer-la-causalité" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="les-4-questions-pour-évaluer-la-causalité"><span class="header-section-number">7</span> 7. Les 4 questions pour évaluer la causalité</h2>
+<ol type="1">
+<li><strong>Sens de la relation</strong> : X cause-t-il Y ou Y cause-t-il X ? (causalité inversée)</li>
+<li><strong>Causes concurrentes</strong> : existe-t-il une variable Z qui influence à la fois X et Y ? (confondante)</li>
+<li><strong>Sélection de l’échantillon</strong> : la sélection est-elle liée à la VD ? (biais de sélection)</li>
+<li><strong>Niveau d’analyse</strong> : individuel vs.&nbsp;agrégé ? (erreur écologique)</li>
+</ol>
+</section>
+<section id="sources-derreur-dans-une-enquête-et-solutions" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="sources-derreur-dans-une-enquête-et-solutions"><span class="header-section-number">8</span> 8. Sources d’erreur dans une enquête (et solutions)</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Erreur</th>
+<th>Cause</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>D’échantillonnage</strong></td>
+<td>Écart paramètre observé vs.&nbsp;réel</td>
+<td>Taille ↑, pondération</td>
+</tr>
+<tr class="even">
+<td><strong>De validité (spécification)</strong></td>
+<td>Question ne mesure pas le concept</td>
+<td>Améliorer opérationnalisation</td>
+</tr>
+<tr class="odd">
+<td><strong>Non-réponse</strong></td>
+<td>Refus de participer ou de répondre</td>
+<td>Raccourcir, éviter questions sensibles</td>
+</tr>
+<tr class="even">
+<td><strong>Désirabilité sociale</strong></td>
+<td>Répondre socialement acceptable</td>
+<td>Enquête anonyme, formulation neutre</td>
+</tr>
+<tr class="odd">
+<td><strong>Centriste</strong></td>
+<td>Cocher le milieu</td>
+<td>Échelle paire, inversion</td>
+</tr>
+<tr class="even">
+<td><strong>Acquiescence</strong></td>
+<td>Dire oui à tout</td>
+<td>Questions à sens inverse</td>
+</tr>
+<tr class="odd">
+<td><strong>Effet d’ordre</strong></td>
+<td>Une question influence la suivante</td>
+<td>Ordre logique réfléchi</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lire-un-tableau-de-régression-en-4-étapes" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="lire-un-tableau-de-régression-en-4-étapes"><span class="header-section-number">9</span> 9. Lire un tableau de régression en 4 étapes</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>Quel <strong>type</strong> de régression ? (linéaire / logistique / multinomiale) → présence d’OR = logistique</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td><strong>Qualité globale</strong> : R² (linéaire) ou pseudo-R² (logistique) ; N</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>Pour <strong>chaque coefficient</strong> : signe → magnitude → significativité (p, étoiles) → catégorie de référence (dummies)</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td><strong>Conclusion</strong> : hypothèse rejetée, non-rejetée, partiellement validée</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="workflow-examen" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="workflow-examen"><span class="header-section-number">10</span> 10. Workflow examen</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Face à une question d’examen, je fais quoi ?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<section id="question-qcm-5-pts" class="level3" data-number="10.1">
+<h3 data-number="10.1" class="anchored" data-anchor-id="question-qcm-5-pts"><span class="header-section-number">10.1</span> Question QCM (5 pts)</h3>
+<ol type="1">
+<li><strong>Lis</strong> très attentivement la consigne (1 ou plusieurs réponses ?).</li>
+<li><strong>Élimine</strong> les options clairement fausses.</li>
+<li><strong>Ne devine pas</strong> si points négatifs sur multi-réponses.</li>
+</ol>
+</section>
+<section id="question-courte-1-pt-2-3-phrases" class="level3" data-number="10.2">
+<h3 data-number="10.2" class="anchored" data-anchor-id="question-courte-1-pt-2-3-phrases"><span class="header-section-number">10.2</span> Question courte (1 pt, 2-3 phrases)</h3>
+<ol type="1">
+<li><strong>Identifie</strong> le concept clé demandé.</li>
+<li><strong>Définis-le</strong> précisément (en 1 phrase).</li>
+<li><strong>Donne</strong> un exemple ou une distinction utile.</li>
+<li><strong>Pas</strong> de remplissage : dense et précis.</li>
+</ol>
+</section>
+<section id="question-de-réflexion-2.5-pts-2-paragraphes" class="level3" data-number="10.3">
+<h3 data-number="10.3" class="anchored" data-anchor-id="question-de-réflexion-2.5-pts-2-paragraphes"><span class="header-section-number">10.3</span> Question de réflexion (2.5 pts, 2 paragraphes)</h3>
+<ol type="1">
+<li><strong>Pose</strong> les enjeux en quelques mots.</li>
+<li><strong>Mobilise</strong> 2-3 concepts du cours.</li>
+<li><strong>Prends position</strong> (rejet, validation, nuance).</li>
+<li><strong>Conclus</strong> avec une ouverture critique.</li>
+</ol>
+</section>
+</div>
+</div>
+<section id="face-à-un-tableau-de-régression-à-interpréter" class="level3" data-number="10.4">
+<h3 data-number="10.4" class="anchored" data-anchor-id="face-à-un-tableau-de-régression-à-interpréter"><span class="header-section-number">10.4</span> Face à un tableau de régression à interpréter</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Réflexe</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. <strong>Quelle est la VD ?</strong></td>
+<td>Notée en haut du tableau</td>
+</tr>
+<tr class="even">
+<td>2. <strong>Quel type de régression ?</strong></td>
+<td>Cherche : odds ratios → logistique ; coefficients seuls → linéaire</td>
+</tr>
+<tr class="odd">
+<td>3. <strong>Qualité globale ?</strong></td>
+<td>R² ou pseudo-R² + N + F-test</td>
+</tr>
+<tr class="even">
+<td>4. <strong>Pour 2-3 prédicteurs significatifs</strong></td>
+<td>Signe + magnitude + étoiles + interprétation en contexte</td>
+</tr>
+<tr class="odd">
+<td>5. <strong>Conclusion sur l’hypothèse</strong></td>
+<td>Validée / rejetée / nuancée</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="face-à-une-question-sur-léthique-ou-la-qualité" class="level3" data-number="10.5">
+<h3 data-number="10.5" class="anchored" data-anchor-id="face-à-une-question-sur-léthique-ou-la-qualité"><span class="header-section-number">10.5</span> Face à une question sur l’éthique ou la qualité</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Réflexe</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Identifier <strong>quelle qualité</strong> est en jeu</td>
+<td>Validité interne ? Externe ? Fiabilité ? Reproductibilité ?</td>
+</tr>
+<tr class="even">
+<td>Mobiliser <strong>un critère du cours</strong></td>
+<td>4 questions causalité, biais types, alpha de Cronbach…</td>
+</tr>
+<tr class="odd">
+<td>Donner un <strong>contre-exemple concret</strong></td>
+<td>Pour illustrer</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="face-à-une-question-sur-la-causalité" class="level3" data-number="10.6">
+<h3 data-number="10.6" class="anchored" data-anchor-id="face-à-une-question-sur-la-causalité"><span class="header-section-number">10.6</span> Face à une question sur la causalité</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Réflexe</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Identifier</strong> si on prétend à la causalité</td>
+<td>« X cause Y » dans la question ?</td>
+</tr>
+<tr class="even">
+<td><strong>Rappeler</strong> : corrélation ≠ causalité</td>
+<td>C’est LA phrase à connaître</td>
+</tr>
+<tr class="odd">
+<td><strong>Lister</strong> les 4 questions</td>
+<td>Sens, causes concurrentes, sélection, niveau d’analyse</td>
+</tr>
+<tr class="even">
+<td><strong>Conclure</strong></td>
+<td>Quelle inférence est licite, laquelle ne l’est pas</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="vocabulaire-dexamen-à-connaître-par-cœur" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="vocabulaire-dexamen-à-connaître-par-cœur"><span class="header-section-number">11</span> 11. Vocabulaire d’examen à connaître par cœur</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Définition rapide</th>
+<th>Slogan</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hypothèse falsifiable</strong></td>
+<td>Peut être réfutée par des données</td>
+<td>« Si pas testable, pas scientifique »</td>
+</tr>
+<tr class="even">
+<td><strong>P-value</strong></td>
+<td>Proba d’observer ça si H0 vraie</td>
+<td>« &lt; 0.05 → rejet de H0 »</td>
+</tr>
+<tr class="odd">
+<td><strong>Niveau de mesure</strong></td>
+<td>Type d’info codée (nom/ord/cont/disc)</td>
+<td>« Détermine TOUT le reste »</td>
+</tr>
+<tr class="even">
+<td><strong>Erreur écologique</strong></td>
+<td>Inférence individu ← agrégé</td>
+<td>« Pays riche ≠ riche du pays »</td>
+</tr>
+<tr class="odd">
+<td><strong>Désirabilité sociale</strong></td>
+<td>Répondre socialement acceptable</td>
+<td>« Sport ? Oui, beaucoup ! (en vrai non) »</td>
+</tr>
+<tr class="even">
+<td><strong>Causalité ≠ corrélation</strong></td>
+<td>Lien ≠ causalité</td>
+<td>« Glaces et noyades : c’est l’été ! »</td>
+</tr>
+<tr class="odd">
+<td><strong>Validité ≠ fiabilité</strong></td>
+<td>Bonne mesure ≠ mesure stable</td>
+<td>« Précis ≠ juste »</td>
+</tr>
+<tr class="even">
+<td><strong>Référence (dummy)</strong></td>
+<td>Catégorie omise dans les régressions</td>
+<td>« Toujours par rapport à la réf »</td>
+</tr>
+<tr class="odd">
+<td><strong>Odds ratio</strong></td>
+<td>Facteur multiplicatif sur les chances</td>
+<td>« OR = 2 : x2 ; OR = 0.5 : ÷2 »</td>
+</tr>
+<tr class="even">
+<td><strong>R² ajusté</strong></td>
+<td>R² pénalisé pour comparer modèles</td>
+<td>« R² brut gonfle toujours »</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="synthèse-en-une-phrase-par-séance" class="level2" data-number="12">
+<h2 data-number="12" class="anchored" data-anchor-id="synthèse-en-une-phrase-par-séance"><span class="header-section-number">12</span> 12. Synthèse en une phrase par séance</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Séance</th>
+<th>En une phrase</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>S1</strong></td>
+<td>Le cours suit un <strong>pipeline en 7 étapes</strong> ; QR claire/faisable/pertinente ; hypothèse falsifiable.</td>
+</tr>
+<tr class="even">
+<td><strong>S2</strong></td>
+<td><strong>Niveau de mesure</strong> (nominal/ordinal/continu/discret) détermine toutes les analyses ultérieures.</td>
+</tr>
+<tr class="odd">
+<td><strong>S3</strong></td>
+<td>Sources multiples (enquête, contenu, data) ; échantillonnage probabiliste vs.&nbsp;non-probabiliste ; questions objectives, fiables, valides.</td>
+</tr>
+<tr class="even">
+<td><strong>S4</strong></td>
+<td>Coder, <strong>codebook</strong>, recoder sans écraser, échelles (alpha de Cronbach ≥ 0.7), décrire l’échantillon.</td>
+</tr>
+<tr class="odd">
+<td><strong>S5</strong></td>
+<td>Analyse de contenu = unités + codebook + codage systématique + qualité (fiabilité Krippendorff ≥ 0.7 + validité).</td>
+</tr>
+<tr class="even">
+<td><strong>S6</strong></td>
+<td>Univariée (distribution/tendance/dispersion), bivariée (tableau croisé, moyennes, corrélation), multivariée (contrôle).</td>
+</tr>
+<tr class="odd">
+<td><strong>S7</strong></td>
+<td><strong>Régression linéaire</strong> (Y quanti) vs.&nbsp;<strong>logistique</strong> (Y dichotomique). Lire β, p, R², OR, interactions.</td>
+</tr>
+<tr class="even">
+<td><strong>S8</strong></td>
+<td>Lire des tableaux réels : signe + magnitude + significativité + R² + N + conclusion.</td>
+</tr>
+<tr class="odd">
+<td><strong>S9</strong></td>
+<td>Qualité = reproductibilité + validité + causalité maîtrisée + incertitude transparente + objectivation réfléchie.</td>
+</tr>
+<tr class="even">
+<td><strong>S10</strong></td>
+<td>Mixed methods ; examen 60 min / 15 pts / 3 parties.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

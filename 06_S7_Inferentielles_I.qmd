@@ -1,0 +1,323 @@
+---
+title: "S7 - Analyses inférentielles I"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Une **régression** modélise l'effet de **plusieurs variables explicatives** sur une variable dépendante. **Linéaire** si Y est quanti, **logistique** si Y est dichotomique. Tu interprètes les **coefficients**, le **R²** (ou pseudo-R²), et les **p-values**.
+:::
+
+Le **point à retenir** : *les régressions servent à expliquer et prédire des phénomènes en fonction de multiples facteurs à la fois. La valeur p nous livre des informations quant à la possibilité d'inférence des résultats sur la population entière.*
+
+## Pourquoi la régression ?
+
+Deux objectifs jumeaux :
+
+| Objectif | Question |
+|---|---|
+| **Expliquer** | Comment Y se modifie-t-il à partir de X ? Quelle est l'influence de chaque facteur ? |
+| **Prédire** | Sur la base du modèle, quelle valeur de Y attendre pour un nouveau cas ? |
+
+C'est l'analyse multivariée **la plus utilisée** en sciences sociales.
+
+## Quel type de régression pour quelle variable dépendante ?
+
+| Y (variable dépendante) | Nombre de catégories | Type de régression |
+|---|---|---|
+| **Nominale** | 2 (dichotomique) | **Régression logistique binaire / binomiale** |
+| Nominale | 3+ | Régression logistique **multinomiale** |
+| **Ordinale** | Toutes | Régression logistique **ordinale** (ou linéaire si traitée comme quanti) |
+| **Quantitative** | — | **Régression linéaire** |
+
+::: {.callout-warning}
+## Et la distribution ?
+Au-delà du niveau de mesure, c'est la **distribution** qui compte. Une variable quanti **non-normale** peut nécessiter une autre régression (Poisson pour des comptages, binomiale négative pour de la surdispersion, etc.). Pour le cours, on se limite à linéaire et logistique.
+:::
+
+## Bloc A — La régression linéaire
+
+### Modèle simple : Y = α + βX + e
+
+L'idée centrale : trouver la **droite** qui passe au mieux dans le nuage de points (X, Y) — la fameuse droite des **moindres carrés** (OLS, *Ordinary Least Squares*).
+
+$$Y = \alpha + \beta X + e$$
+
+| Terme | Signification |
+|---|---|
+| **α** (alpha) | **Constante** ou intercept : valeur de Y quand X = 0 |
+| **β** (beta) | **Coefficient de régression** : de combien Y change quand X augmente d'une unité |
+| **e** | **Terme d'erreur** : écart entre Y prédit (sur la droite) et Y réel |
+
+::: {.callout-tip collapse="true"}
+## En simple
+La régression trouve **la meilleure droite** qui résume le lien entre X et Y. On minimise la somme des erreurs au carré (d'où « moindres carrés »). Pour chaque cas :
+- la droite te donne une **prédiction** ;
+- la **distance verticale** entre le point réel et la droite est l'erreur (résidu).
+:::
+
+### Modèle multiple : plusieurs variables explicatives
+
+$$Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \dots + \beta_k X_k + e$$
+
+Chaque $\beta_j$ s'interprète **« toutes choses égales par ailleurs »** : c'est l'effet propre de $X_j$ **en gardant les autres variables constantes**.
+
+### Éléments clés à lire dans un tableau de régression
+
+| Élément | Interprétation |
+|---|---|
+| **Coefficient (β)** | Sens et magnitude de l'effet. + = positif, − = négatif. |
+| **Erreur type (SE)** | Incertitude sur le coefficient. Plus elle est petite, plus le coefficient est précis. |
+| **Valeur p** | Probabilité d'observer cet effet si H0 (β = 0). p < 0.05 → significatif |
+| **Constante (α)** | Valeur de Y prédite quand toutes les X = 0 (rarement interprétable seule) |
+| **R²** | Proportion de la variance de Y expliquée par le modèle (entre 0 et 1) |
+| **N** | Nombre d'observations |
+
+#### Convention des étoiles
+
+| Code | Seuil | Sens |
+|---|---|---|
+| `***` | p < 0.001 | Très hautement significatif |
+| `**` | p < 0.01 | Hautement significatif |
+| `*` | p < 0.05 | Significatif |
+| `.` ou rien | p ≥ 0.05 | Non significatif |
+
+À **toujours indiquer** sous chaque tableau de régression.
+
+### Le R² (coefficient de détermination)
+
+| Question | Réponse |
+|---|---|
+| Que mesure-t-il ? | La **proportion** de la variance de Y prédite par les X |
+| Plage | 0 à 1 (ou 0 à 100 %) |
+| R² = 0.75 | Le modèle explique **75 %** de la variance de Y ; les 25 % restants sont dus à des facteurs non inclus |
+| R² = 0.05 | Le modèle n'explique presque rien |
+
+::: {.callout-warning}
+## Le R² gonfle artificiellement
+Ajouter **n'importe quelle variable** fait monter le R² — même une variable inutile. Pour comparer des modèles avec un nombre de variables différent, regarde le **R² ajusté** (`Adjusted R²`) qui pénalise les variables superflues.
+:::
+
+### Significativité statistique et inférence
+
+| Idée | Détail |
+|---|---|
+| Sur un **échantillon**, on veut savoir si l'effet observé est dû au **hasard** ou à un facteur réel |
+| La **p-value** te dit : si H0 était vraie (β = 0), quelle est la probabilité d'observer un effet aussi grand ? |
+| Si p < α (souvent 0.05), on **rejette H0** → le coefficient est significatif |
+| Sinon, on **ne rejette pas H0** → on ne peut pas conclure à un effet réel |
+
+::: {.callout-important}
+## Sans significativité, pas d'effet généralisable
+Si un coefficient n'est **pas significatif** (p ≥ 0.05), on ne peut **pas** affirmer que l'effet existe dans la population. Cela ne veut pas dire qu'il n'existe **pas** : peut-être que l'échantillon est trop petit pour le détecter (manque de puissance). À l'examen, ne jamais conclure « pas d'effet » mais « pas d'effet **détectable** ».
+:::
+
+### Exemple : déterminants du taux de maladies cardiaques
+
+| **VD** : taux de maladies cardiaques (% de la population) | Coefficient (SE) |
+|---|---|
+| Taux de personnes à vélo (%) | −0.200*** (0.001) |
+| Taux de fumeur·euse·s (%) | 0.178*** (0.003) |
+| Constante | 14.984 (0.080) |
+| **Observations** | 498 |
+| **R²** | **0.979** |
+| Note : * p < 0.05; ** p < 0.01; *** p < 0.001 |
+
+**Lecture** :
+
+- Le modèle explique **97.9 %** de la variance. Très élevé.
+- Vélo : −0.200, p < 0.001 → **plus** de gens font du vélo, **moins** il y a de maladies cardiaques.
+- Fumeur·euse·s : +0.178, p < 0.001 → effet opposé.
+- Les deux coefficients sont très significatifs.
+
+### Limites de la régression linéaire en sciences sociales
+
+- Les VD sont rarement quanti (souvent oui/non, ou catégorielles) → **régression logistique**.
+- Les individus dans un même contexte (pays, région) ne sont **pas indépendants** → **modèles multi-niveaux** (au-delà du cours).
+
+## Bloc B — La régression logistique binaire
+
+### Pourquoi ?
+
+Beaucoup de phénomènes sont **binaires** (0/1) :
+
+- Vote / s'est abstenu.
+- Utilise Instagram / n'utilise pas.
+- Adopté / non adopté.
+
+La régression linéaire pose deux problèmes pour une VD binaire :
+
+1. Elle peut **prédire des valeurs hors de [0, 1]** (impossible pour une probabilité).
+2. Elle suppose des **effets linéaires constants**, peu adapté à une probabilité bornée.
+
+### La fonction logit
+
+La régression logistique ne prédit pas Y directement. Elle prédit le **logarithme du rapport des chances** (logit) :
+
+$$\text{logit}(p) = \ln\left(\frac{p}{1-p}\right) = \alpha + \beta_1 X_1 + \dots$$
+
+où p = probabilité que Y = 1. Cette transformation contraint p à rester entre 0 et 1.
+
+### Interprétation des coefficients
+
+| Élément | Interprétation |
+|---|---|
+| **Signe du β** | Direction de l'effet (positif/négatif) — interprétable directement |
+| **Significativité** | Idem régression linéaire (p-value, étoiles) |
+| **Magnitude du β** | **Difficile** à interpréter (log-odds, non-linéaire) → on passe aux **odds ratios** |
+| **R²** | **Impossible** à calculer comme en linéaire → **Pseudo-R²** (peu interprétable directement) |
+
+### Les odds ratios (OR)
+
+#### Probabilité vs. odds
+
+| Notion | Définition | Exemple (cartes) |
+|---|---|---|
+| **Probabilité** | Nb événements favorables / Nb total | P(pique) = 13/52 = 0.25 |
+| **Odds** | P(événement) / P(non-événement) | 0.25 / 0.75 = 1/3 ≈ 0.33 |
+| **Odds ratio (OR)** | Rapport de deux odds, e.g. avant/après | exp(β) en régression logistique |
+
+#### Comment lire un OR ?
+
+| OR | Interprétation |
+|---|---|
+| **OR = 1** | Pas d'association |
+| **OR > 1** | Effet **positif** sur P(Y = 1) |
+| **OR < 1** | Effet **négatif** sur P(Y = 1) |
+
+#### Exemples
+
+| OR | Sens |
+|---|---|
+| OR = 1.2 | La probabilité augmente de **20 %** |
+| OR = 2.0 | La probabilité augmente de **100 %** (double) |
+| OR = 0.2 | La probabilité diminue de **80 %** |
+
+::: {.callout-tip collapse="true"}
+## En simple
+L'OR mesure de combien les **chances** (odds) d'un événement changent quand X augmente d'une unité. C'est un **facteur multiplicatif**, pas additif. OR = 2 ne veut pas dire « +2 chances », mais « les chances doublent ».
+:::
+
+### Exemple : admission à l'université
+
+| **VD** : Admis (Oui/Non) | Coefficient | OR |
+|---|---|---|
+| Score GRE | 0.002* | 1.002* |
+| Score GPA | 0.804* | 2.234* |
+| Rang 2 (vs. 1) | −0.675* | 0.508* |
+| Rang 3 (vs. 1) | −1.340*** | 0.261*** |
+| Rang 4 (vs. 1) | −1.551*** | 0.211*** |
+| Constante | −3.989 | — |
+| **N** | 400 | |
+| **Pseudo-R²** | **0.082** | |
+
+**Lecture** : Une augmentation de 1 point de GPA multiplie les **chances** d'être admis par **2.234** (= +123 %). Venir d'un institut de rang 4 (vs. rang 1) divise les chances par environ 5 (OR = 0.211).
+
+### Variante : régression probit
+
+Même principe mais avec la **fonction probit** au lieu de logit. Différences :
+
+- Coefficients **non interprétables en odds ratios** ;
+- Sens (signe) et significativité **identiques** à logit.
+
+À l'examen, savoir que probit existe et qu'on l'interprète comme logit pour signe/significativité.
+
+## Bloc C — Traitement des variables indépendantes
+
+Selon le niveau de mesure de X :
+
+| X | Catégories | Transformation |
+|---|---|---|
+| Nominale | 2 (dichotomique) | **Inclure telle quelle** (0/1) |
+| Nominale | 3+ | **Dichotomiser** : créer plusieurs **dummies** (0/1), en retirer **une** (= catégorie de référence) |
+| Ordinale | — | Inclure telle quelle si traitable comme métrique ; sinon dichotomiser |
+| Quantitative | — | Inclure telle quelle |
+
+### Dichotomiser une variable nominale 3+
+
+**Problème** : passer d'une catégorie à l'autre n'est pas linéaire (ex. source d'info : journal, parents, amis, Instagram, RTS app).
+
+**Solution** : créer des **dummies** :
+
+| Variable originale | RTS_app | Instagram | Amis | (Journal = réf) |
+|---|---|---|---|---|
+| Journal | 0 | 0 | 0 |  |
+| Instagram | 0 | 1 | 0 |  |
+| Amis | 0 | 0 | 1 |  |
+| RTS app | 1 | 0 | 0 |  |
+
+On inclut toutes les dummies **sauf une** (la **référence**, ici « Journal »).
+
+**Interprétation** : chaque coefficient de dummy se lit **par rapport à la catégorie de référence**. *« Par rapport à une personne s'informant par journal, une personne via RTS app a un score Y plus/moins élevé de... »*
+
+## Bloc D — Effets d'interaction
+
+### Définition
+
+Une **interaction** existe quand l'effet de $X_1$ sur Y **dépend de la valeur de $X_2$**.
+
+**Exemple** : *L'effet du temps d'usage d'Instagram sur le manque d'énergie est plus fort pour les extraverti·e·s que pour les introverti·e·s* (hypothèse H3 du S1).
+
+- Y = manque d'énergie
+- X₁ = durée d'usage Instagram
+- X₂ = personnalité (extra/intro)
+
+### Procédé : modèle séquentiel
+
+| Étape | Équation |
+|---|---|
+| **Modèle 1** (sans interaction) | $Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + e$ |
+| **Modèle 2** (avec interaction) | $Y = \alpha + \beta_1 X_1 + \beta_2 X_2 + \beta_3 (X_1 \times X_2) + e$ |
+
+Le terme d'interaction est simplement le **produit** des deux variables.
+
+### Interprétation
+
+L'interaction est **exigeante** : trois coefficients à lire ensemble. On présente toujours **un graphique** (lignes pour chaque modalité de $X_2$) ou un **tableau de prédictions** pour des valeurs choisies de $X_1$ et $X_2$.
+
+### Exemple chiffré
+
+QR : *L'éthique de travail affecte-t-elle le résultat (GPA) différemment selon le genre ?*
+
+- Y = résultat (GPA)
+- $X_1$ = éthique de travail (1 mauvaise → 5 excellente)
+- $X_2$ = genre (0 homme, 1 femme)
+
+Modèle : $Y = 1.539 + 0.570 \times X_1 + 0.175 \times X_2 - 0.087 \times (X_1 \times X_2)$
+
+| Sujet | Profil | Prédiction |
+|---|---|---|
+| A | Femme, éthique faible (1) | $1.539 + 0.175 + 0.570 - 0.087 = 2.197$ |
+| B | Homme, éthique faible (1) | $1.539 + 0.570 = 2.109$... (ici 1.714 dans les slides, vérifier le codage) |
+| C | Femme, éthique élevée (5) | $1.539 + 0.175 + 5 \times 0.570 - 5 \times 0.087 = 2.549$ |
+| D | Homme, éthique élevée (5) | $1.539 + 5 \times 0.570 = 4.389$... (ici 2.414 selon slides) |
+
+Le coefficient d'interaction (−0.087) indique que **le gain de Y par unité d'éthique est plus faible chez les femmes que chez les hommes** (atténuation).
+
+::: {.callout-tip collapse="true"}
+## En simple
+Sans interaction : « L'effet de l'éthique sur le GPA est le même pour tout le monde. »
+Avec interaction : « L'effet de l'éthique sur le GPA **diffère** selon qu'on est homme ou femme. » Le terme d'interaction quantifie cette différence.
+:::
+
+::: {.callout-warning}
+## Pièges examen sur la régression
+
+1. **Confondre signe et significativité**. Un coefficient peut être grand mais non significatif (forte incertitude). Toujours regarder **les deux**.
+2. **Surinterpréter un R² élevé**. Un R² de 0.98 dans un cas social, c'est suspect — probablement biais ou colinéarité.
+3. **Interpréter directement les coefficients logistiques**. Ils sont en log-odds. Pour parler en clair → odds ratios.
+4. **Oublier la catégorie de référence**. Un coef de dummy se lit **toujours** par rapport à une catégorie de référence (à mentionner).
+5. **Confondre R² (linéaire) et pseudo-R² (logistique)**. Le pseudo-R² ne s'interprète **pas** comme % de variance expliquée.
+:::
+
+::: {.callout-note}
+## Récapitulatif Ch.7
+- **Régression** = analyse multivariée pour expliquer ou prédire Y à partir de X₁, X₂, …
+- Type selon Y : **linéaire** (quanti), **logistique binaire** (Y dichotomique), multinomiale ou ordinale.
+- Équation linéaire : $Y = \alpha + \beta_1 X_1 + ... + e$. β = effet de X sur Y, **toutes choses égales par ailleurs**.
+- Lecture : signe + magnitude + erreur type + **p-value** + étoiles + **R²** + N.
+- R² = % de variance de Y expliquée par le modèle (0-1).
+- Logistique : on prédit le **logit** ; on interprète les **odds ratios** (OR = 1 nul, > 1 positif, < 1 négatif).
+- **Probit** : variante de logit, sans OR, signe et significativité identiques.
+- VI catégorielles 3+ → **dichotomiser** en dummies avec catégorie de **référence**.
+- **Interaction** : effet de X₁ dépend de X₂ ; on ajoute le terme produit $X_1 \times X_2$.
+:::

@@ -1,0 +1,1011 @@
+---
+title: "Glossaire"
+---
+
+Ce glossaire définit **en langage simple** tous les termes techniques rencontrés dans les 10 séances. Clique sur un terme pour dérouler son explication. À chaque entrée : une **définition simple** + un **exemple**.
+
+## A
+
+::: {.callout-note collapse="true"}
+## Acquiescence (biais d')
+**En simple** : tendance des répondant·e·s à dire **oui** à tout par réflexe, sans vraiment lire la question.
+
+**Exemple** : si toutes tes questions sont formulées « êtes-vous d'accord avec... », tu vas avoir un excès de « oui ». Solution : **alterner** des items à sens inverse pour repérer ceux qui acquiescent par réflexe.
+:::
+
+::: {.callout-note collapse="true"}
+## Agrégées (données)
+**En simple** : données présentées au niveau d'un **groupe** (pays, région, ville) plutôt qu'au niveau **individuel**.
+
+**Exemple** : « Le taux de chômage du canton de Fribourg » est agrégé ; « Pierre est chômeur » est individuel. Risque : l'**erreur écologique** (conclure sur les individus à partir d'une moyenne).
+:::
+
+::: {.callout-note collapse="true"}
+## Aléatoire (échantillonnage)
+**En simple** : chaque membre de la population a la **même probabilité** d'être tiré au sort dans l'échantillon. C'est le standard de référence.
+
+**Exemple** : tirer 500 numéros parmi tous les électeur·ice·s suisses inscrit·e·s. Pré-requis : avoir la **liste complète** de la population (base d'échantillonnage).
+:::
+
+::: {.callout-note collapse="true"}
+## Alpha de Cronbach
+**En simple** : coefficient mesurant la **cohérence interne** d'une échelle additive — les items mesurent-ils tous le même concept ?
+
+**Exemple** : si tu construis une échelle « anxiété » avec 7 items, l'alpha te dit si ces 7 items pointent vers la même chose. **Seuil acceptable : 0.7**. En dessous, retire un item peu cohérent.
+:::
+
+::: {.callout-note collapse="true"}
+## Alpha de Krippendorff
+**En simple** : coefficient mesurant la **fiabilité inter-codeur** dans une analyse de contenu — deux codeur·euse·s codent-ils la même chose de la même façon ?
+
+**Exemple** : deux étudiant·e·s codent les mêmes 50 articles. Si leurs codages convergent, alpha est élevé. **Seuil acceptable : 0.7**.
+:::
+
+::: {.callout-note collapse="true"}
+## ANOVA (Analyse de variance)
+**En simple** : test qui compare les moyennes de **3 groupes ou plus** en une seule fois. Réponse : « au moins un groupe diffère-t-il des autres ? ».
+
+**Exemple** : comparer la confiance sociale moyenne entre 6 statuts matrimoniaux (marié, séparé, divorcé, veuf, en union, autre). Si F-test significatif → on rejette H0, mais l'ANOVA ne dit pas **quels** groupes diffèrent → comparaisons par paires (Tukey).
+:::
+
+::: {.callout-note collapse="true"}
+## API (Application Programming Interface)
+**En simple** : un système qui permet à deux applications de **dialoguer entre elles** en utilisant un langage standardisé. En recherche, tu peux récupérer des données d'une plateforme via son API.
+
+**Exemple** : tu obtiens une clé d'accès à l'API de TikTok pour récupérer des milliers de posts pour ton étude. Demande souvent un compte « développeur » et des autorisations.
+:::
+
+::: {.callout-note collapse="true"}
+## Aplatissement (kurtosis)
+**En simple** : indicateur de la forme d'une distribution : **pointue** (kurtosis élevé) ou **aplatie** (kurtosis bas).
+
+**Exemple** : une loi normale a kurtosis = 3. Une distribution avec beaucoup d'observations centrées et peu d'extrêmes a kurtosis > 3 (leptokurtique). Avec beaucoup d'extrêmes : kurtosis < 3 (platikurtique).
+:::
+
+## B
+
+::: {.callout-note collapse="true"}
+## Base d'échantillonnage
+**En simple** : la **liste complète** de la population qu'on souhaite étudier, nécessaire pour un échantillonnage probabiliste.
+
+**Exemple** : pour un sondage électoral suisse, la base est le registre des électeur·ice·s inscrit·e·s. Sans cette liste, tu ne peux pas faire d'échantillonnage aléatoire.
+:::
+
+::: {.callout-note collapse="true"}
+## Batterie d'items
+**En simple** : groupe de **plusieurs questions** mesurant **un même concept** sous différents angles. On combine les réponses en un score global.
+
+**Exemple** : pour mesurer la « satisfaction au travail », on pose 5 affirmations (« Mon travail est intéressant », « Je me sens reconnu·e », etc.) sur une échelle de Likert et on somme.
+:::
+
+::: {.callout-note collapse="true"}
+## Biais centriste
+**En simple** : tendance à choisir l'option **du milieu** sur une échelle, pour ne pas s'engager.
+
+**Exemple** : sur une échelle 1-5, beaucoup de gens cochent « 3 ». Solution : utiliser une échelle **paire** (1-4) qui force le choix d'un côté.
+:::
+
+::: {.callout-note collapse="true"}
+## Biais de désirabilité sociale
+**En simple** : tendance à répondre selon ce qui est **socialement acceptable** plutôt qu'honnêtement.
+
+**Exemple** : à « Faites-vous du sport régulièrement ? », les répondant·e·s gonflent leur réponse. Pire pour les sujets sensibles (revenus, racisme, sexualité). Solution : enquête en ligne / anonyme.
+:::
+
+::: {.callout-note collapse="true"}
+## Biais de sélection
+**En simple** : ton échantillon est biaisé parce que les cas qui le composent ont une caractéristique liée à la VD.
+
+**Exemple** : étudier la dépression chez les patient·e·s en psychiatrie. L'échantillon n'est pas représentatif : il est **sélectionné** par la dépression elle-même.
+:::
+
+## C
+
+::: {.callout-note collapse="true"}
+## Cadre théorique
+**En simple** : ensemble des concepts, mécanismes et hypothèses qui **ancrent** ta recherche dans la littérature existante.
+
+**Exemple** : pour étudier Instagram → dépression, ton cadre théorique définit ce qu'est l'« usage d'Instagram », ce qu'est la « dépression », et pourquoi le premier influencerait le second.
+:::
+
+::: {.callout-note collapse="true"}
+## Causalité
+**En simple** : X **cause** Y signifie que modifier X **change** Y. Bien plus difficile à prouver qu'une simple **corrélation**.
+
+**Exemple** : un essai clinique randomisé (X = traitement / placebo) peut prouver une causalité ; un sondage observationnel non. *Corrélation ≠ causalité*.
+:::
+
+::: {.callout-note collapse="true"}
+## Causalité inversée
+**En simple** : tu penses que X cause Y, mais c'est Y qui cause X.
+
+**Exemple** : « Les pompiers causent les incendies » (parce qu'on les voit toujours sur place). Non, c'est l'incendie qui les fait venir.
+:::
+
+::: {.callout-note collapse="true"}
+## Chi-carré (test du χ²)
+**En simple** : test qui compare les fréquences **observées** à celles **attendues** sous H0 (indépendance des deux variables). Si l'écart est trop grand, on rejette H0.
+
+**Exemple** : tester si « vote pour X » dépend de « usage RTS ». Si χ² calculé > seuil critique → les deux variables sont **associées**.
+:::
+
+::: {.callout-note collapse="true"}
+## Codebook
+**En simple** : le **manuel** de ta base de données. Une ligne par variable, avec sa description, ses valeurs possibles et leurs labels.
+
+**Exemple** : `ipol` = intérêt politique, valeurs 1-4, labels « pas du tout intéressé·e » à « très intéressé·e ». Sans codebook, personne (toi non plus) ne peut comprendre tes données dans 6 mois.
+:::
+
+::: {.callout-note collapse="true"}
+## Coefficient de régression (β)
+**En simple** : indique de combien Y change quand X augmente d'**une unité**, les autres variables restant constantes.
+
+**Exemple** : β = −5.3 pour le poids dans une régression sur la consommation → chaque tonne en plus fait baisser la consommation de 5.3 mpg.
+:::
+
+::: {.callout-note collapse="true"}
+## Concept (en recherche)
+**En simple** : notion **abstraite** qu'on veut étudier (anxiété, populisme, capital social). On doit la **définir**, l'opérationnaliser (S2) et la mesurer.
+
+**Exemple** : « populisme » → définition (Mudde) → dimensions (anti-élitisme, peuple homogène) → indicateurs (questions de sondage).
+:::
+
+::: {.callout-note collapse="true"}
+## Confiance (niveau de)
+**En simple** : la probabilité que ton échantillon **reflète** fidèlement la population. Souvent 95 % ou 99 %.
+
+**Exemple** : à 95 % de confiance, on accepte un risque de 5 % de se tromper en généralisant.
+:::
+
+::: {.callout-note collapse="true"}
+## Constante (intercept, α)
+**En simple** : dans une régression, c'est la valeur prédite de Y quand **toutes les variables X = 0**.
+
+**Exemple** : si tu prédis le salaire en fonction de l'expérience, la constante = salaire prédit pour 0 année d'expérience. Pas toujours interprétable seule.
+:::
+
+::: {.callout-note collapse="true"}
+## Corrélation
+**En simple** : mesure du **lien entre deux variables**. Coefficient r entre −1 et +1.
+
+**Exemple** : r = 0.7 entre temps d'étude et notes → forte corrélation positive. r = 0 = pas de lien.
+:::
+
+::: {.callout-note collapse="true"}
+## Cronbach (alpha de)
+**En simple** : voir « Alpha de Cronbach ».
+:::
+
+## D
+
+::: {.callout-note collapse="true"}
+## Degrés de liberté (df)
+**En simple** : nombre de valeurs « libres » dans le calcul d'une statistique. Utile pour lire les tables de χ², t, F.
+
+**Exemple** : dans un t-test à un échantillon avec n = 25, df = n − 1 = 24. Pour un tableau croisé : df = (L−1) × (C−1).
+:::
+
+::: {.callout-note collapse="true"}
+## Désirabilité sociale
+**En simple** : voir « Biais de désirabilité sociale ».
+:::
+
+::: {.callout-note collapse="true"}
+## Diagramme en bâtons
+**En simple** : graphique avec des barres **séparées**, pour les variables **qualitatives**.
+
+**Exemple** : nombre de répondant·e·s par parti politique → diagramme en bâtons.
+:::
+
+::: {.callout-note collapse="true"}
+## Dichotomique (variable)
+**En simple** : variable à **deux** catégories seulement (oui/non, 0/1).
+
+**Exemple** : a voté / s'est abstenu·e. C'est le type de variable que prédit la régression logistique binaire.
+:::
+
+::: {.callout-note collapse="true"}
+## Dichotomiser
+**En simple** : transformer une variable à 3+ catégories en plusieurs variables 0/1 (dummies) pour pouvoir l'utiliser dans une régression.
+
+**Exemple** : « source d'info » (journal, Instagram, RTS, amis) → 3 dummies (journal = référence ; Instagram_oui/non ; RTS_oui/non ; amis_oui/non).
+:::
+
+::: {.callout-note collapse="true"}
+## Discrète (variable)
+**En simple** : variable quantitative dont les valeurs possibles sont **finies** (souvent entières).
+
+**Exemple** : nombre d'enfants dans un ménage (0, 1, 2, 3, ...). Pas de 2.5 enfants.
+:::
+
+::: {.callout-note collapse="true"}
+## Dispersion
+**En simple** : mesure de l'**étalement** des observations autour de la tendance centrale.
+
+**Exemple** : deux groupes ont la même moyenne (75), mais l'un est très resserré (60-90) et l'autre très étalé (20-130). Outils : étendue, IQR, écart-type.
+:::
+
+::: {.callout-note collapse="true"}
+## Distribution
+**En simple** : façon dont les valeurs d'une variable sont **réparties** dans l'échantillon.
+
+**Exemple** : distribution normale = cloche symétrique. Distribution asymétrique = queue longue d'un côté.
+:::
+
+::: {.callout-note collapse="true"}
+## Don de données (data donation)
+**En simple** : transmission **volontaire** par les utilisateur·ice·s de leurs propres données à des chercheur·euse·s.
+
+**Exemple** : tu télécharges tes données Spotify (que la RGPD oblige Spotify à te fournir) et tu les donnes à une étude sur les goûts musicaux.
+:::
+
+::: {.callout-note collapse="true"}
+## Dummy (variable)
+**En simple** : variable binaire (0/1) créée à partir d'une catégorie d'une variable nominale, pour l'utiliser en régression.
+
+**Exemple** : à partir de « parti voté », créer `voted_PS` (oui/non), `voted_PLR` (oui/non), etc. On laisse de côté une catégorie de **référence**.
+:::
+
+## E
+
+::: {.callout-note collapse="true"}
+## Écart interquartile (IQR)
+**En simple** : différence entre le 3e quartile (Q3, 75e percentile) et le 1er quartile (Q1, 25e percentile). Donne la **dispersion** autour de la médiane.
+
+**Exemple** : si Q1 = 50, Q3 = 80, IQR = 30. La moitié centrale des observations se situe sur 30 unités.
+:::
+
+::: {.callout-note collapse="true"}
+## Écart-type (SD)
+**En simple** : distance moyenne entre chaque observation et la moyenne. Plus c'est grand, plus le groupe est **hétérogène**.
+
+**Exemple** : moyenne = 70, SD = 5 → les obs sont resserrées autour de 70. SD = 25 → très étalées. Formule : racine de la variance.
+:::
+
+::: {.callout-note collapse="true"}
+## Échantillon
+**En simple** : sous-ensemble **représentatif** d'une population, utilisé pour faire des inférences statistiques.
+
+**Exemple** : interroger 1 070 Suisse·sse·s pour estimer l'opinion de toute la population (9 mio).
+:::
+
+::: {.callout-note collapse="true"}
+## Échantillon brut vs. net
+**En simple** : brut = ce que tu cibles (échantillon visé + non-réponses anticipées). Net = ce que tu obtiens réellement.
+
+**Exemple** : tu cibles 1000 réponses, tu sais que 30 % ne répondront pas → envoie 1430 invitations (brut).
+:::
+
+::: {.callout-note collapse="true"}
+## Échantillonnage probabiliste vs. non-probabiliste
+**En simple** : probabiliste = chacun a une chance connue d'être tiré au sort. Non-probabiliste = sélection par opportunité (volontaires, quotas, boule de neige).
+
+**Exemple** : Selects = probabiliste (tirage dans le registre). Sondage en ligne sur un site = non-probabiliste (volontaires).
+:::
+
+::: {.callout-note collapse="true"}
+## Échelle de Likert
+**En simple** : échelle ordinale à plusieurs degrés (souvent 5 ou 7) pour mesurer un degré d'accord, créée par Rensis Likert en 1932.
+
+**Exemple** : « 1 = pas du tout d'accord ... 5 = tout à fait d'accord ». On peut additionner les scores d'une batterie pour créer un index.
+:::
+
+::: {.callout-note collapse="true"}
+## Erreur de type I (faux positif)
+**En simple** : conclure qu'il y a un effet alors qu'il n'y en a pas. Risque = seuil α (souvent 5 %).
+
+**Exemple** : conclure qu'un médicament marche alors qu'il ne fait rien. Acquitter un innocent du nom de H0.
+:::
+
+::: {.callout-note collapse="true"}
+## Erreur de type II (faux négatif)
+**En simple** : ne pas détecter un effet qui existe vraiment. Souvent dû à un échantillon trop petit (manque de puissance).
+
+**Exemple** : un médicament marche, mais avec 20 patient·e·s on ne le voit pas.
+:::
+
+::: {.callout-note collapse="true"}
+## Erreur écologique
+**En simple** : conclure sur des **individus** à partir d'une **moyenne agrégée**.
+
+**Exemple** : « Les pays riches ont plus de divorces, donc les personnes riches divorcent plus. » Pas forcément — peut-être que ce sont les pauvres dans ces pays qui divorcent.
+:::
+
+::: {.callout-note collapse="true"}
+## État vs. processus (objectivité)
+**En simple** : « objectivité » = le monde réel est en attente d'être détecté. « Objectivation » = la recherche construit sa représentation du monde.
+
+**Exemple** : la catégorie « femme » comme propriété objective vs. comme construction sociale. Voir Bourdieu sur la violence symbolique.
+:::
+
+::: {.callout-note collapse="true"}
+## Étendue (range)
+**En simple** : max − min. Mesure simple de la dispersion.
+
+**Exemple** : notes de 4 à 18 → étendue = 14. Très sensible aux outliers.
+:::
+
+::: {.callout-note collapse="true"}
+## Exhaustive (enquête)
+**En simple** : on interroge **toute** la population, pas un échantillon. Rare et coûteux.
+
+**Exemple** : recensement de la population suisse ; sondage des 30 étudiant·e·s d'une classe.
+:::
+
+::: {.callout-note collapse="true"}
+## Expérimentales (données)
+**En simple** : données produites avec un **traitement contrôlé** (groupe contrôle vs. groupe traité).
+
+**Exemple** : test A/B sur deux versions d'un site web. C'est le seul design qui prouve solidement la causalité.
+:::
+
+## F
+
+::: {.callout-note collapse="true"}
+## Falsifiabilité
+**En simple** : une hypothèse est falsifiable si elle peut être **réfutée** par des observations.
+
+**Exemple** : « plus de sport → meilleure santé » est falsifiable (on peut mesurer et tester). « Les gens heureux sourient parce qu'ils sont heureux » ne l'est pas (tautologie).
+:::
+
+::: {.callout-note collapse="true"}
+## F-test
+**En simple** : statistique de test produite par l'ANOVA ou la régression. Mesure si la variance expliquée est plus grande que la variance résiduelle.
+
+**Exemple** : F = 39.88, p < 0.001 → on rejette H0 (au moins un groupe diffère).
+:::
+
+::: {.callout-note collapse="true"}
+## Fiabilité
+**En simple** : un instrument est fiable s'il produit le **même résultat** lorsqu'on répète la mesure (dans le temps ou entre personnes).
+
+**Exemple** : une balance qui donne 70 kg, puis 71 kg, puis 69 kg pour la même personne en 5 minutes n'est pas fiable.
+:::
+
+::: {.callout-note collapse="true"}
+## Fréquence vs. fréquence relative vs. cumulée
+**En simple** :
+- **Fréquence (N)** : nombre d'observations dans une catégorie ;
+- **Fréquence relative (%)** : N / total ;
+- **Cumulée** : N total des catégories précédentes + courante.
+
+**Exemple** : 30 romands, soit 37.5 %, cumulé 30 sur la première ligne du tableau.
+:::
+
+## G
+
+::: {.callout-note collapse="true"}
+## Grappes (échantillonnage par)
+**En simple** : on tire au sort des **groupes naturels** (classes, quartiers) et on inclut **tous** les individus du groupe.
+
+**Exemple** : pour étudier la perf en maths à la matu : tirer 5 lycées, prendre toutes leurs classes. Moins cher qu'un tirage individuel.
+:::
+
+## H
+
+::: {.callout-note collapse="true"}
+## Hypothèse de différence
+**En simple** : « Si X → alors Y ». X catégoriel, Y de tout type.
+
+**Exemple** : « Si l'usage est passif (vs. actif), alors le manque d'énergie est plus important. »
+:::
+
+::: {.callout-note collapse="true"}
+## Hypothèse d'interaction
+**En simple** : « L'effet de X sur Y dépend de Z. »
+
+**Exemple** : « L'effet du temps Instagram sur le manque d'énergie est plus fort pour les extraverti·e·s que pour les introverti·e·s. »
+:::
+
+::: {.callout-note collapse="true"}
+## Hypothèse de relation
+**En simple** : « Plus / moins X → plus / moins Y ». X et Y quantitatives (ou ordinales sous conditions).
+
+**Exemple** : « Plus de temps sur Instagram → plus de manque d'énergie. »
+:::
+
+::: {.callout-note collapse="true"}
+## Hypothèse nulle (H0)
+**En simple** : l'hypothèse qu'on cherche à **rejeter** : « il n'y a rien à voir » (aucun effet, aucune différence, aucun lien).
+
+**Exemple** : H0 « la moyenne des deux groupes est identique ». H1 « les moyennes diffèrent ». Si p < 0.05, on rejette H0.
+:::
+
+::: {.callout-note collapse="true"}
+## Histogramme
+**En simple** : graphique à barres **collées** pour visualiser la distribution d'une variable **quantitative**.
+
+**Exemple** : distribution des âges dans un échantillon. Permet de voir si la distribution est normale, asymétrique, multimodale.
+:::
+
+## I
+
+::: {.callout-note collapse="true"}
+## Inclinaison (skewness)
+**En simple** : indicateur d'**asymétrie** d'une distribution.
+
+**Exemple** : revenus = skewness positive (queue à droite, quelques très hauts revenus). Loi normale = skewness 0.
+:::
+
+::: {.callout-note collapse="true"}
+## Indicateur
+**En simple** : variable **mesurable** qui sert à capturer une dimension d'un concept abstrait.
+
+**Exemple** : pour la dimension « durée d'usage d'Instagram » du concept « usage d'Instagram » → indicateur = nombre d'heures déclarées par jour.
+:::
+
+::: {.callout-note collapse="true"}
+## Inférence statistique
+**En simple** : tirer des conclusions sur une **population** à partir d'un **échantillon**.
+
+**Exemple** : à partir des 1070 sondé·e·s, conclure que 60 % de la population veut voter oui.
+:::
+
+::: {.callout-note collapse="true"}
+## Inférentielle (question)
+**En simple** : question qui s'intéresse à l'**influence** d'un phénomène X sur un phénomène Y.
+
+**Exemple** : « Dans quelle mesure les usages d'Instagram influencent-ils la dépression ? ». Opposé : descriptive.
+:::
+
+::: {.callout-note collapse="true"}
+## Intercept
+**En simple** : voir « Constante ».
+:::
+
+::: {.callout-note collapse="true"}
+## Intervalle de confiance (IC)
+**En simple** : fourchette de valeurs qui contient probablement la **vraie** valeur du paramètre. À 95 %, signifie : « si je répète l'étude, 95 % des IC contiendront la vraie valeur ».
+
+**Exemple** : IC à 95 % = [101.6 ; 109.5] pour un QI moyen. Si l'IC ne contient pas la valeur testée (par ex. 100), c'est significatif.
+:::
+
+## K
+
+::: {.callout-note collapse="true"}
+## Kappa de Cohen
+**En simple** : mesure d'accord **inter-codeur** dans une analyse de contenu, alternative à Krippendorff.
+
+**Exemple** : deux codeur·euse·s codent les mêmes textes, Kappa = 0.75 → bon accord. Seuil acceptable : 0.7.
+:::
+
+::: {.callout-note collapse="true"}
+## Krippendorff (alpha de)
+**En simple** : voir « Alpha de Krippendorff ».
+:::
+
+::: {.callout-note collapse="true"}
+## Kurtosis
+**En simple** : voir « Aplatissement ».
+:::
+
+## L
+
+::: {.callout-note collapse="true"}
+## Likert (échelle de)
+**En simple** : voir « Échelle de Likert ».
+:::
+
+::: {.callout-note collapse="true"}
+## Logit
+**En simple** : fonction utilisée en régression logistique pour transformer une probabilité (entre 0 et 1) en log des odds (non borné).
+
+**Exemple** : `logit(p) = ln(p / (1-p))`. C'est ça qui rend la régression logistique mathématiquement utilisable.
+:::
+
+::: {.callout-note collapse="true"}
+## Longitudinales (données)
+**En simple** : données mesurées à **plusieurs dates** sur les mêmes individus. Opposé : transversales.
+
+**Exemple** : Panel Suisse des Ménages suit les mêmes ménages chaque année depuis 1999.
+:::
+
+## M
+
+::: {.callout-note collapse="true"}
+## Marge d'erreur
+**En simple** : écart toléré (en %) entre la réponse de l'échantillon et la « vraie » réponse de la population.
+
+**Exemple** : sondage donnant 60 % avec marge d'erreur de 3 % → la vraie valeur est entre 57 % et 63 %.
+:::
+
+::: {.callout-note collapse="true"}
+## Médiane
+**En simple** : valeur qui **partage** les observations en deux moitiés égales (50 % en dessous, 50 % au-dessus). Robuste aux outliers.
+
+**Exemple** : pour la série 1, 2, 3, 4, 100 → médiane = 3 (vs. moyenne = 22, déformée par 100).
+:::
+
+::: {.callout-note collapse="true"}
+## Médiation
+**En simple** : X influence Y **à travers** une variable intermédiaire M.
+
+**Exemple** : éducation → revenu (via le type d'emploi M). L'effet est indirect.
+:::
+
+::: {.callout-note collapse="true"}
+## Mixed methods
+**En simple** : combinaison de méthodes **qualitatives** et **quantitatives** dans une même recherche.
+
+**Exemple** : focus groups (quali) pour construire une échelle, puis sondage (quanti) pour la tester à grande échelle.
+:::
+
+::: {.callout-note collapse="true"}
+## Mode
+**En simple** : valeur la **plus fréquente** dans l'échantillon. Le seul indicateur de tendance centrale qui fonctionne pour les variables nominales.
+
+**Exemple** : sur 80 étudiant·e·s, 30 viennent de Suisse romande → la Suisse romande est le mode.
+:::
+
+::: {.callout-note collapse="true"}
+## Multivariée (analyse)
+**En simple** : analyse qui considère **3 variables ou plus** simultanément, typiquement par régression.
+
+**Exemple** : prédire le revenu par l'âge, l'éducation, le genre, la région.
+:::
+
+## N
+
+::: {.callout-note collapse="true"}
+## Niveau de mesure
+**En simple** : type d'information codée dans une variable. **4 niveaux** : nominal, ordinal, continu, discret. Détermine les statistiques applicables.
+
+**Exemple** : langue = nominal ; intérêt politique 1-4 = ordinal ; âge en années = continu ; nb d'enfants = discret.
+:::
+
+::: {.callout-note collapse="true"}
+## Nominal (niveau de mesure)
+**En simple** : catégories sans ordre logique.
+
+**Exemple** : langue maternelle (français, allemand, italien). Aucune n'est « supérieure ».
+:::
+
+::: {.callout-note collapse="true"}
+## Non-probabiliste
+**En simple** : voir « Échantillonnage probabiliste vs. non-probabiliste ».
+:::
+
+::: {.callout-note collapse="true"}
+## Non-réponse
+**En simple** : refus de participer (« survey non-response ») ou de répondre à une question (« item non-response »).
+
+**Exemple** : tu envoies 1000 questionnaires, 600 sont remplis → 40 % de non-réponse. Risque : biais si les non-répondant·e·s diffèrent systématiquement.
+:::
+
+## O
+
+::: {.callout-note collapse="true"}
+## Objectivité vs. objectivation
+**En simple** : voir « État vs. processus (objectivité) ».
+:::
+
+::: {.callout-note collapse="true"}
+## Odds (cote)
+**En simple** : rapport entre P(événement) et P(non-événement).
+
+**Exemple** : pour tirer un pique (13/52 = 0.25) → odds = 0.25 / 0.75 = 0.33 (« 1 contre 3 »).
+:::
+
+::: {.callout-note collapse="true"}
+## Odds Ratio (OR)
+**En simple** : rapport de deux odds. En régression logistique, mesure de combien les chances d'un événement sont **multipliées** quand X augmente d'une unité.
+
+**Exemple** : OR = 2 → les chances doublent. OR = 0.5 → les chances sont divisées par 2. OR = 1 → pas d'effet.
+:::
+
+::: {.callout-note collapse="true"}
+## OLS (Ordinary Least Squares)
+**En simple** : méthode des **moindres carrés ordinaires** utilisée par la régression linéaire pour trouver la « meilleure » droite.
+
+**Exemple** : on minimise la somme des erreurs au carré entre les points réels et la droite prédite.
+:::
+
+::: {.callout-note collapse="true"}
+## Open Data
+**En simple** : données mises à disposition gratuitement par leurs producteur·ice·s (souvent l'État) pour libre réutilisation.
+
+**Exemple** : opendata.swiss agrège des données ouvertes des administrations suisses.
+:::
+
+::: {.callout-note collapse="true"}
+## Opérationnalisation
+**En simple** : passer d'un **concept abstrait** à des **indicateurs mesurables**.
+
+**Exemple** : concept = « usage actif d'Instagram » → indicateur = « j'ai liké au moins 5 posts par jour » (oui/non).
+:::
+
+::: {.callout-note collapse="true"}
+## Ordinal (niveau de mesure)
+**En simple** : catégories **ordonnées**, mais sans distance quantifiée entre elles.
+
+**Exemple** : niveau d'études (sans formation < CFC < apprentissage < université). On sait l'ordre, pas l'écart précis.
+:::
+
+## P
+
+::: {.callout-note collapse="true"}
+## Panel (données de)
+**En simple** : type de données longitudinales où on suit les **mêmes individus** dans le temps.
+
+**Exemple** : Panel Suisse des Ménages.
+:::
+
+::: {.callout-note collapse="true"}
+## Paramètre
+**En simple** : valeur **vraie** dans la population, inconnue. Opposé : statistique (calculée sur l'échantillon).
+
+**Exemple** : la moyenne réelle du QI de toute la population (inconnue) = paramètre. Le QI moyen de tes 200 sondé·e·s = statistique.
+:::
+
+::: {.callout-note collapse="true"}
+## Parsing
+**En simple** : technique de web scraping consistant à **décomposer** le code HTML d'une page pour en extraire les éléments d'intérêt.
+
+**Exemple** : sur une page de recettes, parser tous les `<h2>` pour récupérer les noms de plats.
+:::
+
+::: {.callout-note collapse="true"}
+## Pearson (corrélation de)
+**En simple** : coefficient mesurant le lien **linéaire** entre deux variables **quantitatives**. Valeur entre −1 et +1.
+
+**Exemple** : r = 0.85 entre taille et poids → forte corrélation linéaire positive.
+:::
+
+::: {.callout-note collapse="true"}
+## Phi (φ) / V de Cramér
+**En simple** : coefficients d'association pour des tableaux croisés. Phi pour 2 × 2 ; V de Cramér pour les plus grands.
+
+**Exemple** : V de Cramér = 0.3 dans un 3 × 3 → association modérée.
+:::
+
+::: {.callout-note collapse="true"}
+## Pondération (weighting)
+**En simple** : technique consistant à donner plus de poids à certaines observations pour corriger un biais d'inclusion.
+
+**Exemple** : si les 18-30 sont sous-représentés (9 % vs. 13 % en population), on leur donne un poids de 1.44.
+:::
+
+::: {.callout-note collapse="true"}
+## Population
+**En simple** : ensemble total qu'on veut étudier. Souvent inaccessible → on étudie un **échantillon**.
+
+**Exemple** : toute la population suisse (~9 mio). Tu interroges 1 070 personnes pour faire des inférences.
+:::
+
+::: {.callout-note collapse="true"}
+## Pré-test
+**En simple** : test préliminaire d'un questionnaire sur un petit échantillon pour vérifier qu'il fonctionne. Règle : 10 % des participant·e·s visé·e·s.
+
+**Exemple** : envoyer ton sondage à 30 ami·e·s avant les 300 sondé·e·s cibles, pour repérer les questions mal comprises.
+:::
+
+::: {.callout-note collapse="true"}
+## Primaires (données)
+**En simple** : données **récoltées** directement par le·la chercheur·euse pour son étude.
+
+**Exemple** : tu lances ton sondage Qualtrics. Opposé : secondaires.
+:::
+
+::: {.callout-note collapse="true"}
+## Probit (régression)
+**En simple** : variante de la régression logistique, basée sur la fonction normale cumulée plutôt que logit.
+
+**Exemple** : utilisée en économétrie. Signe et significativité = interprétation identique à logit. Mais pas d'odds ratios.
+:::
+
+::: {.callout-note collapse="true"}
+## P-value
+**En simple** : probabilité d'observer un résultat aussi extrême que le tien **si H0 était vraie**. p < 0.05 → on rejette H0.
+
+**Exemple** : p = 0.03 → on rejette H0, le résultat est significatif. p = 0.20 → on ne rejette pas. Attention : ce n'est PAS la probabilité que H0 soit vraie.
+:::
+
+::: {.callout-note collapse="true"}
+## Pseudo-R²
+**En simple** : équivalent du R² pour la régression logistique. **Ne s'interprète pas** comme un pourcentage de variance expliquée.
+
+**Exemple** : pseudo-R² = 0.082 → utile pour comparer des modèles, pas pour dire « le modèle explique 8 %... »
+:::
+
+## Q
+
+::: {.callout-note collapse="true"}
+## Quantitative (donnée / méthode)
+**En simple** : approche qui **quantifie** des phénomènes en chiffres et utilise des analyses statistiques.
+
+**Exemple** : sondage avec 1000 répondant·e·s + analyse de régression. Opposé : qualitative (entretiens, ethnographie).
+:::
+
+::: {.callout-note collapse="true"}
+## Question de recherche (QR)
+**En simple** : la question centrale qui guide ton étude. Doit être **claire, faisable, pertinente**.
+
+**Exemple** : « Dans quelle mesure différents usages d'Instagram influencent-ils les symptômes de dépression chez les étudiant·e·s ? »
+:::
+
+::: {.callout-note collapse="true"}
+## Question fermée / semi-ouverte / ouverte
+**En simple** :
+- **Fermée** : catégories de réponse imposées ;
+- **Semi-ouverte** : catégories + « autre : _____ » ;
+- **Ouverte** : pas de catégories prédéfinies.
+:::
+
+## R
+
+::: {.callout-note collapse="true"}
+## R² (R-carré)
+**En simple** : proportion de la variance de Y **expliquée** par le modèle de régression. Entre 0 et 1.
+
+**Exemple** : R² = 0.296 → le modèle explique 29.6 % de la variance. C'est correct en sciences sociales.
+:::
+
+::: {.callout-note collapse="true"}
+## R² ajusté
+**En simple** : version corrigée du R² qui pénalise les variables superflues. À utiliser pour **comparer** des modèles.
+
+**Exemple** : R² brut monte toujours quand on ajoute une variable, même inutile. Le R² ajusté ne monte que si la variable apporte vraiment.
+:::
+
+::: {.callout-note collapse="true"}
+## Recodage
+**En simple** : modification du codage d'une variable (regrouper des catégories, inverser l'ordre, créer du vrai/faux).
+
+**Exemple** : « âge » continu → tranches d'âge (18-30 / 31-60 / 60+). Toujours créer une **nouvelle** version, ne jamais écraser.
+:::
+
+::: {.callout-note collapse="true"}
+## Régression linéaire
+**En simple** : modèle qui prédit une variable Y **quantitative** en fonction d'une ou plusieurs variables X. Y = α + β₁X₁ + ... + e.
+
+**Exemple** : prédire la consommation de carburant d'une voiture en fonction de son poids et de sa puissance.
+:::
+
+::: {.callout-note collapse="true"}
+## Régression logistique
+**En simple** : modèle qui prédit une variable Y **dichotomique** (0/1) en fonction d'une ou plusieurs variables X.
+
+**Exemple** : prédire « voté ou pas » en fonction de l'âge, du revenu, du niveau d'études. Coefficients lus en odds ratios.
+:::
+
+::: {.callout-note collapse="true"}
+## Régression multinomiale
+**En simple** : régression logistique pour une Y nominale à **3+ catégories**.
+
+**Exemple** : prédire le « parti voté » (PS, PLR, UDC, autre) en fonction des caractéristiques de l'électeur·ice.
+:::
+
+::: {.callout-note collapse="true"}
+## Régression ordinale
+**En simple** : régression logistique pour une Y ordinale.
+
+**Exemple** : prédire la satisfaction (1-5) à partir de variables explicatives, en gardant l'ordre.
+:::
+
+::: {.callout-note collapse="true"}
+## Reproductibilité
+**En simple** : avec les **mêmes données** et le **même code**, on retrouve les mêmes résultats.
+
+**Exemple** : un·e collègue lance ton script R et obtient exactement le même tableau. Pré-requis du travail scientifique sérieux.
+:::
+
+::: {.callout-note collapse="true"}
+## Réplicabilité
+**En simple** : refaire **la même étude** sur de **nouvelles données** et obtenir des résultats similaires.
+
+**Exemple** : Tandoc et al. (2015) trouvent que Facebook ↔ envie. Si tu refais l'étude en 2026 sur Instagram, trouves-tu pareil ? C'est la réplicabilité.
+:::
+
+## S
+
+::: {.callout-note collapse="true"}
+## Satisficing (théorie du)
+**En simple** : les répondant·e·s ne cherchent pas la **meilleure** réponse, mais une réponse **suffisante** avec un minimum d'effort.
+
+**Exemple** : ils cliquent rapidement, choisissent le milieu, copient leurs précédentes réponses. Plus fréquent quand le questionnaire est long ou ennuyeux.
+:::
+
+::: {.callout-note collapse="true"}
+## Scatterplot (diagramme de dispersion)
+**En simple** : graphique avec un point par observation, X en abscisse, Y en ordonnée. Visualise une corrélation.
+
+**Exemple** : taille (X) vs. poids (Y) → nuage de points qui monte → corrélation positive.
+:::
+
+::: {.callout-note collapse="true"}
+## Score (index)
+**En simple** : variable construite en **additionnant** (ou moyennant) les réponses d'une batterie d'items.
+
+**Exemple** : 9 items de Likert (1-5) → score total de 9 à 45 mesurant l'attitude « internationalisme ».
+:::
+
+::: {.callout-note collapse="true"}
+## Secondaires (données)
+**En simple** : données **déjà existantes**, récoltées par d'autres pour d'autres buts.
+
+**Exemple** : utiliser le Panel Suisse des Ménages pour ton étude. Opposé : primaires.
+:::
+
+::: {.callout-note collapse="true"}
+## Sélection (biais de)
+**En simple** : voir « Biais de sélection ».
+:::
+
+::: {.callout-note collapse="true"}
+## Sentiment analysis
+**En simple** : technique automatisée de codage où chaque mot est classé positif/négatif selon un dictionnaire.
+
+**Exemple** : analyser 10 000 tweets pour mesurer l'humeur générale envers une marque.
+:::
+
+::: {.callout-note collapse="true"}
+## Significativité statistique
+**En simple** : un résultat est significatif si p < α (souvent 0.05) → on peut **rejeter H0** avec un risque contrôlé d'erreur.
+
+**Exemple** : p = 0.001 → très hautement significatif. Attention : significatif ≠ important pratiquement.
+:::
+
+::: {.callout-note collapse="true"}
+## Skewness
+**En simple** : voir « Inclinaison ».
+:::
+
+::: {.callout-note collapse="true"}
+## Spearman (corrélation de)
+**En simple** : coefficient mesurant le lien **monotone** entre deux variables **ordinales** (ou non-normales). Calculé sur les **rangs**.
+
+**Exemple** : intérêt politique (1-4) vs. participation électorale (rang) → ρ Spearman = 0.6.
+:::
+
+::: {.callout-note collapse="true"}
+## Stratifié (échantillonnage)
+**En simple** : on divise la population en **strates** (langue, âge), puis on tire au sort dans chaque strate.
+
+**Exemple** : pour un sondage suisse, tirer 70 % en allemand + 25 % en français + 5 % en italien.
+:::
+
+::: {.callout-note collapse="true"}
+## Systématique (échantillonnage)
+**En simple** : on prend chaque **n-ième** unité dans une liste.
+
+**Exemple** : prendre 1 article sur 10 dans un journal.
+:::
+
+## T
+
+::: {.callout-note collapse="true"}
+## Tableau croisé (table de contingence)
+**En simple** : tableau croisant deux variables **catégorielles**. VI en colonnes, VD en lignes.
+
+**Exemple** : vote (en faveur / opposé) × âge (jeune / vieux). On peut calculer % en colonnes, en lignes, ou totaux.
+:::
+
+::: {.callout-note collapse="true"}
+## Tendance centrale
+**En simple** : mesure qui résume le « milieu » d'une distribution. **3 outils** : mode, médiane, moyenne.
+
+**Exemple** : moyenne de notes = 12 ; médiane = 11 ; mode = 10. Selon le niveau de mesure de la variable, on choisit l'outil approprié.
+:::
+
+::: {.callout-note collapse="true"}
+## Test t
+**En simple** : test comparant les **moyennes** de **2 groupes** (ou 1 groupe vs. une valeur de référence).
+
+**Exemple** : tester si la confiance moyenne des hommes diffère de celle des femmes. t = 2.5, p = 0.006 → différence significative.
+:::
+
+::: {.callout-note collapse="true"}
+## Topic modelling
+**En simple** : technique automatisée qui regroupe les textes selon leur **similarité de vocabulaire**, sans étiquetage humain.
+
+**Exemple** : analyser 100 000 articles → identifier les 10 thèmes dominants automatiquement.
+:::
+
+::: {.callout-note collapse="true"}
+## Transversales (données)
+**En simple** : données mesurées à **une seule date** (un instantané).
+
+**Exemple** : sondage post-électoral d'octobre 2023. Opposé : longitudinales.
+:::
+
+::: {.callout-note collapse="true"}
+## Triangulation
+**En simple** : croiser plusieurs sources ou méthodes pour renforcer la confiance dans un résultat.
+
+**Exemple** : confirmer un résultat de sondage par des entretiens, ou par des données de capteurs.
+:::
+
+::: {.callout-note collapse="true"}
+## Tukey (test de)
+**En simple** : test post-hoc qui suit une ANOVA significative pour identifier **quelles paires de groupes** diffèrent vraiment.
+
+**Exemple** : ANOVA sur 4 statuts matrimoniaux → significative. Tukey HSD → c'est marié vs. célibataire qui diffèrent, pas marié vs. divorcé.
+:::
+
+## U
+
+::: {.callout-note collapse="true"}
+## Unité d'analyse
+**En simple** : ce que tu **codes** réellement, une ligne dans la base. Souvent plus fin que l'unité de collecte.
+
+**Exemple** : tu collectes des articles (collecte) mais codes chaque **revendication** dans l'article (analyse).
+:::
+
+::: {.callout-note collapse="true"}
+## Unité de collecte
+**En simple** : le matériel de **base** que tu récupères pour ta recherche.
+
+**Exemple** : un article de presse, un post TikTok, un répondant·e à un sondage.
+:::
+
+::: {.callout-note collapse="true"}
+## Univariée (analyse)
+**En simple** : analyse d'**une seule variable** à la fois. Distribution, tendance centrale, dispersion.
+
+**Exemple** : décrire la distribution des âges dans l'échantillon avec un histogramme et une moyenne.
+:::
+
+## V
+
+::: {.callout-note collapse="true"}
+## Validité externe
+**En simple** : capacité des résultats à se **généraliser** au-delà de l'échantillon étudié.
+
+**Exemple** : tes résultats sur 200 étudiant·e·s de l'UNIFR valent-ils pour les jeunes suisses en général ?
+:::
+
+::: {.callout-note collapse="true"}
+## Validité interne
+**En simple** : qualité du design qui exclut les explications alternatives pour les résultats de **ton** étude.
+
+**Exemple** : ton groupe contrôle est-il vraiment comparable au groupe traité ? Des variables omises peuvent-elles expliquer ton effet ?
+:::
+
+::: {.callout-note collapse="true"}
+## Variable
+**En simple** : caractéristique qui **varie** d'une observation à l'autre.
+
+**Exemple** : âge, langue, parti voté, score de satisfaction. Une colonne dans ton tableau de données.
+:::
+
+::: {.callout-note collapse="true"}
+## Variable dépendante (VD) / indépendante (VI)
+**En simple** : VD = ce que tu veux **expliquer** (Y). VI = ce qui **explique** (X).
+
+**Exemple** : Y = satisfaction au travail, X = salaire. La régression mesure l'effet de X sur Y.
+:::
+
+::: {.callout-note collapse="true"}
+## Variable confondante (Z)
+**En simple** : variable qui influence à la fois X et Y, créant une corrélation **fallacieuse**.
+
+**Exemple** : « ventes de glaces » et « noyades » sont corrélées, mais c'est la **chaleur** (Z) qui cause les deux.
+:::
+
+::: {.callout-note collapse="true"}
+## Variable de contrôle
+**En simple** : variable ajoutée à une régression pour neutraliser son effet et **isoler** l'effet propre des variables d'intérêt.
+
+**Exemple** : en mesurant l'effet du genre sur le salaire, on contrôle pour l'expérience pour éviter de confondre les deux.
+:::
+
+::: {.callout-note collapse="true"}
+## Variance
+**En simple** : carré de l'écart-type. Mesure de **dispersion**.
+
+**Exemple** : si SD = 5, variance = 25. Plus utile en formules (additionnable) qu'en interprétation.
+:::
+
+## W
+
+::: {.callout-note collapse="true"}
+## Web scraping
+**En simple** : technique de récupération automatisée de données sur le web. **Deux** approches : API ou parsing.
+
+**Exemple** : récupérer 10 000 tweets sur un sujet via l'API Twitter, ou parser le code HTML d'un site d'actualité.
+:::
+
+::: {.callout-note collapse="true"}
+## Weighting
+**En simple** : voir « Pondération ».
+:::

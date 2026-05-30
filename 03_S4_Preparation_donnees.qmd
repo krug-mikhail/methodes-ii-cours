@@ -1,0 +1,193 @@
+---
+title: "S4 - Préparation des données d'enquête"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Entre l'enquête terminée et les analyses, il y a une **étape de nettoyage** : tu attribues des noms et des codes, tu documentes tout dans un **codebook**, tu **recodes** sans jamais écraser les variables originales, et tu décris d'abord ton échantillon.
+:::
+
+Le **point à retenir** : *les données récoltées doivent être retravaillées avant utilisation. Il est primordial de garder une trace des « nettoyages » effectués et de procéder par étapes successives.*
+
+## Une fois l'enquête terminée
+
+Première chose à regarder, **avant tout codage** :
+
+| Indicateur | Pourquoi |
+|---|---|
+| **Taux de non-réponses** | Estimer la qualité globale |
+| **Questionnaires vides** | À exclure |
+| **Questionnaires quittés prématurément** | À supprimer si annoncé dans la déclaration sur le traitement des données |
+| **Temps de réponse moyen** | Un temps trop court signale du satisficing |
+
+## Des questions aux variables
+
+Une **réponse** dans le questionnaire devient une **valeur** dans la base de données. Cette transformation suit des règles précises.
+
+### Nommer les variables
+
+- Noms **courts mais compréhensibles** (`ipol` pour « intérêt politique »).
+- Une variable = une question (sauf échelle additive, voir plus bas).
+
+### Attribuer des codes aux réponses
+
+| Type de question | Codage |
+|---|---|
+| **Fermée** | Chiffres assignés aux catégories. Logique : du petit au grand, du moins au plus |
+| **Semi-ouverte** | Coder les « autre » si besoin ; sinon convention : `8` ou `88` |
+| **Ouverte** | Coder si nécessaire |
+| **Préfère ne pas répondre** | Donnée manquante (NA) — ou code spécifique |
+| **Ne sais pas (NSP)** | Convention : `9` ou `99` |
+
+### Garder une trace : ne jamais écraser
+
+::: {.callout-important}
+## Règle d'or du recodage
+**Ne jamais écraser** une variable d'origine. Crée une **nouvelle version** avec un nouveau nom. Tu pourras toujours revenir en arrière, comparer, corriger. Et toujours garder la variable `ID` (numéro d'identification du·de la répondant·e).
+:::
+
+## Le codebook
+
+Le **codebook** est le manuel de ta base de données. Sans lui, personne (pas même toi dans 6 mois) ne peut comprendre ce que représente chaque variable.
+
+### Contenu
+
+| Section | Détail |
+|---|---|
+| **Métadonnées** | Auteur·e, version, date, base de données concernée, infos sur le sondage |
+| **Tableau de variables** | Variable, Description, Question (texte exact), Valeurs, Labels |
+
+### Exemple type
+
+| Variable | Description | Valeur | Label |
+|---|---|---|---|
+| `ID` | Numéro d'identification du·de la répondant·e | — | — |
+| `ipol` | Intérêt pour la politique | 1 | Pas du tout intéressé·e |
+|  |  | 2 | Plutôt pas intéressé·e |
+|  |  | 3 | Plutôt intéressé·e |
+|  |  | 4 | Très intéressé·e |
+
+## Les recodages
+
+### Possibilités classiques
+
+| Recodage | Quand |
+|---|---|
+| **Réduire le nombre de catégories** | Trop de catégories peu peuplées → regrouper en « autre » |
+| **Regrouper des catégories** | Ex. cantons → urbains vs. ruraux |
+| **Inverser l'ordre** | Dans une batterie de questions, certains items sont formulés à l'inverse → réaligner |
+| **Combiner deux variables** | Ex. canton + langue → Suisse alémanique vs. romande |
+| **Construire vrai/faux** | À partir d'une question de connaissance |
+| **Échelles additives** | Addition de plusieurs items pour créer un index |
+
+### Bonnes pratiques
+
+1. **Analyse univariée avant et après** le recodage : compare les fréquences pour vérifier que rien n'a été perdu.
+2. **Plusieurs versions** d'une même variable peuvent coexister (`age`, `age_cat3`, `age_cat5`).
+3. **Trace dans le codebook** : toujours documenter quoi a été regroupé, et pourquoi.
+
+#### Exemple : variable « Nombre de partis au CF »
+
+| **Avant** (`savoirpol_cf`) |  | **Après** (`savoirpol_cf_vf`) |  |
+|---|---|---|---|
+| 1 = 3 partis | N = 32 | 0 = faux | N = 82 |
+| 2 = 4 partis | N = 95 | 1 = vrai | N = 95 |
+| 3 = 5 partis | N = 26 | NA = non-réponse | N = 5 |
+| 8 = NSP | N = 24 |  |  |
+| 9 = NR | N = 5 |  |  |
+| **TOTAL** | 182 | **TOTAL** | 182 |
+
+Recodage : 1, 3, 8, 9 → 0 (faux/NA), 2 → 1 (vrai). Toutes les obs sont conservées, juste regroupées.
+
+## Construire une échelle (index)
+
+### Pourquoi ?
+
+Pour des **caractéristiques complexes** comme une attitude ou une motivation, **une seule question** ne suffit pas. On mesure le concept par **plusieurs indicateurs**, puis on combine.
+
+### Les étapes
+
+| Étape | Action |
+|---|---|
+| **1. Fondement théorique** | Quelle caractéristique mesurer ? Définition à partir de la littérature |
+| **2. Opérationnalisation** | Choisir les indicateurs (questions disponibles ou batterie à créer ; s'inspirer de [zis.gesis.org](https://zis.gesis.org/)) |
+| **3. Mesurer la corrélation** entre items | Les items mesurent-ils bien la même chose ? |
+| **4. Création de l'échelle** | Addition (ou moyenne) des scores des items |
+| **5. Diagnostic et amélioration** | Test de fiabilité (Alpha de Cronbach) ; élimination d'items si nécessaire |
+
+### Exemple : « Internationalism » de Likert (1932)
+
+- **9 items**, chacun de 1 à 5 sur l'échelle de Likert (1 = fortement contre l'ouverture, 5 = fortement pour) ;
+- **Recoder le sens** si certains items sont inversés ;
+- **Score total** = somme des 9 réponses → variable de 9 à 45 ;
+- Possibilité de **diviser par le nombre d'items** → score sur 1-5 ;
+- **Mesurer la fiabilité** de l'échelle obtenue.
+
+::: {.callout-important}
+## L'Alpha de Cronbach
+**Définition** : coefficient mesurant la **cohérence interne** d'une échelle additive — les items mesurent-ils bien tous le même concept ?
+
+**Seuil acceptable** : **0.7** (en sciences sociales). En dessous : l'échelle n'est pas fiable. Solution : retirer un item peu cohérent et recalculer.
+:::
+
+::: {.callout-tip collapse="true"}
+## En simple
+L'Alpha de Cronbach, c'est le **score de cohésion** d'une équipe de questions qui essaient toutes de mesurer la même chose. Si elles « répondent » dans le même sens à chaque participant·e, alpha est élevé (proche de 1). Si elles partent dans tous les sens, alpha est bas → ton échelle ne mesure pas vraiment ce que tu prétends.
+:::
+
+### Échelles connues du domaine
+
+- **Social Media Addiction Scale (SMAS)** — Tutgun-Ünal & Deniz, 2015
+- **Internet Skills Scale (ISS)** — Van Deursen, Helsper & Eynon, 2019
+
+## Premiers résultats : décrire l'échantillon
+
+Avant toute analyse complexe, tu **décris** ton échantillon. Ça remplit deux fonctions : vérifier qu'il ressemble à la population et donner du contexte aux lecteur·ice·s.
+
+| Caractéristique | Mesure adaptée |
+|---|---|
+| **Âge** (continu) | Moyenne, écart-type |
+| **Catégorie d'âge** (ordinale) | Distribution (fréquences, %), mode |
+| **Genre** (nominale) | Distribution (fréquences, %), mode |
+| **Langue** (nominale) | Distribution (fréquences, %), mode |
+
+## La pondération (weighting)
+
+### Pourquoi ?
+
+Si ton échantillon **diffère** de la population sur une caractéristique importante (les 18-30 ans sont sous-représentés, par ex.), tu peux corriger en **pondérant** : tu donnes plus de poids aux observations rares et moins aux observations sur-représentées.
+
+### Procédure
+
+1. Calculer le **poids** : `proportion dans la population / proportion dans l'échantillon` ;
+2. Créer une nouvelle variable assignant ce poids à chaque individu.
+
+#### Exemple
+
+| Catégorie | Échantillon (%) | Population (%) | Poids |
+|---|---|---|---|
+| 18-30 ans | 9 | 13 | 1.44 |
+| 31-40 ans | 28 | 28 | 1.00 |
+| 41-50 ans | 29 | 30 | 1.03 |
+| 51+ ans | 33 | 28 | 0.84 |
+
+Les 18-30 sont sous-représentés → on leur donne **plus** de poids (1.44) pour compenser.
+
+::: {.callout-warning}
+## Quand la pondération est-elle critique ?
+- **Essentielle** si tu calcules une **moyenne** ou un **pourcentage** que tu veux généraliser à la population.
+- **Moins crucial** pour les **relations entre variables** (régressions multivariées) — les coefficients sont moins sensibles aux biais d'inclusion si les variables de stratification sont incluses comme contrôles.
+:::
+
+::: {.callout-note}
+## Récapitulatif Ch.4
+- Avant analyse : taux de non-réponse, questionnaires vides, temps de réponse.
+- Coder les réponses : du petit au grand, conventions `8/88` (autre), `9/99` (NSP), `NA` (préfère ne pas répondre).
+- **Ne jamais écraser** une variable. Créer une nouvelle version.
+- **Codebook** = manuel de la base : variable, description, valeur, label.
+- Recoder pour simplifier, regrouper, inverser, combiner ou créer du vrai/faux.
+- Une **échelle additive** combine plusieurs items mesurant un concept abstrait (attitude, motivation).
+- **Alpha de Cronbach** ≥ 0.7 → échelle fiable.
+- Toujours **décrire l'échantillon** avant les analyses (socio-démographiques).
+- **Pondération** corrige les biais d'inclusion pour les statistiques descriptives.
+:::

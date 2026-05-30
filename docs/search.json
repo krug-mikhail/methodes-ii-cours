@@ -1,0 +1,1258 @@
+[
+  {
+    "objectID": "08_S9_Qualite_communication.html",
+    "href": "08_S9_Qualite_communication.html",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nUne bonne analyse est reproductible, valide (interne et externe), prudente sur la causalité, transparente sur l’incertitude, consciente de l’objectivation, et communiquée clairement au lecteur·ice.\nLe point à retenir : il est important de s’assurer de la qualité des résultats d’une analyse quantitative. Le processus de production et d’interprétation doit être documenté. Lors de la présentation, pense en premier lieu au·à la lecteur·ice et rends ton raisonnement le plus clair et transparent possible.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-a-reproductibilité",
+    "href": "08_S9_Qualite_communication.html#bloc-a-reproductibilité",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "1 Bloc A — Reproductibilité",
+    "text": "1 Bloc A — Reproductibilité\n\n1.1 Pourquoi rendre ses résultats reproductibles ?\nKarl Popper le disait : « Nous ne prenons même pas nos propres observations au sérieux tant que nous ne les avons pas répétées et testées. Ce n’est que par de telles répétitions que nous pouvons nous convaincre qu’il ne s’agit pas d’une coïncidence isolée. »\nLa reproductibilité renforce la fiabilité des résultats et la confiance dans la science. Sans elle, un résultat reste un « événement isolé », pas une vraie connaissance.\n\n\n1.2 Trois notions parfois confondues\n\n\n\n\n\n\n\nNotion\nDéfinition\n\n\n\n\nReproductibilité\nLes mêmes données + le même code = les mêmes résultats\n\n\nRéplicabilité\nRefaire l’étude avec de nouvelles données sur le même protocole = résultats similaires\n\n\nRobustesse\nLes résultats tiennent avec des méthodes alternatives ou des choix différents\n\n\n\n\n\n1.3 Bonnes pratiques\n\n\n\n\n\n\n\nPratique\nAction\n\n\n\n\nDocument méta\nNote tes réflexions et décisions à chaque étape\n\n\nCode statistique annoté\nUn fichier par étape (nettoyage, univariée, multivariée) avec commentaires clairs\n\n\nVersions\nGarder plusieurs versions du papier final, idéalement avec track-changes\n\n\nMise à disposition\nCode annoté + données + questionnaires + tout document permettant la reproduction",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-b-validité-interne-et-externe",
+    "href": "08_S9_Qualite_communication.html#bloc-b-validité-interne-et-externe",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "2 Bloc B — Validité interne et externe",
+    "text": "2 Bloc B — Validité interne et externe\n\n2.1 Définition (Krippendorff, 2013)\n\n« La validité réside dans le fait que la qualité des résultats de la recherche nous conduit à les accepter comme vrais, comme parlant du monde réel. Un instrument de mesure est valide s’il mesure ce que son utilisateur prétend qu’il mesure. »\n\n\n\n2.2 Validité interne vs. externe\n\n\n\n\n\n\n\n\nType\nQuestion\nBonne pratique\n\n\n\n\nInterne\nLe design est-il assez rigoureux pour soutenir les conclusions sur cette étude ?\nDiversifier les sources, tester les explications alternatives\n\n\nExterne\nLes résultats sont-ils généralisables à d’autres contextes ?\nComparer avec d’autres données ou études\n\n\n\n\n\n\n\n\n\nLa validité, c’est multiple\n\n\n\n\nValidité de contenu : la mesure couvre-t-elle bien tous les aspects du concept ?\nValidité de construit : la mesure se rapporte-t-elle bien au concept théorique ?\nValidité interne : le design exclut-il les explications alternatives ?\nValidité externe : les résultats se généralisent-ils ?\n\nÀ chaque étape de ta recherche, demande-toi quelle validité est en jeu.\n\n\n\n\n2.3 Bonnes pratiques générales\n\nS’assurer que les variables mesurent bien les concepts visés.\nTester les explications alternatives.\nComparer ses mesures à des mesures obtenues par d’autres sources (triangulation).\nUtiliser des mesures déjà établies (échelles validées de la littérature).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-c-causalité-vs.-corrélation",
+    "href": "08_S9_Qualite_communication.html#bloc-c-causalité-vs.-corrélation",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "3 Bloc C — Causalité vs. corrélation",
+    "text": "3 Bloc C — Causalité vs. corrélation\n\n3.1 Le piège de Coluche\n\n« Quand on est malade, il ne faut surtout pas aller à l’hôpital : la probabilité de mourir dans un lit d’hôpital est dix fois plus grande que dans son lit à la maison. »\n\nL’humour de Coluche illustre toute la difficulté : la corrélation entre « être à l’hôpital » et « mourir » ne dit rien sur la causalité. Cause cachée : on va à l’hôpital quand on est gravement malade — c’est la maladie qui tue, pas l’hôpital.\n\n\n3.2 Causalité : au cœur de la science\nLa démarche scientifique vise à établir des liens causaux : X cause Y. Mais :\n\nLes causes sont multiples ;\nCe qu’on observe dans les données est une corrélation ;\nLe risque d’interprétation causale abusive est permanent.\n\n\n\n3.3 4 questions pour évaluer une relation causale\n\n\n\n\n\n\n\n\n#\nQuestion\nConcept\n\n\n\n\n1\nSens de la relation : X cause-t-il Y, ou est-ce l’inverse ? Ou une influence réciproque ?\nCausalité inversée\n\n\n2\nCauses concurrentes : existe-t-il une variable Z qui influence à la fois X et Y ?\nVariable confondante (cofondante)\n\n\n3\nSélection de l’échantillon : la sélection des cas est-elle liée à la VD ?\nBiais de sélection\n\n\n4\nNiveau d’analyse : le niveau auquel on analyse correspond-il à celui de la théorie ?\nErreur écologique\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nCausalité inversée : « Les pompiers causent les incendies » (parce qu’on les voit toujours là). Non : c’est l’incendie qui les fait venir.\nCause concurrente : « Les ventes de glaces causent les noyades. » Non : c’est la chaleur qui fait grimper les deux.\nBiais de sélection : étudier la dépression chez les personnes en psychiatrie ne dit rien de la population — l’échantillon est sélectionné par la VD.\nErreur écologique : « Les pays riches ont plus de divorces, donc les riches divorcent plus. » Pas forcément : c’est peut-être une moyenne agrégée trompeuse.\n\n\n\n\n\n\n3.4 Bonnes pratiques pour étayer la causalité\n\nModèle théorique solide basé sur la littérature.\nHypothèses bien formulées et justifiées.\nCondition temporelle : X doit précéder Y dans le temps.\nExclure les autres causes : variables omises, biais de sélection, niveau d’analyse erroné.\nModèle d’analyse approprié : régression avec variables de contrôle, ou design expérimental.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-d-incertitude",
+    "href": "08_S9_Qualite_communication.html#bloc-d-incertitude",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "4 Bloc D — Incertitude",
+    "text": "4 Bloc D — Incertitude\n\n4.1 Qu’est-ce que l’incertitude scientifique ?\nL’incertitude est une mesure quantitative de la variabilité des données. Toutes les mesures contiennent une erreur. Toutes les données ont une gamme de valeurs attendues, jamais une valeur ponctuelle parfaite.\nIncertitude ≠ doute sur les résultats. Indiquer l’incertitude, c’est être transparent sur la confiance qu’on accorde à la mesure.\n\n\n4.2 Bonnes pratiques : toujours indiquer\n\n\n\n\n\n\n\nMesure\nDéfinition\n\n\n\n\nNiveau de confiance\nProbabilité que l’échantillon reflète la population (souvent 95 % ou 99 %)\n\n\nMarge d’erreur\nÉcart toléré entre échantillon et population (souvent en %)\n\n\nÉcart-type\nDispersion autour de la moyenne (S6)\n\n\nIntervalle de confiance (IC)\nÉtendue contenant le paramètre de population à un certain degré de certitude (souvent 95 %)\n\n\n\n\n\n\n\n\n\nLecture d’un IC\n\n\n\nUn IC à 95 % de [3.2 ; 5.8] signifie : si je répète l’étude un grand nombre de fois, 95 % des intervalles calculés contiendront la vraie valeur du paramètre.\nAstuce : si l’IC d’une différence contient 0, la différence n’est pas significative (0 = « pas de différence » reste plausible).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-e-objectivité-vs.-objectivation",
+    "href": "08_S9_Qualite_communication.html#bloc-e-objectivité-vs.-objectivation",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "5 Bloc E — Objectivité vs. objectivation",
+    "text": "5 Bloc E — Objectivité vs. objectivation\n\n5.1 Deux postures\n\n\n\n\n\n\n\nPosture\nDéfinition\n\n\n\n\nObjectivité (état)\nLe monde a des propriétés objectives en attente d’être dévoilées. La recherche détecte du réel.\n\n\nObjectivation (processus)\nLa recherche construit sa représentation du monde en construisant le sujet connaissant. C’est une construction sociale de la réalité.\n\n\n\n\n\n5.2 Danger de l’objectivité naïve\nQuand on traite des catégories sociales comme « objectives » (genre, classe, ethnie), on risque de :\n\nNaturaliser ce qui résulte des relations de pouvoir.\nExercer une violence symbolique sur les individus catégorisés (les enfermer dans une case).\n\n\n\n5.3 Bonnes pratiques\n\n\n\n\n\n\n\nPratique\nLogique\n\n\n\n\nNoter ses a priori au début de la recherche\nConscience réflexive\n\n\nQuestionner ses concepts, hypothèses, mesures\nRemise en question\n\n\nDiscuter et collaborer\nTriangulation des points de vue\n\n\nSe re-mettre en question sans s’auto-saboter\nÉquilibre",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-f-présentation-des-résultats",
+    "href": "08_S9_Qualite_communication.html#bloc-f-présentation-des-résultats",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "6 Bloc F — Présentation des résultats",
+    "text": "6 Bloc F — Présentation des résultats\n\n6.1 Structure type d’un papier de recherche\n\n\n\n\n\n\n\nSection\nContenu\n\n\n\n\n1. Univariée\nDescription de la VD (et VI) : tableau ou graphique + explication claire\n\n\n2. Bi-/multivariée\nTableau ou graphique + explication + interprétation des hypothèses au fil ou en bloc\n\n\n3. Réponse à la QR\nSynthèse : la QR est-elle résolue ? Avec quelles nuances ?\n\n\n\nDeux options d’organisation :\n\nOption I : interpréter au fur et à mesure (hypothèses validées/invalidées à mesure de la présentation).\nOption II : présenter tous les résultats, puis revenir sur chaque hypothèse pour conclure.\n\n\n\n6.2 Conseils généraux\n\n\n\n\n\n\n\nConseil\nDétail\n\n\n\n\nPenser au·à la lecteur·ice\nMessage clair, précis, compréhensible\n\n\nSeulement les résultats importants\nLe reste va en annexes\n\n\nRéférer aux concepts, pas aux noms de variables\nPas de VAR1, VAR2 — parler de « l’attitude populiste »\n\n\nIndiquer l’incertitude systématiquement\n\n\n\nNuméroter et titrer tous les tableaux et graphiques\n\n\n\n\n\n\n6.3 Règles pour les tableaux\n\n\n\n\n\n\nRègle\n\n\n\n\nIndiquer les totaux 100 % pour les proportions\n\n\nIndiquer l’incertitude (SE, IC, écart-type)\n\n\nPas de noms de variables techniques\n\n\nNote sous le tableau avec seuils de significativité : * p &lt; .05, ** p &lt; .01, *** p &lt; .001\n\n\nStyle sobre : pas d’effets 3D, usage restrictif des couleurs\n\n\n\n\n\n6.4 Tableaux types\n\n\n\n\n\n\n\nType d’analyse\nContenu\n\n\n\n\nUnivariée — fréquences\nCatégorie, Fréquence (N), Pourcentage (%), Total\n\n\nUnivariée — description quanti\nConcept, Moyenne, Écart-type, Étendue, Observations\n\n\nBivariée — croisé\nVI en colonnes, VD en lignes, % en colonnes\n\n\nBivariée — moyennes\nVI en colonnes, Moyenne, Écart-type, Observations\n\n\nRégression linéaire\nModèles en colonnes, VI en lignes, Coefficients (SE), Niveau de signif., Constante, N, R²\n\n\nRégression logistique\nIdem + colonne Odds Ratio, Pseudo-R²\n\n\n\n\n\n6.5 Règles pour les graphiques\n\n\n\n\n\n\nRègle\n\n\n\n\nGraphique adapté à l’analyse (barres pour quali, histogramme pour quanti, scatterplot pour 2 quanti)\n\n\nReprésenter l’incertitude (barres d’erreur, IC)\n\n\nPas de noms de variables\n\n\nÉchelle entière : représenter toute l’étendue (sinon distorsion)\n\n\nDistance constante entre points de l’axe\n\n\nSens de lecture usuel (plus petit au plus grand, plus ancien au plus récent)\n\n\nStyle sobre\n\n\n\n\n\n\n\n\n\nLes pièges visuels classiques\n\n\n\n\nAxe Y tronqué : faire commencer à 80 au lieu de 0 → un déclin de 5 % paraît dramatique.\nAxe Y inversé : montrer la mortalité de haut en bas → une baisse apparaît comme une hausse.\nAxe X disproportionnel : compresser ou étirer le temps → un événement récent semble représenter une tendance longue.\n\nÀ l’examen, sois capable de repérer ces manipulations dans un graphique présenté.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "08_S9_Qualite_communication.html#bloc-g-le-pipeline-de-recherche-vue-densemble",
+    "href": "08_S9_Qualite_communication.html#bloc-g-le-pipeline-de-recherche-vue-densemble",
+    "title": "S9 - Qualité et communication des résultats",
+    "section": "7 Bloc G — Le pipeline de recherche, vue d’ensemble",
+    "text": "7 Bloc G — Le pipeline de recherche, vue d’ensemble\nLe cours boucle sur le pipeline du S1, en associant chaque étape à une séance :\n\n\n\nÉtape\nSéances du cours\n\n\n\n\n1. Identification de l’objet\n(Méthodes I)\n\n\n2. Problématisation + QR\nS1\n\n\n2 bis. Hypothèses\nS1\n\n\n3. Opérationnalisation\nS2\n\n\n4. Collecte\nS3 – S5\n\n\n5. Analyse\nS6 – S8\n\n\n6. Dissémination\nS9\n\n\n\n\n\n\n\n\n\nRécapitulatif Ch.9\n\n\n\n\nReproductibilité ≠ réplicabilité ≠ robustesse. Document méta, code annoté, données partagées.\nValidité interne (rigueur du design) vs. externe (généralisation).\nCorrélation ≠ causalité. 4 questions à se poser : sens, causes concurrentes, sélection, niveau d’analyse.\nIncertitude : toujours indiquer niveau de confiance, marge d’erreur, IC, écart-type.\nObjectivité (état) vs. objectivation (processus) : être conscient·e que la recherche construit sa réalité.\nPrésenter ses résultats : penser au lecteur, structurer (uni → bi/multi → conclusion), tableaux/graphiques sobres avec incertitude.\nPipeline complet : objet → QR → hypothèses → opérationnalisation → collecte → analyse → dissémination.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S9 - Qualité et communication des résultats"
+    ]
+  },
+  {
+    "objectID": "09_S10_Conclusion.html",
+    "href": "09_S10_Conclusion.html",
+    "title": "S10 - Conclusion et mixed methods",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nBilan du cours, infos examen détaillées, et ouverture sur les mixed methods : combiner quanti et quali pour explorer ou approfondir.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S10 - Conclusion et mixed methods"
+    ]
+  },
+  {
+    "objectID": "09_S10_Conclusion.html#bloc-a-infos-examen-à-connaître",
+    "href": "09_S10_Conclusion.html#bloc-a-infos-examen-à-connaître",
+    "title": "S10 - Conclusion et mixed methods",
+    "section": "1 Bloc A — Infos examen (à connaître)",
+    "text": "1 Bloc A — Infos examen (à connaître)\n\n1.1 Modalités\n\n\n\n\n\n\n\nÉlément\nDétail\n\n\n\n\nFormat\nExamen écrit\n\n\nDurée\n60 minutes\n\n\nPériode\nSession d’été 2026 (date communiquée par la Faculté ; généralement le 01/06/2026 à 17h00, à vérifier)\n\n\nNote\n100 % de la note finale\n\n\nMatière\nCours + lectures obligatoires (les 3 scripts)\n\n\nMatériel autorisé\nAucun, sauf dictionnaire bilingue non-annoté pour étudiant·e·s non-francophones\n\n\n\n\n\n1.2 Structure de l’examen (15 points)\n\n\n\n\n\n\n\n\n\nPartie\nPoints\nFormat\nObjectif\n\n\n\n\n1. QCM\n5 pts (10 questions × 0.5)\nChoix multiple\nCompréhension passive : vocabulaire, distinctions de base\n\n\n2. Questions courtes\n5 pts (5 questions × 1)\nRéponses 2-3 phrases\nCompréhension active, synthèse, précision\n\n\n3. Questions de réflexion\n5 pts (2 questions × 2.5)\nDeux paragraphes\nRéflexion, analyse critique\n\n\nTotal\n15 pts\n\n\n\n\n\n\n\n\n\n\n\nStratégie de copie\n\n\n\n\nQCM : indication donnée si plusieurs réponses possibles ; points négatifs si erreur sur les multi-réponses. Lis bien la consigne.\nQuestions courtes : 2-3 phrases denses valent mieux qu’un paragraphe vague. Vise la précision : nomme le concept, définis-le brièvement, donne l’exemple.\nRéflexion : deux paragraphes structurés. Pose les enjeux, prends position, justifie. Mobilise les concepts du cours.\n\n\n\n\n\n1.3 Conseils pour réviser efficacement\n\nLes 7 étapes du pipeline : à savoir réciter de mémoire.\nNiveaux de mesure × méthode : connaître la matrice par cœur (S6).\nLire un tableau de régression (linéaire et logistique) : signes, étoiles, R²/pseudo-R², OR (S7-S8).\nVocabulaire des biais : désirabilité, satisficing, sélection, écologique.\nDistinctions clés : fiabilité vs. validité ; corrélation vs. causalité ; reproductibilité vs. réplicabilité ; quanti vs. quali.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S10 - Conclusion et mixed methods"
+    ]
+  },
+  {
+    "objectID": "09_S10_Conclusion.html#bloc-b-retour-sur-2-points-difficiles-du-cours",
+    "href": "09_S10_Conclusion.html#bloc-b-retour-sur-2-points-difficiles-du-cours",
+    "title": "S10 - Conclusion et mixed methods",
+    "section": "2 Bloc B — Retour sur 2 points difficiles du cours",
+    "text": "2 Bloc B — Retour sur 2 points difficiles du cours\n\n2.1 Régression probit (S7/8)\nPour rappel :\n\nPrincipe similaire à la régression logistique.\nFonction probit différente de logit (basée sur la loi normale plutôt que la distribution logistique).\nPas d’odds ratios (impossible à interpréter ainsi).\nSigne et significativité des effets : identiques à logit.\nÀ l’examen : savoir reconnaître qu’on parle de probit, et savoir qu’on l’interprète comme logit (signe + p).\n\n\n\n2.2 Échantillonnage (script 1 et S3) — rappel des cas\n\n\n\n\n\n\n\nCas type\nÉchantillonnage adapté\n\n\n\n\n« Savoir si les étudiant·e·s du cours trouvent que je parle trop vite, et si ça varie entre romands et alémaniques »\nEnquête exhaustive (petite population, accessible)\n\n\n« Savoir si la perf en maths dépend des profs ou des aptitudes »\nPar grappes (par classes, en gardant tous les élèves de la classe)\n\n\n« Savoir si les thèmes de la presse varient entre semaine et week-end »\nPar grappes (jours naturels regroupés)",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S10 - Conclusion et mixed methods"
+    ]
+  },
+  {
+    "objectID": "09_S10_Conclusion.html#bloc-c-mixed-methods",
+    "href": "09_S10_Conclusion.html#bloc-c-mixed-methods",
+    "title": "S10 - Conclusion et mixed methods",
+    "section": "3 Bloc C — Mixed methods",
+    "text": "3 Bloc C — Mixed methods\n\n3.1 Idée centrale\nCombiner méthodes qualitatives et quantitatives dans une même recherche. Particulièrement utile quand :\n\nLe domaine est peu exploré → manque de base théorique pour formuler des hypothèses et instruments de mesure standardisés ;\nLes résultats quantitatifs couvrent insatisfaisamment certains aspects (surprenants, contradictoires, non-illustratifs).\n\n\n\n3.2 Deux logiques principales\n\n3.2.1 1. Étude préparatoire / préliminaire\nDémarche : étude qualitative en amont (procédé inductif) → étude quantitative principale (procédé déductif).\nExemple : étude sur le binge-watching (Fahr et al.) — Quels motifs poussent les individus à regarder plusieurs épisodes d’affilée ?\n\nÉtape qualitative : focus groups → construction d’une échelle de motifs.\nÉtape quantitative : tester l’effet des différents motifs sur la probabilité d’avoir un comportement de binge-watching problématique.\n\n\n\n3.2.2 2. Approfondissement\nDémarche : étude quantitative principale → étude qualitative pour explorer des résultats surprenants.\nExemple : étude sur le news-tagging (Kümpel, 2019) — Qu’est-ce qui pousse les utilisateur·ice·s de Facebook à consulter des news ?\n\nÉtape quantitative expérimentale : montre que le « tagging » (être mentionné sous un post) est le prédicteur le plus important.\nÉtape qualitative (entretiens) : montre que les user·ice·s tagguent quelqu’un quand ils·elles pensent que ça l’intéressera — donc le « tagging » n’est pas une cause simple mais un signal social complexe.\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nMixed methods inductif → déductif : tu explores avec du quali (focus groups, entretiens) pour comprendre la diversité du phénomène, puis tu testes à grande échelle avec du quanti.\nMixed methods déductif → inductif : tu trouves un résultat quanti, mais tu veux comprendre pourquoi ; le quali permet d’aller voir derrière les chiffres.\n\nDans les deux cas, on ne se contente pas d’une seule méthode : la combinaison renforce la robustesse et la profondeur.\n\n\n\n\n\n\n3.3 Quand recourir aux mixed methods ?\n\n\n\n\n\n\n\nSituation\nApproche conseillée\n\n\n\n\nDomaine peu théorisé\nQuali d’abord (exploration), quanti ensuite (test)\n\n\nRésultat quanti contre-intuitif\nQuali après pour interpréter\n\n\nBesoin de typologie + de magnitude\nQuali pour types + quanti pour comptage\n\n\nValidation par triangulation\nQuanti + quali en parallèle sur le même objet\n\n\n\n\n\n3.4 Limites et défis\n\n\n\n\n\n\n\nLimite\nDétail\n\n\n\n\nCompétences\nMaîtriser les deux méthodes\n\n\nTemps et coût\nDoubler les efforts de collecte et d’analyse\n\n\nCohérence\nArticuler les résultats des deux approches sans incohérence épistémologique",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S10 - Conclusion et mixed methods"
+    ]
+  },
+  {
+    "objectID": "09_S10_Conclusion.html#bloc-d-que-retenir-du-cours",
+    "href": "09_S10_Conclusion.html#bloc-d-que-retenir-du-cours",
+    "title": "S10 - Conclusion et mixed methods",
+    "section": "4 Bloc D — Que retenir du cours ?",
+    "text": "4 Bloc D — Que retenir du cours ?\nLe cours t’a appris à :\n\nFormuler une question de recherche quantitative claire, faisable, pertinente.\nIdentifier la source de données adaptée à la QR (enquête, contenu, données existantes).\nOpérationnaliser un concept abstrait en variables mesurables.\nPréparer des données (codage, codebook, recodages, pondération).\nDécrire une variable (univariée), tester un lien (bivariée), modéliser (multivariée).\nInterpréter une régression (linéaire ou logistique) avec significativité et taille d’effet.\nCritiquer la qualité d’une recherche : validité, fiabilité, causalité, incertitude.\nCommuniquer les résultats avec rigueur et transparence.\n\nCe n’est pas une boîte à outils statique : c’est un regard critique sur la production de connaissances quantitatives — que tu produises les tiennes ou que tu lises celles des autres.\n\n\n\n\n\n\nRécapitulatif Ch.10\n\n\n\n\nExamen : 60 min, 15 pts, 3 parties (QCM, courtes, réflexion). Aucun matériel sauf dico.\nProbit = comme logit, sans OR, signe et p identiques.\nMixed methods = combiner quali et quanti :\n\nPréparatoire : quali d’abord (induction) → quanti (déduction).\nApprofondissement : quanti d’abord → quali pour explorer les surprises.\n\nLe cours t’arme pour produire des recherches quanti rigoureuses et lire critiquement celles des autres.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S10 - Conclusion et mixed methods"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html",
+    "href": "01_S2_Donnees_quantitatives.html",
+    "title": "S2 - Données quantitatives",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nLes données quantitatives sont des observations organisées en lignes (cas) et colonnes (variables). Avant toute analyse, tu dois savoir d’où elles viennent, comment elles ont été produites, et à quel niveau de mesure appartient chaque variable.\nLe point à retenir : il existe une multitude de sources de données quantitatives, mais elles partagent des caractéristiques communes. Bien connaître ces caractéristiques est essentiel pour tout le processus de recherche.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html#le-cadre-méthodologique",
+    "href": "01_S2_Donnees_quantitatives.html#le-cadre-méthodologique",
+    "title": "S2 - Données quantitatives",
+    "section": "1 Le cadre méthodologique",
+    "text": "1 Le cadre méthodologique\nL’étape 3 du pipeline (opérationnalisation) inclut la définition du cadre méthodologique : décrire le type de données, la procédure de récolte, le nombre d’observations, et passer des concepts aux indicateurs mesurables.\n\n\n\n\n\n\n\n\nConcept\nDimension\nIndicateur\n\n\n\n\nUsage passif d’Instagram\nDurée d’utilisation\nHeures déclarées par jour\n\n\nSymptômes de dépression\nManque d’énergie\nScore sur batterie de 5 items\n\n\nPersonnalité\nExtraversion\nScore Big Five\n\n\n\nC’est cette chaîne concept → dimension → indicateur → variable qui rend le concept abstrait mesurable.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html#distinctions-pour-qualifier-des-données",
+    "href": "01_S2_Donnees_quantitatives.html#distinctions-pour-qualifier-des-données",
+    "title": "S2 - Données quantitatives",
+    "section": "2 6 distinctions pour qualifier des données",
+    "text": "2 6 distinctions pour qualifier des données\n\n2.1 1. Primaires vs. secondaires\n\n\n\n\n\n\n\n\nType\nDéfinition\nExemple\n\n\n\n\nPrimaires\nRécoltées par le·la chercheur·euse même\nTu lances ton propre sondage Qualtrics\n\n\nSecondaires\nBases de données déjà existantes\nTu utilises le Panel Suisse des Ménages via SwissUbase\n\n\n\n\n\n2.2 2. Individuelles vs. agrégées\n\n\n\n\n\n\n\n\nType\nNiveau d’observation\nExemple\n\n\n\n\nIndividuelles\nNiveau le moins agrégé\nUn individu, un post, un tweet\n\n\nAgrégées\nMoyenne ou somme sur un groupe\nTaux de chômage par pays (Banque mondiale)\n\n\n\n\n\n\n\n\n\nL’erreur écologique\n\n\n\nDéfinition : attribuer à un individu une caractéristique observée sur la moyenne de son groupe. « Les Suisses gagnent 6 800 CHF en moyenne, donc mon voisin gagne 6 800 CHF. » — non, c’est la moyenne ; l’individu peut être très loin.\nÀ l’examen, dès qu’on raisonne au niveau agrégé pour conclure sur des individus → attention à cette erreur.\n\n\n\n\n2.3 3. Échantillon vs. exhaustives\n\n\n\n\n\n\n\n\nType\nCouverture\nExemple\n\n\n\n\nÉchantillon\nUne partie de la population\nSelects interroge ~7 000 personnes pour les élections fédérales\n\n\nExhaustives\nToute la population\nRecensement, registre AVS\n\n\n\n\n\n2.4 4. Transversales vs. longitudinales\n\n\n\n\n\n\n\n\nType\nTemporalité\nExemple\n\n\n\n\nTransversales\nUne seule date\nSondage post-électoral d’octobre 2023\n\n\nLongitudinales\nPlusieurs dates (panel)\nPanel Suisse des Ménages (mêmes individus suivis depuis 1999)\n\n\n\n\n\n2.5 5. Expérimentales vs. observationnelles\n\n\n\n\n\n\n\n\nType\nProduction\nExemple\n\n\n\n\nExpérimentales\nIssues d’un traitement (groupes contrôle/traitement)\nOn manipule la dose de réseaux sociaux avant le coucher\n\n\nD’observation\nSans manipulation par le·la chercheur·euse\nOn observe ce qui se passe naturellement\n\n\n\n\n\n2.6 6. Objectives vs. subjectives — et directes vs. indirectes\n\n\n\n\n\n\n\nDistinction\nExemple\n\n\n\n\nFaits objectifs\nDurée d’utilisation mesurée par appli\n\n\nFaits subjectifs\nAttitudes envers la numérisation (déclarées)\n\n\nObservation directe\nPodomètre\n\n\nObservation indirecte\nQuestion d’enquête : « Combien de pas faites-vous par jour ? »\n\n\n\n\n\n\n\n\n\nLe biais de désirabilité sociale\n\n\n\nQuand une question touche un sujet sensible (sexe, argent, sport, racisme), les répondant·e·s ont tendance à se présenter sous un jour favorable. « Combien de fois par semaine faites-vous du sport ? » → réponses systématiquement gonflées. La mesure indirecte exacerbe ce biais.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html#le-fichier-de-données-ligne-colonne",
+    "href": "01_S2_Donnees_quantitatives.html#le-fichier-de-données-ligne-colonne",
+    "title": "S2 - Données quantitatives",
+    "section": "3 Le fichier de données : ligne / colonne",
+    "text": "3 Le fichier de données : ligne / colonne\nGlobalement, un fichier de données quantitatives ressemble toujours à ça :\n\nChaque ligne = un cas / une observation (un individu, un pays, un article, un post…).\nChaque colonne = une variable (âge, langue, durée, score…).\n\nC’est cette structure rectangulaire qui rend l’analyse statistique possible.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html#la-variable-définition-et-niveaux-de-mesure",
+    "href": "01_S2_Donnees_quantitatives.html#la-variable-définition-et-niveaux-de-mesure",
+    "title": "S2 - Données quantitatives",
+    "section": "4 La variable : définition et niveaux de mesure",
+    "text": "4 La variable : définition et niveaux de mesure\nVariable : caractéristique qui varie d’une observation à l’autre (Sirkin, 1996). Ex. âge, durée d’utilisation des médias sociaux, parti voté.\nLa distinction la plus utile en statistique est celle des niveaux de mesure (4 types).\n\n\n\n\n\n\n\n\n\nVariable\nNiveau\nCaractéristique\nExemple\n\n\n\n\nQualitative / catégorielle\nNominal\nAttributs sans ordre logique\nLangue maternelle, religion, parti voté\n\n\nQualitative / catégorielle\nOrdinal\nAttributs ordonnés\nNiveau de formation, intérêt politique sur 4 niveaux\n\n\nQuantitative\nContinue\nScore numérique, infinité de valeurs possibles dans un intervalle\nTaille (cm), âge (années avec décimales), durée\n\n\nQuantitative\nDiscrète\nScore numérique, nombre fini de valeurs\nTaille du ménage, nombre d’enfants\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nNominale = des noms (homme, femme, autre ; PS, PLR, UDC). Pas de hiérarchie.\nOrdinale = des noms rangés (pas du tout d’accord &lt; plutôt pas d’accord &lt; plutôt d’accord &lt; tout à fait d’accord).\nContinue = des vrais nombres entre lesquels tu peux toujours en insérer un autre (1.5 mètres, 1.51 m, 1.512 m…).\nDiscrète = des vrais nombres mais limités à des valeurs entières (3 enfants, jamais 3.5).\n\n\n\n\n\n\n\n\n\n\nLe niveau de mesure dépend du codage, pas du phénomène\n\n\n\nL’âge en années, c’est continu. L’âge codé en 3 tranches (0-25 / 26-40 / 41+), c’est ordinal. Même phénomène, deux niveaux différents. À chaque variable, regarde comment elle est codée, pas seulement ce qu’elle représente.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html#pourquoi-le-niveau-de-mesure-est-crucial",
+    "href": "01_S2_Donnees_quantitatives.html#pourquoi-le-niveau-de-mesure-est-crucial",
+    "title": "S2 - Données quantitatives",
+    "section": "5 Pourquoi le niveau de mesure est crucial",
+    "text": "5 Pourquoi le niveau de mesure est crucial\n\n\n\n\n\n\n\nImportance\nPourquoi\n\n\n\n\nThéorique\nFormuler des hypothèses, opérationnaliser un concept\n\n\nMéthodologique\nChoisir la méthode d’analyse appropriée\n\n\nEmpirique\nChoisir le bon coefficient d’association, interpréter correctement\n\n\n\nUne hypothèse de relation (« plus X → plus Y ») exige X et Y quantitatives ou ordinales. Une hypothèse de différence (« si X catégoriel → alors Y… ») exige X nominale et Y de n’importe quel type.\n\n\n\n\n\n\nFrontières floues\n\n\n\nLe niveau de mesure n’est pas toujours évident. Une échelle de Likert à 5 points est officiellement ordinale, mais on la traite souvent comme quantitative quand il y a 5+ catégories et qu’on suppose des distances égales. À l’examen : justifie ton choix.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "01_S2_Donnees_quantitatives.html#mini-quiz-mental-slido-du-cours",
+    "href": "01_S2_Donnees_quantitatives.html#mini-quiz-mental-slido-du-cours",
+    "title": "S2 - Données quantitatives",
+    "section": "6 Mini-quiz mental (slido du cours)",
+    "text": "6 Mini-quiz mental (slido du cours)\n\n\n\n\n\n\n\nVariable\nNiveau de mesure ?\n\n\n\n\nNombre de posts Instagram d’un parti\nDiscrète (valeurs entières, finies sur un intervalle)\n\n\nNationalité\nNominale (suisse, française, etc., sans ordre)\n\n\nNiveau d’engagement politique sur 5 points\nOrdinale (faible &lt; moyen &lt; fort)\n\n\n\n\n\n\n\n\n\nRécapitulatif Ch.2\n\n\n\n\nUne donnée quantitative = une observation rangée dans un fichier (lignes × colonnes).\nSix distinctions clés : primaires/secondaires, individuelles/agrégées, échantillon/exhaustives, transversales/longitudinales, expérimentales/observationnelles, objectives/subjectives.\nL’erreur écologique = conclure sur un individu à partir d’une moyenne de groupe.\nLe biais de désirabilité sociale = répondre pour se présenter sous un jour favorable.\nQuatre niveaux de mesure : nominal, ordinal, continu, discret. Ils conditionnent toutes les analyses ultérieures.\nLe niveau de mesure dépend du codage, pas du phénomène.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S2 - Données quantitatives"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html",
+    "href": "00_S1_Introduction.html",
+    "title": "S1 - Introduction",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nMéthodes II t’apprend à transformer une question floue en projet de recherche quantitatif : tu poses une question, tu formules des hypothèses, tu choisis comment les tester et tu interprètes ce que tu trouves.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#pourquoi-un-deuxième-cours-de-méthodes",
+    "href": "00_S1_Introduction.html#pourquoi-un-deuxième-cours-de-méthodes",
+    "title": "S1 - Introduction",
+    "section": "1 Pourquoi un deuxième cours de méthodes ?",
+    "text": "1 Pourquoi un deuxième cours de méthodes ?\nTu croises des chiffres tous les jours : sondages dans la presse, statistiques officielles, études citées sur LinkedIn, mémoires de Master. Sans clés méthodologiques, tu ne peux ni évaluer leur sérieux, ni produire les tiens. Méthodes II te donne :\n\nun savoir théorique (concepts clés de la méthodo quantitative) ;\nun savoir-faire (R en exercices) ;\nun regard critique (avec Méthodes I).\n\nLe point à retenir du cours : une même problématique peut être abordée de plusieurs manières. Formuler une question quantitative oblige à se demander comment quantifier le phénomène.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#le-pipeline-dun-projet-de-recherche-empirique",
+    "href": "00_S1_Introduction.html#le-pipeline-dun-projet-de-recherche-empirique",
+    "title": "S1 - Introduction",
+    "section": "2 Le pipeline d’un projet de recherche empirique",
+    "text": "2 Le pipeline d’un projet de recherche empirique\nLe cours suit une démarche en 7 étapes (Bonneville et al., 2007). C’est le fil conducteur qu’il faut maîtriser de mémoire.\n\n\n\n\n\n\n\nÉtape\nQuestion à se poser\n\n\n\n\n1. Identification de l’objet\nSur quoi est-ce que je veux travailler ?\n\n\n2. Problématisation + QR\nQue sait-on déjà ? Que veut-on savoir en plus ?\n\n\n2 bis. Hypothèses\nQuelle réponse provisoire est-ce que je teste ?\n\n\n3. Opérationnalisation\nComment je transforme un concept en variables mesurables ?\n\n\n4. Collecte des données\nOù je récupère les données ?\n\n\n5. Analyse\nQue disent les chiffres ?\n\n\n6. Dissémination\nComment je communique mes résultats ?\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nLe pipeline, c’est la recette de cuisine d’un projet de recherche. Tu ne commences pas par les analyses : tu commences par identifier ce que tu veux savoir, puis tu fais les courses (collecte), tu prépares (opérationnalisation, recodage), tu cuisines (analyses), tu sers (communication). Sauter une étape = mauvais plat.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#la-question-de-recherche",
+    "href": "00_S1_Introduction.html#la-question-de-recherche",
+    "title": "S1 - Introduction",
+    "section": "3 La question de recherche",
+    "text": "3 La question de recherche\n\n3.1 Trois critères de qualité (Van Campenhoudt et al., 2017)\nUne bonne question de recherche est :\n\nClaire : pas vague, périmètre délimité ;\nFaisable : réaliste vu tes ressources (temps, argent, accès aux données) ;\nPertinente : vise à comprendre un phénomène, pas à le décrire trivialement ni à émettre un jugement moral.\n\nExemple type : Dans quelle mesure différents usages d’Instagram influencent-ils les symptômes de dépression chez les étudiant·e·s ?\n\n\n3.2 Deux grandes familles de questions quantitatives\n\n\n\n\n\n\n\n\nType\nLogique\nExemple\n\n\n\n\nDescriptive\nDécrire un seul phénomène ou son évolution\nComment a évolué la consommation de presse écrite en Suisse depuis 2000 ?\n\n\nInférentielle\nÉtudier l’influence d’un phénomène X sur un autre Y\nDans quelle mesure les usages d’Instagram influencent-ils les symptômes de dépression ?\n\n\n\n\n\n\n\n\n\nLa « formule magique » d’une question inférentielle\n\n\n\nDans quelle mesure est-ce que le phénomène X influence le phénomène Y ? Trois sous-questions : 1. Y a-t-il vraiment une influence ? 2. Si oui, quelle est sa force ? 3. Quel est son sens (positif/négatif) ?",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#le-cadre-théorique",
+    "href": "00_S1_Introduction.html#le-cadre-théorique",
+    "title": "S1 - Introduction",
+    "section": "4 Le cadre théorique",
+    "text": "4 Le cadre théorique\nLe cadre théorique sert à ancrer ta recherche dans le savoir existant. Quatre briques :\n\nDéfinir les concepts principaux (X et Y) et leurs dimensions sur la base de la littérature.\nExpliquer les mécanismes causaux présumés entre X et Y.\nFormuler des hypothèses précises.\nJustifier ces hypothèses par les études antérieures.\n\nExemple : pour étudier le lien Instagram → dépression, tu dois préciser les dimensions de chaque concept.\n\n\n\n\n\n\n\nConcept\nDimensions\n\n\n\n\nUsages d’Instagram\nDurée d’utilisation · Mode (passif/actif) · Intention (divertissement, interaction, comparaison)\n\n\nSymptômes de dépression\nManque d’énergie · Sentiment d’impuissance · Indifférence · Colère",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#lhypothèse-définition-et-critères",
+    "href": "00_S1_Introduction.html#lhypothèse-définition-et-critères",
+    "title": "S1 - Introduction",
+    "section": "5 L’hypothèse : définition et critères",
+    "text": "5 L’hypothèse : définition et critères\nUne hypothèse est une proposition visant à fournir une explication vraisemblable d’un ensemble de faits, qui doit être soumise au contrôle de l’expérience (Larousse). C’est une réponse provisoire à ta QR.\nCinq critères qu’une bonne hypothèse doit remplir :\n\n\n\n\n\n\n\nCritère\nSignification\n\n\n\n\nVraisemblable\nS’inscrit dans des connaissances établies\n\n\nPrécise\nPas d’ambiguïté\n\n\nCohérente\nApporte bien une réponse à la problématique\n\n\nFalsifiable\nPeut être confrontée aux faits (testée empiriquement)\n\n\nUnivoque\nComprise de la même façon par tout chercheur\n\n\n\n\n\n\n\n\n\nFalsifiable : LE critère scientifique\n\n\n\nUne hypothèse qui ne peut pas être démentie par des données n’est pas scientifique. « Les gens heureux sourient parce qu’ils sont heureux » n’est pas une hypothèse — c’est une tautologie. « Plus quelqu’un sourit, plus son score de satisfaction est élevé » en est une : tu peux mesurer et la rejeter.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#les-3-types-dhypothèses",
+    "href": "00_S1_Introduction.html#les-3-types-dhypothèses",
+    "title": "S1 - Introduction",
+    "section": "6 Les 3 types d’hypothèses",
+    "text": "6 Les 3 types d’hypothèses\n\n\n\n\n\n\n\n\nType\nForme typique\nExemple\n\n\n\n\nRelation\n« Plus / moins X → plus / moins Y »\nH1 : Plus un·e usager·ère passe du temps sur Instagram, plus il/elle ressentira un manque d’énergie après.\n\n\nDifférence / changement\n« Si X → alors Y »\nH2 : Si l’utilisation d’Instagram est passive (plutôt qu’active), alors l’usager·ère ressentira un manque d’énergie plus important.\n\n\nInteraction\n« L’influence de X sur Y est plus/moins forte selon Z »\nH3 : L’influence du temps d’usage d’Instagram sur le manque d’énergie est plus forte pour les personnalités extraverties que pour les introverties.\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nUne hypothèse de relation, c’est un curseur : plus on bouge X, plus Y bouge dans une direction donnée.\nUne hypothèse de différence, c’est un interrupteur : la catégorie de X (passif/actif) change l’état de Y.\nUne hypothèse d’interaction, c’est un modificateur : la force du lien X → Y dépend d’une troisième variable Z.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#limites-de-la-démarche-quantitative",
+    "href": "00_S1_Introduction.html#limites-de-la-démarche-quantitative",
+    "title": "S1 - Introduction",
+    "section": "7 Limites de la démarche quantitative",
+    "text": "7 Limites de la démarche quantitative\nLe quantitatif n’est pas la solution à tout. Critiques principales :\n\nDifficulté voire impossibilité de traiter certains sujets (subjectivité des acteurs, symboles, sens caché des pratiques).\nTendance à répondre à de petites questions précises plutôt qu’à des théories ambitieuses.\nRisque de réifier des catégories construites comme si elles étaient « naturelles ».\n\nC’est pour cela qu’on parle souvent de mixed methods (S10) : combiner quali et quanti pour profiter des deux.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "00_S1_Introduction.html#modalités-dévaluation",
+    "href": "00_S1_Introduction.html#modalités-dévaluation",
+    "title": "S1 - Introduction",
+    "section": "8 Modalités d’évaluation",
+    "text": "8 Modalités d’évaluation\n\n\n\n\n\n\n\nÉlément\nDétail\n\n\n\n\nFormat\nExamen écrit, 60 minutes\n\n\nDate\nSession d’été 2026 (date communiquée par la Faculté)\n\n\nNote\n100 % de la note finale\n\n\nMatière\nCours + lectures obligatoires (3 scripts)\n\n\nMatériel autorisé\nAucun, sauf dictionnaire bilingue non annoté pour non-francophones\n\n\nStructure\n3 parties à 5 points chacune : 10 QCM (0.5 pt), 5 questions courtes (1 pt, 2-3 phrases), 2 questions de réflexion (2.5 pts, 2 paragraphes)\n\n\n\n\n\n\n\n\n\nPour gagner des points faciles\n\n\n\n\nLes QCM testent la compréhension passive : maîtrise du vocabulaire, distinctions de base.\nLes questions courtes testent ta précision : 2-3 phrases denses valent mieux qu’un paragraphe vague.\nLes questions de réflexion notent ton analyse critique : pose les enjeux, prends position, justifie.\n\n\n\n\n\n\n\n\n\nRécapitulatif Ch.1\n\n\n\n\nLe cours suit un pipeline en 7 étapes : objet → QR → hypothèses → opérationnalisation → collecte → analyse → dissémination.\nUne bonne QR est claire, faisable, pertinente.\nDeux familles : descriptive (un phénomène) vs. inférentielle (X → Y).\nUne bonne hypothèse est vraisemblable, précise, cohérente, falsifiable, univoque.\nTrois types d’hypothèses : relation, différence, interaction.\nL’examen pèse 100 % de la note ; matière = cours + scripts.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S1 - Introduction"
+    ]
+  },
+  {
+    "objectID": "05_S6_Uni_bi_multi.html",
+    "href": "05_S6_Uni_bi_multi.html",
+    "title": "S6 - Analyses uni-, bi- et multivariées",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nTu analyses une variable à la fois (univariée) pour la décrire, deux variables (bivariée) pour explorer leur lien, trois ou plus (multivariée) pour contrôler des facteurs concurrents. Le bon outil dépend toujours du niveau de mesure.\nLe point à retenir : l’analyse univariée décrit la distribution d’une seule variable. L’analyse bivariée s’intéresse à la relation entre deux variables. Différentes mesures sont admises selon les niveaux de mesure.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S6 - Analyses uni-, bi- et multivariées"
+    ]
+  },
+  {
+    "objectID": "05_S6_Uni_bi_multi.html#bloc-a-analyses-univariées-script-3",
+    "href": "05_S6_Uni_bi_multi.html#bloc-a-analyses-univariées-script-3",
+    "title": "S6 - Analyses uni-, bi- et multivariées",
+    "section": "1 Bloc A — Analyses univariées (script 3)",
+    "text": "1 Bloc A — Analyses univariées (script 3)\nL’analyse univariée (= descriptive) sert à connaître ses données et à anticiper les problèmes. Elle se concentre sur trois aspects : distribution, tendance centrale, dispersion.\n\n1.1 Distribution\nLa distribution d’une variable montre comment elle est répartie. Outils disponibles :\n\n\n\n\n\n\n\n\n\n\nVariable\nNiveau\nTableau de fréquence\nGraphique\nIndicateurs\n\n\n\n\nQualitative\nNominal\nOK\nDiagramme en bâtons\nIncohérent\n\n\nQualitative\nOrdinal\nOK\nDiagramme en bâtons\nIncohérent (sauf si traité comme quanti)\n\n\nQuantitative\nContinue\nIncohérent\nHistogramme\nOK\n\n\nQuantitative\nDiscrète\nIncohérent (sauf petite étendue)\nHistogramme\nOK\n\n\n\n\n\n\n\n\n\nDiagramme en bâtons vs. histogramme\n\n\n\n\nDiagramme en bâtons : pour les variables qualitatives (catégorielles). Les barres sont séparées (rien entre les catégories).\nHistogramme : pour les variables quantitatives. Les barres se touchent (continuité des valeurs). C’est ce qui permet de voir la forme de la distribution (normale, asymétrique, multimodale).\n\n\n\n\n1.1.1 Le tableau de fréquences\nContient : les fréquences absolues (N), les pourcentages (fréquences relatives), et les fréquences cumulées. Dernière ligne = total.\nExemple : provenance des étudiant·e·s du cours\n\n\n\nProvenance\nFréquence (N)\nPourcentage (%)\nCumulée\n\n\n\n\nSuisse romande\n30\n37.5\n30\n\n\nSuisse alémanique\n20\n25.0\n50\n\n\nTessin\n20\n25.0\n70\n\n\nÉtranger\n10\n12.5\n80\n\n\nTotal\n80\n100\n—\n\n\n\n\n\n1.1.2 Indicateurs sur la forme de la distribution\nDeux mesures importantes pour les variables quantitatives :\n\n\n\n\n\n\n\n\n\nIndicateur\nAnglais\nQue mesure-t-il ?\nValeur pour une loi normale\n\n\n\n\nAplatissement\nKurtosis\nForme de la courbe : pointue vs. aplatie\n3\n\n\nInclinaison\nSkewness\nSymétrie : queue plus longue à gauche ou à droite\n0 (symétrique)\n\n\n\n\nSkewness positive → queue à droite (longue traîne de grandes valeurs).\nSkewness négative → queue à gauche.\nKurtosis &gt; 3 → distribution plus pointue (concentration autour de la moyenne).\nKurtosis &lt; 3 → plus aplatie.\n\n\n\n\n\n\n\nVérifier la normalité, pourquoi ?\n\n\n\nBeaucoup de procédés statistiques (régression linéaire, test t, ANOVA) supposent une distribution normale (en cloche). Si tes données s’en écartent fortement (skewness ou kurtosis trop élevés), tu dois soit transformer la variable, soit utiliser un test non-paramétrique.\n\n\n\n\n\n1.2 Tendance centrale\nLa tendance centrale résume le « milieu » d’une distribution. Trois mesures, chacune avec des conditions de validité.\n\n\n\n\n\n\n\n\nMesure\nDéfinition\nNiveau de mesure requis\n\n\n\n\nMode\nValeur la plus fréquente\nTous (nominal, ordinal, quanti)\n\n\nMédiane\nValeur du milieu quand les obs sont triées\nOrdinal et plus (besoin d’un ordre)\n\n\nMoyenne\nSomme des valeurs / nombre d’obs (\\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i\\))\nQuantitatif (continu)\n\n\n\n\n\n\nNiveau\nMode\nMédiane\nMoyenne\n\n\n\n\nNominal\nOK\nIncohérent\nIncohérent\n\n\nOrdinal\nOK\nOK\nIncohérent (sauf si traité comme quanti)\n\n\nContinu\nOK\nOK\nOK\n\n\nDiscret\nOK\nOK\nIncohérent (mais utilisé quand même)\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nLe mode = la réponse la plus populaire (utile pour les catégories).\nLa médiane = la valeur qui partage l’échantillon en deux moitiés égales (utile quand il y a des valeurs extrêmes).\nLa moyenne = la « valeur typique » mais sensible aux valeurs extrêmes (un milliardaire dans un échantillon de 100 personnes fait exploser la moyenne du revenu).\n\n\n\n\n\n\n1.3 Dispersion\nLa dispersion mesure à quel point les observations sont éloignées de la tendance centrale.\n\n\n\n\n\n\n\n\nMesure\nDéfinition\nNiveau requis\n\n\n\n\nÉtendue (range)\nMax − Min\nQuanti\n\n\nÉcart interquartile (IQR)\nQ3 − Q1 (75e − 25e percentile)\nQuanti\n\n\nÉcart type (SD)\nRacine carrée de la variance ; dispersion autour de la moyenne\nQuanti\n\n\n\nL’écart type se calcule via : \\[SD = \\sqrt{\\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2}\\]\n\n\n\n\n\n\nLe boxplot (boîte à moustaches)\n\n\n\nVisualise simultanément : la médiane (ligne dans la boîte), l’IQR (la boîte = Q1 à Q3), les moustaches (jusqu’à 1.5 × IQR de la boîte), et les outliers (points au-delà). Idéal pour comparer la dispersion entre groupes.\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nL’écart type = la distance moyenne entre chaque obs et la moyenne du groupe. SD élevé = les obs sont dispersées (groupe hétérogène). SD bas = elles sont proches de la moyenne (groupe homogène). Avec moyenne + écart type, tu décris déjà 90 % de l’utile sur une variable quantitative.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S6 - Analyses uni-, bi- et multivariées"
+    ]
+  },
+  {
+    "objectID": "05_S6_Uni_bi_multi.html#bloc-b-analyses-bivariées",
+    "href": "05_S6_Uni_bi_multi.html#bloc-b-analyses-bivariées",
+    "title": "S6 - Analyses uni-, bi- et multivariées",
+    "section": "2 Bloc B — Analyses bivariées",
+    "text": "2 Bloc B — Analyses bivariées\n\n2.1 Définition et objectifs\nAnalyse de la relation entre deux variables. Buts :\n\nDescriptif : distribution d’une variable en relation à l’autre dans l’échantillon.\nCausal : différences entre groupes (sans contrôle de causes concurrentes — c’est la limite).\n\nSouvent une étape préparatoire avant une analyse multivariée.\n\n\n2.2 3 informations à extraire d’une analyse bivariée\n\nLa nature de l’association (positive, négative, en U…).\nLa force de l’association → coefficient d’association.\nLa significativité statistique (vu en S7).\n\n\n\n2.3 Choix de la méthode selon les niveaux de mesure\nC’est la table à connaître par cœur pour l’examen.\n\n\n\n\n\n\n\n\n\n\nVariable nominale\nVariable ordinale\nVariable quantitative\n\n\n\n\nVariable nominale\nTableau croisé\nTableau croisé\nAnalyse de moyenne (t-test, ANOVA)\n\n\nVariable ordinale\nTableau croisé\nCorrélation de Spearman\nAnalyse de moyenne\n\n\nVariable quantitative\nAnalyse de moyenne\nAnalyse de moyenne\nCorrélation de Pearson\n\n\n\n\n\n2.4 Lien avec les types d’hypothèses\n\nHypothèse de différence (« si X alors Y ») → typiquement tableau croisé ou analyse de moyenne.\nHypothèse de relation (« plus X → plus/moins Y ») → typiquement corrélation.\n\n\n\n2.5 Le tableau croisé (table de contingence)\n\n2.5.1 Principe\nCroisement entre deux variables catégorielles. Convention :\n\nVariable indépendante en colonnes.\nVariable dépendante en lignes.\n\n\n\n2.5.2 Exemple : Vote pour initiative X × Usage de la RTS\nValeurs observées (N et %)\n\n\n\nVote / Usage RTS\nOui\nNon\nTotal\n\n\n\n\nEn faveur\n138 (27.6)\n64 (12.8)\n202 (40.4)\n\n\nIndifférent\n83 (16.6)\n67 (13.4)\n150 (30.0)\n\n\nOpposé\n64 (12.8)\n84 (16.8)\n148 (29.6)\n\n\nTotal\n285 (57.0)\n215 (43.0)\n500 (100)\n\n\n\n\n\n2.5.3 Pourcentages : ligne, colonne, total ?\n\n\n\n\n\n\n\n\n% en\nLecture\nQuand l’utiliser\n\n\n\n\nLignes\nPour chaque ligne, somme = 100 %\nDécrire la composition d’un groupe (ex. : parmi les « en faveur », X % utilisent RTS)\n\n\nColonnes\nPour chaque colonne, somme = 100 %\nStandard quand la VI est en colonnes (ex. : parmi les usagers de RTS, X % sont en faveur)\n\n\nTotal\nToutes cellules / N total\nVue d’ensemble\n\n\n\n\n\n\n\n\n\nQuel pourcentage choisir ?\n\n\n\nToujours selon la variable indépendante. Si la VI est en colonnes (convention), tu fais les pourcentages en colonnes. Ainsi, en lisant le tableau, tu compares directement les deux modalités de la VI sur la VD.\n\n\n\n\n\n2.6 Le test du chi-carré (χ²)\n\n2.6.1 Principe\nLe chi-carré teste si les valeurs observées s’écartent des valeurs théoriques attendues si les deux variables étaient indépendantes (H0).\n\n\n2.6.2 Calculs\nFréquences théoriques pour chaque cellule : \\[E = \\frac{\\text{total ligne} \\times \\text{total colonne}}{\\text{total échantillon}}\\]\nStatistique χ² : \\[\\chi^2 = \\sum \\frac{(O - E)^2}{E}\\]\navec O = fréquence observée et E = fréquence théorique.\nDegrés de liberté : \\((L-1) \\times (C-1)\\) où L = nb lignes, C = nb colonnes.\n\n\n2.6.3 Décision\nOn compare le χ² calculé à une valeur critique (table) à df degrés de liberté. Si χ² &gt; valeur critique → on rejette H0 : les variables sont associées.\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nLe chi-carré, c’est l’écart entre ce qu’on observe et ce qu’on s’attendrait à voir si les deux variables n’étaient pas liées. Si l’écart est trop grand pour être dû au hasard, on conclut qu’il y a un lien.\n\n\n\n\n\n2.6.4 Coefficients d’association (force du lien)\n\n\n\nCoefficient\nQuand\n\n\n\n\nPhi (φ)\nTableau 2 × 2\n\n\nV de Cramér\nTableaux plus grands\n\n\nTau de Kendall, Spearman\nVariables ordinales\n\n\n\n\n\n\n2.7 Analyse de moyenne\n\n2.7.1 Comparaison de 2 groupes\nCalcul de la moyenne dans chaque groupe + test de la différence avec un t-test (p-value).\nExemple : confiance sociale par sexe\n\n\n\nSexe\nN\nMoyenne\nÉcart-type\n\n\n\n\nHomme\n746\n5.819\n2.012\n\n\nFemme\n747\n5.548\n2.129\n\n\nTotal\n1493\n5.638\n2.075\n\n\nDifférence\n\n0.270\nt = 2.519, p = 0.006\n\n\n\np &lt; 0.05 → la différence est statistiquement significative.\n\n\n2.7.2 Comparaison de 3+ groupes : ANOVA\nL’ANOVA (Analyse de Variance) décompose la variance totale en :\n\nVariance intra-groupes : dispersion à l’intérieur de chaque groupe ;\nVariance inter-groupes : différences entre groupes.\n\nLe F-test mesure si la variance inter &gt; variance intra. Si oui (p faible), au moins un groupe diffère.\nExemple : confiance sociale par statut matrimonial → F = 39.88, p &lt; 0.001 → on rejette H0. Mais l’ANOVA ne dit pas QUELS groupes diffèrent → comparaisons par paires (pairwise / Tukey HSD).\n\n\n\n2.8 La corrélation\n\n2.8.1 Définition\nRapport de simultanéité entre deux variables : varient-elles ensemble ?\n\n\n2.8.2 Coefficient r\n\n\\(r = -1\\) : corrélation parfaite négative.\n\\(r = 0\\) : pas de corrélation linéaire (= H0).\n\\(r = +1\\) : corrélation parfaite positive.\n\n\n\n2.8.3 Pearson vs. Spearman\n\n\n\n\n\n\n\n\nCoefficient\nPour quoi ?\nMesure\n\n\n\n\nPearson\n2 variables quantitatives\nRelation linéaire sur les valeurs\n\n\nSpearman\n2 variables ordinales (ou non-normales)\nRelation monotone sur les rangs\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nPearson mesure si une droite traverse bien le nuage de points.\nSpearman mesure juste si quand l’une monte, l’autre monte aussi (pas forcément linéairement).\n\n\n\n\n\n\n2.8.4 Significativité\nLe coefficient seul ne dit rien sur la significativité → il faut une p-value pour conclure (vu en S7).\n\n\n\n\n\n\nCorrélation ≠ causalité\n\n\n\nVoir tylervigen.com/spurious-correlations pour des exemples absurdes. Deux variables peuvent varier ensemble : - Par causalité directe (X → Y) ; - Par causalité inverse (Y → X) ; - Par une variable tierce Z qui influence les deux ; - Par pur hasard (corrélations « fallacieuses »).\nUne corrélation ne permet jamais à elle seule de conclure à un lien de cause à effet.\n\n\n\n\n2.8.5 Le diagramme de dispersion (scatterplot)\nVisualisation standard d’une corrélation : un point par observation, X en abscisse, Y en ordonnée. Permet de voir la forme du lien (linéaire ? courbe ?), la force, et les outliers. Le site guessthecorrelation.com entraîne à estimer r à l’œil.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S6 - Analyses uni-, bi- et multivariées"
+    ]
+  },
+  {
+    "objectID": "05_S6_Uni_bi_multi.html#bloc-c-analyses-trivariées-multivariées",
+    "href": "05_S6_Uni_bi_multi.html#bloc-c-analyses-trivariées-multivariées",
+    "title": "S6 - Analyses uni-, bi- et multivariées",
+    "section": "3 Bloc C — Analyses trivariées / multivariées",
+    "text": "3 Bloc C — Analyses trivariées / multivariées\n\n3.1 Pourquoi aller au-delà du bivarié ?\nLe bivarié ne contrôle pas les causes concurrentes. On veut tester si la relation X → Y :\n\n\n\n\n\n\n\nQuestion\nConcept\n\n\n\n\nExiste-t-elle vraiment ou est-elle fallacieuse ?\nTest d’une variable tierce Z confondante\n\n\nS’exerce-t-elle directement ou via une autre variable ?\nMédiation\n\n\nVarie-t-elle selon la valeur d’une autre variable ?\nInteraction (voir S7)\n\n\n\n\n\n3.2 Exemple : tableau croisé contrôlé par l’âge\nVote pour initiative X × Usage RTS, en contrôlant pour l’âge (&lt; 60 vs. ≥ 60).\n\n\n\n\n\n\n\n\n\n\n\nÂge &lt; 60\n\nÂge ≥ 60\n\n\n\n\n\nVote / Usage RTS\nOui (N=144)\nNon (N=133)\nOui (N=141)\nNon (N=82)\n\n\nEn faveur (%)\n40.3\n36.1\n56.7\n19.5\n\n\nIndifférent (%)\n38.2\n33.8\n19.9\n26.8\n\n\nOpposé (%)\n21.5\n30.1\n23.4\n53.7\n\n\n\nLe lien Usage RTS → Vote est plus fort chez les ≥ 60 que chez les &lt; 60 → preuve d’une interaction : l’effet de l’usage RTS dépend de l’âge.\n\n\n\n\n\n\nMultivariée = au moins 3 variables\n\n\n\nAvec 3+ variables et une question explicative (X → Y avec contrôles), on passe en général à la régression (S7-S8). Le tableau croisé contrôlé est une première étape pédagogique.\n\n\n\n\n\n\n\n\nRécapitulatif Ch.6\n\n\n\n\nUnivariée = décrire une variable seule (distribution, tendance centrale, dispersion).\nDistribution : tableau de fréquences (quali), histogramme (quanti), diag. en bâtons (quali).\nTendance centrale : mode (tous niveaux), médiane (ordinal+), moyenne (quanti).\nDispersion : étendue, IQR, écart-type (quanti uniquement).\nIndicateurs de forme : kurtosis (3 si normale), skewness (0 si symétrique).\nBivariée : choix de la méthode = matrice nominal/ordinal/quanti.\nTableau croisé : valeurs observées vs. théoriques → χ² et coefficients (φ, V de Cramér).\nAnalyse de moyenne : t-test (2 groupes), ANOVA + Tukey (3+ groupes).\nCorrélation : Pearson (linéaire, quanti) vs. Spearman (monotone, ordinal/rangs). r ∈ [−1, +1].\nCorrélation n’est pas causalité.\nMultivariée = contrôler les variables tierces (vu en régression, S7-S8).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S6 - Analyses uni-, bi- et multivariées"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html",
+    "href": "03_S4_Preparation_donnees.html",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nEntre l’enquête terminée et les analyses, il y a une étape de nettoyage : tu attribues des noms et des codes, tu documentes tout dans un codebook, tu recodes sans jamais écraser les variables originales, et tu décris d’abord ton échantillon.\nLe point à retenir : les données récoltées doivent être retravaillées avant utilisation. Il est primordial de garder une trace des « nettoyages » effectués et de procéder par étapes successives.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#une-fois-lenquête-terminée",
+    "href": "03_S4_Preparation_donnees.html#une-fois-lenquête-terminée",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "1 Une fois l’enquête terminée",
+    "text": "1 Une fois l’enquête terminée\nPremière chose à regarder, avant tout codage :\n\n\n\n\n\n\n\nIndicateur\nPourquoi\n\n\n\n\nTaux de non-réponses\nEstimer la qualité globale\n\n\nQuestionnaires vides\nÀ exclure\n\n\nQuestionnaires quittés prématurément\nÀ supprimer si annoncé dans la déclaration sur le traitement des données\n\n\nTemps de réponse moyen\nUn temps trop court signale du satisficing",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#des-questions-aux-variables",
+    "href": "03_S4_Preparation_donnees.html#des-questions-aux-variables",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "2 Des questions aux variables",
+    "text": "2 Des questions aux variables\nUne réponse dans le questionnaire devient une valeur dans la base de données. Cette transformation suit des règles précises.\n\n2.1 Nommer les variables\n\nNoms courts mais compréhensibles (ipol pour « intérêt politique »).\nUne variable = une question (sauf échelle additive, voir plus bas).\n\n\n\n2.2 Attribuer des codes aux réponses\n\n\n\n\n\n\n\nType de question\nCodage\n\n\n\n\nFermée\nChiffres assignés aux catégories. Logique : du petit au grand, du moins au plus\n\n\nSemi-ouverte\nCoder les « autre » si besoin ; sinon convention : 8 ou 88\n\n\nOuverte\nCoder si nécessaire\n\n\nPréfère ne pas répondre\nDonnée manquante (NA) — ou code spécifique\n\n\nNe sais pas (NSP)\nConvention : 9 ou 99\n\n\n\n\n\n2.3 Garder une trace : ne jamais écraser\n\n\n\n\n\n\nRègle d’or du recodage\n\n\n\nNe jamais écraser une variable d’origine. Crée une nouvelle version avec un nouveau nom. Tu pourras toujours revenir en arrière, comparer, corriger. Et toujours garder la variable ID (numéro d’identification du·de la répondant·e).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#le-codebook",
+    "href": "03_S4_Preparation_donnees.html#le-codebook",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "3 Le codebook",
+    "text": "3 Le codebook\nLe codebook est le manuel de ta base de données. Sans lui, personne (pas même toi dans 6 mois) ne peut comprendre ce que représente chaque variable.\n\n3.1 Contenu\n\n\n\n\n\n\n\nSection\nDétail\n\n\n\n\nMétadonnées\nAuteur·e, version, date, base de données concernée, infos sur le sondage\n\n\nTableau de variables\nVariable, Description, Question (texte exact), Valeurs, Labels\n\n\n\n\n\n3.2 Exemple type\n\n\n\nVariable\nDescription\nValeur\nLabel\n\n\n\n\nID\nNuméro d’identification du·de la répondant·e\n—\n—\n\n\nipol\nIntérêt pour la politique\n1\nPas du tout intéressé·e\n\n\n\n\n2\nPlutôt pas intéressé·e\n\n\n\n\n3\nPlutôt intéressé·e\n\n\n\n\n4\nTrès intéressé·e",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#les-recodages",
+    "href": "03_S4_Preparation_donnees.html#les-recodages",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "4 Les recodages",
+    "text": "4 Les recodages\n\n4.1 Possibilités classiques\n\n\n\n\n\n\n\nRecodage\nQuand\n\n\n\n\nRéduire le nombre de catégories\nTrop de catégories peu peuplées → regrouper en « autre »\n\n\nRegrouper des catégories\nEx. cantons → urbains vs. ruraux\n\n\nInverser l’ordre\nDans une batterie de questions, certains items sont formulés à l’inverse → réaligner\n\n\nCombiner deux variables\nEx. canton + langue → Suisse alémanique vs. romande\n\n\nConstruire vrai/faux\nÀ partir d’une question de connaissance\n\n\nÉchelles additives\nAddition de plusieurs items pour créer un index\n\n\n\n\n\n4.2 Bonnes pratiques\n\nAnalyse univariée avant et après le recodage : compare les fréquences pour vérifier que rien n’a été perdu.\nPlusieurs versions d’une même variable peuvent coexister (age, age_cat3, age_cat5).\nTrace dans le codebook : toujours documenter quoi a été regroupé, et pourquoi.\n\n\n4.2.1 Exemple : variable « Nombre de partis au CF »\n\n\n\nAvant (savoirpol_cf)\n\nAprès (savoirpol_cf_vf)\n\n\n\n\n\n1 = 3 partis\nN = 32\n0 = faux\nN = 82\n\n\n2 = 4 partis\nN = 95\n1 = vrai\nN = 95\n\n\n3 = 5 partis\nN = 26\nNA = non-réponse\nN = 5\n\n\n8 = NSP\nN = 24\n\n\n\n\n9 = NR\nN = 5\n\n\n\n\nTOTAL\n182\nTOTAL\n182\n\n\n\nRecodage : 1, 3, 8, 9 → 0 (faux/NA), 2 → 1 (vrai). Toutes les obs sont conservées, juste regroupées.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#construire-une-échelle-index",
+    "href": "03_S4_Preparation_donnees.html#construire-une-échelle-index",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "5 Construire une échelle (index)",
+    "text": "5 Construire une échelle (index)\n\n5.1 Pourquoi ?\nPour des caractéristiques complexes comme une attitude ou une motivation, une seule question ne suffit pas. On mesure le concept par plusieurs indicateurs, puis on combine.\n\n\n5.2 Les étapes\n\n\n\nÉtape\nAction\n\n\n\n\n1. Fondement théorique\nQuelle caractéristique mesurer ? Définition à partir de la littérature\n\n\n2. Opérationnalisation\nChoisir les indicateurs (questions disponibles ou batterie à créer ; s’inspirer de zis.gesis.org)\n\n\n3. Mesurer la corrélation entre items\nLes items mesurent-ils bien la même chose ?\n\n\n4. Création de l’échelle\nAddition (ou moyenne) des scores des items\n\n\n5. Diagnostic et amélioration\nTest de fiabilité (Alpha de Cronbach) ; élimination d’items si nécessaire\n\n\n\n\n\n5.3 Exemple : « Internationalism » de Likert (1932)\n\n9 items, chacun de 1 à 5 sur l’échelle de Likert (1 = fortement contre l’ouverture, 5 = fortement pour) ;\nRecoder le sens si certains items sont inversés ;\nScore total = somme des 9 réponses → variable de 9 à 45 ;\nPossibilité de diviser par le nombre d’items → score sur 1-5 ;\nMesurer la fiabilité de l’échelle obtenue.\n\n\n\n\n\n\n\nL’Alpha de Cronbach\n\n\n\nDéfinition : coefficient mesurant la cohérence interne d’une échelle additive — les items mesurent-ils bien tous le même concept ?\nSeuil acceptable : 0.7 (en sciences sociales). En dessous : l’échelle n’est pas fiable. Solution : retirer un item peu cohérent et recalculer.\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nL’Alpha de Cronbach, c’est le score de cohésion d’une équipe de questions qui essaient toutes de mesurer la même chose. Si elles « répondent » dans le même sens à chaque participant·e, alpha est élevé (proche de 1). Si elles partent dans tous les sens, alpha est bas → ton échelle ne mesure pas vraiment ce que tu prétends.\n\n\n\n\n\n5.4 Échelles connues du domaine\n\nSocial Media Addiction Scale (SMAS) — Tutgun-Ünal & Deniz, 2015\nInternet Skills Scale (ISS) — Van Deursen, Helsper & Eynon, 2019",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#premiers-résultats-décrire-léchantillon",
+    "href": "03_S4_Preparation_donnees.html#premiers-résultats-décrire-léchantillon",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "6 Premiers résultats : décrire l’échantillon",
+    "text": "6 Premiers résultats : décrire l’échantillon\nAvant toute analyse complexe, tu décris ton échantillon. Ça remplit deux fonctions : vérifier qu’il ressemble à la population et donner du contexte aux lecteur·ice·s.\n\n\n\nCaractéristique\nMesure adaptée\n\n\n\n\nÂge (continu)\nMoyenne, écart-type\n\n\nCatégorie d’âge (ordinale)\nDistribution (fréquences, %), mode\n\n\nGenre (nominale)\nDistribution (fréquences, %), mode\n\n\nLangue (nominale)\nDistribution (fréquences, %), mode",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "03_S4_Preparation_donnees.html#la-pondération-weighting",
+    "href": "03_S4_Preparation_donnees.html#la-pondération-weighting",
+    "title": "S4 - Préparation des données d’enquête",
+    "section": "7 La pondération (weighting)",
+    "text": "7 La pondération (weighting)\n\n7.1 Pourquoi ?\nSi ton échantillon diffère de la population sur une caractéristique importante (les 18-30 ans sont sous-représentés, par ex.), tu peux corriger en pondérant : tu donnes plus de poids aux observations rares et moins aux observations sur-représentées.\n\n\n7.2 Procédure\n\nCalculer le poids : proportion dans la population / proportion dans l'échantillon ;\nCréer une nouvelle variable assignant ce poids à chaque individu.\n\n\n7.2.1 Exemple\n\n\n\nCatégorie\nÉchantillon (%)\nPopulation (%)\nPoids\n\n\n\n\n18-30 ans\n9\n13\n1.44\n\n\n31-40 ans\n28\n28\n1.00\n\n\n41-50 ans\n29\n30\n1.03\n\n\n51+ ans\n33\n28\n0.84\n\n\n\nLes 18-30 sont sous-représentés → on leur donne plus de poids (1.44) pour compenser.\n\n\n\n\n\n\nQuand la pondération est-elle critique ?\n\n\n\n\nEssentielle si tu calcules une moyenne ou un pourcentage que tu veux généraliser à la population.\nMoins crucial pour les relations entre variables (régressions multivariées) — les coefficients sont moins sensibles aux biais d’inclusion si les variables de stratification sont incluses comme contrôles.\n\n\n\n\n\n\n\n\n\nRécapitulatif Ch.4\n\n\n\n\nAvant analyse : taux de non-réponse, questionnaires vides, temps de réponse.\nCoder les réponses : du petit au grand, conventions 8/88 (autre), 9/99 (NSP), NA (préfère ne pas répondre).\nNe jamais écraser une variable. Créer une nouvelle version.\nCodebook = manuel de la base : variable, description, valeur, label.\nRecoder pour simplifier, regrouper, inverser, combiner ou créer du vrai/faux.\nUne échelle additive combine plusieurs items mesurant un concept abstrait (attitude, motivation).\nAlpha de Cronbach ≥ 0.7 → échelle fiable.\nToujours décrire l’échantillon avant les analyses (socio-démographiques).\nPondération corrige les biais d’inclusion pour les statistiques descriptives.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S4 - Préparation des données d'enquête"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html",
+    "href": "06_S7_Inferentielles_I.html",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nUne régression modélise l’effet de plusieurs variables explicatives sur une variable dépendante. Linéaire si Y est quanti, logistique si Y est dichotomique. Tu interprètes les coefficients, le R² (ou pseudo-R²), et les p-values.\nLe point à retenir : les régressions servent à expliquer et prédire des phénomènes en fonction de multiples facteurs à la fois. La valeur p nous livre des informations quant à la possibilité d’inférence des résultats sur la population entière.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html#pourquoi-la-régression",
+    "href": "06_S7_Inferentielles_I.html#pourquoi-la-régression",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "1 Pourquoi la régression ?",
+    "text": "1 Pourquoi la régression ?\nDeux objectifs jumeaux :\n\n\n\n\n\n\n\nObjectif\nQuestion\n\n\n\n\nExpliquer\nComment Y se modifie-t-il à partir de X ? Quelle est l’influence de chaque facteur ?\n\n\nPrédire\nSur la base du modèle, quelle valeur de Y attendre pour un nouveau cas ?\n\n\n\nC’est l’analyse multivariée la plus utilisée en sciences sociales.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html#quel-type-de-régression-pour-quelle-variable-dépendante",
+    "href": "06_S7_Inferentielles_I.html#quel-type-de-régression-pour-quelle-variable-dépendante",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "2 Quel type de régression pour quelle variable dépendante ?",
+    "text": "2 Quel type de régression pour quelle variable dépendante ?\n\n\n\n\n\n\n\n\nY (variable dépendante)\nNombre de catégories\nType de régression\n\n\n\n\nNominale\n2 (dichotomique)\nRégression logistique binaire / binomiale\n\n\nNominale\n3+\nRégression logistique multinomiale\n\n\nOrdinale\nToutes\nRégression logistique ordinale (ou linéaire si traitée comme quanti)\n\n\nQuantitative\n—\nRégression linéaire\n\n\n\n\n\n\n\n\n\nEt la distribution ?\n\n\n\nAu-delà du niveau de mesure, c’est la distribution qui compte. Une variable quanti non-normale peut nécessiter une autre régression (Poisson pour des comptages, binomiale négative pour de la surdispersion, etc.). Pour le cours, on se limite à linéaire et logistique.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html#bloc-a-la-régression-linéaire",
+    "href": "06_S7_Inferentielles_I.html#bloc-a-la-régression-linéaire",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "3 Bloc A — La régression linéaire",
+    "text": "3 Bloc A — La régression linéaire\n\n3.1 Modèle simple : Y = α + βX + e\nL’idée centrale : trouver la droite qui passe au mieux dans le nuage de points (X, Y) — la fameuse droite des moindres carrés (OLS, Ordinary Least Squares).\n\\[Y = \\alpha + \\beta X + e\\]\n\n\n\n\n\n\n\nTerme\nSignification\n\n\n\n\nα (alpha)\nConstante ou intercept : valeur de Y quand X = 0\n\n\nβ (beta)\nCoefficient de régression : de combien Y change quand X augmente d’une unité\n\n\ne\nTerme d’erreur : écart entre Y prédit (sur la droite) et Y réel\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nLa régression trouve la meilleure droite qui résume le lien entre X et Y. On minimise la somme des erreurs au carré (d’où « moindres carrés »). Pour chaque cas : - la droite te donne une prédiction ; - la distance verticale entre le point réel et la droite est l’erreur (résidu).\n\n\n\n\n\n3.2 Modèle multiple : plusieurs variables explicatives\n\\[Y = \\alpha + \\beta_1 X_1 + \\beta_2 X_2 + \\dots + \\beta_k X_k + e\\]\nChaque \\(\\beta_j\\) s’interprète « toutes choses égales par ailleurs » : c’est l’effet propre de \\(X_j\\) en gardant les autres variables constantes.\n\n\n3.3 Éléments clés à lire dans un tableau de régression\n\n\n\n\n\n\n\nÉlément\nInterprétation\n\n\n\n\nCoefficient (β)\nSens et magnitude de l’effet. + = positif, − = négatif.\n\n\nErreur type (SE)\nIncertitude sur le coefficient. Plus elle est petite, plus le coefficient est précis.\n\n\nValeur p\nProbabilité d’observer cet effet si H0 (β = 0). p &lt; 0.05 → significatif\n\n\nConstante (α)\nValeur de Y prédite quand toutes les X = 0 (rarement interprétable seule)\n\n\nR²\nProportion de la variance de Y expliquée par le modèle (entre 0 et 1)\n\n\nN\nNombre d’observations\n\n\n\n\n3.3.1 Convention des étoiles\n\n\n\nCode\nSeuil\nSens\n\n\n\n\n***\np &lt; 0.001\nTrès hautement significatif\n\n\n**\np &lt; 0.01\nHautement significatif\n\n\n*\np &lt; 0.05\nSignificatif\n\n\n. ou rien\np ≥ 0.05\nNon significatif\n\n\n\nÀ toujours indiquer sous chaque tableau de régression.\n\n\n\n3.4 Le R² (coefficient de détermination)\n\n\n\n\n\n\n\nQuestion\nRéponse\n\n\n\n\nQue mesure-t-il ?\nLa proportion de la variance de Y prédite par les X\n\n\nPlage\n0 à 1 (ou 0 à 100 %)\n\n\nR² = 0.75\nLe modèle explique 75 % de la variance de Y ; les 25 % restants sont dus à des facteurs non inclus\n\n\nR² = 0.05\nLe modèle n’explique presque rien\n\n\n\n\n\n\n\n\n\nLe R² gonfle artificiellement\n\n\n\nAjouter n’importe quelle variable fait monter le R² — même une variable inutile. Pour comparer des modèles avec un nombre de variables différent, regarde le R² ajusté (Adjusted R²) qui pénalise les variables superflues.\n\n\n\n\n3.5 Significativité statistique et inférence\n\n\n\n\n\n\n\nIdée\nDétail\n\n\n\n\nSur un échantillon, on veut savoir si l’effet observé est dû au hasard ou à un facteur réel\n\n\n\nLa p-value te dit : si H0 était vraie (β = 0), quelle est la probabilité d’observer un effet aussi grand ?\n\n\n\nSi p &lt; α (souvent 0.05), on rejette H0 → le coefficient est significatif\n\n\n\nSinon, on ne rejette pas H0 → on ne peut pas conclure à un effet réel\n\n\n\n\n\n\n\n\n\n\nSans significativité, pas d’effet généralisable\n\n\n\nSi un coefficient n’est pas significatif (p ≥ 0.05), on ne peut pas affirmer que l’effet existe dans la population. Cela ne veut pas dire qu’il n’existe pas : peut-être que l’échantillon est trop petit pour le détecter (manque de puissance). À l’examen, ne jamais conclure « pas d’effet » mais « pas d’effet détectable ».\n\n\n\n\n3.6 Exemple : déterminants du taux de maladies cardiaques\n\n\n\n\n\n\n\nVD : taux de maladies cardiaques (% de la population)\nCoefficient (SE)\n\n\n\n\nTaux de personnes à vélo (%)\n−0.200*** (0.001)\n\n\nTaux de fumeur·euse·s (%)\n0.178*** (0.003)\n\n\nConstante\n14.984 (0.080)\n\n\nObservations\n498\n\n\nR²\n0.979\n\n\nNote : * p &lt; 0.05; ** p &lt; 0.01; *** p &lt; 0.001\n\n\n\n\nLecture :\n\nLe modèle explique 97.9 % de la variance. Très élevé.\nVélo : −0.200, p &lt; 0.001 → plus de gens font du vélo, moins il y a de maladies cardiaques.\nFumeur·euse·s : +0.178, p &lt; 0.001 → effet opposé.\nLes deux coefficients sont très significatifs.\n\n\n\n3.7 Limites de la régression linéaire en sciences sociales\n\nLes VD sont rarement quanti (souvent oui/non, ou catégorielles) → régression logistique.\nLes individus dans un même contexte (pays, région) ne sont pas indépendants → modèles multi-niveaux (au-delà du cours).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html#bloc-b-la-régression-logistique-binaire",
+    "href": "06_S7_Inferentielles_I.html#bloc-b-la-régression-logistique-binaire",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "4 Bloc B — La régression logistique binaire",
+    "text": "4 Bloc B — La régression logistique binaire\n\n4.1 Pourquoi ?\nBeaucoup de phénomènes sont binaires (0/1) :\n\nVote / s’est abstenu.\nUtilise Instagram / n’utilise pas.\nAdopté / non adopté.\n\nLa régression linéaire pose deux problèmes pour une VD binaire :\n\nElle peut prédire des valeurs hors de [0, 1] (impossible pour une probabilité).\nElle suppose des effets linéaires constants, peu adapté à une probabilité bornée.\n\n\n\n4.2 La fonction logit\nLa régression logistique ne prédit pas Y directement. Elle prédit le logarithme du rapport des chances (logit) :\n\\[\\text{logit}(p) = \\ln\\left(\\frac{p}{1-p}\\right) = \\alpha + \\beta_1 X_1 + \\dots\\]\noù p = probabilité que Y = 1. Cette transformation contraint p à rester entre 0 et 1.\n\n\n4.3 Interprétation des coefficients\n\n\n\n\n\n\n\nÉlément\nInterprétation\n\n\n\n\nSigne du β\nDirection de l’effet (positif/négatif) — interprétable directement\n\n\nSignificativité\nIdem régression linéaire (p-value, étoiles)\n\n\nMagnitude du β\nDifficile à interpréter (log-odds, non-linéaire) → on passe aux odds ratios\n\n\nR²\nImpossible à calculer comme en linéaire → Pseudo-R² (peu interprétable directement)\n\n\n\n\n\n4.4 Les odds ratios (OR)\n\n4.4.1 Probabilité vs. odds\n\n\n\n\n\n\n\n\nNotion\nDéfinition\nExemple (cartes)\n\n\n\n\nProbabilité\nNb événements favorables / Nb total\nP(pique) = 13/52 = 0.25\n\n\nOdds\nP(événement) / P(non-événement)\n0.25 / 0.75 = 1/3 ≈ 0.33\n\n\nOdds ratio (OR)\nRapport de deux odds, e.g. avant/après\nexp(β) en régression logistique\n\n\n\n\n\n4.4.2 Comment lire un OR ?\n\n\n\nOR\nInterprétation\n\n\n\n\nOR = 1\nPas d’association\n\n\nOR &gt; 1\nEffet positif sur P(Y = 1)\n\n\nOR &lt; 1\nEffet négatif sur P(Y = 1)\n\n\n\n\n\n4.4.3 Exemples\n\n\n\nOR\nSens\n\n\n\n\nOR = 1.2\nLa probabilité augmente de 20 %\n\n\nOR = 2.0\nLa probabilité augmente de 100 % (double)\n\n\nOR = 0.2\nLa probabilité diminue de 80 %\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nL’OR mesure de combien les chances (odds) d’un événement changent quand X augmente d’une unité. C’est un facteur multiplicatif, pas additif. OR = 2 ne veut pas dire « +2 chances », mais « les chances doublent ».\n\n\n\n\n\n\n4.5 Exemple : admission à l’université\n\n\n\nVD : Admis (Oui/Non)\nCoefficient\nOR\n\n\n\n\nScore GRE\n0.002*\n1.002*\n\n\nScore GPA\n0.804*\n2.234*\n\n\nRang 2 (vs. 1)\n−0.675*\n0.508*\n\n\nRang 3 (vs. 1)\n−1.340***\n0.261***\n\n\nRang 4 (vs. 1)\n−1.551***\n0.211***\n\n\nConstante\n−3.989\n—\n\n\nN\n400\n\n\n\nPseudo-R²\n0.082\n\n\n\n\nLecture : Une augmentation de 1 point de GPA multiplie les chances d’être admis par 2.234 (= +123 %). Venir d’un institut de rang 4 (vs. rang 1) divise les chances par environ 5 (OR = 0.211).\n\n\n4.6 Variante : régression probit\nMême principe mais avec la fonction probit au lieu de logit. Différences :\n\nCoefficients non interprétables en odds ratios ;\nSens (signe) et significativité identiques à logit.\n\nÀ l’examen, savoir que probit existe et qu’on l’interprète comme logit pour signe/significativité.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html#bloc-c-traitement-des-variables-indépendantes",
+    "href": "06_S7_Inferentielles_I.html#bloc-c-traitement-des-variables-indépendantes",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "5 Bloc C — Traitement des variables indépendantes",
+    "text": "5 Bloc C — Traitement des variables indépendantes\nSelon le niveau de mesure de X :\n\n\n\n\n\n\n\n\nX\nCatégories\nTransformation\n\n\n\n\nNominale\n2 (dichotomique)\nInclure telle quelle (0/1)\n\n\nNominale\n3+\nDichotomiser : créer plusieurs dummies (0/1), en retirer une (= catégorie de référence)\n\n\nOrdinale\n—\nInclure telle quelle si traitable comme métrique ; sinon dichotomiser\n\n\nQuantitative\n—\nInclure telle quelle\n\n\n\n\n5.1 Dichotomiser une variable nominale 3+\nProblème : passer d’une catégorie à l’autre n’est pas linéaire (ex. source d’info : journal, parents, amis, Instagram, RTS app).\nSolution : créer des dummies :\n\n\n\nVariable originale\nRTS_app\nInstagram\nAmis\n(Journal = réf)\n\n\n\n\nJournal\n0\n0\n0\n\n\n\nInstagram\n0\n1\n0\n\n\n\nAmis\n0\n0\n1\n\n\n\nRTS app\n1\n0\n0\n\n\n\n\nOn inclut toutes les dummies sauf une (la référence, ici « Journal »).\nInterprétation : chaque coefficient de dummy se lit par rapport à la catégorie de référence. « Par rapport à une personne s’informant par journal, une personne via RTS app a un score Y plus/moins élevé de… »",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "06_S7_Inferentielles_I.html#bloc-d-effets-dinteraction",
+    "href": "06_S7_Inferentielles_I.html#bloc-d-effets-dinteraction",
+    "title": "S7 - Analyses inférentielles I",
+    "section": "6 Bloc D — Effets d’interaction",
+    "text": "6 Bloc D — Effets d’interaction\n\n6.1 Définition\nUne interaction existe quand l’effet de \\(X_1\\) sur Y dépend de la valeur de \\(X_2\\).\nExemple : L’effet du temps d’usage d’Instagram sur le manque d’énergie est plus fort pour les extraverti·e·s que pour les introverti·e·s (hypothèse H3 du S1).\n\nY = manque d’énergie\nX₁ = durée d’usage Instagram\nX₂ = personnalité (extra/intro)\n\n\n\n6.2 Procédé : modèle séquentiel\n\n\n\n\n\n\n\nÉtape\nÉquation\n\n\n\n\nModèle 1 (sans interaction)\n\\(Y = \\alpha + \\beta_1 X_1 + \\beta_2 X_2 + e\\)\n\n\nModèle 2 (avec interaction)\n\\(Y = \\alpha + \\beta_1 X_1 + \\beta_2 X_2 + \\beta_3 (X_1 \\times X_2) + e\\)\n\n\n\nLe terme d’interaction est simplement le produit des deux variables.\n\n\n6.3 Interprétation\nL’interaction est exigeante : trois coefficients à lire ensemble. On présente toujours un graphique (lignes pour chaque modalité de \\(X_2\\)) ou un tableau de prédictions pour des valeurs choisies de \\(X_1\\) et \\(X_2\\).\n\n\n6.4 Exemple chiffré\nQR : L’éthique de travail affecte-t-elle le résultat (GPA) différemment selon le genre ?\n\nY = résultat (GPA)\n\\(X_1\\) = éthique de travail (1 mauvaise → 5 excellente)\n\\(X_2\\) = genre (0 homme, 1 femme)\n\nModèle : \\(Y = 1.539 + 0.570 \\times X_1 + 0.175 \\times X_2 - 0.087 \\times (X_1 \\times X_2)\\)\n\n\n\n\n\n\n\n\nSujet\nProfil\nPrédiction\n\n\n\n\nA\nFemme, éthique faible (1)\n\\(1.539 + 0.175 + 0.570 - 0.087 = 2.197\\)\n\n\nB\nHomme, éthique faible (1)\n\\(1.539 + 0.570 = 2.109\\)… (ici 1.714 dans les slides, vérifier le codage)\n\n\nC\nFemme, éthique élevée (5)\n\\(1.539 + 0.175 + 5 \\times 0.570 - 5 \\times 0.087 = 2.549\\)\n\n\nD\nHomme, éthique élevée (5)\n\\(1.539 + 5 \\times 0.570 = 4.389\\)… (ici 2.414 selon slides)\n\n\n\nLe coefficient d’interaction (−0.087) indique que le gain de Y par unité d’éthique est plus faible chez les femmes que chez les hommes (atténuation).\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nSans interaction : « L’effet de l’éthique sur le GPA est le même pour tout le monde. » Avec interaction : « L’effet de l’éthique sur le GPA diffère selon qu’on est homme ou femme. » Le terme d’interaction quantifie cette différence.\n\n\n\n\n\n\n\n\n\nPièges examen sur la régression\n\n\n\n\nConfondre signe et significativité. Un coefficient peut être grand mais non significatif (forte incertitude). Toujours regarder les deux.\nSurinterpréter un R² élevé. Un R² de 0.98 dans un cas social, c’est suspect — probablement biais ou colinéarité.\nInterpréter directement les coefficients logistiques. Ils sont en log-odds. Pour parler en clair → odds ratios.\nOublier la catégorie de référence. Un coef de dummy se lit toujours par rapport à une catégorie de référence (à mentionner).\nConfondre R² (linéaire) et pseudo-R² (logistique). Le pseudo-R² ne s’interprète pas comme % de variance expliquée.\n\n\n\n\n\n\n\n\n\nRécapitulatif Ch.7\n\n\n\n\nRégression = analyse multivariée pour expliquer ou prédire Y à partir de X₁, X₂, …\nType selon Y : linéaire (quanti), logistique binaire (Y dichotomique), multinomiale ou ordinale.\nÉquation linéaire : \\(Y = \\alpha + \\beta_1 X_1 + ... + e\\). β = effet de X sur Y, toutes choses égales par ailleurs.\nLecture : signe + magnitude + erreur type + p-value + étoiles + R² + N.\nR² = % de variance de Y expliquée par le modèle (0-1).\nLogistique : on prédit le logit ; on interprète les odds ratios (OR = 1 nul, &gt; 1 positif, &lt; 1 négatif).\nProbit : variante de logit, sans OR, signe et significativité identiques.\nVI catégorielles 3+ → dichotomiser en dummies avec catégorie de référence.\nInteraction : effet de X₁ dépend de X₂ ; on ajoute le terme produit \\(X_1 \\times X_2\\).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S7 - Analyses inférentielles I"
+    ]
+  },
+  {
+    "objectID": "synthese.html",
+    "href": "synthese.html",
+    "title": "Synthèse",
+    "section": "",
+    "text": "Ce que cette page apporte\n\n\n\nToute la matière du cours condensée en tableaux et schémas : pipeline, types de questions, sources, niveaux de mesure, choix de test, critères de qualité, workflow d’examen. À utiliser pour les dernières heures de révision.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#le-pipeline-de-recherche-en-7-étapes",
+    "href": "synthese.html#le-pipeline-de-recherche-en-7-étapes",
+    "title": "Synthèse",
+    "section": "1 1. Le pipeline de recherche en 7 étapes",
+    "text": "1 1. Le pipeline de recherche en 7 étapes\n┌─────────────────────────────────────────────────────────────────┐\n│  1. IDENTIFICATION DE L'OBJET                                   │\n│     \"Sur quoi je travaille ?\" (intérêt, faisabilité)            │\n└───────────────────────────┬─────────────────────────────────────┘\n                            │\n┌───────────────────────────▼─────────────────────────────────────┐\n│  2. PROBLÉMATISATION & QUESTION DE RECHERCHE                    │\n│     \"Que sait-on déjà ? Que veut-on savoir en plus ?\"           │\n│     -&gt; QR claire, faisable, pertinente                          │\n└───────────────────────────┬─────────────────────────────────────┘\n                            │\n┌───────────────────────────▼─────────────────────────────────────┐\n│  2 bis. CADRE THÉORIQUE & HYPOTHÈSES                            │\n│     Concepts, dimensions, mécanismes causaux                    │\n│     -&gt; H1, H2... (vraisemblables, précises, falsifiables)       │\n└───────────────────────────┬─────────────────────────────────────┘\n                            │\n┌───────────────────────────▼─────────────────────────────────────┐\n│  3. OPÉRATIONNALISATION                                         │\n│     Concept -&gt; Dimensions -&gt; Indicateurs -&gt; Variables           │\n│     -&gt; Choix des méthodes d'analyse                             │\n└───────────────────────────┬─────────────────────────────────────┘\n                            │\n┌───────────────────────────▼─────────────────────────────────────┐\n│  4. COLLECTE DES DONNÉES                                        │\n│     Enquête / Contenu / Données existantes                      │\n│     Échantillonnage, mesures, questionnaires                    │\n└───────────────────────────┬─────────────────────────────────────┘\n                            │\n┌───────────────────────────▼─────────────────────────────────────┐\n│  5. ANALYSE                                                     │\n│     Préparation -&gt; Univariée -&gt; Bi/Multivariée -&gt; Tests         │\n└───────────────────────────┬─────────────────────────────────────┘\n                            │\n┌───────────────────────────▼─────────────────────────────────────┐\n│  6. DISSÉMINATION                                               │\n│     Tableaux, graphiques, transparence, incertitude             │\n└─────────────────────────────────────────────────────────────────┘",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#types-de-questions-de-recherche",
+    "href": "synthese.html#types-de-questions-de-recherche",
+    "title": "Synthèse",
+    "section": "2 2. Types de questions de recherche",
+    "text": "2 2. Types de questions de recherche\n\n\n\n\n\n\n\n\n\nType\nLogique\nMéthode typique\nExemple\n\n\n\n\nDescriptive\nDécrire un seul phénomène ou son évolution\nUnivariée, bivariée (description)\n« Comment évolue la consommation de presse écrite en Suisse ? »\n\n\nInférentielle (causale)\nInfluence de X sur Y\nBi- et multivariée, régression\n« Les usages d’Instagram influencent-ils la dépression ? »\n\n\nExploratoire\nComprendre un domaine peu théorisé\nMixed methods (quali d’abord)\n« Quels motifs poussent au binge-watching ? »\n\n\n\n\n2.1 Formule magique d’une QR inférentielle\n\nDans quelle mesure est-ce que le phénomène X influence le phénomène Y ?\n\nTrois sous-questions : 1. Y a-t-il vraiment une influence ? 2. Quelle est sa force ? 3. Quel est son sens (positif/négatif) ?",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#sources-de-données-tableau-comparatif",
+    "href": "synthese.html#sources-de-données-tableau-comparatif",
+    "title": "Synthèse",
+    "section": "3 3. Sources de données : tableau comparatif",
+    "text": "3 3. Sources de données : tableau comparatif\n\n\n\n\n\n\n\n\n\n\nSource\nType\nAvantages\nInconvénients\nÉchantillonnage typique\n\n\n\n\nEnquête par sondage\nPrimaires, individuelles\nConçue pour ta QR ; contrôle sur les questions\nCher ; non-réponses ; désirabilité\nProbabiliste (aléatoire, stratifié, grappes) ou non-probabiliste\n\n\nAnalyse de contenu\nPrimaires, individuelles\nAccès à des données non déclarées (presse, RS)\nCodage long ; fiabilité à mesurer\nProbabiliste sur le corpus\n\n\nDonnées documentaires\nPrimaires/secondaires\nSource officielle, archivable\nFormat brut ; choix critiques\nPar date, par mots-clés\n\n\nWeb scraping (API / parsing)\nPrimaires, individuelles\nVolume, rapidité, faible coût\nRestrictions techniques ; éthique\nSelon critères de la plateforme\n\n\nDonnées secondaires (FORS, OFS, ESS)\nSecondaires\nÉchantillons grands et validés\nPas conçues pour ta QR ; opérationnalisation imposée\nDéjà fait par les producteur·ice·s\n\n\nOpen Data\nSecondaires, souvent agrégées\nGratuit, public, large\nNiveau agrégé → risque d’erreur écologique\nPas d’échantillonnage à faire\n\n\nApplication\nPrimaires\nMesures longitudinales, capteurs\nCoût de développement\nVolontaires (souvent)\n\n\nDon de données\nPrimaires\nDonnées personnelles riches\nÉchantillon auto-sélectionné\nVolontaires",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#niveaux-de-mesure-et-statistiques-applicables",
+    "href": "synthese.html#niveaux-de-mesure-et-statistiques-applicables",
+    "title": "Synthèse",
+    "section": "4 4. Niveaux de mesure et statistiques applicables",
+    "text": "4 4. Niveaux de mesure et statistiques applicables\n\n4.1 Distribution\n\n\n\n\n\n\n\n\n\nNiveau\nTableau de fréquences\nGraphique\nIndicateurs (kurtosis, skewness)\n\n\n\n\nNominal\nOK\nDiagramme en bâtons\nIncohérent\n\n\nOrdinal\nOK\nDiagramme en bâtons\nIncohérent (sauf si traité comme quanti)\n\n\nContinu\nIncohérent\nHistogramme\nOK\n\n\nDiscret\nIncohérent (sauf petite étendue)\nHistogramme\nOK\n\n\n\n\n\n4.2 Tendance centrale\n\n\n\nNiveau\nMode\nMédiane\nMoyenne\n\n\n\n\nNominal\nOK\nIncohérent\nIncohérent\n\n\nOrdinal\nOK\nOK\nIncohérent (sauf si traité comme quanti)\n\n\nContinu\nOK\nOK\nOK\n\n\nDiscret\nOK\nOK\nIncohérent (mais utilisé)\n\n\n\n\n\n4.3 Dispersion\n\n\n\n\n\n\n\n\n\nNiveau\nÉtendue\nIQR\nÉcart-type\n\n\n\n\nNominal\nIncohérent\nIncohérent\nIncohérent\n\n\nOrdinal\nIncohérent (sauf si quanti)\nIncohérent (sauf si quanti)\nIncohérent (sauf si quanti)\n\n\nContinu\nOK\nOK\nOK\n\n\nDiscret\nOK\nOK\nIncohérent (mais utilisé)",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#quel-test-pour-quel-cas",
+    "href": "synthese.html#quel-test-pour-quel-cas",
+    "title": "Synthèse",
+    "section": "5 5. Quel test pour quel cas ?",
+    "text": "5 5. Quel test pour quel cas ?\n\n5.1 Analyse bivariée selon les niveaux de mesure\n\n\n\n\n\n\n\n\n\n\nVariable nominale\nVariable ordinale\nVariable quantitative\n\n\n\n\nVariable nominale\nTableau croisé + χ² + φ/V de Cramér\nTableau croisé + χ²\nAnalyse de moyenne : t-test (2 grp) ou ANOVA (3+ grp)\n\n\nVariable ordinale\nTableau croisé\nCorrélation de Spearman\nAnalyse de moyenne\n\n\nVariable quantitative\nAnalyse de moyenne\nAnalyse de moyenne\nCorrélation de Pearson\n\n\n\n\n\n5.2 Analyse multivariée : choix de la régression\n\n\n\n\n\n\n\n\nVD (Y)\nType de régression\nParticularité\n\n\n\n\nQuantitative\nLinéaire\nOLS, coefficients en unités de Y, R²\n\n\nDichotomique (0/1)\nLogistique binaire / binomiale\nLogit ou probit, odds ratios\n\n\nNominale 3+ catégories\nMultinomiale\nLogits multiples par rapport à une référence\n\n\nOrdinale\nOrdinale ou linéaire si traitée comme quanti\nConserve l’ordre\n\n\n\n\n\n5.3 Flowchart de décision pour le test\nCombien de variables ?\n│\n├── 1 variable : ANALYSE UNIVARIÉE\n│   │\n│   └── Décrire distribution / tendance centrale / dispersion\n│       Quel niveau de mesure ? -&gt; table ci-dessus\n│\n├── 2 variables : ANALYSE BIVARIÉE\n│   │\n│   ├── 2 nominales        -&gt; Tableau croisé + chi-carré\n│   ├── 1 nominale + 1 quanti -&gt; t-test (2 grp) ou ANOVA (3+ grp)\n│   ├── 2 ordinales       -&gt; Corrélation de Spearman\n│   └── 2 quantitatives   -&gt; Corrélation de Pearson + scatterplot\n│\n└── 3+ variables : MULTIVARIÉE / RÉGRESSION\n    │\n    ├── Y quanti        -&gt; Régression linéaire (OLS)\n    ├── Y dichotomique  -&gt; Régression logistique (logit / probit)\n    ├── Y nominale 3+  -&gt; Multinomiale\n    └── Y ordinale     -&gt; Ordinale (ou linéaire si traitée comme quanti)",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#critères-de-qualité",
+    "href": "synthese.html#critères-de-qualité",
+    "title": "Synthèse",
+    "section": "6 6. Critères de qualité",
+    "text": "6 6. Critères de qualité\n\n\n\n\n\n\n\n\nCritère\nDéfinition\nComment l’évaluer\n\n\n\n\nFiabilité (reliability)\nMesure cohérente quand on la répète\nTest intra-codeur, inter-codeur (alpha de Krippendorff, kappa de Cohen ≥ 0.7) ; alpha de Cronbach pour les échelles ≥ 0.7\n\n\nValidité interne\nMesure ce qu’elle prétend mesurer\nDiversité des sources, tester explications alternatives, mesures établies\n\n\nValidité externe\nGénéralisable au-delà de l’échantillon\nComparer avec d’autres données, autres contextes\n\n\nReproductibilité\nMêmes données + même code = mêmes résultats\nCode annoté, données partagées, document méta\n\n\nRéplicabilité\nRefaire l’étude avec nouvelles données = résultats similaires\nProtocole publié, design transparent\n\n\nRobustesse\nRésultats tiennent sous méthodes alternatives\nAnalyses de sensibilité, modèles emboîtés",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#les-4-questions-pour-évaluer-la-causalité",
+    "href": "synthese.html#les-4-questions-pour-évaluer-la-causalité",
+    "title": "Synthèse",
+    "section": "7 7. Les 4 questions pour évaluer la causalité",
+    "text": "7 7. Les 4 questions pour évaluer la causalité\n\nSens de la relation : X cause-t-il Y ou Y cause-t-il X ? (causalité inversée)\nCauses concurrentes : existe-t-il une variable Z qui influence à la fois X et Y ? (confondante)\nSélection de l’échantillon : la sélection est-elle liée à la VD ? (biais de sélection)\nNiveau d’analyse : individuel vs. agrégé ? (erreur écologique)",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#sources-derreur-dans-une-enquête-et-solutions",
+    "href": "synthese.html#sources-derreur-dans-une-enquête-et-solutions",
+    "title": "Synthèse",
+    "section": "8 8. Sources d’erreur dans une enquête (et solutions)",
+    "text": "8 8. Sources d’erreur dans une enquête (et solutions)\n\n\n\n\n\n\n\n\nErreur\nCause\nSolution\n\n\n\n\nD’échantillonnage\nÉcart paramètre observé vs. réel\nTaille ↑, pondération\n\n\nDe validité (spécification)\nQuestion ne mesure pas le concept\nAméliorer opérationnalisation\n\n\nNon-réponse\nRefus de participer ou de répondre\nRaccourcir, éviter questions sensibles\n\n\nDésirabilité sociale\nRépondre socialement acceptable\nEnquête anonyme, formulation neutre\n\n\nCentriste\nCocher le milieu\nÉchelle paire, inversion\n\n\nAcquiescence\nDire oui à tout\nQuestions à sens inverse\n\n\nEffet d’ordre\nUne question influence la suivante\nOrdre logique réfléchi",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#lire-un-tableau-de-régression-en-4-étapes",
+    "href": "synthese.html#lire-un-tableau-de-régression-en-4-étapes",
+    "title": "Synthèse",
+    "section": "9 9. Lire un tableau de régression en 4 étapes",
+    "text": "9 9. Lire un tableau de régression en 4 étapes\n\n\n\n\n\n\n\nÉtape\nQuestion\n\n\n\n\n1\nQuel type de régression ? (linéaire / logistique / multinomiale) → présence d’OR = logistique\n\n\n2\nQualité globale : R² (linéaire) ou pseudo-R² (logistique) ; N\n\n\n3\nPour chaque coefficient : signe → magnitude → significativité (p, étoiles) → catégorie de référence (dummies)\n\n\n4\nConclusion : hypothèse rejetée, non-rejetée, partiellement validée",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#workflow-examen",
+    "href": "synthese.html#workflow-examen",
+    "title": "Synthèse",
+    "section": "10 10. Workflow examen",
+    "text": "10 10. Workflow examen\n\n\n\n\n\n\nFace à une question d’examen, je fais quoi ?\n\n\n\n\n10.1 Question QCM (5 pts)\n\nLis très attentivement la consigne (1 ou plusieurs réponses ?).\nÉlimine les options clairement fausses.\nNe devine pas si points négatifs sur multi-réponses.\n\n\n\n10.2 Question courte (1 pt, 2-3 phrases)\n\nIdentifie le concept clé demandé.\nDéfinis-le précisément (en 1 phrase).\nDonne un exemple ou une distinction utile.\nPas de remplissage : dense et précis.\n\n\n\n10.3 Question de réflexion (2.5 pts, 2 paragraphes)\n\nPose les enjeux en quelques mots.\nMobilise 2-3 concepts du cours.\nPrends position (rejet, validation, nuance).\nConclus avec une ouverture critique.\n\n\n\n\n\n10.4 Face à un tableau de régression à interpréter\n\n\n\n\n\n\n\nRéflexe\nAction\n\n\n\n\n1. Quelle est la VD ?\nNotée en haut du tableau\n\n\n2. Quel type de régression ?\nCherche : odds ratios → logistique ; coefficients seuls → linéaire\n\n\n3. Qualité globale ?\nR² ou pseudo-R² + N + F-test\n\n\n4. Pour 2-3 prédicteurs significatifs\nSigne + magnitude + étoiles + interprétation en contexte\n\n\n5. Conclusion sur l’hypothèse\nValidée / rejetée / nuancée\n\n\n\n\n\n10.5 Face à une question sur l’éthique ou la qualité\n\n\n\n\n\n\n\nRéflexe\nAction\n\n\n\n\nIdentifier quelle qualité est en jeu\nValidité interne ? Externe ? Fiabilité ? Reproductibilité ?\n\n\nMobiliser un critère du cours\n4 questions causalité, biais types, alpha de Cronbach…\n\n\nDonner un contre-exemple concret\nPour illustrer\n\n\n\n\n\n10.6 Face à une question sur la causalité\n\n\n\n\n\n\n\nRéflexe\nAction\n\n\n\n\nIdentifier si on prétend à la causalité\n« X cause Y » dans la question ?\n\n\nRappeler : corrélation ≠ causalité\nC’est LA phrase à connaître\n\n\nLister les 4 questions\nSens, causes concurrentes, sélection, niveau d’analyse\n\n\nConclure\nQuelle inférence est licite, laquelle ne l’est pas",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#vocabulaire-dexamen-à-connaître-par-cœur",
+    "href": "synthese.html#vocabulaire-dexamen-à-connaître-par-cœur",
+    "title": "Synthèse",
+    "section": "11 11. Vocabulaire d’examen à connaître par cœur",
+    "text": "11 11. Vocabulaire d’examen à connaître par cœur\n\n\n\n\n\n\n\n\nConcept\nDéfinition rapide\nSlogan\n\n\n\n\nHypothèse falsifiable\nPeut être réfutée par des données\n« Si pas testable, pas scientifique »\n\n\nP-value\nProba d’observer ça si H0 vraie\n« &lt; 0.05 → rejet de H0 »\n\n\nNiveau de mesure\nType d’info codée (nom/ord/cont/disc)\n« Détermine TOUT le reste »\n\n\nErreur écologique\nInférence individu ← agrégé\n« Pays riche ≠ riche du pays »\n\n\nDésirabilité sociale\nRépondre socialement acceptable\n« Sport ? Oui, beaucoup ! (en vrai non) »\n\n\nCausalité ≠ corrélation\nLien ≠ causalité\n« Glaces et noyades : c’est l’été ! »\n\n\nValidité ≠ fiabilité\nBonne mesure ≠ mesure stable\n« Précis ≠ juste »\n\n\nRéférence (dummy)\nCatégorie omise dans les régressions\n« Toujours par rapport à la réf »\n\n\nOdds ratio\nFacteur multiplicatif sur les chances\n« OR = 2 : x2 ; OR = 0.5 : ÷2 »\n\n\nR² ajusté\nR² pénalisé pour comparer modèles\n« R² brut gonfle toujours »",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "synthese.html#synthèse-en-une-phrase-par-séance",
+    "href": "synthese.html#synthèse-en-une-phrase-par-séance",
+    "title": "Synthèse",
+    "section": "12 12. Synthèse en une phrase par séance",
+    "text": "12 12. Synthèse en une phrase par séance\n\n\n\n\n\n\n\nSéance\nEn une phrase\n\n\n\n\nS1\nLe cours suit un pipeline en 7 étapes ; QR claire/faisable/pertinente ; hypothèse falsifiable.\n\n\nS2\nNiveau de mesure (nominal/ordinal/continu/discret) détermine toutes les analyses ultérieures.\n\n\nS3\nSources multiples (enquête, contenu, data) ; échantillonnage probabiliste vs. non-probabiliste ; questions objectives, fiables, valides.\n\n\nS4\nCoder, codebook, recoder sans écraser, échelles (alpha de Cronbach ≥ 0.7), décrire l’échantillon.\n\n\nS5\nAnalyse de contenu = unités + codebook + codage systématique + qualité (fiabilité Krippendorff ≥ 0.7 + validité).\n\n\nS6\nUnivariée (distribution/tendance/dispersion), bivariée (tableau croisé, moyennes, corrélation), multivariée (contrôle).\n\n\nS7\nRégression linéaire (Y quanti) vs. logistique (Y dichotomique). Lire β, p, R², OR, interactions.\n\n\nS8\nLire des tableaux réels : signe + magnitude + significativité + R² + N + conclusion.\n\n\nS9\nQualité = reproductibilité + validité + causalité maîtrisée + incertitude transparente + objectivation réfléchie.\n\n\nS10\nMixed methods ; examen 60 min / 15 pts / 3 parties.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Synthèse"
+    ]
+  },
+  {
+    "objectID": "glossaire.html",
+    "href": "glossaire.html",
+    "title": "Glossaire",
+    "section": "",
+    "text": "Ce glossaire définit en langage simple tous les termes techniques rencontrés dans les 10 séances. Clique sur un terme pour dérouler son explication. À chaque entrée : une définition simple + un exemple.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#a",
+    "href": "glossaire.html#a",
+    "title": "Glossaire",
+    "section": "1 A",
+    "text": "1 A\n\n\n\n\n\n\nAcquiescence (biais d’)\n\n\n\n\n\nEn simple : tendance des répondant·e·s à dire oui à tout par réflexe, sans vraiment lire la question.\nExemple : si toutes tes questions sont formulées « êtes-vous d’accord avec… », tu vas avoir un excès de « oui ». Solution : alterner des items à sens inverse pour repérer ceux qui acquiescent par réflexe.\n\n\n\n\n\n\n\n\n\nAgrégées (données)\n\n\n\n\n\nEn simple : données présentées au niveau d’un groupe (pays, région, ville) plutôt qu’au niveau individuel.\nExemple : « Le taux de chômage du canton de Fribourg » est agrégé ; « Pierre est chômeur » est individuel. Risque : l’erreur écologique (conclure sur les individus à partir d’une moyenne).\n\n\n\n\n\n\n\n\n\nAléatoire (échantillonnage)\n\n\n\n\n\nEn simple : chaque membre de la population a la même probabilité d’être tiré au sort dans l’échantillon. C’est le standard de référence.\nExemple : tirer 500 numéros parmi tous les électeur·ice·s suisses inscrit·e·s. Pré-requis : avoir la liste complète de la population (base d’échantillonnage).\n\n\n\n\n\n\n\n\n\nAlpha de Cronbach\n\n\n\n\n\nEn simple : coefficient mesurant la cohérence interne d’une échelle additive — les items mesurent-ils tous le même concept ?\nExemple : si tu construis une échelle « anxiété » avec 7 items, l’alpha te dit si ces 7 items pointent vers la même chose. Seuil acceptable : 0.7. En dessous, retire un item peu cohérent.\n\n\n\n\n\n\n\n\n\nAlpha de Krippendorff\n\n\n\n\n\nEn simple : coefficient mesurant la fiabilité inter-codeur dans une analyse de contenu — deux codeur·euse·s codent-ils la même chose de la même façon ?\nExemple : deux étudiant·e·s codent les mêmes 50 articles. Si leurs codages convergent, alpha est élevé. Seuil acceptable : 0.7.\n\n\n\n\n\n\n\n\n\nANOVA (Analyse de variance)\n\n\n\n\n\nEn simple : test qui compare les moyennes de 3 groupes ou plus en une seule fois. Réponse : « au moins un groupe diffère-t-il des autres ? ».\nExemple : comparer la confiance sociale moyenne entre 6 statuts matrimoniaux (marié, séparé, divorcé, veuf, en union, autre). Si F-test significatif → on rejette H0, mais l’ANOVA ne dit pas quels groupes diffèrent → comparaisons par paires (Tukey).\n\n\n\n\n\n\n\n\n\nAPI (Application Programming Interface)\n\n\n\n\n\nEn simple : un système qui permet à deux applications de dialoguer entre elles en utilisant un langage standardisé. En recherche, tu peux récupérer des données d’une plateforme via son API.\nExemple : tu obtiens une clé d’accès à l’API de TikTok pour récupérer des milliers de posts pour ton étude. Demande souvent un compte « développeur » et des autorisations.\n\n\n\n\n\n\n\n\n\nAplatissement (kurtosis)\n\n\n\n\n\nEn simple : indicateur de la forme d’une distribution : pointue (kurtosis élevé) ou aplatie (kurtosis bas).\nExemple : une loi normale a kurtosis = 3. Une distribution avec beaucoup d’observations centrées et peu d’extrêmes a kurtosis &gt; 3 (leptokurtique). Avec beaucoup d’extrêmes : kurtosis &lt; 3 (platikurtique).",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#b",
+    "href": "glossaire.html#b",
+    "title": "Glossaire",
+    "section": "2 B",
+    "text": "2 B\n\n\n\n\n\n\nBase d’échantillonnage\n\n\n\n\n\nEn simple : la liste complète de la population qu’on souhaite étudier, nécessaire pour un échantillonnage probabiliste.\nExemple : pour un sondage électoral suisse, la base est le registre des électeur·ice·s inscrit·e·s. Sans cette liste, tu ne peux pas faire d’échantillonnage aléatoire.\n\n\n\n\n\n\n\n\n\nBatterie d’items\n\n\n\n\n\nEn simple : groupe de plusieurs questions mesurant un même concept sous différents angles. On combine les réponses en un score global.\nExemple : pour mesurer la « satisfaction au travail », on pose 5 affirmations (« Mon travail est intéressant », « Je me sens reconnu·e », etc.) sur une échelle de Likert et on somme.\n\n\n\n\n\n\n\n\n\nBiais centriste\n\n\n\n\n\nEn simple : tendance à choisir l’option du milieu sur une échelle, pour ne pas s’engager.\nExemple : sur une échelle 1-5, beaucoup de gens cochent « 3 ». Solution : utiliser une échelle paire (1-4) qui force le choix d’un côté.\n\n\n\n\n\n\n\n\n\nBiais de désirabilité sociale\n\n\n\n\n\nEn simple : tendance à répondre selon ce qui est socialement acceptable plutôt qu’honnêtement.\nExemple : à « Faites-vous du sport régulièrement ? », les répondant·e·s gonflent leur réponse. Pire pour les sujets sensibles (revenus, racisme, sexualité). Solution : enquête en ligne / anonyme.\n\n\n\n\n\n\n\n\n\nBiais de sélection\n\n\n\n\n\nEn simple : ton échantillon est biaisé parce que les cas qui le composent ont une caractéristique liée à la VD.\nExemple : étudier la dépression chez les patient·e·s en psychiatrie. L’échantillon n’est pas représentatif : il est sélectionné par la dépression elle-même.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#c",
+    "href": "glossaire.html#c",
+    "title": "Glossaire",
+    "section": "3 C",
+    "text": "3 C\n\n\n\n\n\n\nCadre théorique\n\n\n\n\n\nEn simple : ensemble des concepts, mécanismes et hypothèses qui ancrent ta recherche dans la littérature existante.\nExemple : pour étudier Instagram → dépression, ton cadre théorique définit ce qu’est l’« usage d’Instagram », ce qu’est la « dépression », et pourquoi le premier influencerait le second.\n\n\n\n\n\n\n\n\n\nCausalité\n\n\n\n\n\nEn simple : X cause Y signifie que modifier X change Y. Bien plus difficile à prouver qu’une simple corrélation.\nExemple : un essai clinique randomisé (X = traitement / placebo) peut prouver une causalité ; un sondage observationnel non. Corrélation ≠ causalité.\n\n\n\n\n\n\n\n\n\nCausalité inversée\n\n\n\n\n\nEn simple : tu penses que X cause Y, mais c’est Y qui cause X.\nExemple : « Les pompiers causent les incendies » (parce qu’on les voit toujours sur place). Non, c’est l’incendie qui les fait venir.\n\n\n\n\n\n\n\n\n\nChi-carré (test du χ²)\n\n\n\n\n\nEn simple : test qui compare les fréquences observées à celles attendues sous H0 (indépendance des deux variables). Si l’écart est trop grand, on rejette H0.\nExemple : tester si « vote pour X » dépend de « usage RTS ». Si χ² calculé &gt; seuil critique → les deux variables sont associées.\n\n\n\n\n\n\n\n\n\nCodebook\n\n\n\n\n\nEn simple : le manuel de ta base de données. Une ligne par variable, avec sa description, ses valeurs possibles et leurs labels.\nExemple : ipol = intérêt politique, valeurs 1-4, labels « pas du tout intéressé·e » à « très intéressé·e ». Sans codebook, personne (toi non plus) ne peut comprendre tes données dans 6 mois.\n\n\n\n\n\n\n\n\n\nCoefficient de régression (β)\n\n\n\n\n\nEn simple : indique de combien Y change quand X augmente d’une unité, les autres variables restant constantes.\nExemple : β = −5.3 pour le poids dans une régression sur la consommation → chaque tonne en plus fait baisser la consommation de 5.3 mpg.\n\n\n\n\n\n\n\n\n\nConcept (en recherche)\n\n\n\n\n\nEn simple : notion abstraite qu’on veut étudier (anxiété, populisme, capital social). On doit la définir, l’opérationnaliser (S2) et la mesurer.\nExemple : « populisme » → définition (Mudde) → dimensions (anti-élitisme, peuple homogène) → indicateurs (questions de sondage).\n\n\n\n\n\n\n\n\n\nConfiance (niveau de)\n\n\n\n\n\nEn simple : la probabilité que ton échantillon reflète fidèlement la population. Souvent 95 % ou 99 %.\nExemple : à 95 % de confiance, on accepte un risque de 5 % de se tromper en généralisant.\n\n\n\n\n\n\n\n\n\nConstante (intercept, α)\n\n\n\n\n\nEn simple : dans une régression, c’est la valeur prédite de Y quand toutes les variables X = 0.\nExemple : si tu prédis le salaire en fonction de l’expérience, la constante = salaire prédit pour 0 année d’expérience. Pas toujours interprétable seule.\n\n\n\n\n\n\n\n\n\nCorrélation\n\n\n\n\n\nEn simple : mesure du lien entre deux variables. Coefficient r entre −1 et +1.\nExemple : r = 0.7 entre temps d’étude et notes → forte corrélation positive. r = 0 = pas de lien.\n\n\n\n\n\n\n\n\n\nCronbach (alpha de)\n\n\n\n\n\nEn simple : voir « Alpha de Cronbach ».",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#d",
+    "href": "glossaire.html#d",
+    "title": "Glossaire",
+    "section": "4 D",
+    "text": "4 D\n\n\n\n\n\n\nDegrés de liberté (df)\n\n\n\n\n\nEn simple : nombre de valeurs « libres » dans le calcul d’une statistique. Utile pour lire les tables de χ², t, F.\nExemple : dans un t-test à un échantillon avec n = 25, df = n − 1 = 24. Pour un tableau croisé : df = (L−1) × (C−1).\n\n\n\n\n\n\n\n\n\nDésirabilité sociale\n\n\n\n\n\nEn simple : voir « Biais de désirabilité sociale ».\n\n\n\n\n\n\n\n\n\nDiagramme en bâtons\n\n\n\n\n\nEn simple : graphique avec des barres séparées, pour les variables qualitatives.\nExemple : nombre de répondant·e·s par parti politique → diagramme en bâtons.\n\n\n\n\n\n\n\n\n\nDichotomique (variable)\n\n\n\n\n\nEn simple : variable à deux catégories seulement (oui/non, 0/1).\nExemple : a voté / s’est abstenu·e. C’est le type de variable que prédit la régression logistique binaire.\n\n\n\n\n\n\n\n\n\nDichotomiser\n\n\n\n\n\nEn simple : transformer une variable à 3+ catégories en plusieurs variables 0/1 (dummies) pour pouvoir l’utiliser dans une régression.\nExemple : « source d’info » (journal, Instagram, RTS, amis) → 3 dummies (journal = référence ; Instagram_oui/non ; RTS_oui/non ; amis_oui/non).\n\n\n\n\n\n\n\n\n\nDiscrète (variable)\n\n\n\n\n\nEn simple : variable quantitative dont les valeurs possibles sont finies (souvent entières).\nExemple : nombre d’enfants dans un ménage (0, 1, 2, 3, …). Pas de 2.5 enfants.\n\n\n\n\n\n\n\n\n\nDispersion\n\n\n\n\n\nEn simple : mesure de l’étalement des observations autour de la tendance centrale.\nExemple : deux groupes ont la même moyenne (75), mais l’un est très resserré (60-90) et l’autre très étalé (20-130). Outils : étendue, IQR, écart-type.\n\n\n\n\n\n\n\n\n\nDistribution\n\n\n\n\n\nEn simple : façon dont les valeurs d’une variable sont réparties dans l’échantillon.\nExemple : distribution normale = cloche symétrique. Distribution asymétrique = queue longue d’un côté.\n\n\n\n\n\n\n\n\n\nDon de données (data donation)\n\n\n\n\n\nEn simple : transmission volontaire par les utilisateur·ice·s de leurs propres données à des chercheur·euse·s.\nExemple : tu télécharges tes données Spotify (que la RGPD oblige Spotify à te fournir) et tu les donnes à une étude sur les goûts musicaux.\n\n\n\n\n\n\n\n\n\nDummy (variable)\n\n\n\n\n\nEn simple : variable binaire (0/1) créée à partir d’une catégorie d’une variable nominale, pour l’utiliser en régression.\nExemple : à partir de « parti voté », créer voted_PS (oui/non), voted_PLR (oui/non), etc. On laisse de côté une catégorie de référence.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#e",
+    "href": "glossaire.html#e",
+    "title": "Glossaire",
+    "section": "5 E",
+    "text": "5 E\n\n\n\n\n\n\nÉcart interquartile (IQR)\n\n\n\n\n\nEn simple : différence entre le 3e quartile (Q3, 75e percentile) et le 1er quartile (Q1, 25e percentile). Donne la dispersion autour de la médiane.\nExemple : si Q1 = 50, Q3 = 80, IQR = 30. La moitié centrale des observations se situe sur 30 unités.\n\n\n\n\n\n\n\n\n\nÉcart-type (SD)\n\n\n\n\n\nEn simple : distance moyenne entre chaque observation et la moyenne. Plus c’est grand, plus le groupe est hétérogène.\nExemple : moyenne = 70, SD = 5 → les obs sont resserrées autour de 70. SD = 25 → très étalées. Formule : racine de la variance.\n\n\n\n\n\n\n\n\n\nÉchantillon\n\n\n\n\n\nEn simple : sous-ensemble représentatif d’une population, utilisé pour faire des inférences statistiques.\nExemple : interroger 1 070 Suisse·sse·s pour estimer l’opinion de toute la population (9 mio).\n\n\n\n\n\n\n\n\n\nÉchantillon brut vs. net\n\n\n\n\n\nEn simple : brut = ce que tu cibles (échantillon visé + non-réponses anticipées). Net = ce que tu obtiens réellement.\nExemple : tu cibles 1000 réponses, tu sais que 30 % ne répondront pas → envoie 1430 invitations (brut).\n\n\n\n\n\n\n\n\n\nÉchantillonnage probabiliste vs. non-probabiliste\n\n\n\n\n\nEn simple : probabiliste = chacun a une chance connue d’être tiré au sort. Non-probabiliste = sélection par opportunité (volontaires, quotas, boule de neige).\nExemple : Selects = probabiliste (tirage dans le registre). Sondage en ligne sur un site = non-probabiliste (volontaires).\n\n\n\n\n\n\n\n\n\nÉchelle de Likert\n\n\n\n\n\nEn simple : échelle ordinale à plusieurs degrés (souvent 5 ou 7) pour mesurer un degré d’accord, créée par Rensis Likert en 1932.\nExemple : « 1 = pas du tout d’accord … 5 = tout à fait d’accord ». On peut additionner les scores d’une batterie pour créer un index.\n\n\n\n\n\n\n\n\n\nErreur de type I (faux positif)\n\n\n\n\n\nEn simple : conclure qu’il y a un effet alors qu’il n’y en a pas. Risque = seuil α (souvent 5 %).\nExemple : conclure qu’un médicament marche alors qu’il ne fait rien. Acquitter un innocent du nom de H0.\n\n\n\n\n\n\n\n\n\nErreur de type II (faux négatif)\n\n\n\n\n\nEn simple : ne pas détecter un effet qui existe vraiment. Souvent dû à un échantillon trop petit (manque de puissance).\nExemple : un médicament marche, mais avec 20 patient·e·s on ne le voit pas.\n\n\n\n\n\n\n\n\n\nErreur écologique\n\n\n\n\n\nEn simple : conclure sur des individus à partir d’une moyenne agrégée.\nExemple : « Les pays riches ont plus de divorces, donc les personnes riches divorcent plus. » Pas forcément — peut-être que ce sont les pauvres dans ces pays qui divorcent.\n\n\n\n\n\n\n\n\n\nÉtat vs. processus (objectivité)\n\n\n\n\n\nEn simple : « objectivité » = le monde réel est en attente d’être détecté. « Objectivation » = la recherche construit sa représentation du monde.\nExemple : la catégorie « femme » comme propriété objective vs. comme construction sociale. Voir Bourdieu sur la violence symbolique.\n\n\n\n\n\n\n\n\n\nÉtendue (range)\n\n\n\n\n\nEn simple : max − min. Mesure simple de la dispersion.\nExemple : notes de 4 à 18 → étendue = 14. Très sensible aux outliers.\n\n\n\n\n\n\n\n\n\nExhaustive (enquête)\n\n\n\n\n\nEn simple : on interroge toute la population, pas un échantillon. Rare et coûteux.\nExemple : recensement de la population suisse ; sondage des 30 étudiant·e·s d’une classe.\n\n\n\n\n\n\n\n\n\nExpérimentales (données)\n\n\n\n\n\nEn simple : données produites avec un traitement contrôlé (groupe contrôle vs. groupe traité).\nExemple : test A/B sur deux versions d’un site web. C’est le seul design qui prouve solidement la causalité.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#f",
+    "href": "glossaire.html#f",
+    "title": "Glossaire",
+    "section": "6 F",
+    "text": "6 F\n\n\n\n\n\n\nFalsifiabilité\n\n\n\n\n\nEn simple : une hypothèse est falsifiable si elle peut être réfutée par des observations.\nExemple : « plus de sport → meilleure santé » est falsifiable (on peut mesurer et tester). « Les gens heureux sourient parce qu’ils sont heureux » ne l’est pas (tautologie).\n\n\n\n\n\n\n\n\n\nF-test\n\n\n\n\n\nEn simple : statistique de test produite par l’ANOVA ou la régression. Mesure si la variance expliquée est plus grande que la variance résiduelle.\nExemple : F = 39.88, p &lt; 0.001 → on rejette H0 (au moins un groupe diffère).\n\n\n\n\n\n\n\n\n\nFiabilité\n\n\n\n\n\nEn simple : un instrument est fiable s’il produit le même résultat lorsqu’on répète la mesure (dans le temps ou entre personnes).\nExemple : une balance qui donne 70 kg, puis 71 kg, puis 69 kg pour la même personne en 5 minutes n’est pas fiable.\n\n\n\n\n\n\n\n\n\nFréquence vs. fréquence relative vs. cumulée\n\n\n\n\n\nEn simple : - Fréquence (N) : nombre d’observations dans une catégorie ; - Fréquence relative (%) : N / total ; - Cumulée : N total des catégories précédentes + courante.\nExemple : 30 romands, soit 37.5 %, cumulé 30 sur la première ligne du tableau.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#g",
+    "href": "glossaire.html#g",
+    "title": "Glossaire",
+    "section": "7 G",
+    "text": "7 G\n\n\n\n\n\n\nGrappes (échantillonnage par)\n\n\n\n\n\nEn simple : on tire au sort des groupes naturels (classes, quartiers) et on inclut tous les individus du groupe.\nExemple : pour étudier la perf en maths à la matu : tirer 5 lycées, prendre toutes leurs classes. Moins cher qu’un tirage individuel.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#h",
+    "href": "glossaire.html#h",
+    "title": "Glossaire",
+    "section": "8 H",
+    "text": "8 H\n\n\n\n\n\n\nHypothèse de différence\n\n\n\n\n\nEn simple : « Si X → alors Y ». X catégoriel, Y de tout type.\nExemple : « Si l’usage est passif (vs. actif), alors le manque d’énergie est plus important. »\n\n\n\n\n\n\n\n\n\nHypothèse d’interaction\n\n\n\n\n\nEn simple : « L’effet de X sur Y dépend de Z. »\nExemple : « L’effet du temps Instagram sur le manque d’énergie est plus fort pour les extraverti·e·s que pour les introverti·e·s. »\n\n\n\n\n\n\n\n\n\nHypothèse de relation\n\n\n\n\n\nEn simple : « Plus / moins X → plus / moins Y ». X et Y quantitatives (ou ordinales sous conditions).\nExemple : « Plus de temps sur Instagram → plus de manque d’énergie. »\n\n\n\n\n\n\n\n\n\nHypothèse nulle (H0)\n\n\n\n\n\nEn simple : l’hypothèse qu’on cherche à rejeter : « il n’y a rien à voir » (aucun effet, aucune différence, aucun lien).\nExemple : H0 « la moyenne des deux groupes est identique ». H1 « les moyennes diffèrent ». Si p &lt; 0.05, on rejette H0.\n\n\n\n\n\n\n\n\n\nHistogramme\n\n\n\n\n\nEn simple : graphique à barres collées pour visualiser la distribution d’une variable quantitative.\nExemple : distribution des âges dans un échantillon. Permet de voir si la distribution est normale, asymétrique, multimodale.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#i",
+    "href": "glossaire.html#i",
+    "title": "Glossaire",
+    "section": "9 I",
+    "text": "9 I\n\n\n\n\n\n\nInclinaison (skewness)\n\n\n\n\n\nEn simple : indicateur d’asymétrie d’une distribution.\nExemple : revenus = skewness positive (queue à droite, quelques très hauts revenus). Loi normale = skewness 0.\n\n\n\n\n\n\n\n\n\nIndicateur\n\n\n\n\n\nEn simple : variable mesurable qui sert à capturer une dimension d’un concept abstrait.\nExemple : pour la dimension « durée d’usage d’Instagram » du concept « usage d’Instagram » → indicateur = nombre d’heures déclarées par jour.\n\n\n\n\n\n\n\n\n\nInférence statistique\n\n\n\n\n\nEn simple : tirer des conclusions sur une population à partir d’un échantillon.\nExemple : à partir des 1070 sondé·e·s, conclure que 60 % de la population veut voter oui.\n\n\n\n\n\n\n\n\n\nInférentielle (question)\n\n\n\n\n\nEn simple : question qui s’intéresse à l’influence d’un phénomène X sur un phénomène Y.\nExemple : « Dans quelle mesure les usages d’Instagram influencent-ils la dépression ? ». Opposé : descriptive.\n\n\n\n\n\n\n\n\n\nIntercept\n\n\n\n\n\nEn simple : voir « Constante ».\n\n\n\n\n\n\n\n\n\nIntervalle de confiance (IC)\n\n\n\n\n\nEn simple : fourchette de valeurs qui contient probablement la vraie valeur du paramètre. À 95 %, signifie : « si je répète l’étude, 95 % des IC contiendront la vraie valeur ».\nExemple : IC à 95 % = [101.6 ; 109.5] pour un QI moyen. Si l’IC ne contient pas la valeur testée (par ex. 100), c’est significatif.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#k",
+    "href": "glossaire.html#k",
+    "title": "Glossaire",
+    "section": "10 K",
+    "text": "10 K\n\n\n\n\n\n\nKappa de Cohen\n\n\n\n\n\nEn simple : mesure d’accord inter-codeur dans une analyse de contenu, alternative à Krippendorff.\nExemple : deux codeur·euse·s codent les mêmes textes, Kappa = 0.75 → bon accord. Seuil acceptable : 0.7.\n\n\n\n\n\n\n\n\n\nKrippendorff (alpha de)\n\n\n\n\n\nEn simple : voir « Alpha de Krippendorff ».\n\n\n\n\n\n\n\n\n\nKurtosis\n\n\n\n\n\nEn simple : voir « Aplatissement ».",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#l",
+    "href": "glossaire.html#l",
+    "title": "Glossaire",
+    "section": "11 L",
+    "text": "11 L\n\n\n\n\n\n\nLikert (échelle de)\n\n\n\n\n\nEn simple : voir « Échelle de Likert ».\n\n\n\n\n\n\n\n\n\nLogit\n\n\n\n\n\nEn simple : fonction utilisée en régression logistique pour transformer une probabilité (entre 0 et 1) en log des odds (non borné).\nExemple : logit(p) = ln(p / (1-p)). C’est ça qui rend la régression logistique mathématiquement utilisable.\n\n\n\n\n\n\n\n\n\nLongitudinales (données)\n\n\n\n\n\nEn simple : données mesurées à plusieurs dates sur les mêmes individus. Opposé : transversales.\nExemple : Panel Suisse des Ménages suit les mêmes ménages chaque année depuis 1999.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#m",
+    "href": "glossaire.html#m",
+    "title": "Glossaire",
+    "section": "12 M",
+    "text": "12 M\n\n\n\n\n\n\nMarge d’erreur\n\n\n\n\n\nEn simple : écart toléré (en %) entre la réponse de l’échantillon et la « vraie » réponse de la population.\nExemple : sondage donnant 60 % avec marge d’erreur de 3 % → la vraie valeur est entre 57 % et 63 %.\n\n\n\n\n\n\n\n\n\nMédiane\n\n\n\n\n\nEn simple : valeur qui partage les observations en deux moitiés égales (50 % en dessous, 50 % au-dessus). Robuste aux outliers.\nExemple : pour la série 1, 2, 3, 4, 100 → médiane = 3 (vs. moyenne = 22, déformée par 100).\n\n\n\n\n\n\n\n\n\nMédiation\n\n\n\n\n\nEn simple : X influence Y à travers une variable intermédiaire M.\nExemple : éducation → revenu (via le type d’emploi M). L’effet est indirect.\n\n\n\n\n\n\n\n\n\nMixed methods\n\n\n\n\n\nEn simple : combinaison de méthodes qualitatives et quantitatives dans une même recherche.\nExemple : focus groups (quali) pour construire une échelle, puis sondage (quanti) pour la tester à grande échelle.\n\n\n\n\n\n\n\n\n\nMode\n\n\n\n\n\nEn simple : valeur la plus fréquente dans l’échantillon. Le seul indicateur de tendance centrale qui fonctionne pour les variables nominales.\nExemple : sur 80 étudiant·e·s, 30 viennent de Suisse romande → la Suisse romande est le mode.\n\n\n\n\n\n\n\n\n\nMultivariée (analyse)\n\n\n\n\n\nEn simple : analyse qui considère 3 variables ou plus simultanément, typiquement par régression.\nExemple : prédire le revenu par l’âge, l’éducation, le genre, la région.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#n",
+    "href": "glossaire.html#n",
+    "title": "Glossaire",
+    "section": "13 N",
+    "text": "13 N\n\n\n\n\n\n\nNiveau de mesure\n\n\n\n\n\nEn simple : type d’information codée dans une variable. 4 niveaux : nominal, ordinal, continu, discret. Détermine les statistiques applicables.\nExemple : langue = nominal ; intérêt politique 1-4 = ordinal ; âge en années = continu ; nb d’enfants = discret.\n\n\n\n\n\n\n\n\n\nNominal (niveau de mesure)\n\n\n\n\n\nEn simple : catégories sans ordre logique.\nExemple : langue maternelle (français, allemand, italien). Aucune n’est « supérieure ».\n\n\n\n\n\n\n\n\n\nNon-probabiliste\n\n\n\n\n\nEn simple : voir « Échantillonnage probabiliste vs. non-probabiliste ».\n\n\n\n\n\n\n\n\n\nNon-réponse\n\n\n\n\n\nEn simple : refus de participer (« survey non-response ») ou de répondre à une question (« item non-response »).\nExemple : tu envoies 1000 questionnaires, 600 sont remplis → 40 % de non-réponse. Risque : biais si les non-répondant·e·s diffèrent systématiquement.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#o",
+    "href": "glossaire.html#o",
+    "title": "Glossaire",
+    "section": "14 O",
+    "text": "14 O\n\n\n\n\n\n\nObjectivité vs. objectivation\n\n\n\n\n\nEn simple : voir « État vs. processus (objectivité) ».\n\n\n\n\n\n\n\n\n\nOdds (cote)\n\n\n\n\n\nEn simple : rapport entre P(événement) et P(non-événement).\nExemple : pour tirer un pique (13/52 = 0.25) → odds = 0.25 / 0.75 = 0.33 (« 1 contre 3 »).\n\n\n\n\n\n\n\n\n\nOdds Ratio (OR)\n\n\n\n\n\nEn simple : rapport de deux odds. En régression logistique, mesure de combien les chances d’un événement sont multipliées quand X augmente d’une unité.\nExemple : OR = 2 → les chances doublent. OR = 0.5 → les chances sont divisées par 2. OR = 1 → pas d’effet.\n\n\n\n\n\n\n\n\n\nOLS (Ordinary Least Squares)\n\n\n\n\n\nEn simple : méthode des moindres carrés ordinaires utilisée par la régression linéaire pour trouver la « meilleure » droite.\nExemple : on minimise la somme des erreurs au carré entre les points réels et la droite prédite.\n\n\n\n\n\n\n\n\n\nOpen Data\n\n\n\n\n\nEn simple : données mises à disposition gratuitement par leurs producteur·ice·s (souvent l’État) pour libre réutilisation.\nExemple : opendata.swiss agrège des données ouvertes des administrations suisses.\n\n\n\n\n\n\n\n\n\nOpérationnalisation\n\n\n\n\n\nEn simple : passer d’un concept abstrait à des indicateurs mesurables.\nExemple : concept = « usage actif d’Instagram » → indicateur = « j’ai liké au moins 5 posts par jour » (oui/non).\n\n\n\n\n\n\n\n\n\nOrdinal (niveau de mesure)\n\n\n\n\n\nEn simple : catégories ordonnées, mais sans distance quantifiée entre elles.\nExemple : niveau d’études (sans formation &lt; CFC &lt; apprentissage &lt; université). On sait l’ordre, pas l’écart précis.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#p",
+    "href": "glossaire.html#p",
+    "title": "Glossaire",
+    "section": "15 P",
+    "text": "15 P\n\n\n\n\n\n\nPanel (données de)\n\n\n\n\n\nEn simple : type de données longitudinales où on suit les mêmes individus dans le temps.\nExemple : Panel Suisse des Ménages.\n\n\n\n\n\n\n\n\n\nParamètre\n\n\n\n\n\nEn simple : valeur vraie dans la population, inconnue. Opposé : statistique (calculée sur l’échantillon).\nExemple : la moyenne réelle du QI de toute la population (inconnue) = paramètre. Le QI moyen de tes 200 sondé·e·s = statistique.\n\n\n\n\n\n\n\n\n\nParsing\n\n\n\n\n\nEn simple : technique de web scraping consistant à décomposer le code HTML d’une page pour en extraire les éléments d’intérêt.\nExemple : sur une page de recettes, parser tous les &lt;h2&gt; pour récupérer les noms de plats.\n\n\n\n\n\n\n\n\n\nPearson (corrélation de)\n\n\n\n\n\nEn simple : coefficient mesurant le lien linéaire entre deux variables quantitatives. Valeur entre −1 et +1.\nExemple : r = 0.85 entre taille et poids → forte corrélation linéaire positive.\n\n\n\n\n\n\n\n\n\nPhi (φ) / V de Cramér\n\n\n\n\n\nEn simple : coefficients d’association pour des tableaux croisés. Phi pour 2 × 2 ; V de Cramér pour les plus grands.\nExemple : V de Cramér = 0.3 dans un 3 × 3 → association modérée.\n\n\n\n\n\n\n\n\n\nPondération (weighting)\n\n\n\n\n\nEn simple : technique consistant à donner plus de poids à certaines observations pour corriger un biais d’inclusion.\nExemple : si les 18-30 sont sous-représentés (9 % vs. 13 % en population), on leur donne un poids de 1.44.\n\n\n\n\n\n\n\n\n\nPopulation\n\n\n\n\n\nEn simple : ensemble total qu’on veut étudier. Souvent inaccessible → on étudie un échantillon.\nExemple : toute la population suisse (~9 mio). Tu interroges 1 070 personnes pour faire des inférences.\n\n\n\n\n\n\n\n\n\nPré-test\n\n\n\n\n\nEn simple : test préliminaire d’un questionnaire sur un petit échantillon pour vérifier qu’il fonctionne. Règle : 10 % des participant·e·s visé·e·s.\nExemple : envoyer ton sondage à 30 ami·e·s avant les 300 sondé·e·s cibles, pour repérer les questions mal comprises.\n\n\n\n\n\n\n\n\n\nPrimaires (données)\n\n\n\n\n\nEn simple : données récoltées directement par le·la chercheur·euse pour son étude.\nExemple : tu lances ton sondage Qualtrics. Opposé : secondaires.\n\n\n\n\n\n\n\n\n\nProbit (régression)\n\n\n\n\n\nEn simple : variante de la régression logistique, basée sur la fonction normale cumulée plutôt que logit.\nExemple : utilisée en économétrie. Signe et significativité = interprétation identique à logit. Mais pas d’odds ratios.\n\n\n\n\n\n\n\n\n\nP-value\n\n\n\n\n\nEn simple : probabilité d’observer un résultat aussi extrême que le tien si H0 était vraie. p &lt; 0.05 → on rejette H0.\nExemple : p = 0.03 → on rejette H0, le résultat est significatif. p = 0.20 → on ne rejette pas. Attention : ce n’est PAS la probabilité que H0 soit vraie.\n\n\n\n\n\n\n\n\n\nPseudo-R²\n\n\n\n\n\nEn simple : équivalent du R² pour la régression logistique. Ne s’interprète pas comme un pourcentage de variance expliquée.\nExemple : pseudo-R² = 0.082 → utile pour comparer des modèles, pas pour dire « le modèle explique 8 %… »",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#q",
+    "href": "glossaire.html#q",
+    "title": "Glossaire",
+    "section": "16 Q",
+    "text": "16 Q\n\n\n\n\n\n\nQuantitative (donnée / méthode)\n\n\n\n\n\nEn simple : approche qui quantifie des phénomènes en chiffres et utilise des analyses statistiques.\nExemple : sondage avec 1000 répondant·e·s + analyse de régression. Opposé : qualitative (entretiens, ethnographie).\n\n\n\n\n\n\n\n\n\nQuestion de recherche (QR)\n\n\n\n\n\nEn simple : la question centrale qui guide ton étude. Doit être claire, faisable, pertinente.\nExemple : « Dans quelle mesure différents usages d’Instagram influencent-ils les symptômes de dépression chez les étudiant·e·s ? »\n\n\n\n\n\n\n\n\n\nQuestion fermée / semi-ouverte / ouverte\n\n\n\n\n\nEn simple : - Fermée : catégories de réponse imposées ; - Semi-ouverte : catégories + « autre : _____ » ; - Ouverte : pas de catégories prédéfinies.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#r",
+    "href": "glossaire.html#r",
+    "title": "Glossaire",
+    "section": "17 R",
+    "text": "17 R\n\n\n\n\n\n\nR² (R-carré)\n\n\n\n\n\nEn simple : proportion de la variance de Y expliquée par le modèle de régression. Entre 0 et 1.\nExemple : R² = 0.296 → le modèle explique 29.6 % de la variance. C’est correct en sciences sociales.\n\n\n\n\n\n\n\n\n\nR² ajusté\n\n\n\n\n\nEn simple : version corrigée du R² qui pénalise les variables superflues. À utiliser pour comparer des modèles.\nExemple : R² brut monte toujours quand on ajoute une variable, même inutile. Le R² ajusté ne monte que si la variable apporte vraiment.\n\n\n\n\n\n\n\n\n\nRecodage\n\n\n\n\n\nEn simple : modification du codage d’une variable (regrouper des catégories, inverser l’ordre, créer du vrai/faux).\nExemple : « âge » continu → tranches d’âge (18-30 / 31-60 / 60+). Toujours créer une nouvelle version, ne jamais écraser.\n\n\n\n\n\n\n\n\n\nRégression linéaire\n\n\n\n\n\nEn simple : modèle qui prédit une variable Y quantitative en fonction d’une ou plusieurs variables X. Y = α + β₁X₁ + … + e.\nExemple : prédire la consommation de carburant d’une voiture en fonction de son poids et de sa puissance.\n\n\n\n\n\n\n\n\n\nRégression logistique\n\n\n\n\n\nEn simple : modèle qui prédit une variable Y dichotomique (0/1) en fonction d’une ou plusieurs variables X.\nExemple : prédire « voté ou pas » en fonction de l’âge, du revenu, du niveau d’études. Coefficients lus en odds ratios.\n\n\n\n\n\n\n\n\n\nRégression multinomiale\n\n\n\n\n\nEn simple : régression logistique pour une Y nominale à 3+ catégories.\nExemple : prédire le « parti voté » (PS, PLR, UDC, autre) en fonction des caractéristiques de l’électeur·ice.\n\n\n\n\n\n\n\n\n\nRégression ordinale\n\n\n\n\n\nEn simple : régression logistique pour une Y ordinale.\nExemple : prédire la satisfaction (1-5) à partir de variables explicatives, en gardant l’ordre.\n\n\n\n\n\n\n\n\n\nReproductibilité\n\n\n\n\n\nEn simple : avec les mêmes données et le même code, on retrouve les mêmes résultats.\nExemple : un·e collègue lance ton script R et obtient exactement le même tableau. Pré-requis du travail scientifique sérieux.\n\n\n\n\n\n\n\n\n\nRéplicabilité\n\n\n\n\n\nEn simple : refaire la même étude sur de nouvelles données et obtenir des résultats similaires.\nExemple : Tandoc et al. (2015) trouvent que Facebook ↔︎ envie. Si tu refais l’étude en 2026 sur Instagram, trouves-tu pareil ? C’est la réplicabilité.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#s",
+    "href": "glossaire.html#s",
+    "title": "Glossaire",
+    "section": "18 S",
+    "text": "18 S\n\n\n\n\n\n\nSatisficing (théorie du)\n\n\n\n\n\nEn simple : les répondant·e·s ne cherchent pas la meilleure réponse, mais une réponse suffisante avec un minimum d’effort.\nExemple : ils cliquent rapidement, choisissent le milieu, copient leurs précédentes réponses. Plus fréquent quand le questionnaire est long ou ennuyeux.\n\n\n\n\n\n\n\n\n\nScatterplot (diagramme de dispersion)\n\n\n\n\n\nEn simple : graphique avec un point par observation, X en abscisse, Y en ordonnée. Visualise une corrélation.\nExemple : taille (X) vs. poids (Y) → nuage de points qui monte → corrélation positive.\n\n\n\n\n\n\n\n\n\nScore (index)\n\n\n\n\n\nEn simple : variable construite en additionnant (ou moyennant) les réponses d’une batterie d’items.\nExemple : 9 items de Likert (1-5) → score total de 9 à 45 mesurant l’attitude « internationalisme ».\n\n\n\n\n\n\n\n\n\nSecondaires (données)\n\n\n\n\n\nEn simple : données déjà existantes, récoltées par d’autres pour d’autres buts.\nExemple : utiliser le Panel Suisse des Ménages pour ton étude. Opposé : primaires.\n\n\n\n\n\n\n\n\n\nSélection (biais de)\n\n\n\n\n\nEn simple : voir « Biais de sélection ».\n\n\n\n\n\n\n\n\n\nSentiment analysis\n\n\n\n\n\nEn simple : technique automatisée de codage où chaque mot est classé positif/négatif selon un dictionnaire.\nExemple : analyser 10 000 tweets pour mesurer l’humeur générale envers une marque.\n\n\n\n\n\n\n\n\n\nSignificativité statistique\n\n\n\n\n\nEn simple : un résultat est significatif si p &lt; α (souvent 0.05) → on peut rejeter H0 avec un risque contrôlé d’erreur.\nExemple : p = 0.001 → très hautement significatif. Attention : significatif ≠ important pratiquement.\n\n\n\n\n\n\n\n\n\nSkewness\n\n\n\n\n\nEn simple : voir « Inclinaison ».\n\n\n\n\n\n\n\n\n\nSpearman (corrélation de)\n\n\n\n\n\nEn simple : coefficient mesurant le lien monotone entre deux variables ordinales (ou non-normales). Calculé sur les rangs.\nExemple : intérêt politique (1-4) vs. participation électorale (rang) → ρ Spearman = 0.6.\n\n\n\n\n\n\n\n\n\nStratifié (échantillonnage)\n\n\n\n\n\nEn simple : on divise la population en strates (langue, âge), puis on tire au sort dans chaque strate.\nExemple : pour un sondage suisse, tirer 70 % en allemand + 25 % en français + 5 % en italien.\n\n\n\n\n\n\n\n\n\nSystématique (échantillonnage)\n\n\n\n\n\nEn simple : on prend chaque n-ième unité dans une liste.\nExemple : prendre 1 article sur 10 dans un journal.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#t",
+    "href": "glossaire.html#t",
+    "title": "Glossaire",
+    "section": "19 T",
+    "text": "19 T\n\n\n\n\n\n\nTableau croisé (table de contingence)\n\n\n\n\n\nEn simple : tableau croisant deux variables catégorielles. VI en colonnes, VD en lignes.\nExemple : vote (en faveur / opposé) × âge (jeune / vieux). On peut calculer % en colonnes, en lignes, ou totaux.\n\n\n\n\n\n\n\n\n\nTendance centrale\n\n\n\n\n\nEn simple : mesure qui résume le « milieu » d’une distribution. 3 outils : mode, médiane, moyenne.\nExemple : moyenne de notes = 12 ; médiane = 11 ; mode = 10. Selon le niveau de mesure de la variable, on choisit l’outil approprié.\n\n\n\n\n\n\n\n\n\nTest t\n\n\n\n\n\nEn simple : test comparant les moyennes de 2 groupes (ou 1 groupe vs. une valeur de référence).\nExemple : tester si la confiance moyenne des hommes diffère de celle des femmes. t = 2.5, p = 0.006 → différence significative.\n\n\n\n\n\n\n\n\n\nTopic modelling\n\n\n\n\n\nEn simple : technique automatisée qui regroupe les textes selon leur similarité de vocabulaire, sans étiquetage humain.\nExemple : analyser 100 000 articles → identifier les 10 thèmes dominants automatiquement.\n\n\n\n\n\n\n\n\n\nTransversales (données)\n\n\n\n\n\nEn simple : données mesurées à une seule date (un instantané).\nExemple : sondage post-électoral d’octobre 2023. Opposé : longitudinales.\n\n\n\n\n\n\n\n\n\nTriangulation\n\n\n\n\n\nEn simple : croiser plusieurs sources ou méthodes pour renforcer la confiance dans un résultat.\nExemple : confirmer un résultat de sondage par des entretiens, ou par des données de capteurs.\n\n\n\n\n\n\n\n\n\nTukey (test de)\n\n\n\n\n\nEn simple : test post-hoc qui suit une ANOVA significative pour identifier quelles paires de groupes diffèrent vraiment.\nExemple : ANOVA sur 4 statuts matrimoniaux → significative. Tukey HSD → c’est marié vs. célibataire qui diffèrent, pas marié vs. divorcé.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#u",
+    "href": "glossaire.html#u",
+    "title": "Glossaire",
+    "section": "20 U",
+    "text": "20 U\n\n\n\n\n\n\nUnité d’analyse\n\n\n\n\n\nEn simple : ce que tu codes réellement, une ligne dans la base. Souvent plus fin que l’unité de collecte.\nExemple : tu collectes des articles (collecte) mais codes chaque revendication dans l’article (analyse).\n\n\n\n\n\n\n\n\n\nUnité de collecte\n\n\n\n\n\nEn simple : le matériel de base que tu récupères pour ta recherche.\nExemple : un article de presse, un post TikTok, un répondant·e à un sondage.\n\n\n\n\n\n\n\n\n\nUnivariée (analyse)\n\n\n\n\n\nEn simple : analyse d’une seule variable à la fois. Distribution, tendance centrale, dispersion.\nExemple : décrire la distribution des âges dans l’échantillon avec un histogramme et une moyenne.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#v",
+    "href": "glossaire.html#v",
+    "title": "Glossaire",
+    "section": "21 V",
+    "text": "21 V\n\n\n\n\n\n\nValidité externe\n\n\n\n\n\nEn simple : capacité des résultats à se généraliser au-delà de l’échantillon étudié.\nExemple : tes résultats sur 200 étudiant·e·s de l’UNIFR valent-ils pour les jeunes suisses en général ?\n\n\n\n\n\n\n\n\n\nValidité interne\n\n\n\n\n\nEn simple : qualité du design qui exclut les explications alternatives pour les résultats de ton étude.\nExemple : ton groupe contrôle est-il vraiment comparable au groupe traité ? Des variables omises peuvent-elles expliquer ton effet ?\n\n\n\n\n\n\n\n\n\nVariable\n\n\n\n\n\nEn simple : caractéristique qui varie d’une observation à l’autre.\nExemple : âge, langue, parti voté, score de satisfaction. Une colonne dans ton tableau de données.\n\n\n\n\n\n\n\n\n\nVariable dépendante (VD) / indépendante (VI)\n\n\n\n\n\nEn simple : VD = ce que tu veux expliquer (Y). VI = ce qui explique (X).\nExemple : Y = satisfaction au travail, X = salaire. La régression mesure l’effet de X sur Y.\n\n\n\n\n\n\n\n\n\nVariable confondante (Z)\n\n\n\n\n\nEn simple : variable qui influence à la fois X et Y, créant une corrélation fallacieuse.\nExemple : « ventes de glaces » et « noyades » sont corrélées, mais c’est la chaleur (Z) qui cause les deux.\n\n\n\n\n\n\n\n\n\nVariable de contrôle\n\n\n\n\n\nEn simple : variable ajoutée à une régression pour neutraliser son effet et isoler l’effet propre des variables d’intérêt.\nExemple : en mesurant l’effet du genre sur le salaire, on contrôle pour l’expérience pour éviter de confondre les deux.\n\n\n\n\n\n\n\n\n\nVariance\n\n\n\n\n\nEn simple : carré de l’écart-type. Mesure de dispersion.\nExemple : si SD = 5, variance = 25. Plus utile en formules (additionnable) qu’en interprétation.",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "glossaire.html#w",
+    "href": "glossaire.html#w",
+    "title": "Glossaire",
+    "section": "22 W",
+    "text": "22 W\n\n\n\n\n\n\nWeb scraping\n\n\n\n\n\nEn simple : technique de récupération automatisée de données sur le web. Deux approches : API ou parsing.\nExemple : récupérer 10 000 tweets sur un sujet via l’API Twitter, ou parser le code HTML d’un site d’actualité.\n\n\n\n\n\n\n\n\n\nWeighting\n\n\n\n\n\nEn simple : voir « Pondération ».",
+    "crumbs": [
+      "Accueil",
+      "Outils de révision",
+      "Glossaire"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Méthodes II — Cours (théorie)",
+    "section": "",
+    "text": "À propos\n\n\n\nRésumé pédagogique du cours BA Méthodes II (Prof. Dr. Alexandra Feddersen) — Sciences de la communication et des médias, UNIFR, SP 2026. Il complète le repo methodes-ii-resume consacré à la partie exercices R.",
+    "crumbs": [
+      "Accueil",
+      "Méthodes II — Cours (théorie)"
+    ]
+  },
+  {
+    "objectID": "index.html#navigation-rapide",
+    "href": "index.html#navigation-rapide",
+    "title": "Méthodes II — Cours (théorie)",
+    "section": "1 Navigation rapide",
+    "text": "1 Navigation rapide\n\n1.1 Les 10 séances\n\nS1 · Introduction\nS2 · Données quantitatives\nS3 · Sources de données\nS4 · Préparation des données d’enquête\nS5 · Analyse de contenu quantitative\nS6 · Analyses uni-, bi- et multivariées\nS7 · Analyses inférentielles I\nS8 · Analyses inférentielles II\nS9 · Qualité et communication des résultats\nS10 · Conclusion\n\n\n\n1.2 Outils de révision\n\nSynthèse — les concepts clés en un coup d’œil\nGlossaire — chaque terme en langage simple",
+    "crumbs": [
+      "Accueil",
+      "Méthodes II — Cours (théorie)"
+    ]
+  },
+  {
+    "objectID": "index.html#lexamen",
+    "href": "index.html#lexamen",
+    "title": "Méthodes II — Cours (théorie)",
+    "section": "2 L’examen",
+    "text": "2 L’examen\n\nFormat : examen écrit, 60 minutes, session d’été 2026\nMatière : cours + lectures obligatoires (3 scripts + chapitres dédiés)\nNote : 100 % de l’examen écrit\nMatériel autorisé : aucun, sauf dictionnaires bilingues non annotés pour étudiant·e·s non francophones",
+    "crumbs": [
+      "Accueil",
+      "Méthodes II — Cours (théorie)"
+    ]
+  },
+  {
+    "objectID": "index.html#le-fil-conducteur-du-cours",
+    "href": "index.html#le-fil-conducteur-du-cours",
+    "title": "Méthodes II — Cours (théorie)",
+    "section": "3 Le fil conducteur du cours",
+    "text": "3 Le fil conducteur du cours\nLe cours suit les étapes d’un projet de recherche empirique quantitative :\n\nIdentifier l’objet de recherche → question de recherche\nCadre théorique et formulation des hypothèses\nOpérationnalisation : passer d’un concept à des indicateurs mesurables\nCollecte des données : choix de la source (enquête, contenu, données existantes)\nPréparation et codage des données\nAnalyse descriptive (uni-/bi-/multivariée) puis inférentielle (tests, régression)\nCommunication des résultats : qualité, transparence, réplicabilité",
+    "crumbs": [
+      "Accueil",
+      "Méthodes II — Cours (théorie)"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html",
+    "href": "07_S8_Inferentielles_II.html",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nS8 met en pratique les régressions vues en S7 sur des articles de recherche réels. L’objectif : savoir lire un tableau de régression, identifier la méthode utilisée, et formuler une lecture critique.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html#de-la-théorie-à-la-lecture-critique-détudes",
+    "href": "07_S8_Inferentielles_II.html#de-la-théorie-à-la-lecture-critique-détudes",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "1 De la théorie à la lecture critique d’études",
+    "text": "1 De la théorie à la lecture critique d’études\nLa séance S7 a posé les fondations : équations, coefficients, R², p-values, odds ratios, interactions. La séance S8 t’entraîne sur des cas réels : tu ouvres un article, tu repères la méthode, tu lis le tableau, tu interprètes.\nÀ l’examen : on peut te donner un extrait de régression (linéaire ou logistique) et te demander :\n\nQuel type de régression est-ce ?\nLe modèle dans son ensemble explique-t-il bien la VD ?\nQuels facteurs sont significatifs ? Dans quel sens ? Avec quelle force ?\nQuelle est la conclusion sur l’hypothèse testée ?",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html#schéma-de-lecture-dun-tableau-de-régression",
+    "href": "07_S8_Inferentielles_II.html#schéma-de-lecture-dun-tableau-de-régression",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "2 Schéma de lecture d’un tableau de régression",
+    "text": "2 Schéma de lecture d’un tableau de régression\n\n2.1 Étape 1 — Identifier le type\n\n\n\nIndice\nType\n\n\n\n\nY est quanti (échelle, score, % de population)\nLinéaire\n\n\nY est dichotomique (0/1, oui/non)\nLogistique binaire\n\n\nY a 3+ catégories nominales\nLogistique multinomiale\n\n\nY est ordinale traitée comme telle\nLogistique ordinale\n\n\nY compte des événements\nPoisson (hors cours)\n\n\n\nPrésence d’odds ratios dans le tableau → c’est logistique.\n\n\n2.2 Étape 2 — Évaluer le modèle global\n\n\n\n\n\n\n\nÉlément\nCritère\n\n\n\n\nR² (linéaire)\nQuelle part de la variance de Y est expliquée ?\n\n\nPseudo-R² (logistique)\nComparer avec d’autres modèles, pas comme %\n\n\nN (observations)\nAssez d’observations pour la complexité du modèle ?\n\n\nF-test global (parfois)\nLe modèle est-il utile en bloc ?\n\n\n\n\n\n2.3 Étape 3 — Lire chaque coefficient\nPour chaque ligne, regarde dans cet ordre :\n\nSigne (+/−) → sens de l’effet ;\nMagnitude → taille de l’effet ;\nSignificativité (étoiles / p-value) → l’effet est-il fiable ?\nCatégorie de référence (pour les dummies) → l’effet est par rapport à quoi ?\n\n\n\n2.4 Étape 4 — Formuler la conclusion\nRéponds à l’hypothèse posée : rejetée, non-rejetée, ou partiellement validée. Mentionne le sens, la force, la significativité — sans jamais sauter à la causalité pure sans le justifier (S9).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html#exemple-lecture-dune-régression-linéaire-adam-et-al.-2026-sur-les-théories-du-complot",
+    "href": "07_S8_Inferentielles_II.html#exemple-lecture-dune-régression-linéaire-adam-et-al.-2026-sur-les-théories-du-complot",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "3 Exemple : lecture d’une régression linéaire (Adam et al. 2026 sur les théories du complot)",
+    "text": "3 Exemple : lecture d’une régression linéaire (Adam et al. 2026 sur les théories du complot)\nAdam et ses collègues étudient les facteurs prédisant l’adhésion aux théories du complot (échelle de Likert 1-5) en Suisse et Allemagne. Tableau de régression linéaire :\n\n\n\nFacteur prédictif\nb\nSE\np\n\n\n\n\n(Constante)\n−0.34\n0.23\n.149\n\n\nAttitude populiste\n0.43\n0.05\n&lt; .001\n\n\nMéfiance politique\n0.21\n0.03\n&lt; .001\n\n\nÂge\n−0.00\n0.00\n.087\n\n\nFemme\n0.03\n0.06\n.560\n\n\nAllemand·e\n0.15\n0.06\n.014\n\n\nUtilisation médias traditionnels\n−0.07\n0.04\n.125\n\n\nUtilisation médias sociaux\n0.19\n0.04\n&lt; .001\n\n\nVote droite populiste\n0.13\n0.02\n&lt; .001\n\n\nIntérêt politique\n−0.08\n0.03\n.004\n\n\nExposition médias grand public\n0.01\n0.01\n.468\n\n\nN\n865\n\n\n\n\nR²\n.296\n\n\n\n\n\n\n3.1 Lecture critique\n\nLe modèle explique 29.6 % de la variance de l’adhésion aux théories du complot. C’est un score correct en sciences sociales.\nEffets significatifs et positifs (p &lt; .001) : attitude populiste (+0.43), méfiance politique (+0.21), usage des médias sociaux (+0.19), vote pour parti de droite populiste (+0.13). → Ces facteurs augmentent l’adhésion.\nEffet significatif et négatif : intérêt politique (−0.08, p = .004). Plus tu t’intéresses à la politique, moins tu adhères.\nNon significatifs : âge, genre (femme), médias traditionnels, exposition aux médias grand public. → Pas de preuve qu’ils jouent un rôle.\nAllemand·e : positif (+0.15, p = .014) → les Allemand·e·s adhèrent légèrement plus que les Suisse·sse·s alémaniques.\n\n\n\n3.2 Pour répondre à une question d’examen\nDiscutez l’influence de trois facteurs en détail :\n\nAttitude populiste : effet positif fort (+0.43), très hautement significatif (p &lt; .001). C’est le prédicteur le plus puissant : une augmentation d’1 unité sur l’échelle d’attitude populiste augmente le score de complot de 0.43 point.\nUsage médias sociaux : effet positif modéré (+0.19), p &lt; .001. Confirme l’hypothèse que les réseaux sociaux véhiculent ou renforcent les théories du complot, contrairement aux médias traditionnels (non significatifs).\nIntérêt politique : effet négatif (−0.08), p = .004. Une littératie politique plus forte protège contre l’adhésion conspirationniste. Effet petit mais robuste.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html#exemple-lecture-dune-régression-logistique",
+    "href": "07_S8_Inferentielles_II.html#exemple-lecture-dune-régression-logistique",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "4 Exemple : lecture d’une régression logistique",
+    "text": "4 Exemple : lecture d’une régression logistique\nReprenant l’exemple S7 (admission à l’université) :\n\n\n\nY = Admis (Oui/Non)\nCoefficient\nOdds Ratio\n\n\n\n\nScore GRE\n0.002*\n1.002*\n\n\nScore GPA\n0.804*\n2.234*\n\n\nRang 2 (vs. 1)\n−0.675*\n0.508*\n\n\nRang 3 (vs. 1)\n−1.340***\n0.261*\n\n\nRang 4 (vs. 1)\n−1.551***\n0.211*\n\n\nConstante\n−3.989\n—\n\n\nPseudo-R²\n0.082\n\n\n\n\n\n4.1 Lecture\n\nGPA = +0.804*, OR = 2.234 → chaque point de GPA en plus multiplie par 2.23 les chances d’admission (+123 %).\nGRE = +0.002, OR = 1.002 → effet positif mais très faible (chaque point GRE ≈ +0.2 % de chances).\nRang 2 vs. 1 : OR = 0.508 → être dans un institut de rang 2 plutôt que 1 divise par 2 les chances.\nRang 4 vs. 1 : OR = 0.211 → divise par ~5 les chances.\nPseudo-R² = 0.082 : à ne pas lire comme « 8 % de variance expliquée » (impossible en logistique) ; on l’utilise pour comparer des modèles emboîtés.\n\n\n\n\n\n\n\nAvec un pseudo-R² faible, le modèle reste utile ?\n\n\n\nOui — un pseudo-R² faible ne signifie pas un mauvais modèle. Il faut combiner avec la significativité des coefficients et l’adéquation théorique. Beaucoup d’études en sciences sociales ont des pseudo-R² de 0.05-0.15 mais des résultats robustes.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html#articles-de-référence-lecture-conseillée",
+    "href": "07_S8_Inferentielles_II.html#articles-de-référence-lecture-conseillée",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "5 Articles de référence (lecture conseillée)",
+    "text": "5 Articles de référence (lecture conseillée)\nPlusieurs articles utilisant ces méthodes sont mentionnés dans le cours et peuvent illustrer des lectures critiques :\n\n\n\n\n\n\n\nArticle\nApport\n\n\n\n\nAdam et al. (2026) — How Do Media Contribute to the Dissemination of Conspiracy Beliefs?\nRégression linéaire avec contrôles multiples ; lecture comparée des effets\n\n\nBergström & Jervelycke Belfrage (2018)\nUsage des médias sociaux et consommation d’info\n\n\nHampton (2019)\nRéseaux sociaux et capital social\n\n\nZimmermann & Kohring (2020)\nConfiance dans les médias et démocratie\n\n\n\n\n\n\n\n\n\nComment lire un article empirique sans paniquer\n\n\n\n\n\n\nVa d’abord aux figures et tableaux (sections « Results »).\nRepère la régression principale.\nIdentifie la VD et le type (linéaire ? logistique ?).\nLis les 3 coefficients les plus importants (significatifs avec gros effets).\nReviens à l’abstract et à la discussion pour la conclusion des auteurs.\n\nL’introduction et la revue de littérature peuvent attendre — l’examen teste surtout la lecture méthodologique.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "07_S8_Inferentielles_II.html#bonnes-pratiques-dinterprétation",
+    "href": "07_S8_Inferentielles_II.html#bonnes-pratiques-dinterprétation",
+    "title": "S8 - Analyses inférentielles II",
+    "section": "6 Bonnes pratiques d’interprétation",
+    "text": "6 Bonnes pratiques d’interprétation\n\n\n\n\n\n\n\nPratique\nDétail\n\n\n\n\nToujours mentionner le N\nAvec 50 obs, même un gros coefficient peut être instable\n\n\nReporter l’IC ou la SE\nPour montrer l’incertitude (S9)\n\n\nComparer modèles emboîtés\nTester l’ajout/retrait d’une variable ; regarder Δ R² ou Δ pseudo-R²\n\n\nVérifier les hypothèses du modèle\nLinéarité, normalité des résidus, homoscédasticité (linéaire) ; multicolinéarité, indépendance (les deux)\n\n\nNe pas extrapoler hors du domaine des données\nSi X varie de 0 à 10 dans l’échantillon, ne pas prédire pour X = 100\n\n\nDistinguer significativité statistique et importance pratique\nUn effet significatif peut être trop petit pour avoir un impact concret\n\n\n\n\n\n\n\n\n\nLe piège du grand N\n\n\n\nAvec N = 100 000, tout devient significatif (même les effets minuscules). À l’inverse, avec N = 30, même un gros effet peut être non significatif (manque de puissance). Toujours interpréter en contexte de la taille de l’échantillon.\n\n\n\n\n\n\n\n\nRécapitulatif Ch.8\n\n\n\n\nS8 = mise en pratique de S7 sur des études empiriques réelles.\nSchéma de lecture : (1) type de régression, (2) qualité globale (R²/N), (3) chaque coefficient (signe, magnitude, p), (4) conclusion sur l’hypothèse.\nLinéaire → coefficient = effet sur Y en unité ; logistique → OR = facteur multiplicatif sur les chances.\nToujours lire 3 dimensions ensemble : significativité, sens, taille de l’effet.\nEn sciences sociales, un R² de 0.20-0.30 est très acceptable ; un pseudo-R² de 0.05-0.15 aussi.\nÀ l’examen : pratique la lecture de tableaux. Les questions de réflexion attendent une lecture argumentée, pas une récitation.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S8 - Analyses inférentielles II"
+    ]
+  },
+  {
+    "objectID": "02_S3_Sources_donnees.html",
+    "href": "02_S3_Sources_donnees.html",
+    "title": "S3 - Sources de données",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nLes sources de données quantitatives sont multiples (enquêtes, documents, web, open data, don de données), mais chacune oblige le·la chercheur·euse à planifier : choix de la source, échantillonnage, formulation des questions, et justification de chaque décision.\nLe point à retenir : les sources de données quantitatives sont multiples, mais leur récolte demande un savoir-faire spécifique et une planification poussée. De nombreux choix doivent être justifiés en commençant par le choix des sources jusqu’à l’unité d’analyse en passant par un éventuel échantillonnage.\nCette séance couvre deux blocs :",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S3 - Sources de données"
+    ]
+  },
+  {
+    "objectID": "02_S3_Sources_donnees.html#bloc-a-sources-documentaires-et-numériques-script-1",
+    "href": "02_S3_Sources_donnees.html#bloc-a-sources-documentaires-et-numériques-script-1",
+    "title": "S3 - Sources de données",
+    "section": "1 Bloc A : Sources documentaires et numériques (script 1)",
+    "text": "1 Bloc A : Sources documentaires et numériques (script 1)\n\n1.1 Quatre vérifications avant toute collecte\nQuelle que soit la source, il faut se demander :\n\n\n\n\n\n\n\nVérification\nQuestion concrète\n\n\n\n\nAccessibilité\nLes données sont-elles disponibles ? En entier ou en partie ? Quelle fraction de la population est représentée ?\n\n\nCoûts\nTemps, argent, infrastructure ?\n\n\nPossibilités de collecte / analyse\nQuels outils techniques ? Données individuelles ou agrégées ?\n\n\nAdéquation\nLes données permettent-elles vraiment d’opérationnaliser le concept étudié ?\n\n\n\nEt deux questions critiques :\n\nComment les données ont-elles été produites (par qui, avec quel but, quels biais possibles) ?\nY a-t-il des enjeux éthiques (consentement, anonymat, protection des données) ?\n\n\n\n1.2 Sources documentaires : presse, audiovisuel, réseaux sociaux\n\n\n\n\n\n\n\n\nSource\nAccès\nRisques\n\n\n\n\nPresse écrite / en ligne\nBases de données (Swissdox, Nexis Uni, Factiva) via biblio universitaire ou VPN. Recherche par mots-clés + opérateurs booléens (AND, OR), troncatures (*), expressions exactes (\"...\")\nContenu en ligne modifiable → garder copies hors ligne, noter la date de récolte\n\n\nAudiovisuel\nMédiathèques RTS/SRF, streaming, archives, enregistrement personnel\nDisponibilité temporaire seulement\n\n\nRéseaux sociaux\nCaptures d’écran, extensions de navigateur, API, parsing\nÉthique : consentement des utilisateur·ice·s\n\n\n\n\n\n1.3 Unité de collecte vs. unité d’analyse\nDistinction fondamentale à connaître à l’examen :\n\n\n\n\n\n\n\n\nNiveau\nDéfinition\nExemple\n\n\n\n\nUnité de collecte (sampling unit)\nLe matériel récupéré, défini par la QR\nUn article de presse, un post TikTok\n\n\nUnité d’analyse (coding unit)\nL’unité statistique codée, une ligne dans la base\nUn paragraphe, un mot, une revendication\n\n\nUnité de contexte\nCe qui entoure l’unité d’analyse pour l’interpréter\nLa vidéo entière du post\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\nL’unité de collecte, c’est ce que tu attrapes avec ton filet (articles, posts, vidéos). L’unité d’analyse, c’est ce que tu mesures à l’intérieur (un acteur, une émotion, un thème). L’unité de contexte, c’est le décor qui t’aide à comprendre (la vidéo entière, l’article complet). Tu peux avoir 100 articles (collecte) mais 700 revendications codées (analyse).\n\n\n\n\n1.3.1 Découpage parallèle vs. hiérarchique\n\n\n\n\n\n\n\n\nDécoupage\nLogique\nExemple\n\n\n\n\nParallèle\nPlusieurs unités d’analyse autonomes par unité de collecte, chacune avec son codebook\nUn post TikTok → analyse musique + texte + action séparément\n\n\nHiérarchique\nDécomposition en niveaux imbriqués\nArticle → §1, §2, §3 ; chaque § analysé en lien avec l’article\n\n\n\n\n\n\n1.4 Échantillonnage probabiliste (sources documentaires)\n\n\n\n\n\n\n\n\nTechnique\nPrincipe\nExemple\n\n\n\n\nAléatoire\nTirage au sort dans la population\nTirer 50 articles parmi 5 000 au hasard\n\n\nStratifié\nDiviser en strates (langue, type), puis tirer au sort dans chaque strate. Proportionnel (respect des poids réels) ou disproportionnel (égalité par strate)\n60 % en allemand + 40 % en français ; ou 50/50\n\n\nSystématique / par liste\nChaque n-ième unité (tous les 10)\n1 article sur 10 sur la liste\n\n\nPar grappes\nTirage de sous-groupes naturels, puis tout le groupe est inclus\nTirer 4 « semaines naturelles » dans l’année, coder tous les articles de ces 4 semaines\n\n\n\n\n\n\n\n\n\nLe pré-requis de l’échantillonnage probabiliste\n\n\n\nPour qu’un échantillon soit probabiliste, il faut connaître la population totale (ou avoir une base d’échantillonnage = une liste complète). Sans ça, on tombe en non-probabiliste (volontaires, quotas, boule de neige) → impossible de calculer marges d’erreur.\n\n\n\n\n1.5 Web scraping : API vs. parsing\n\n\n\n\n\n\n\nTechnique\nPrincipe\n\n\n\n\nAPI (Application Programming Interface)\nTu simules une application qui dialogue avec un service (TikTok, Wikipedia). Tu obtiens des clés et tokens, puis tu interroges directement les données.\n\n\nParsing\nTu décomposes le code HTML d’une page web pour extraire le texte des nœuds qui t’intéressent. Tu suis des « paths » (chemins) dans l’arborescence du document.\n\n\n\nÀ l’examen : il ne faut pas connaître la marche à suivre détaillée, mais la différence de logique entre les deux. API = dialogue applicatif structuré ; parsing = scrapping du code HTML brut.\n\n\n1.6 Avantages/inconvénients des données numériques\n\n\n\n\n\n\n\n+\n−\n\n\n\n\nAccessibilité\nAccès parfois restreint (quota de requêtes, limites)\n\n\nFaible coût\nAlgorithmes biaisent ce que tu vois\n\n\nVariété et amplitude\nRisque de se perdre dans la masse\n\n\nMise à jour quasi-temps réel\nDurée de vie variable → archiver hors ligne ! (Wayback Machine)\n\n\n\n\n\n1.7 Autres sources : open data, applications, don de données\n\n\n\n\n\n\n\n\nSource\nLogique\nExemple\n\n\n\n\nOpen Data (et Open Government Data, OGD)\nDonnées publiques mises à disposition gratuitement. Données agrégées pour préserver l’anonymat\nopendata.swiss\n\n\nApplications\nApp créée pour collecter données (capteurs + sondages). Coûteux à développer\nÉtude longitudinale via appli santé\n\n\nDon de données\nRGPD oblige les plateformes à donner aux user·ice·s leurs propres données → ils peuvent les transmettre à des chercheur·euse·s\nDonner ses données Spotify pour étude des préférences musicales\n\n\n\n\n\n\n\n\n\nDon de données et représentativité\n\n\n\nL’échantillon obtenu par don est petit et auto-sélectionné (seuls les motivé·e·s participent). Cela restreint la portée des conclusions et oblige à clarifier l’éthique (consentement, anonymisation, stockage sécurisé).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S3 - Sources de données"
+    ]
+  },
+  {
+    "objectID": "02_S3_Sources_donnees.html#bloc-b-enquêtes-quantitatives-standardisées",
+    "href": "02_S3_Sources_donnees.html#bloc-b-enquêtes-quantitatives-standardisées",
+    "title": "S3 - Sources de données",
+    "section": "2 Bloc B : Enquêtes quantitatives standardisées",
+    "text": "2 Bloc B : Enquêtes quantitatives standardisées\n\n2.1 Définition et moyens\nUne enquête standardisée (par sondage) sert à la recherche scientifique, mais aussi à l’administration, au marketing et aux médias. Elle se distingue de l’enquête qualitative par :\n\nun but descriptif ou explicatif (pas exploratoire) ;\nun nombre d’observations élevé ;\nune structuration haute (questions fixes, mêmes catégories pour tout le monde) ;\nune influence minimale de l’enquêteur·ice.\n\nQuatre moyens de récolte :\n\n\n\n\n\n\n\n\nMoyen\n+\n−\n\n\n\n\nFace-à-face\nFiable, suivi\nCher, biais d’enquêteur\n\n\nTéléphone\nCouverture large\nRefus, biais de génération\n\n\nPar écrit (auto-administré)\nAnonyme, pas cher\nTaux de réponse faible\n\n\nEn ligne (auto-administré)\nRapide, économique\nBiais de couverture (seuls les connectés répondent)\n\n\n\n\n\n2.2 Échantillonnage : pourquoi et comment\nPourquoi échantillonner ? Une enquête exhaustive (interroger toute la population) est coûteuse ou impossible. On utilise une fraction représentative = échantillon. C’est l’idée centrale de l’inférence statistique.\n\n2.2.1 Mode de prélèvement\n\n\n\n\n\n\n\n\nCatégorie\nType\nDéfinition\n\n\n\n\nProbabiliste\nAléatoire\nTirage au sort dans la liste complète\n\n\n\nStratifié\nDivision en strates importantes (langue, âge), puis tirage\n\n\n\nPar grappes\nTirage de groupes naturels (classes, quartiers) entiers\n\n\nNon-probabiliste\nDe commodité\nVolontaires\n\n\n\nPar quotas\nRecrutement des X premiers volontaires par catégorie\n\n\n\nBoule de neige\nLes participant·e·s en recrutent d’autres\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nProbabiliste = chaque membre de la population a une chance connue, non nulle d’être tiré au sort. Tu peux calculer marges d’erreur et inférer.\nNon-probabiliste = pas de tirage au sort vrai. Plus rapide et moins cher, mais pas de marges d’erreur, et l’échantillon peut être très biaisé.\n\n\n\n\n\n\n2.2.2 Taille de l’échantillon\nPour un échantillon probabiliste parfaitement aléatoire, la taille dépend de :\n\n\n\n\n\n\n\nParamètre\nDéfinition\n\n\n\n\nTaille de la population\nEx. 9 mio. d’habitants en Suisse\n\n\nNiveau de confiance\nProbabilité que l’échantillon reflète bien la population (souvent 95 % ou 99 %)\n\n\nMarge d’erreur\nÉcart toléré entre échantillon et population (souvent 3 %)\n\n\n\nExemple : sur 1 070 personnes représentatives interrogées, 60 % disent vouloir voter oui. Avec une marge d’erreur de 3 % et 95 % de confiance, 57-63 % de la population veut voter oui.\n\n\n\n\n\n\nÉchantillon net vs. brut\n\n\n\n\nBrut = ce que tu vises (échantillon net) + non-réponses anticipées.\nNet = ce que tu obtiens réellement après non-réponses.\n\nToujours surévaluer le brut pour atteindre le net visé.\n\n\n\n\n\n2.3 Formulation des questions\n\n2.3.1 Trois critères de qualité (qui valent aussi pour les catégories de réponse)\n\n\n\n\n\n\n\nCritère\nDéfinition\n\n\n\n\nObjectivité\nLa question est comprise de la même manière par tout le monde\n\n\nFiabilité\nÀ mesures répétées, la question produit le même résultat\n\n\nValidité\nOn mesure bien ce qu’on prétend mesurer\n\n\n\n\n\n2.3.2 Degré d’ouverture\n\n\n\n\n\n\n\n\n\nType\nRéponses\nAvantage\nInconvénient\n\n\n\n\nFermée\nCatégories fixes ou échelle\nObjectivité d’évaluation\nPerte d’info, format imposé\n\n\nSemi-ouverte\nCatégories + « autre : ____ »\nCompromis\nCodage supplémentaire\n\n\nOuverte\nPas de réponse prédéfinie\nRéponses authentiques\nFaible objectivité (sauf pour caractéristiques métriques : âge, revenu)\n\n\n\n\n\n2.3.3 Catégories de réponse → niveau de mesure\n\n\n\n\n\n\n\n\nVariable\nNiveau\nCatégories de réponse\n\n\n\n\nNominale\nNominal\nÉchelle nominale ou question (semi-)ouverte\n\n\nOrdinale\nOrdinal\nÉchelle ordinale (5 ou 7 catégories, ou 0 à 10)\n\n\nQuantitative\nContinu / discret\nÉchelle à X catégories ou question ouverte sur métrique\n\n\n\n\n\n2.3.4 Questions « seules » vs. batteries d’items + échelle de Likert\nPour mesurer une attitude (concept abstrait), une seule question ne suffit pas. On utilise une batterie d’items :\n\nPlusieurs propositions concernant l’objet d’attitude (certaines favorables, d’autres défavorables) ;\nRéponses sur une échelle de Likert (souvent 5 échelons : fortement en désaccord → fortement d’accord) ;\nOn peut additionner les scores pour obtenir un index par individu ;\nLa cohérence de l’échelle se mesure avec l’alpha de Cronbach (seuil acceptable : 0.7, vu en S4).\n\n\n\n\n2.4 Types de questions\n\n\n\n\n\n\n\n\nType\nLogique\nExemple\n\n\n\n\nAttitude\n« Veuillez indiquer dans quelle mesure vous êtes d’accord avec… »\nAffirmation + échelle de Likert (sans négations !)\n\n\nComportement rétrospectif\n« Avez-vous voté lors des dernières élections ? »\nOui / Non / Je ne sais plus\n\n\nComportement prospectif\n« Pour quel parti voterez-vous ? »\nListe de partis\n\n\nFréquence\n« Combien d’heures avez-vous passé sur les réseaux sociaux ? »\nTranches OU question ouverte (heures/jour)\n\n\nSocio-démographique\nÂge, sexe, revenu, formation\nPlutôt à la fin du questionnaire\n\n\n\n\n\n2.5 Structure d’un questionnaire\n\n\n\n\n\n\n\nBloc\nContenu\n\n\n\n\n1. Introduction\nBut de l’étude (sans dévoiler les hypothèses !), durée, anonymat, contact\n\n\n2. Partie principale\nQuelques questions faciles d’abord, puis blocs thématiques, questions filtres\n\n\n3. Socio-démographiques\nVers la fin\n\n\n4. Remerciement\nÉventuellement question ouverte pour commentaires\n\n\n\n\n\n2.6 Sources d’erreur\n\n\n\n\n\n\n\n\nErreur\nCause\nSolution\n\n\n\n\nD’échantillonnage\nÉcart entre paramètre observé et paramètre vrai\nAugmenter taille échantillon, pondération\n\n\nDe validité (spécification)\nLa question ne mesure pas vraiment le concept\nAméliorer opérationnalisation\n\n\nNon-réponse (survey ou item)\nRefus de participer ou de répondre à une question\nRaccourcir, éviter questions sensibles\n\n\nDésirabilité sociale\nRéponses « socialement acceptables »\nEnquête en ligne/écrit, formulation neutre\n\n\nCentriste\nChoisir l’option du milieu\nCatégories alternatives, inverser le sens\n\n\nAcquiescence\nDire oui à tout\nQuestions à sens inverse\n\n\nEffet d’ordre\nUne question influence la suivante\nOrdre logique réfléchi\n\n\n\n\n\n\n\n\n\nThéorie du satisficing\n\n\n\nLes participant·e·s ne cherchent pas la meilleure réponse, ils cherchent une réponse suffisante avec un minimum d’effort. Plus le questionnaire est long et complexe, plus le satisficing augmente → réponses superficielles, biais centriste, abandons.\n\n\n\n\n2.7 Pré-test\nAvant de lancer une enquête à grande échelle, toujours faire un pré-test (règle générale : 10 % des participant·e·s visé·e·s). Objectifs :\n\nLes questions sont-elles comprises ?\nY a-t-il de la variance dans les réponses (sinon question inutile) ?\nAi-je oublié quelque chose d’important ?\nQuel est le taux de réponse et le temps moyen ?\n\nPour une recherche expérimentale, c’est une étude pilote (le design fonctionne-t-il ?).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S3 - Sources de données"
+    ]
+  },
+  {
+    "objectID": "02_S3_Sources_donnees.html#sources-de-données-secondaires-pré-existantes",
+    "href": "02_S3_Sources_donnees.html#sources-de-données-secondaires-pré-existantes",
+    "title": "S3 - Sources de données",
+    "section": "3 Sources de données secondaires (pré-existantes)",
+    "text": "3 Sources de données secondaires (pré-existantes)\n\n\n\n\n\n\n\nType\nExemples\n\n\n\n\nSuisses (sciences sociales)\nFORS (forscenter.ch) : Panel Suisse des Ménages, Selects, Vox/Voto\n\n\nInternationales\nWorld Value Survey, European Social Survey\n\n\nStatistiques officielles\nOCDE, Eurostat, OFS (Office fédéral de la statistique)\n\n\n\n\n\n\n\n\n\nRécapitulatif Ch.3\n\n\n\n\nAvant collecte : vérifier accessibilité, coûts, possibilités, adéquation ; questionner production et éthique.\nUnité de collecte ≠ unité d’analyse.\nÉchantillonnage probabiliste (aléatoire, stratifié, grappes, systématique) vs. non-probabiliste (commodité, quotas, boule de neige).\nUne enquête standardisée se définit par sa structuration haute et son influence minimale de l’enquêteur·ice.\nUne bonne question : objective, fiable, valide. Catégories de réponse : disjointes, exhaustives.\nÉchelle de Likert = batterie d’items mesurant une attitude → score additionné = index.\nSources d’erreur principales : échantillonnage, validité, non-réponse, désirabilité sociale, centriste, acquiescence, ordre.\nToujours faire un pré-test.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S3 - Sources de données"
+    ]
+  },
+  {
+    "objectID": "04_S5_Analyse_contenu.html",
+    "href": "04_S5_Analyse_contenu.html",
+    "title": "S5 - Analyse de contenu quantitative",
+    "section": "",
+    "text": "Ce chapitre en 1 ligne\n\n\n\nL’analyse de contenu quantitative transforme des sources textuelles ou audiovisuelles en données chiffrées via un codage systématique. Tu définis des unités, tu construis une grille de codage (codebook), tu codes, et tu vérifies la qualité (fiabilité + validité).\nLe point à retenir : l’analyse de contenu quantitative permet de quantifier des sources textuelles et audio-visuelles. Elle requiert une grande systématicité dans les choix opérés avant le codage, pendant son exécution, et lors du contrôle de qualité.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S5 - Analyse de contenu quantitative"
+    ]
+  },
+  {
+    "objectID": "04_S5_Analyse_contenu.html#analyse-de-contenu-quanti-vs.-quali",
+    "href": "04_S5_Analyse_contenu.html#analyse-de-contenu-quanti-vs.-quali",
+    "title": "S5 - Analyse de contenu quantitative",
+    "section": "1 Analyse de contenu : quanti vs. quali",
+    "text": "1 Analyse de contenu : quanti vs. quali\nUne fois tes sources documentaires récoltées, deux grandes options de traitement :\n\n\n\n\n\n\n\n\nCritère\nAnalyse qualitative\nAnalyse quantitative\n\n\n\n\nBut principal\nAnalyse des thèmes, concepts, constructions de sens\nRéduction de la complexité, quantification des éléments de contenu\n\n\nRapport aux hypothèses\nTravail de vérification (falsifier/vérifier des hypothèses)\nTravail d’exploration (puis éventuellement formulation d’hypothèses)\n\n\nNiveau d’analyse\nAnalyse directe : sens manifeste du texte\nAnalyse indirecte : sens latent ou caché\n\n\n\n\n\n\n\n\n\nLe tableau est trompeur\n\n\n\nLa distinction quali/quanti n’est pas si étanche. Une analyse quali doit aussi être systématique ; une analyse quanti exige de la classification et de l’interprétation. Le tableau ci-dessus simplifie pour comprendre, mais en pratique les deux se nourrissent (mixed methods, voir S10).",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S5 - Analyse de contenu quantitative"
+    ]
+  },
+  {
+    "objectID": "04_S5_Analyse_contenu.html#définition-janis-1965",
+    "href": "04_S5_Analyse_contenu.html#définition-janis-1965",
+    "title": "S5 - Analyse de contenu quantitative",
+    "section": "2 Définition (Janis, 1965)",
+    "text": "2 Définition (Janis, 1965)\n\n« L’analyse de contenu peut être définie comme se référant à toute technique (a) de classification des véhicules de signes (b) qui repose uniquement sur les jugements […] d’un analyste ou d’un groupe d’analystes quant à l’appartenance des véhicules de signes à telle ou telle catégorie, (c) à condition que les jugements de l’analyste soient considérés comme le rapport d’un observateur scientifique. »\n\nTrois éléments clés :\n\n\n\n\n\n\n\nÉlément\nSignification\n\n\n\n\n(a) Véhicules de signes\nToute convention qui véhicule un message : texte, mots, image, sons\n\n\n(b) Jugement de l’analyste\nC’est le·la chercheur·euse qui classe les véhicules dans des catégories (= codage)\n\n\n(c) Scientifique\nPas un jugement personnel ponctuel : systématique et reproductible",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S5 - Analyse de contenu quantitative"
+    ]
+  },
+  {
+    "objectID": "04_S5_Analyse_contenu.html#les-4-étapes-de-lanalyse-de-contenu-quantitative",
+    "href": "04_S5_Analyse_contenu.html#les-4-étapes-de-lanalyse-de-contenu-quantitative",
+    "title": "S5 - Analyse de contenu quantitative",
+    "section": "3 Les 4 étapes de l’analyse de contenu quantitative",
+    "text": "3 Les 4 étapes de l’analyse de contenu quantitative\n\n3.1 Étape 1 — Définir les unités de codage\nReprendre les distinctions du S3 :\n\n\n\n\n\n\n\n\nUnité\nDéfinition\nExemple (étude Feddersen 2015 sur le discours médiatique sur les étranger·ère·s)\n\n\n\n\nCollecte\nLe matériel récolté\nArticles NZZ, Blick, Le Temps, Le Matin sur 3 votations (2000, 2004, 2009)\n\n\nAnalyse\nL’unité statistique codée\nUne revendication dans l’article (acteur + cadrage + objet)\n\n\nCodage\nUne variable à coder pour chaque unité d’analyse\nActeur (WHO), cible (AT WHOM), forme (HOW), contenu (WHAT), évaluation positive/neutre/négative\n\n\n\n\n\n\n\n\n\nUne pré-analyse aide à définir\n\n\n\n\n\nAvant de figer les unités, lis flottant (lecture rapide d’un échantillon) pour te familiariser avec le matériel. Tu repèreras des nuances, des catégories à prévoir, des cas limites. Ne saute jamais cette étape.\n\n\n\n\n\n3.2 Étape 2 — Établir la grille de codage (codebook)\nPour chaque unité de codage (variable), tu définis :\n\n\n\nÉlément\nDétail\n\n\n\n\nNom de la variable\nCourt mais compréhensible\n\n\nDéfinition\nQue mesure-t-elle exactement ?\n\n\nCatégories (valeurs)\nListées avec leur code numérique\n\n\nExemples\nTirés du corpus, pour les cas limites\n\n\n\n\n3.2.1 Trois manières de définir les catégories\n\n\n\nApproche\nLogique\n\n\n\n\nDéductive\nÀ partir des concepts théoriques existants\n\n\nInductive\nÀ partir du matériel observé (pré-analyse)\n\n\nHybride\nCombinaison des deux\n\n\n\n\n\n\n\n\n\nLes 3 critères des catégories\n\n\n\n\nMutuellement exclusives : aucune confusion possible entre deux catégories.\nExhaustives : couvrent toutes les possibilités (sinon perte d’info).\nAdaptées aux analyses statistiques envisagées : respecter les niveaux de mesure voulus.\n\nEt un équilibre : ni trop de catégories (perte de vue d’ensemble), ni trop peu (perte d’information).\n\n\n\n\n\n3.3 Étape 3 — Réaliser le codage\nLe codage est systématique : unité d’analyse après unité d’analyse, unité de codage après unité de codage.\n\n3.3.1 Trois techniques\n\n\n\n\n\n\n\n\nTechnique\nDéfinition\nExemple\n\n\n\n\nÀ la main\nCodeur·euse humain·e applique la grille\nÉtudiant·e qui code 100 articles\n\n\nAutomatisée\nAlgorithme\nSentiment analysis (chaque mot classé positif/négatif via dictionnaire), topic modelling (textes classés par similarité de vocabulaire)\n\n\nSemi-automatisée\nAnalyse manuelle puis automatisation\nCodage d’un échantillon → entraînement d’un modèle → application au reste\n\n\n\n\n\n3.3.2 Bonnes pratiques\n\nFormation des codeur·euse·s si plusieurs personnes.\nDocumenter les décisions au fur et à mesure (cas litigieux, conventions de codage).\nUtiliser des schémas de décision (arbres « est-ce que … ? » → catégorie X / Y).\nGarder des exemples illustratifs issus du corpus pour les catégories importantes (utiles pour la partie opérationnalisation du papier final).\n\n\n\n\n3.4 Étape 4 — Vérifier la qualité du codage\nDeux indicateurs complémentaires : fiabilité et validité.\n\n3.4.1 Fiabilité (reliability) — Kaplan & Goldsen (1965)\n\n« La fiabilité assure que les données sont obtenues indépendamment de l’instrument ou de la personne qui effectue la mesure. »\n\nTrois tests possibles :\n\n\n\n\n\n\n\n\nTest\nProcédure\nMesure\n\n\n\n\nIntra-codeur\nLe·la même codeur·euse recode une partie après un délai\nStabilité (cohérence dans le temps)\n\n\nInter-codeur\nUn·e autre codeur·euse recode une partie\nReproductibilité (cohérence entre personnes)\n\n\nComparaison à un standard\nComparaison à un codage de référence\nPrécision\n\n\n\n\n\n3.4.2 Comment chiffrer la fiabilité ?\n\n\n\n\n\n\n\n\nMesure\nDéfinition\nSeuil acceptable\n\n\n\n\nConcordance (%)\nProportion d’unités codées de la même manière\nIndicatif\n\n\nAlpha de Krippendorff\nPour toute variable\n0.7 (sciences sociales)\n\n\nKappa de Cohen\nVariantes selon niveau de mesure\n0.7\n\n\n\n\n\n\n\n\n\nEn simple\n\n\n\n\n\n\nAlpha de Cronbach (S4) = la cohésion entre items d’une échelle (questions qui mesurent la même chose).\nAlpha de Krippendorff (S5) = la cohésion entre codeur·euse·s sur une même variable codée.\n\nDeux alphas, deux fonctions différentes. Le seuil de 0.7 est commun aux deux par convention.\n\n\n\n\n\n3.4.3 Validité (Krippendorff, 2013)\n\n« La validité réside dans le fait que la qualité des résultats nous conduit à les accepter comme vrais. Un instrument de mesure est valide s’il mesure ce que son utilisateur prétend qu’il mesure. »\n\n\n\n\n\n\n\n\nType\nQuestion\n\n\n\n\nValidité interne\nLe codage mesure-t-il bien ce qu’il est censé mesurer ? → Assurer une bonne diversité des sources codées\n\n\nValidité externe\nLe codage est-il généralisable au monde réel ? → Comparer avec d’autres codages sur d’autres sources\n\n\n\n\n\n\n\n\n\nFiabilité et validité, c’est différent\n\n\n\n\nFiable mais non valide : ton mètre mesure toujours la même chose (constant) mais il est faussé de 5 cm → tu mesures précisément autre chose que ce que tu veux.\nValide mais non fiable : ton mètre vise la bonne taille mais varie d’une mesure à l’autre → l’instrument est trop instable.\nFiable ET valide : ton mètre est précis ET il mesure la bonne taille.\n\nL’objectif est toujours les deux.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S5 - Analyse de contenu quantitative"
+    ]
+  },
+  {
+    "objectID": "04_S5_Analyse_contenu.html#si-la-qualité-nest-pas-au-rendez-vous",
+    "href": "04_S5_Analyse_contenu.html#si-la-qualité-nest-pas-au-rendez-vous",
+    "title": "S5 - Analyse de contenu quantitative",
+    "section": "4 Si la qualité n’est pas au rendez-vous",
+    "text": "4 Si la qualité n’est pas au rendez-vous\nRecodage obligatoire. Tu peux ajuster la grille de codage (préciser des cas litigieux, ajouter une catégorie, fusionner deux qui se confondent), puis recommencer le codage.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S5 - Analyse de contenu quantitative"
+    ]
+  },
+  {
+    "objectID": "04_S5_Analyse_contenu.html#exemple-concret-feddersen-2015",
+    "href": "04_S5_Analyse_contenu.html#exemple-concret-feddersen-2015",
+    "title": "S5 - Analyse de contenu quantitative",
+    "section": "5 Exemple concret : Feddersen (2015)",
+    "text": "5 Exemple concret : Feddersen (2015)\nÉtude du discours médiatique suisse sur étranger·ère·s et musulman·e·s autour de trois votations :\n\n\n\n\n\n\n\nÉlément\nDétail\n\n\n\n\nQR\nComment le discours diffère-t-il entre 2000 et 2009 ?\n\n\nCas\n3 campagnes (initiative « 18 % », naturalisation facilitée, anti-minarets)\n\n\nUnité de collecte\nArticles NZZ, Blick, Le Temps, Le Matin (2 semaines avant à 1 semaine après le vote) — 484 articles\n\n\nMots-clés\nétrang, musulman, islam* / ausländ, muslim, moslem, islam\n\n\nUnité d’analyse\nUne revendication = acteur + acteur adressé + forme + contenu + objet + cadrage (765 revendications au total, théorie de Koopmans & Statham 1999)\n\n\nUnités de codage\nSource, date, population visée, niveau de généralisation, thématique, framing, évaluation\n\n\n\nUne étude solide se présente toujours ainsi : on lit, on comprend immédiatement ce qui a été collecté, comment, à quel niveau on a codé, et avec quelles variables.\n\n\n\n\n\n\nRécapitulatif Ch.5\n\n\n\n\nQuanti vs. quali : but de quantification vs. de compréhension du sens ; mais frontière poreuse.\nL’analyse de contenu est systématique et basée sur le jugement scientifique (Janis 1965).\n4 étapes : (1) définir les unités de codage, (2) construire la grille, (3) coder, (4) vérifier la qualité.\n3 manières de définir les catégories : déductive, inductive, hybride.\nCatégories : mutuellement exclusives, exhaustives, adaptées.\nCoder à la main, automatique (sentiment analysis, topic modelling), ou semi-automatique.\nFiabilité = constance (intra, inter, comparée). Validité = on mesure bien le bon truc.\nSeuils acceptables : Krippendorff ≥ 0.7 ; Kappa ≥ 0.7.\nFiable ≠ valide. Il faut les deux.",
+    "crumbs": [
+      "Accueil",
+      "Séances du cours",
+      "S5 - Analyse de contenu quantitative"
+    ]
+  }
+]

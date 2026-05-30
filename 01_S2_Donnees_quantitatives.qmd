@@ -1,0 +1,148 @@
+---
+title: "S2 - Données quantitatives"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Les **données quantitatives** sont des observations organisées en lignes (cas) et colonnes (variables). Avant toute analyse, tu dois savoir **d'où elles viennent**, **comment elles ont été produites**, et à **quel niveau de mesure** appartient chaque variable.
+:::
+
+Le **point à retenir** : *il existe une multitude de sources de données quantitatives, mais elles partagent des caractéristiques communes. Bien connaître ces caractéristiques est essentiel pour tout le processus de recherche.*
+
+## Le cadre méthodologique
+
+L'étape 3 du pipeline (opérationnalisation) inclut la définition du **cadre méthodologique** : décrire le type de données, la procédure de récolte, le nombre d'observations, et passer des concepts aux **indicateurs mesurables**.
+
+| Concept | Dimension | Indicateur |
+|---|---|---|
+| Usage passif d'Instagram | Durée d'utilisation | Heures déclarées par jour |
+| Symptômes de dépression | Manque d'énergie | Score sur batterie de 5 items |
+| Personnalité | Extraversion | Score Big Five |
+
+C'est cette chaîne **concept → dimension → indicateur → variable** qui rend le concept abstrait **mesurable**.
+
+## 6 distinctions pour qualifier des données
+
+### 1. Primaires vs. secondaires
+
+| Type | Définition | Exemple |
+|---|---|---|
+| **Primaires** | Récoltées par le·la chercheur·euse même | Tu lances ton propre sondage Qualtrics |
+| **Secondaires** | Bases de données déjà existantes | Tu utilises le Panel Suisse des Ménages via SwissUbase |
+
+### 2. Individuelles vs. agrégées
+
+| Type | Niveau d'observation | Exemple |
+|---|---|---|
+| **Individuelles** | Niveau le moins agrégé | Un individu, un post, un tweet |
+| **Agrégées** | Moyenne ou somme sur un groupe | Taux de chômage par pays (Banque mondiale) |
+
+::: {.callout-warning}
+## L'erreur écologique
+**Définition** : attribuer à un individu une caractéristique observée sur la moyenne de son groupe. *« Les Suisses gagnent 6 800 CHF en moyenne, donc mon voisin gagne 6 800 CHF. »* — non, c'est la moyenne ; l'individu peut être très loin.
+
+À l'examen, dès qu'on raisonne au niveau agrégé pour conclure sur des individus → attention à cette erreur.
+:::
+
+### 3. Échantillon vs. exhaustives
+
+| Type | Couverture | Exemple |
+|---|---|---|
+| **Échantillon** | Une partie de la population | Selects interroge ~7 000 personnes pour les élections fédérales |
+| **Exhaustives** | Toute la population | Recensement, registre AVS |
+
+### 4. Transversales vs. longitudinales
+
+| Type | Temporalité | Exemple |
+|---|---|---|
+| **Transversales** | Une seule date | Sondage post-électoral d'octobre 2023 |
+| **Longitudinales** | Plusieurs dates (panel) | Panel Suisse des Ménages (mêmes individus suivis depuis 1999) |
+
+### 5. Expérimentales vs. observationnelles
+
+| Type | Production | Exemple |
+|---|---|---|
+| **Expérimentales** | Issues d'un traitement (groupes contrôle/traitement) | On manipule la dose de réseaux sociaux avant le coucher |
+| **D'observation** | Sans manipulation par le·la chercheur·euse | On observe ce qui se passe naturellement |
+
+### 6. Objectives vs. subjectives — et directes vs. indirectes
+
+| Distinction | Exemple |
+|---|---|
+| **Faits objectifs** | Durée d'utilisation mesurée par appli |
+| **Faits subjectifs** | Attitudes envers la numérisation (déclarées) |
+| **Observation directe** | Podomètre |
+| **Observation indirecte** | Question d'enquête : « Combien de pas faites-vous par jour ? » |
+
+::: {.callout-warning}
+## Le biais de désirabilité sociale
+Quand une question touche un sujet sensible (sexe, argent, sport, racisme), les répondant·e·s ont tendance à se présenter sous un jour favorable. *« Combien de fois par semaine faites-vous du sport ? »* → réponses systématiquement gonflées. La mesure indirecte exacerbe ce biais.
+:::
+
+## Le fichier de données : ligne / colonne
+
+Globalement, un fichier de données quantitatives ressemble toujours à ça :
+
+- **Chaque ligne** = un cas / une observation (un individu, un pays, un article, un post...).
+- **Chaque colonne** = une variable (âge, langue, durée, score...).
+
+C'est cette structure rectangulaire qui rend l'analyse statistique possible.
+
+## La variable : définition et niveaux de mesure
+
+**Variable** : caractéristique qui **varie** d'une observation à l'autre (Sirkin, 1996). Ex. âge, durée d'utilisation des médias sociaux, parti voté.
+
+La distinction la plus utile en statistique est celle des **niveaux de mesure** (4 types).
+
+| Variable | Niveau | Caractéristique | Exemple |
+|---|---|---|---|
+| Qualitative / catégorielle | **Nominal** | Attributs sans ordre logique | Langue maternelle, religion, parti voté |
+| Qualitative / catégorielle | **Ordinal** | Attributs **ordonnés** | Niveau de formation, intérêt politique sur 4 niveaux |
+| Quantitative | **Continue** | Score numérique, infinité de valeurs possibles dans un intervalle | Taille (cm), âge (années avec décimales), durée |
+| Quantitative | **Discrète** | Score numérique, nombre fini de valeurs | Taille du ménage, nombre d'enfants |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- **Nominale** = des **noms** (homme, femme, autre ; PS, PLR, UDC). Pas de hiérarchie.
+- **Ordinale** = des noms **rangés** (pas du tout d'accord < plutôt pas d'accord < plutôt d'accord < tout à fait d'accord).
+- **Continue** = des **vrais nombres** entre lesquels tu peux toujours en insérer un autre (1.5 mètres, 1.51 m, 1.512 m...).
+- **Discrète** = des **vrais nombres** mais limités à des valeurs entières (3 enfants, jamais 3.5).
+:::
+
+::: {.callout-important}
+## Le niveau de mesure dépend du codage, pas du phénomène
+L'âge en années, c'est **continu**. L'âge codé en 3 tranches (0-25 / 26-40 / 41+), c'est **ordinal**. Même phénomène, deux niveaux différents. À chaque variable, regarde **comment** elle est codée, pas seulement ce qu'elle représente.
+:::
+
+## Pourquoi le niveau de mesure est crucial
+
+| Importance | Pourquoi |
+|---|---|
+| **Théorique** | Formuler des hypothèses, opérationnaliser un concept |
+| **Méthodologique** | Choisir la **méthode d'analyse** appropriée |
+| **Empirique** | Choisir le bon **coefficient d'association**, interpréter correctement |
+
+Une hypothèse de **relation** (« plus X → plus Y ») exige X **et** Y **quantitatives ou ordinales**. Une hypothèse de **différence** (« si X catégoriel → alors Y... ») exige X **nominale** et Y de n'importe quel type.
+
+::: {.callout-warning}
+## Frontières floues
+Le niveau de mesure n'est pas toujours évident. Une échelle de Likert à 5 points est officiellement **ordinale**, mais on la traite souvent comme **quantitative** quand il y a 5+ catégories et qu'on suppose des distances égales. À l'examen : justifie ton choix.
+:::
+
+## Mini-quiz mental (slido du cours)
+
+| Variable | Niveau de mesure ? |
+|---|---|
+| Nombre de posts Instagram d'un parti | **Discrète** (valeurs entières, finies sur un intervalle) |
+| Nationalité | **Nominale** (suisse, française, etc., sans ordre) |
+| Niveau d'engagement politique sur 5 points | **Ordinale** (faible < moyen < fort) |
+
+::: {.callout-note}
+## Récapitulatif Ch.2
+- Une **donnée quantitative** = une observation rangée dans un fichier (lignes × colonnes).
+- Six distinctions clés : primaires/secondaires, individuelles/agrégées, échantillon/exhaustives, transversales/longitudinales, expérimentales/observationnelles, objectives/subjectives.
+- L'**erreur écologique** = conclure sur un individu à partir d'une moyenne de groupe.
+- Le **biais de désirabilité sociale** = répondre pour se présenter sous un jour favorable.
+- Quatre **niveaux de mesure** : nominal, ordinal, continu, discret. Ils conditionnent **toutes** les analyses ultérieures.
+- Le niveau de mesure dépend du **codage**, pas du phénomène.
+:::

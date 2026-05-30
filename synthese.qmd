@@ -1,0 +1,273 @@
+---
+title: "Synthèse"
+---
+
+::: {.callout-tip}
+## Ce que cette page apporte
+Toute la matière du cours condensée en **tableaux** et **schémas** : pipeline, types de questions, sources, niveaux de mesure, choix de test, critères de qualité, workflow d'examen. À utiliser pour les **dernières heures de révision**.
+:::
+
+## 1. Le pipeline de recherche en 7 étapes
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  1. IDENTIFICATION DE L'OBJET                                   │
+│     "Sur quoi je travaille ?" (intérêt, faisabilité)            │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  2. PROBLÉMATISATION & QUESTION DE RECHERCHE                    │
+│     "Que sait-on déjà ? Que veut-on savoir en plus ?"           │
+│     -> QR claire, faisable, pertinente                          │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  2 bis. CADRE THÉORIQUE & HYPOTHÈSES                            │
+│     Concepts, dimensions, mécanismes causaux                    │
+│     -> H1, H2... (vraisemblables, précises, falsifiables)       │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  3. OPÉRATIONNALISATION                                         │
+│     Concept -> Dimensions -> Indicateurs -> Variables           │
+│     -> Choix des méthodes d'analyse                             │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  4. COLLECTE DES DONNÉES                                        │
+│     Enquête / Contenu / Données existantes                      │
+│     Échantillonnage, mesures, questionnaires                    │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  5. ANALYSE                                                     │
+│     Préparation -> Univariée -> Bi/Multivariée -> Tests         │
+└───────────────────────────┬─────────────────────────────────────┘
+                            │
+┌───────────────────────────▼─────────────────────────────────────┐
+│  6. DISSÉMINATION                                               │
+│     Tableaux, graphiques, transparence, incertitude             │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## 2. Types de questions de recherche
+
+| Type | Logique | Méthode typique | Exemple |
+|---|---|---|---|
+| **Descriptive** | Décrire un seul phénomène ou son évolution | Univariée, bivariée (description) | « Comment évolue la consommation de presse écrite en Suisse ? » |
+| **Inférentielle (causale)** | Influence de X sur Y | Bi- et multivariée, régression | « Les usages d'Instagram influencent-ils la dépression ? » |
+| **Exploratoire** | Comprendre un domaine peu théorisé | Mixed methods (quali d'abord) | « Quels motifs poussent au binge-watching ? » |
+
+### Formule magique d'une QR inférentielle
+
+> *Dans quelle mesure est-ce que le phénomène X influence le phénomène Y ?*
+
+Trois sous-questions :
+1. Y a-t-il **vraiment** une influence ?
+2. **Quelle est sa force** ?
+3. Quel est son **sens** (positif/négatif) ?
+
+## 3. Sources de données : tableau comparatif
+
+| Source | Type | Avantages | Inconvénients | Échantillonnage typique |
+|---|---|---|---|---|
+| **Enquête par sondage** | Primaires, individuelles | Conçue pour ta QR ; contrôle sur les questions | Cher ; non-réponses ; désirabilité | Probabiliste (aléatoire, stratifié, grappes) ou non-probabiliste |
+| **Analyse de contenu** | Primaires, individuelles | Accès à des données non déclarées (presse, RS) | Codage long ; fiabilité à mesurer | Probabiliste sur le corpus |
+| **Données documentaires** | Primaires/secondaires | Source officielle, archivable | Format brut ; choix critiques | Par date, par mots-clés |
+| **Web scraping (API / parsing)** | Primaires, individuelles | Volume, rapidité, faible coût | Restrictions techniques ; éthique | Selon critères de la plateforme |
+| **Données secondaires** (FORS, OFS, ESS) | Secondaires | Échantillons grands et validés | Pas conçues pour ta QR ; opérationnalisation imposée | Déjà fait par les producteur·ice·s |
+| **Open Data** | Secondaires, souvent agrégées | Gratuit, public, large | Niveau agrégé → risque d'erreur écologique | Pas d'échantillonnage à faire |
+| **Application** | Primaires | Mesures longitudinales, capteurs | Coût de développement | Volontaires (souvent) |
+| **Don de données** | Primaires | Données personnelles riches | Échantillon auto-sélectionné | Volontaires |
+
+## 4. Niveaux de mesure et statistiques applicables
+
+### Distribution
+
+| Niveau | Tableau de fréquences | Graphique | Indicateurs (kurtosis, skewness) |
+|---|---|---|---|
+| Nominal | OK | Diagramme en bâtons | Incohérent |
+| Ordinal | OK | Diagramme en bâtons | Incohérent (sauf si traité comme quanti) |
+| Continu | Incohérent | **Histogramme** | OK |
+| Discret | Incohérent (sauf petite étendue) | Histogramme | OK |
+
+### Tendance centrale
+
+| Niveau | Mode | Médiane | Moyenne |
+|---|---|---|---|
+| Nominal | OK | Incohérent | Incohérent |
+| Ordinal | OK | OK | Incohérent (sauf si traité comme quanti) |
+| Continu | OK | OK | OK |
+| Discret | OK | OK | Incohérent (mais utilisé) |
+
+### Dispersion
+
+| Niveau | Étendue | IQR | Écart-type |
+|---|---|---|---|
+| Nominal | Incohérent | Incohérent | Incohérent |
+| Ordinal | Incohérent (sauf si quanti) | Incohérent (sauf si quanti) | Incohérent (sauf si quanti) |
+| Continu | OK | OK | OK |
+| Discret | OK | OK | Incohérent (mais utilisé) |
+
+## 5. Quel test pour quel cas ?
+
+### Analyse bivariée selon les niveaux de mesure
+
+| | Variable nominale | Variable ordinale | Variable quantitative |
+|---|---|---|---|
+| **Variable nominale** | **Tableau croisé** + χ² + φ/V de Cramér | **Tableau croisé** + χ² | **Analyse de moyenne** : t-test (2 grp) ou ANOVA (3+ grp) |
+| **Variable ordinale** | Tableau croisé | **Corrélation de Spearman** | Analyse de moyenne |
+| **Variable quantitative** | Analyse de moyenne | Analyse de moyenne | **Corrélation de Pearson** |
+
+### Analyse multivariée : choix de la régression
+
+| VD (Y) | Type de régression | Particularité |
+|---|---|---|
+| **Quantitative** | **Linéaire** | OLS, coefficients en unités de Y, R² |
+| **Dichotomique (0/1)** | **Logistique binaire / binomiale** | Logit ou probit, odds ratios |
+| **Nominale 3+ catégories** | **Multinomiale** | Logits multiples par rapport à une référence |
+| **Ordinale** | **Ordinale** ou linéaire si traitée comme quanti | Conserve l'ordre |
+
+### Flowchart de décision pour le test
+
+```
+Combien de variables ?
+│
+├── 1 variable : ANALYSE UNIVARIÉE
+│   │
+│   └── Décrire distribution / tendance centrale / dispersion
+│       Quel niveau de mesure ? -> table ci-dessus
+│
+├── 2 variables : ANALYSE BIVARIÉE
+│   │
+│   ├── 2 nominales        -> Tableau croisé + chi-carré
+│   ├── 1 nominale + 1 quanti -> t-test (2 grp) ou ANOVA (3+ grp)
+│   ├── 2 ordinales       -> Corrélation de Spearman
+│   └── 2 quantitatives   -> Corrélation de Pearson + scatterplot
+│
+└── 3+ variables : MULTIVARIÉE / RÉGRESSION
+    │
+    ├── Y quanti        -> Régression linéaire (OLS)
+    ├── Y dichotomique  -> Régression logistique (logit / probit)
+    ├── Y nominale 3+  -> Multinomiale
+    └── Y ordinale     -> Ordinale (ou linéaire si traitée comme quanti)
+```
+
+## 6. Critères de qualité
+
+| Critère | Définition | Comment l'évaluer |
+|---|---|---|
+| **Fiabilité (reliability)** | Mesure cohérente quand on la répète | Test intra-codeur, inter-codeur (alpha de Krippendorff, kappa de Cohen ≥ 0.7) ; alpha de Cronbach pour les échelles ≥ 0.7 |
+| **Validité interne** | Mesure ce qu'elle prétend mesurer | Diversité des sources, tester explications alternatives, mesures établies |
+| **Validité externe** | Généralisable au-delà de l'échantillon | Comparer avec d'autres données, autres contextes |
+| **Reproductibilité** | Mêmes données + même code = mêmes résultats | Code annoté, données partagées, document méta |
+| **Réplicabilité** | Refaire l'étude avec nouvelles données = résultats similaires | Protocole publié, design transparent |
+| **Robustesse** | Résultats tiennent sous méthodes alternatives | Analyses de sensibilité, modèles emboîtés |
+
+## 7. Les 4 questions pour évaluer la causalité
+
+1. **Sens de la relation** : X cause-t-il Y ou Y cause-t-il X ? (causalité inversée)
+2. **Causes concurrentes** : existe-t-il une variable Z qui influence à la fois X et Y ? (confondante)
+3. **Sélection de l'échantillon** : la sélection est-elle liée à la VD ? (biais de sélection)
+4. **Niveau d'analyse** : individuel vs. agrégé ? (erreur écologique)
+
+## 8. Sources d'erreur dans une enquête (et solutions)
+
+| Erreur | Cause | Solution |
+|---|---|---|
+| **D'échantillonnage** | Écart paramètre observé vs. réel | Taille ↑, pondération |
+| **De validité (spécification)** | Question ne mesure pas le concept | Améliorer opérationnalisation |
+| **Non-réponse** | Refus de participer ou de répondre | Raccourcir, éviter questions sensibles |
+| **Désirabilité sociale** | Répondre socialement acceptable | Enquête anonyme, formulation neutre |
+| **Centriste** | Cocher le milieu | Échelle paire, inversion |
+| **Acquiescence** | Dire oui à tout | Questions à sens inverse |
+| **Effet d'ordre** | Une question influence la suivante | Ordre logique réfléchi |
+
+## 9. Lire un tableau de régression en 4 étapes
+
+| Étape | Question |
+|---|---|
+| **1** | Quel **type** de régression ? (linéaire / logistique / multinomiale) → présence d'OR = logistique |
+| **2** | **Qualité globale** : R² (linéaire) ou pseudo-R² (logistique) ; N |
+| **3** | Pour **chaque coefficient** : signe → magnitude → significativité (p, étoiles) → catégorie de référence (dummies) |
+| **4** | **Conclusion** : hypothèse rejetée, non-rejetée, partiellement validée |
+
+## 10. Workflow examen
+
+::: {.callout-important}
+## Face à une question d'examen, je fais quoi ?
+
+### Question QCM (5 pts)
+1. **Lis** très attentivement la consigne (1 ou plusieurs réponses ?).
+2. **Élimine** les options clairement fausses.
+3. **Ne devine pas** si points négatifs sur multi-réponses.
+
+### Question courte (1 pt, 2-3 phrases)
+1. **Identifie** le concept clé demandé.
+2. **Définis-le** précisément (en 1 phrase).
+3. **Donne** un exemple ou une distinction utile.
+4. **Pas** de remplissage : dense et précis.
+
+### Question de réflexion (2.5 pts, 2 paragraphes)
+1. **Pose** les enjeux en quelques mots.
+2. **Mobilise** 2-3 concepts du cours.
+3. **Prends position** (rejet, validation, nuance).
+4. **Conclus** avec une ouverture critique.
+:::
+
+### Face à un tableau de régression à interpréter
+
+| Réflexe | Action |
+|---|---|
+| 1. **Quelle est la VD ?** | Notée en haut du tableau |
+| 2. **Quel type de régression ?** | Cherche : odds ratios → logistique ; coefficients seuls → linéaire |
+| 3. **Qualité globale ?** | R² ou pseudo-R² + N + F-test |
+| 4. **Pour 2-3 prédicteurs significatifs** | Signe + magnitude + étoiles + interprétation en contexte |
+| 5. **Conclusion sur l'hypothèse** | Validée / rejetée / nuancée |
+
+### Face à une question sur l'éthique ou la qualité
+
+| Réflexe | Action |
+|---|---|
+| Identifier **quelle qualité** est en jeu | Validité interne ? Externe ? Fiabilité ? Reproductibilité ? |
+| Mobiliser **un critère du cours** | 4 questions causalité, biais types, alpha de Cronbach... |
+| Donner un **contre-exemple concret** | Pour illustrer |
+
+### Face à une question sur la causalité
+
+| Réflexe | Action |
+|---|---|
+| **Identifier** si on prétend à la causalité | « X cause Y » dans la question ? |
+| **Rappeler** : corrélation ≠ causalité | C'est LA phrase à connaître |
+| **Lister** les 4 questions | Sens, causes concurrentes, sélection, niveau d'analyse |
+| **Conclure** | Quelle inférence est licite, laquelle ne l'est pas |
+
+## 11. Vocabulaire d'examen à connaître par cœur
+
+| Concept | Définition rapide | Slogan |
+|---|---|---|
+| **Hypothèse falsifiable** | Peut être réfutée par des données | « Si pas testable, pas scientifique » |
+| **P-value** | Proba d'observer ça si H0 vraie | « < 0.05 → rejet de H0 » |
+| **Niveau de mesure** | Type d'info codée (nom/ord/cont/disc) | « Détermine TOUT le reste » |
+| **Erreur écologique** | Inférence individu ← agrégé | « Pays riche ≠ riche du pays » |
+| **Désirabilité sociale** | Répondre socialement acceptable | « Sport ? Oui, beaucoup ! (en vrai non) » |
+| **Causalité ≠ corrélation** | Lien ≠ causalité | « Glaces et noyades : c'est l'été ! » |
+| **Validité ≠ fiabilité** | Bonne mesure ≠ mesure stable | « Précis ≠ juste » |
+| **Référence (dummy)** | Catégorie omise dans les régressions | « Toujours par rapport à la réf » |
+| **Odds ratio** | Facteur multiplicatif sur les chances | « OR = 2 : x2 ; OR = 0.5 : ÷2 » |
+| **R² ajusté** | R² pénalisé pour comparer modèles | « R² brut gonfle toujours » |
+
+## 12. Synthèse en une phrase par séance
+
+| Séance | En une phrase |
+|---|---|
+| **S1** | Le cours suit un **pipeline en 7 étapes** ; QR claire/faisable/pertinente ; hypothèse falsifiable. |
+| **S2** | **Niveau de mesure** (nominal/ordinal/continu/discret) détermine toutes les analyses ultérieures. |
+| **S3** | Sources multiples (enquête, contenu, data) ; échantillonnage probabiliste vs. non-probabiliste ; questions objectives, fiables, valides. |
+| **S4** | Coder, **codebook**, recoder sans écraser, échelles (alpha de Cronbach ≥ 0.7), décrire l'échantillon. |
+| **S5** | Analyse de contenu = unités + codebook + codage systématique + qualité (fiabilité Krippendorff ≥ 0.7 + validité). |
+| **S6** | Univariée (distribution/tendance/dispersion), bivariée (tableau croisé, moyennes, corrélation), multivariée (contrôle). |
+| **S7** | **Régression linéaire** (Y quanti) vs. **logistique** (Y dichotomique). Lire β, p, R², OR, interactions. |
+| **S8** | Lire des tableaux réels : signe + magnitude + significativité + R² + N + conclusion. |
+| **S9** | Qualité = reproductibilité + validité + causalité maîtrisée + incertitude transparente + objectivation réfléchie. |
+| **S10** | Mixed methods ; examen 60 min / 15 pts / 3 parties. |

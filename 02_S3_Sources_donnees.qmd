@@ -1,0 +1,271 @@
+---
+title: "S3 - Sources de données"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Les sources de données quantitatives sont multiples (enquêtes, documents, web, open data, don de données), mais chacune oblige le·la chercheur·euse à **planifier** : choix de la source, échantillonnage, formulation des questions, et justification de chaque décision.
+:::
+
+Le **point à retenir** : *les sources de données quantitatives sont multiples, mais leur récolte demande un savoir-faire spécifique et une planification poussée. De nombreux choix doivent être justifiés en commençant par le choix des sources jusqu'à l'unité d'analyse en passant par un éventuel échantillonnage.*
+
+Cette séance couvre **deux blocs** :
+
+1. les **sources documentaires et numériques** (script 1, lecture obligatoire) ;
+2. les **enquêtes par sondage** (questionnement, échantillonnage).
+
+## Bloc A : Sources documentaires et numériques (script 1)
+
+### Quatre vérifications avant toute collecte
+
+Quelle que soit la source, il faut se demander :
+
+| Vérification | Question concrète |
+|---|---|
+| **Accessibilité** | Les données sont-elles disponibles ? En entier ou en partie ? Quelle fraction de la population est représentée ? |
+| **Coûts** | Temps, argent, infrastructure ? |
+| **Possibilités de collecte / analyse** | Quels outils techniques ? Données individuelles ou agrégées ? |
+| **Adéquation** | Les données permettent-elles vraiment d'opérationnaliser le concept étudié ? |
+
+Et **deux questions critiques** :
+
+- Comment les données ont-elles été produites (par qui, avec quel but, quels biais possibles) ?
+- Y a-t-il des **enjeux éthiques** (consentement, anonymat, protection des données) ?
+
+### Sources documentaires : presse, audiovisuel, réseaux sociaux
+
+| Source | Accès | Risques |
+|---|---|---|
+| **Presse écrite / en ligne** | Bases de données (Swissdox, Nexis Uni, Factiva) via biblio universitaire ou VPN. Recherche par mots-clés + opérateurs booléens (AND, OR), troncatures (`*`), expressions exactes (`"..."`) | Contenu en ligne modifiable → garder copies hors ligne, noter la date de récolte |
+| **Audiovisuel** | Médiathèques RTS/SRF, streaming, archives, enregistrement personnel | Disponibilité temporaire seulement |
+| **Réseaux sociaux** | Captures d'écran, extensions de navigateur, **API**, parsing | Éthique : consentement des utilisateur·ice·s |
+
+### Unité de collecte vs. unité d'analyse
+
+Distinction **fondamentale** à connaître à l'examen :
+
+| Niveau | Définition | Exemple |
+|---|---|---|
+| **Unité de collecte** (sampling unit) | Le matériel récupéré, défini par la QR | Un article de presse, un post TikTok |
+| **Unité d'analyse** (coding unit) | L'unité statistique codée, une ligne dans la base | Un paragraphe, un mot, une revendication |
+| **Unité de contexte** | Ce qui entoure l'unité d'analyse pour l'interpréter | La vidéo entière du post |
+
+::: {.callout-tip collapse="true"}
+## En simple
+L'unité de collecte, c'est **ce que tu attrapes** avec ton filet (articles, posts, vidéos). L'unité d'analyse, c'est **ce que tu mesures** à l'intérieur (un acteur, une émotion, un thème). L'unité de contexte, c'est **le décor** qui t'aide à comprendre (la vidéo entière, l'article complet). Tu peux avoir 100 articles (collecte) mais 700 revendications codées (analyse).
+:::
+
+#### Découpage parallèle vs. hiérarchique
+
+| Découpage | Logique | Exemple |
+|---|---|---|
+| **Parallèle** | Plusieurs unités d'analyse autonomes par unité de collecte, chacune avec son codebook | Un post TikTok → analyse musique + texte + action séparément |
+| **Hiérarchique** | Décomposition en niveaux imbriqués | Article → §1, §2, §3 ; chaque § analysé en lien avec l'article |
+
+### Échantillonnage probabiliste (sources documentaires)
+
+| Technique | Principe | Exemple |
+|---|---|---|
+| **Aléatoire** | Tirage au sort dans la population | Tirer 50 articles parmi 5 000 au hasard |
+| **Stratifié** | Diviser en strates (langue, type), puis tirer au sort dans chaque strate. Proportionnel (respect des poids réels) ou disproportionnel (égalité par strate) | 60 % en allemand + 40 % en français ; ou 50/50 |
+| **Systématique / par liste** | Chaque n-ième unité (tous les 10) | 1 article sur 10 sur la liste |
+| **Par grappes** | Tirage de sous-groupes naturels, puis tout le groupe est inclus | Tirer 4 « semaines naturelles » dans l'année, coder tous les articles de ces 4 semaines |
+
+::: {.callout-important}
+## Le pré-requis de l'échantillonnage probabiliste
+Pour qu'un échantillon soit probabiliste, il faut **connaître la population totale** (ou avoir une base d'échantillonnage = une liste complète). Sans ça, on tombe en **non-probabiliste** (volontaires, quotas, boule de neige) → impossible de calculer marges d'erreur.
+:::
+
+### Web scraping : API vs. parsing
+
+| Technique | Principe |
+|---|---|
+| **API** (Application Programming Interface) | Tu simules une application qui dialogue avec un service (TikTok, Wikipedia). Tu obtiens des clés et tokens, puis tu interroges directement les données. |
+| **Parsing** | Tu décomposes le code HTML d'une page web pour extraire le texte des nœuds qui t'intéressent. Tu suis des « paths » (chemins) dans l'arborescence du document. |
+
+**À l'examen** : il ne faut pas connaître la marche à suivre détaillée, mais la **différence de logique** entre les deux. API = dialogue applicatif structuré ; parsing = scrapping du code HTML brut.
+
+### Avantages/inconvénients des données numériques
+
+| + | − |
+|---|---|
+| Accessibilité | Accès parfois restreint (quota de requêtes, limites) |
+| Faible coût | Algorithmes biaisent ce que tu vois |
+| Variété et amplitude | Risque de se perdre dans la masse |
+| Mise à jour quasi-temps réel | Durée de vie variable → archiver hors ligne ! (Wayback Machine) |
+
+### Autres sources : open data, applications, don de données
+
+| Source | Logique | Exemple |
+|---|---|---|
+| **Open Data** (et **Open Government Data**, OGD) | Données publiques mises à disposition gratuitement. Données agrégées pour préserver l'anonymat | opendata.swiss |
+| **Applications** | App créée pour collecter données (capteurs + sondages). Coûteux à développer | Étude longitudinale via appli santé |
+| **Don de données** | RGPD oblige les plateformes à donner aux user·ice·s leurs propres données → ils peuvent les transmettre à des chercheur·euse·s | Donner ses données Spotify pour étude des préférences musicales |
+
+::: {.callout-warning}
+## Don de données et représentativité
+L'échantillon obtenu par don est **petit et auto-sélectionné** (seuls les motivé·e·s participent). Cela restreint la portée des conclusions et oblige à clarifier l'éthique (consentement, anonymisation, stockage sécurisé).
+:::
+
+## Bloc B : Enquêtes quantitatives standardisées
+
+### Définition et moyens
+
+Une **enquête standardisée** (par sondage) sert à la recherche scientifique, mais aussi à l'administration, au marketing et aux médias. Elle se distingue de l'enquête qualitative par :
+
+- un **but descriptif ou explicatif** (pas exploratoire) ;
+- un **nombre d'observations élevé** ;
+- une **structuration haute** (questions fixes, mêmes catégories pour tout le monde) ;
+- une **influence minimale de l'enquêteur·ice**.
+
+Quatre **moyens** de récolte :
+
+| Moyen | + | − |
+|---|---|---|
+| Face-à-face | Fiable, suivi | Cher, biais d'enquêteur |
+| Téléphone | Couverture large | Refus, biais de génération |
+| Par écrit (auto-administré) | Anonyme, pas cher | Taux de réponse faible |
+| En ligne (auto-administré) | Rapide, économique | Biais de couverture (seuls les connectés répondent) |
+
+### Échantillonnage : pourquoi et comment
+
+**Pourquoi échantillonner ?** Une enquête **exhaustive** (interroger toute la population) est coûteuse ou impossible. On utilise une **fraction représentative** = échantillon. C'est l'idée centrale de l'inférence statistique.
+
+#### Mode de prélèvement
+
+| Catégorie | Type | Définition |
+|---|---|---|
+| **Probabiliste** | Aléatoire | Tirage au sort dans la liste complète |
+|  | Stratifié | Division en strates importantes (langue, âge), puis tirage |
+|  | Par grappes | Tirage de groupes naturels (classes, quartiers) entiers |
+| **Non-probabiliste** | De commodité | Volontaires |
+|  | Par quotas | Recrutement des X premiers volontaires par catégorie |
+|  | Boule de neige | Les participant·e·s en recrutent d'autres |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- **Probabiliste** = chaque membre de la population a une chance **connue, non nulle** d'être tiré au sort. Tu peux calculer marges d'erreur et inférer.
+- **Non-probabiliste** = pas de tirage au sort vrai. Plus rapide et moins cher, mais pas de marges d'erreur, et l'échantillon peut être très biaisé.
+:::
+
+#### Taille de l'échantillon
+
+Pour un échantillon probabiliste parfaitement aléatoire, la taille dépend de :
+
+| Paramètre | Définition |
+|---|---|
+| **Taille de la population** | Ex. 9 mio. d'habitants en Suisse |
+| **Niveau de confiance** | Probabilité que l'échantillon reflète bien la population (souvent 95 % ou 99 %) |
+| **Marge d'erreur** | Écart toléré entre échantillon et population (souvent 3 %) |
+
+**Exemple** : sur 1 070 personnes représentatives interrogées, 60 % disent vouloir voter oui. Avec une marge d'erreur de 3 % et 95 % de confiance, **57-63 % de la population** veut voter oui.
+
+::: {.callout-warning}
+## Échantillon net vs. brut
+- **Brut** = ce que tu vises (échantillon net) **+ non-réponses** anticipées.
+- **Net** = ce que tu obtiens réellement après non-réponses.
+
+Toujours surévaluer le brut pour atteindre le net visé.
+:::
+
+### Formulation des questions
+
+#### Trois critères de qualité (qui valent **aussi** pour les catégories de réponse)
+
+| Critère | Définition |
+|---|---|
+| **Objectivité** | La question est comprise de la même manière par tout le monde |
+| **Fiabilité** | À mesures répétées, la question produit le même résultat |
+| **Validité** | On mesure bien ce qu'on prétend mesurer |
+
+#### Degré d'ouverture
+
+| Type | Réponses | Avantage | Inconvénient |
+|---|---|---|---|
+| **Fermée** | Catégories fixes ou échelle | Objectivité d'évaluation | Perte d'info, format imposé |
+| **Semi-ouverte** | Catégories + « autre : ____ » | Compromis | Codage supplémentaire |
+| **Ouverte** | Pas de réponse prédéfinie | Réponses authentiques | Faible objectivité (sauf pour caractéristiques métriques : âge, revenu) |
+
+#### Catégories de réponse → niveau de mesure
+
+| Variable | Niveau | Catégories de réponse |
+|---|---|---|
+| Nominale | Nominal | Échelle nominale ou question (semi-)ouverte |
+| Ordinale | Ordinal | Échelle ordinale (5 ou 7 catégories, ou 0 à 10) |
+| Quantitative | Continu / discret | Échelle à X catégories ou question ouverte sur métrique |
+
+#### Questions « seules » vs. batteries d'items + échelle de Likert
+
+Pour mesurer une **attitude** (concept abstrait), une seule question ne suffit pas. On utilise une **batterie d'items** :
+
+- Plusieurs propositions concernant l'objet d'attitude (certaines favorables, d'autres défavorables) ;
+- Réponses sur une **échelle de Likert** (souvent 5 échelons : fortement en désaccord → fortement d'accord) ;
+- On peut additionner les scores pour obtenir un **index** par individu ;
+- La cohérence de l'échelle se mesure avec l'**alpha de Cronbach** (seuil acceptable : 0.7, vu en S4).
+
+### Types de questions
+
+| Type | Logique | Exemple |
+|---|---|---|
+| **Attitude** | « Veuillez indiquer dans quelle mesure vous êtes d'accord avec... » | Affirmation + échelle de Likert (sans négations !) |
+| **Comportement rétrospectif** | « Avez-vous voté lors des dernières élections ? » | Oui / Non / Je ne sais plus |
+| **Comportement prospectif** | « Pour quel parti voterez-vous ? » | Liste de partis |
+| **Fréquence** | « Combien d'heures avez-vous passé sur les réseaux sociaux ? » | Tranches OU question ouverte (heures/jour) |
+| **Socio-démographique** | Âge, sexe, revenu, formation | Plutôt à la fin du questionnaire |
+
+### Structure d'un questionnaire
+
+| Bloc | Contenu |
+|---|---|
+| **1. Introduction** | But de l'étude (sans dévoiler les hypothèses !), durée, anonymat, contact |
+| **2. Partie principale** | Quelques questions faciles d'abord, puis blocs thématiques, questions filtres |
+| **3. Socio-démographiques** | Vers la fin |
+| **4. Remerciement** | Éventuellement question ouverte pour commentaires |
+
+### Sources d'erreur
+
+| Erreur | Cause | Solution |
+|---|---|---|
+| **D'échantillonnage** | Écart entre paramètre observé et paramètre vrai | Augmenter taille échantillon, pondération |
+| **De validité (spécification)** | La question ne mesure pas vraiment le concept | Améliorer opérationnalisation |
+| **Non-réponse** (survey ou item) | Refus de participer ou de répondre à une question | Raccourcir, éviter questions sensibles |
+| **Désirabilité sociale** | Réponses « socialement acceptables » | Enquête en ligne/écrit, formulation neutre |
+| **Centriste** | Choisir l'option du milieu | Catégories alternatives, inverser le sens |
+| **Acquiescence** | Dire oui à tout | Questions à sens inverse |
+| **Effet d'ordre** | Une question influence la suivante | Ordre logique réfléchi |
+
+::: {.callout-warning}
+## Théorie du satisficing
+Les participant·e·s ne cherchent pas la **meilleure** réponse, ils cherchent une réponse **suffisante** avec un minimum d'effort. Plus le questionnaire est long et complexe, plus le satisficing augmente → réponses superficielles, biais centriste, abandons.
+:::
+
+### Pré-test
+
+Avant de lancer une enquête à grande échelle, **toujours** faire un pré-test (règle générale : 10 % des participant·e·s visé·e·s). Objectifs :
+
+- Les questions sont-elles **comprises** ?
+- Y a-t-il de la **variance** dans les réponses (sinon question inutile) ?
+- Ai-je **oublié** quelque chose d'important ?
+- Quel est le **taux de réponse** et le **temps moyen** ?
+
+Pour une recherche expérimentale, c'est une **étude pilote** (le design fonctionne-t-il ?).
+
+## Sources de données secondaires (pré-existantes)
+
+| Type | Exemples |
+|---|---|
+| **Suisses (sciences sociales)** | FORS (forscenter.ch) : Panel Suisse des Ménages, Selects, Vox/Voto |
+| **Internationales** | World Value Survey, European Social Survey |
+| **Statistiques officielles** | OCDE, Eurostat, OFS (Office fédéral de la statistique) |
+
+::: {.callout-note}
+## Récapitulatif Ch.3
+- Avant collecte : vérifier **accessibilité, coûts, possibilités, adéquation** ; questionner production et éthique.
+- **Unité de collecte** ≠ **unité d'analyse**.
+- Échantillonnage **probabiliste** (aléatoire, stratifié, grappes, systématique) vs. **non-probabiliste** (commodité, quotas, boule de neige).
+- Une enquête standardisée se définit par sa **structuration haute** et son **influence minimale** de l'enquêteur·ice.
+- Une bonne question : **objective, fiable, valide**. Catégories de réponse : **disjointes, exhaustives**.
+- Échelle de Likert = batterie d'items mesurant une attitude → score additionné = index.
+- Sources d'erreur principales : échantillonnage, validité, non-réponse, **désirabilité sociale**, centriste, acquiescence, ordre.
+- Toujours faire un **pré-test**.
+:::

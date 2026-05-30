@@ -1,0 +1,144 @@
+---
+title: "S10 - Conclusion et mixed methods"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Bilan du cours, **infos examen** détaillées, et ouverture sur les **mixed methods** : combiner quanti et quali pour explorer ou approfondir.
+:::
+
+## Bloc A — Infos examen (à connaître)
+
+### Modalités
+
+| Élément | Détail |
+|---|---|
+| **Format** | Examen écrit |
+| **Durée** | **60 minutes** |
+| **Période** | Session d'été 2026 (date communiquée par la Faculté ; généralement le 01/06/2026 à 17h00, à vérifier) |
+| **Note** | 100 % de la note finale |
+| **Matière** | Cours + lectures obligatoires (les 3 scripts) |
+| **Matériel autorisé** | Aucun, sauf dictionnaire bilingue **non-annoté** pour étudiant·e·s non-francophones |
+
+### Structure de l'examen (15 points)
+
+| Partie | Points | Format | Objectif |
+|---|---|---|---|
+| **1. QCM** | 5 pts (10 questions × 0.5) | Choix multiple | Compréhension **passive** : vocabulaire, distinctions de base |
+| **2. Questions courtes** | 5 pts (5 questions × 1) | Réponses 2-3 phrases | Compréhension **active**, synthèse, précision |
+| **3. Questions de réflexion** | 5 pts (2 questions × 2.5) | Deux paragraphes | Réflexion, **analyse critique** |
+| **Total** | **15 pts** |  |  |
+
+::: {.callout-important}
+## Stratégie de copie
+- **QCM** : indication donnée si plusieurs réponses possibles ; **points négatifs** si erreur sur les multi-réponses. Lis bien la consigne.
+- **Questions courtes** : 2-3 phrases denses valent mieux qu'un paragraphe vague. Vise la **précision** : nomme le concept, définis-le brièvement, donne l'exemple.
+- **Réflexion** : deux paragraphes structurés. Pose les enjeux, prends position, justifie. Mobilise les concepts du cours.
+:::
+
+### Conseils pour réviser efficacement
+
+1. **Les 7 étapes du pipeline** : à savoir réciter de mémoire.
+2. **Niveaux de mesure × méthode** : connaître la matrice par cœur (S6).
+3. **Lire un tableau de régression** (linéaire et logistique) : signes, étoiles, R²/pseudo-R², OR (S7-S8).
+4. **Vocabulaire** des biais : désirabilité, satisficing, sélection, écologique.
+5. **Distinctions clés** : fiabilité vs. validité ; corrélation vs. causalité ; reproductibilité vs. réplicabilité ; quanti vs. quali.
+
+## Bloc B — Retour sur 2 points difficiles du cours
+
+### Régression probit (S7/8)
+
+Pour rappel :
+
+- Principe **similaire** à la régression logistique.
+- **Fonction probit** différente de logit (basée sur la loi normale plutôt que la distribution logistique).
+- **Pas d'odds ratios** (impossible à interpréter ainsi).
+- **Signe** et **significativité** des effets : **identiques** à logit.
+- À l'examen : savoir reconnaître qu'on parle de probit, et savoir qu'on l'interprète comme logit (signe + p).
+
+### Échantillonnage (script 1 et S3) — rappel des cas
+
+| Cas type | Échantillonnage adapté |
+|---|---|
+| « Savoir si les étudiant·e·s du cours trouvent que je parle trop vite, et si ça varie entre romands et alémaniques » | **Enquête exhaustive** (petite population, accessible) |
+| « Savoir si la perf en maths dépend des profs ou des aptitudes » | **Par grappes** (par classes, en gardant tous les élèves de la classe) |
+| « Savoir si les thèmes de la presse varient entre semaine et week-end » | **Par grappes** (jours naturels regroupés) |
+
+## Bloc C — Mixed methods
+
+### Idée centrale
+
+Combiner **méthodes qualitatives** et **quantitatives** dans une même recherche. Particulièrement utile quand :
+
+- Le **domaine est peu exploré** → manque de base théorique pour formuler des hypothèses et instruments de mesure standardisés ;
+- Les **résultats quantitatifs** couvrent insatisfaisamment certains aspects (surprenants, contradictoires, non-illustratifs).
+
+### Deux logiques principales
+
+#### 1. Étude préparatoire / préliminaire
+
+**Démarche** : étude qualitative en amont (procédé **inductif**) → étude quantitative principale (procédé **déductif**).
+
+**Exemple** : étude sur le **binge-watching** (Fahr et al.) — *Quels motifs poussent les individus à regarder plusieurs épisodes d'affilée ?*
+
+1. **Étape qualitative** : focus groups → construction d'une **échelle de motifs**.
+2. **Étape quantitative** : tester l'effet des différents motifs sur la probabilité d'avoir un comportement de binge-watching problématique.
+
+#### 2. Approfondissement
+
+**Démarche** : étude quantitative principale → étude qualitative pour explorer des résultats surprenants.
+
+**Exemple** : étude sur le **news-tagging** (Kümpel, 2019) — *Qu'est-ce qui pousse les utilisateur·ice·s de Facebook à consulter des news ?*
+
+1. **Étape quantitative expérimentale** : montre que le « tagging » (être mentionné sous un post) est le prédicteur le plus important.
+2. **Étape qualitative (entretiens)** : montre que les user·ice·s tagguent quelqu'un quand ils·elles pensent que ça l'intéressera — donc le « tagging » n'est pas une cause simple mais un **signal social complexe**.
+
+::: {.callout-tip collapse="true"}
+## En simple
+- **Mixed methods inductif → déductif** : tu explores avec du quali (focus groups, entretiens) pour comprendre la diversité du phénomène, puis tu testes à grande échelle avec du quanti.
+- **Mixed methods déductif → inductif** : tu trouves un résultat quanti, mais tu veux **comprendre pourquoi** ; le quali permet d'aller voir derrière les chiffres.
+
+Dans les deux cas, on ne se contente **pas** d'une seule méthode : la combinaison renforce la robustesse et la profondeur.
+:::
+
+### Quand recourir aux mixed methods ?
+
+| Situation | Approche conseillée |
+|---|---|
+| Domaine peu théorisé | **Quali d'abord** (exploration), **quanti ensuite** (test) |
+| Résultat quanti contre-intuitif | **Quali après** pour interpréter |
+| Besoin de typologie + de magnitude | **Quali pour types + quanti pour comptage** |
+| Validation par triangulation | **Quanti + quali en parallèle** sur le même objet |
+
+### Limites et défis
+
+| Limite | Détail |
+|---|---|
+| **Compétences** | Maîtriser les deux méthodes |
+| **Temps et coût** | Doubler les efforts de collecte et d'analyse |
+| **Cohérence** | Articuler les résultats des deux approches sans incohérence épistémologique |
+
+## Bloc D — Que retenir du cours ?
+
+Le cours t'a appris à :
+
+1. **Formuler** une question de recherche quantitative claire, faisable, pertinente.
+2. **Identifier** la source de données adaptée à la QR (enquête, contenu, données existantes).
+3. **Opérationnaliser** un concept abstrait en variables mesurables.
+4. **Préparer** des données (codage, codebook, recodages, pondération).
+5. **Décrire** une variable (univariée), tester un lien (bivariée), modéliser (multivariée).
+6. **Interpréter** une régression (linéaire ou logistique) avec significativité et taille d'effet.
+7. **Critiquer** la qualité d'une recherche : validité, fiabilité, causalité, incertitude.
+8. **Communiquer** les résultats avec rigueur et transparence.
+
+Ce n'est pas une boîte à outils statique : c'est un **regard critique** sur la production de connaissances quantitatives — que tu produises les tiennes ou que tu lises celles des autres.
+
+::: {.callout-note}
+## Récapitulatif Ch.10
+- Examen : 60 min, 15 pts, 3 parties (QCM, courtes, réflexion). Aucun matériel sauf dico.
+- **Probit** = comme logit, sans OR, signe et p identiques.
+- **Mixed methods** = combiner quali et quanti :
+  - **Préparatoire** : quali d'abord (induction) → quanti (déduction).
+  - **Approfondissement** : quanti d'abord → quali pour explorer les surprises.
+- Le cours t'arme pour **produire** des recherches quanti rigoureuses **et lire critiquement** celles des autres.
+:::

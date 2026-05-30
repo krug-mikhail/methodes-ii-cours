@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>S4 - Préparation des données d’enquête – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./03_S4_Preparation_donnees.html">S4 - Préparation des données d’enquête</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#une-fois-lenquête-terminée" id="toc-une-fois-lenquête-terminée" class="nav-link active" data-scroll-target="#une-fois-lenquête-terminée"><span class="header-section-number">1</span> Une fois l’enquête terminée</a></li>
+  <li><a href="#des-questions-aux-variables" id="toc-des-questions-aux-variables" class="nav-link" data-scroll-target="#des-questions-aux-variables"><span class="header-section-number">2</span> Des questions aux variables</a>
+  <ul class="collapse">
+  <li><a href="#nommer-les-variables" id="toc-nommer-les-variables" class="nav-link" data-scroll-target="#nommer-les-variables"><span class="header-section-number">2.1</span> Nommer les variables</a></li>
+  <li><a href="#attribuer-des-codes-aux-réponses" id="toc-attribuer-des-codes-aux-réponses" class="nav-link" data-scroll-target="#attribuer-des-codes-aux-réponses"><span class="header-section-number">2.2</span> Attribuer des codes aux réponses</a></li>
+  <li><a href="#garder-une-trace-ne-jamais-écraser" id="toc-garder-une-trace-ne-jamais-écraser" class="nav-link" data-scroll-target="#garder-une-trace-ne-jamais-écraser"><span class="header-section-number">2.3</span> Garder une trace : ne jamais écraser</a></li>
+  </ul></li>
+  <li><a href="#le-codebook" id="toc-le-codebook" class="nav-link" data-scroll-target="#le-codebook"><span class="header-section-number">3</span> Le codebook</a>
+  <ul class="collapse">
+  <li><a href="#contenu" id="toc-contenu" class="nav-link" data-scroll-target="#contenu"><span class="header-section-number">3.1</span> Contenu</a></li>
+  <li><a href="#exemple-type" id="toc-exemple-type" class="nav-link" data-scroll-target="#exemple-type"><span class="header-section-number">3.2</span> Exemple type</a></li>
+  </ul></li>
+  <li><a href="#les-recodages" id="toc-les-recodages" class="nav-link" data-scroll-target="#les-recodages"><span class="header-section-number">4</span> Les recodages</a>
+  <ul class="collapse">
+  <li><a href="#possibilités-classiques" id="toc-possibilités-classiques" class="nav-link" data-scroll-target="#possibilités-classiques"><span class="header-section-number">4.1</span> Possibilités classiques</a></li>
+  <li><a href="#bonnes-pratiques" id="toc-bonnes-pratiques" class="nav-link" data-scroll-target="#bonnes-pratiques"><span class="header-section-number">4.2</span> Bonnes pratiques</a></li>
+  </ul></li>
+  <li><a href="#construire-une-échelle-index" id="toc-construire-une-échelle-index" class="nav-link" data-scroll-target="#construire-une-échelle-index"><span class="header-section-number">5</span> Construire une échelle (index)</a>
+  <ul class="collapse">
+  <li><a href="#pourquoi" id="toc-pourquoi" class="nav-link" data-scroll-target="#pourquoi"><span class="header-section-number">5.1</span> Pourquoi ?</a></li>
+  <li><a href="#les-étapes" id="toc-les-étapes" class="nav-link" data-scroll-target="#les-étapes"><span class="header-section-number">5.2</span> Les étapes</a></li>
+  <li><a href="#exemple-internationalism-de-likert-1932" id="toc-exemple-internationalism-de-likert-1932" class="nav-link" data-scroll-target="#exemple-internationalism-de-likert-1932"><span class="header-section-number">5.3</span> Exemple : « Internationalism » de Likert (1932)</a></li>
+  <li><a href="#échelles-connues-du-domaine" id="toc-échelles-connues-du-domaine" class="nav-link" data-scroll-target="#échelles-connues-du-domaine"><span class="header-section-number">5.4</span> Échelles connues du domaine</a></li>
+  </ul></li>
+  <li><a href="#premiers-résultats-décrire-léchantillon" id="toc-premiers-résultats-décrire-léchantillon" class="nav-link" data-scroll-target="#premiers-résultats-décrire-léchantillon"><span class="header-section-number">6</span> Premiers résultats : décrire l’échantillon</a></li>
+  <li><a href="#la-pondération-weighting" id="toc-la-pondération-weighting" class="nav-link" data-scroll-target="#la-pondération-weighting"><span class="header-section-number">7</span> La pondération (weighting)</a>
+  <ul class="collapse">
+  <li><a href="#pourquoi-1" id="toc-pourquoi-1" class="nav-link" data-scroll-target="#pourquoi-1"><span class="header-section-number">7.1</span> Pourquoi ?</a></li>
+  <li><a href="#procédure" id="toc-procédure" class="nav-link" data-scroll-target="#procédure"><span class="header-section-number">7.2</span> Procédure</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00_S1_Introduction.html">Séances du cours</a></li><li class="breadcrumb-item"><a href="./03_S4_Preparation_donnees.html">S4 - Préparation des données d’enquête</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">S4 - Préparation des données d’enquête</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Ce chapitre en 1 ligne
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Entre l’enquête terminée et les analyses, il y a une <strong>étape de nettoyage</strong> : tu attribues des noms et des codes, tu documentes tout dans un <strong>codebook</strong>, tu <strong>recodes</strong> sans jamais écraser les variables originales, et tu décris d’abord ton échantillon.</p>
+</div>
+</div>
+<p>Le <strong>point à retenir</strong> : <em>les données récoltées doivent être retravaillées avant utilisation. Il est primordial de garder une trace des « nettoyages » effectués et de procéder par étapes successives.</em></p>
+<section id="une-fois-lenquête-terminée" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="une-fois-lenquête-terminée"><span class="header-section-number">1</span> Une fois l’enquête terminée</h2>
+<p>Première chose à regarder, <strong>avant tout codage</strong> :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicateur</th>
+<th>Pourquoi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Taux de non-réponses</strong></td>
+<td>Estimer la qualité globale</td>
+</tr>
+<tr class="even">
+<td><strong>Questionnaires vides</strong></td>
+<td>À exclure</td>
+</tr>
+<tr class="odd">
+<td><strong>Questionnaires quittés prématurément</strong></td>
+<td>À supprimer si annoncé dans la déclaration sur le traitement des données</td>
+</tr>
+<tr class="even">
+<td><strong>Temps de réponse moyen</strong></td>
+<td>Un temps trop court signale du satisficing</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="des-questions-aux-variables" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="des-questions-aux-variables"><span class="header-section-number">2</span> Des questions aux variables</h2>
+<p>Une <strong>réponse</strong> dans le questionnaire devient une <strong>valeur</strong> dans la base de données. Cette transformation suit des règles précises.</p>
+<section id="nommer-les-variables" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="nommer-les-variables"><span class="header-section-number">2.1</span> Nommer les variables</h3>
+<ul>
+<li>Noms <strong>courts mais compréhensibles</strong> (<code>ipol</code> pour « intérêt politique »).</li>
+<li>Une variable = une question (sauf échelle additive, voir plus bas).</li>
+</ul>
+</section>
+<section id="attribuer-des-codes-aux-réponses" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="attribuer-des-codes-aux-réponses"><span class="header-section-number">2.2</span> Attribuer des codes aux réponses</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type de question</th>
+<th>Codage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Fermée</strong></td>
+<td>Chiffres assignés aux catégories. Logique : du petit au grand, du moins au plus</td>
+</tr>
+<tr class="even">
+<td><strong>Semi-ouverte</strong></td>
+<td>Coder les « autre » si besoin ; sinon convention : <code>8</code> ou <code>88</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Ouverte</strong></td>
+<td>Coder si nécessaire</td>
+</tr>
+<tr class="even">
+<td><strong>Préfère ne pas répondre</strong></td>
+<td>Donnée manquante (NA) — ou code spécifique</td>
+</tr>
+<tr class="odd">
+<td><strong>Ne sais pas (NSP)</strong></td>
+<td>Convention : <code>9</code> ou <code>99</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="garder-une-trace-ne-jamais-écraser" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="garder-une-trace-ne-jamais-écraser"><span class="header-section-number">2.3</span> Garder une trace : ne jamais écraser</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Règle d’or du recodage
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Ne jamais écraser</strong> une variable d’origine. Crée une <strong>nouvelle version</strong> avec un nouveau nom. Tu pourras toujours revenir en arrière, comparer, corriger. Et toujours garder la variable <code>ID</code> (numéro d’identification du·de la répondant·e).</p>
+</div>
+</div>
+</section>
+</section>
+<section id="le-codebook" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="le-codebook"><span class="header-section-number">3</span> Le codebook</h2>
+<p>Le <strong>codebook</strong> est le manuel de ta base de données. Sans lui, personne (pas même toi dans 6 mois) ne peut comprendre ce que représente chaque variable.</p>
+<section id="contenu" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="contenu"><span class="header-section-number">3.1</span> Contenu</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Section</th>
+<th>Détail</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Métadonnées</strong></td>
+<td>Auteur·e, version, date, base de données concernée, infos sur le sondage</td>
+</tr>
+<tr class="even">
+<td><strong>Tableau de variables</strong></td>
+<td>Variable, Description, Question (texte exact), Valeurs, Labels</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exemple-type" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="exemple-type"><span class="header-section-number">3.2</span> Exemple type</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+<th>Valeur</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>ID</code></td>
+<td>Numéro d’identification du·de la répondant·e</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>ipol</code></td>
+<td>Intérêt pour la politique</td>
+<td>1</td>
+<td>Pas du tout intéressé·e</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>2</td>
+<td>Plutôt pas intéressé·e</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>3</td>
+<td>Plutôt intéressé·e</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>4</td>
+<td>Très intéressé·e</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="les-recodages" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="les-recodages"><span class="header-section-number">4</span> Les recodages</h2>
+<section id="possibilités-classiques" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="possibilités-classiques"><span class="header-section-number">4.1</span> Possibilités classiques</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Recodage</th>
+<th>Quand</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Réduire le nombre de catégories</strong></td>
+<td>Trop de catégories peu peuplées → regrouper en « autre »</td>
+</tr>
+<tr class="even">
+<td><strong>Regrouper des catégories</strong></td>
+<td>Ex. cantons → urbains vs.&nbsp;ruraux</td>
+</tr>
+<tr class="odd">
+<td><strong>Inverser l’ordre</strong></td>
+<td>Dans une batterie de questions, certains items sont formulés à l’inverse → réaligner</td>
+</tr>
+<tr class="even">
+<td><strong>Combiner deux variables</strong></td>
+<td>Ex. canton + langue → Suisse alémanique vs.&nbsp;romande</td>
+</tr>
+<tr class="odd">
+<td><strong>Construire vrai/faux</strong></td>
+<td>À partir d’une question de connaissance</td>
+</tr>
+<tr class="even">
+<td><strong>Échelles additives</strong></td>
+<td>Addition de plusieurs items pour créer un index</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bonnes-pratiques" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="bonnes-pratiques"><span class="header-section-number">4.2</span> Bonnes pratiques</h3>
+<ol type="1">
+<li><strong>Analyse univariée avant et après</strong> le recodage : compare les fréquences pour vérifier que rien n’a été perdu.</li>
+<li><strong>Plusieurs versions</strong> d’une même variable peuvent coexister (<code>age</code>, <code>age_cat3</code>, <code>age_cat5</code>).</li>
+<li><strong>Trace dans le codebook</strong> : toujours documenter quoi a été regroupé, et pourquoi.</li>
+</ol>
+<section id="exemple-variable-nombre-de-partis-au-cf" class="level4" data-number="4.2.1">
+<h4 data-number="4.2.1" class="anchored" data-anchor-id="exemple-variable-nombre-de-partis-au-cf"><span class="header-section-number">4.2.1</span> Exemple : variable « Nombre de partis au CF »</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th><strong>Avant</strong> (<code>savoirpol_cf</code>)</th>
+<th></th>
+<th><strong>Après</strong> (<code>savoirpol_cf_vf</code>)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 = 3 partis</td>
+<td>N = 32</td>
+<td>0 = faux</td>
+<td>N = 82</td>
+</tr>
+<tr class="even">
+<td>2 = 4 partis</td>
+<td>N = 95</td>
+<td>1 = vrai</td>
+<td>N = 95</td>
+</tr>
+<tr class="odd">
+<td>3 = 5 partis</td>
+<td>N = 26</td>
+<td>NA = non-réponse</td>
+<td>N = 5</td>
+</tr>
+<tr class="even">
+<td>8 = NSP</td>
+<td>N = 24</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9 = NR</td>
+<td>N = 5</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>TOTAL</strong></td>
+<td>182</td>
+<td><strong>TOTAL</strong></td>
+<td>182</td>
+</tr>
+</tbody>
+</table>
+<p>Recodage : 1, 3, 8, 9 → 0 (faux/NA), 2 → 1 (vrai). Toutes les obs sont conservées, juste regroupées.</p>
+</section>
+</section>
+</section>
+<section id="construire-une-échelle-index" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="construire-une-échelle-index"><span class="header-section-number">5</span> Construire une échelle (index)</h2>
+<section id="pourquoi" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="pourquoi"><span class="header-section-number">5.1</span> Pourquoi ?</h3>
+<p>Pour des <strong>caractéristiques complexes</strong> comme une attitude ou une motivation, <strong>une seule question</strong> ne suffit pas. On mesure le concept par <strong>plusieurs indicateurs</strong>, puis on combine.</p>
+</section>
+<section id="les-étapes" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="les-étapes"><span class="header-section-number">5.2</span> Les étapes</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Étape</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1. Fondement théorique</strong></td>
+<td>Quelle caractéristique mesurer ? Définition à partir de la littérature</td>
+</tr>
+<tr class="even">
+<td><strong>2. Opérationnalisation</strong></td>
+<td>Choisir les indicateurs (questions disponibles ou batterie à créer ; s’inspirer de <a href="https://zis.gesis.org/">zis.gesis.org</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>3. Mesurer la corrélation</strong> entre items</td>
+<td>Les items mesurent-ils bien la même chose ?</td>
+</tr>
+<tr class="even">
+<td><strong>4. Création de l’échelle</strong></td>
+<td>Addition (ou moyenne) des scores des items</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Diagnostic et amélioration</strong></td>
+<td>Test de fiabilité (Alpha de Cronbach) ; élimination d’items si nécessaire</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="exemple-internationalism-de-likert-1932" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="exemple-internationalism-de-likert-1932"><span class="header-section-number">5.3</span> Exemple : « Internationalism » de Likert (1932)</h3>
+<ul>
+<li><strong>9 items</strong>, chacun de 1 à 5 sur l’échelle de Likert (1 = fortement contre l’ouverture, 5 = fortement pour) ;</li>
+<li><strong>Recoder le sens</strong> si certains items sont inversés ;</li>
+<li><strong>Score total</strong> = somme des 9 réponses → variable de 9 à 45 ;</li>
+<li>Possibilité de <strong>diviser par le nombre d’items</strong> → score sur 1-5 ;</li>
+<li><strong>Mesurer la fiabilité</strong> de l’échelle obtenue.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+L’Alpha de Cronbach
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Définition</strong> : coefficient mesurant la <strong>cohérence interne</strong> d’une échelle additive — les items mesurent-ils bien tous le même concept ?</p>
+<p><strong>Seuil acceptable</strong> : <strong>0.7</strong> (en sciences sociales). En dessous : l’échelle n’est pas fiable. Solution : retirer un item peu cohérent et recalculer.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>L’Alpha de Cronbach, c’est le <strong>score de cohésion</strong> d’une équipe de questions qui essaient toutes de mesurer la même chose. Si elles « répondent » dans le même sens à chaque participant·e, alpha est élevé (proche de 1). Si elles partent dans tous les sens, alpha est bas → ton échelle ne mesure pas vraiment ce que tu prétends.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="échelles-connues-du-domaine" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="échelles-connues-du-domaine"><span class="header-section-number">5.4</span> Échelles connues du domaine</h3>
+<ul>
+<li><strong>Social Media Addiction Scale (SMAS)</strong> — Tutgun-Ünal &amp; Deniz, 2015</li>
+<li><strong>Internet Skills Scale (ISS)</strong> — Van Deursen, Helsper &amp; Eynon, 2019</li>
+</ul>
+</section>
+</section>
+<section id="premiers-résultats-décrire-léchantillon" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="premiers-résultats-décrire-léchantillon"><span class="header-section-number">6</span> Premiers résultats : décrire l’échantillon</h2>
+<p>Avant toute analyse complexe, tu <strong>décris</strong> ton échantillon. Ça remplit deux fonctions : vérifier qu’il ressemble à la population et donner du contexte aux lecteur·ice·s.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Caractéristique</th>
+<th>Mesure adaptée</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Âge</strong> (continu)</td>
+<td>Moyenne, écart-type</td>
+</tr>
+<tr class="even">
+<td><strong>Catégorie d’âge</strong> (ordinale)</td>
+<td>Distribution (fréquences, %), mode</td>
+</tr>
+<tr class="odd">
+<td><strong>Genre</strong> (nominale)</td>
+<td>Distribution (fréquences, %), mode</td>
+</tr>
+<tr class="even">
+<td><strong>Langue</strong> (nominale)</td>
+<td>Distribution (fréquences, %), mode</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="la-pondération-weighting" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="la-pondération-weighting"><span class="header-section-number">7</span> La pondération (weighting)</h2>
+<section id="pourquoi-1" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="pourquoi-1"><span class="header-section-number">7.1</span> Pourquoi ?</h3>
+<p>Si ton échantillon <strong>diffère</strong> de la population sur une caractéristique importante (les 18-30 ans sont sous-représentés, par ex.), tu peux corriger en <strong>pondérant</strong> : tu donnes plus de poids aux observations rares et moins aux observations sur-représentées.</p>
+</section>
+<section id="procédure" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="procédure"><span class="header-section-number">7.2</span> Procédure</h3>
+<ol type="1">
+<li>Calculer le <strong>poids</strong> : <code>proportion dans la population / proportion dans l'échantillon</code> ;</li>
+<li>Créer une nouvelle variable assignant ce poids à chaque individu.</li>
+</ol>
+<section id="exemple" class="level4" data-number="7.2.1">
+<h4 data-number="7.2.1" class="anchored" data-anchor-id="exemple"><span class="header-section-number">7.2.1</span> Exemple</h4>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>Échantillon (%)</th>
+<th>Population (%)</th>
+<th>Poids</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>18-30 ans</td>
+<td>9</td>
+<td>13</td>
+<td>1.44</td>
+</tr>
+<tr class="even">
+<td>31-40 ans</td>
+<td>28</td>
+<td>28</td>
+<td>1.00</td>
+</tr>
+<tr class="odd">
+<td>41-50 ans</td>
+<td>29</td>
+<td>30</td>
+<td>1.03</td>
+</tr>
+<tr class="even">
+<td>51+ ans</td>
+<td>33</td>
+<td>28</td>
+<td>0.84</td>
+</tr>
+</tbody>
+</table>
+<p>Les 18-30 sont sous-représentés → on leur donne <strong>plus</strong> de poids (1.44) pour compenser.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Quand la pondération est-elle critique ?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Essentielle</strong> si tu calcules une <strong>moyenne</strong> ou un <strong>pourcentage</strong> que tu veux généraliser à la population.</li>
+<li><strong>Moins crucial</strong> pour les <strong>relations entre variables</strong> (régressions multivariées) — les coefficients sont moins sensibles aux biais d’inclusion si les variables de stratification sont incluses comme contrôles.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Récapitulatif Ch.4
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Avant analyse : taux de non-réponse, questionnaires vides, temps de réponse.</li>
+<li>Coder les réponses : du petit au grand, conventions <code>8/88</code> (autre), <code>9/99</code> (NSP), <code>NA</code> (préfère ne pas répondre).</li>
+<li><strong>Ne jamais écraser</strong> une variable. Créer une nouvelle version.</li>
+<li><strong>Codebook</strong> = manuel de la base : variable, description, valeur, label.</li>
+<li>Recoder pour simplifier, regrouper, inverser, combiner ou créer du vrai/faux.</li>
+<li>Une <strong>échelle additive</strong> combine plusieurs items mesurant un concept abstrait (attitude, motivation).</li>
+<li><strong>Alpha de Cronbach</strong> ≥ 0.7 → échelle fiable.</li>
+<li>Toujours <strong>décrire l’échantillon</strong> avant les analyses (socio-démographiques).</li>
+<li><strong>Pondération</strong> corrige les biais d’inclusion pour les statistiques descriptives.</li>
+</ul>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

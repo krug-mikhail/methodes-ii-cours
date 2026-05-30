@@ -1,0 +1,152 @@
+---
+title: "S1 - Introduction"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Méthodes II t'apprend à **transformer une question floue en projet de recherche quantitatif** : tu poses une question, tu formules des hypothèses, tu choisis comment les tester et tu interprètes ce que tu trouves.
+:::
+
+## Pourquoi un deuxième cours de méthodes ?
+
+Tu croises des chiffres tous les jours : sondages dans la presse, statistiques officielles, études citées sur LinkedIn, mémoires de Master. Sans clés méthodologiques, tu ne peux ni évaluer leur sérieux, ni produire les tiens. Méthodes II te donne :
+
+- **un savoir** théorique (concepts clés de la méthodo quantitative) ;
+- **un savoir-faire** (R en exercices) ;
+- **un regard critique** (avec Méthodes I).
+
+Le **point à retenir** du cours : *une même problématique peut être abordée de plusieurs manières. Formuler une question quantitative oblige à se demander comment quantifier le phénomène.*
+
+## Le pipeline d'un projet de recherche empirique
+
+Le cours suit une démarche en **7 étapes** (Bonneville et al., 2007). C'est le fil conducteur qu'il faut maîtriser de mémoire.
+
+| Étape | Question à se poser |
+|---|---|
+| 1. Identification de l'objet | Sur quoi est-ce que je veux travailler ? |
+| 2. Problématisation + QR | Que sait-on déjà ? Que veut-on savoir en plus ? |
+| 2 bis. Hypothèses | Quelle réponse provisoire est-ce que je teste ? |
+| 3. Opérationnalisation | Comment je transforme un concept en variables mesurables ? |
+| 4. Collecte des données | Où je récupère les données ? |
+| 5. Analyse | Que disent les chiffres ? |
+| 6. Dissémination | Comment je communique mes résultats ? |
+
+::: {.callout-tip collapse="true"}
+## En simple
+Le pipeline, c'est la **recette de cuisine** d'un projet de recherche. Tu ne commences pas par les analyses : tu commences par identifier ce que tu veux savoir, puis tu fais les courses (collecte), tu prépares (opérationnalisation, recodage), tu cuisines (analyses), tu sers (communication). Sauter une étape = mauvais plat.
+:::
+
+## La question de recherche
+
+### Trois critères de qualité (Van Campenhoudt et al., 2017)
+
+Une bonne question de recherche est :
+
+- **Claire** : pas vague, périmètre délimité ;
+- **Faisable** : réaliste vu tes ressources (temps, argent, accès aux données) ;
+- **Pertinente** : vise à **comprendre** un phénomène, pas à le décrire trivialement ni à émettre un jugement moral.
+
+Exemple type : *Dans quelle mesure différents usages d'Instagram influencent-ils les symptômes de dépression chez les étudiant·e·s ?*
+
+### Deux grandes familles de questions quantitatives
+
+| Type | Logique | Exemple |
+|---|---|---|
+| **Descriptive** | Décrire **un seul** phénomène ou son évolution | Comment a évolué la consommation de presse écrite en Suisse depuis 2000 ? |
+| **Inférentielle** | Étudier **l'influence** d'un phénomène X sur un autre Y | Dans quelle mesure les usages d'Instagram influencent-ils les symptômes de dépression ? |
+
+::: {.callout-important}
+## La « formule magique » d'une question inférentielle
+*Dans quelle mesure est-ce que le phénomène X influence le phénomène Y ?* Trois sous-questions :
+1. Y a-t-il **vraiment** une influence ?
+2. Si oui, **quelle est sa force** ?
+3. Quel est son **sens** (positif/négatif) ?
+:::
+
+## Le cadre théorique
+
+Le cadre théorique sert à **ancrer** ta recherche dans le savoir existant. Quatre briques :
+
+1. **Définir les concepts** principaux (X et Y) et leurs **dimensions** sur la base de la littérature.
+2. **Expliquer les mécanismes causaux** présumés entre X et Y.
+3. **Formuler des hypothèses** précises.
+4. **Justifier** ces hypothèses par les études antérieures.
+
+Exemple : pour étudier le lien Instagram → dépression, tu dois préciser les dimensions de chaque concept.
+
+| Concept | Dimensions |
+|---|---|
+| Usages d'Instagram | Durée d'utilisation · Mode (passif/actif) · Intention (divertissement, interaction, comparaison) |
+| Symptômes de dépression | Manque d'énergie · Sentiment d'impuissance · Indifférence · Colère |
+
+## L'hypothèse : définition et critères
+
+Une **hypothèse** est *une proposition visant à fournir une explication vraisemblable d'un ensemble de faits, qui doit être soumise au contrôle de l'expérience* (Larousse). C'est une **réponse provisoire** à ta QR.
+
+Cinq critères qu'une bonne hypothèse doit remplir :
+
+| Critère | Signification |
+|---|---|
+| **Vraisemblable** | S'inscrit dans des connaissances établies |
+| **Précise** | Pas d'ambiguïté |
+| **Cohérente** | Apporte bien une réponse à la problématique |
+| **Falsifiable** | Peut être confrontée aux faits (testée empiriquement) |
+| **Univoque** | Comprise de la même façon par tout chercheur |
+
+::: {.callout-warning}
+## Falsifiable : LE critère scientifique
+Une hypothèse qui ne peut **pas** être démentie par des données n'est pas scientifique. *« Les gens heureux sourient parce qu'ils sont heureux »* n'est pas une hypothèse — c'est une tautologie. *« Plus quelqu'un sourit, plus son score de satisfaction est élevé »* en est une : tu peux mesurer et la rejeter.
+:::
+
+## Les 3 types d'hypothèses
+
+| Type | Forme typique | Exemple |
+|---|---|---|
+| **Relation** | « Plus / moins X → plus / moins Y » | H1 : *Plus un·e usager·ère passe du temps sur Instagram, plus il/elle ressentira un manque d'énergie après.* |
+| **Différence / changement** | « Si X → alors Y » | H2 : *Si l'utilisation d'Instagram est passive (plutôt qu'active), alors l'usager·ère ressentira un manque d'énergie plus important.* |
+| **Interaction** | « L'influence de X sur Y est plus/moins forte selon Z » | H3 : *L'influence du temps d'usage d'Instagram sur le manque d'énergie est plus forte pour les personnalités extraverties que pour les introverties.* |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- Une **hypothèse de relation**, c'est un curseur : plus on bouge X, plus Y bouge dans une direction donnée.
+- Une **hypothèse de différence**, c'est un interrupteur : la catégorie de X (passif/actif) change l'état de Y.
+- Une **hypothèse d'interaction**, c'est un modificateur : la force du lien X → Y dépend d'une **troisième** variable Z.
+:::
+
+## Limites de la démarche quantitative
+
+Le quantitatif n'est pas la solution à tout. Critiques principales :
+
+- Difficulté voire impossibilité de traiter certains sujets (subjectivité des acteurs, symboles, sens caché des pratiques).
+- Tendance à répondre à de **petites questions précises** plutôt qu'à des théories ambitieuses.
+- Risque de **réifier** des catégories construites comme si elles étaient « naturelles ».
+
+C'est pour cela qu'on parle souvent de **mixed methods** (S10) : combiner quali et quanti pour profiter des deux.
+
+## Modalités d'évaluation
+
+| Élément | Détail |
+|---|---|
+| Format | Examen écrit, **60 minutes** |
+| Date | Session d'été 2026 (date communiquée par la Faculté) |
+| Note | **100 %** de la note finale |
+| Matière | Cours + lectures obligatoires (3 scripts) |
+| Matériel autorisé | Aucun, sauf dictionnaire bilingue non annoté pour non-francophones |
+| Structure | **3 parties à 5 points** chacune : 10 QCM (0.5 pt), 5 questions courtes (1 pt, 2-3 phrases), 2 questions de réflexion (2.5 pts, 2 paragraphes) |
+
+::: {.callout-warning}
+## Pour gagner des points faciles
+- Les **QCM** testent la compréhension passive : maîtrise du vocabulaire, distinctions de base.
+- Les **questions courtes** testent ta précision : 2-3 phrases denses valent mieux qu'un paragraphe vague.
+- Les **questions de réflexion** notent ton analyse critique : pose les enjeux, prends position, justifie.
+:::
+
+::: {.callout-note}
+## Récapitulatif Ch.1
+- Le cours suit un **pipeline en 7 étapes** : objet → QR → hypothèses → opérationnalisation → collecte → analyse → dissémination.
+- Une **bonne QR** est claire, faisable, pertinente.
+- Deux familles : **descriptive** (un phénomène) vs. **inférentielle** (X → Y).
+- Une **bonne hypothèse** est vraisemblable, précise, cohérente, **falsifiable**, univoque.
+- Trois types d'hypothèses : **relation, différence, interaction**.
+- L'examen pèse 100 % de la note ; matière = cours + scripts.
+:::

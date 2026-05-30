@@ -1,0 +1,247 @@
+---
+title: "S9 - Qualité et communication des résultats"
+---
+
+::: {.callout-tip}
+## Ce chapitre en 1 ligne
+Une bonne analyse est **reproductible**, **valide** (interne et externe), prudente sur la **causalité**, transparente sur l'**incertitude**, consciente de l'**objectivation**, et **communiquée clairement** au lecteur·ice.
+:::
+
+Le **point à retenir** : *il est important de s'assurer de la qualité des résultats d'une analyse quantitative. Le processus de production et d'interprétation doit être documenté. Lors de la présentation, pense en premier lieu au·à la lecteur·ice et rends ton raisonnement le plus clair et transparent possible.*
+
+## Bloc A — Reproductibilité
+
+### Pourquoi rendre ses résultats reproductibles ?
+
+Karl Popper le disait : *« Nous ne prenons même pas nos propres observations au sérieux tant que nous ne les avons pas répétées et testées. Ce n'est que par de telles répétitions que nous pouvons nous convaincre qu'il ne s'agit pas d'une coïncidence isolée. »*
+
+La reproductibilité **renforce la fiabilité** des résultats et la confiance dans la science. Sans elle, un résultat reste un « événement isolé », pas une vraie connaissance.
+
+### Trois notions parfois confondues
+
+| Notion | Définition |
+|---|---|
+| **Reproductibilité** | Les **mêmes données** + le **même code** = les **mêmes résultats** |
+| **Réplicabilité** | Refaire l'étude avec **de nouvelles données** sur le même protocole = résultats similaires |
+| **Robustesse** | Les résultats tiennent avec des **méthodes alternatives** ou des choix différents |
+
+### Bonnes pratiques
+
+| Pratique | Action |
+|---|---|
+| **Document méta** | Note tes réflexions et décisions à chaque étape |
+| **Code statistique annoté** | Un fichier par étape (nettoyage, univariée, multivariée) avec commentaires clairs |
+| **Versions** | Garder plusieurs versions du papier final, idéalement avec track-changes |
+| **Mise à disposition** | Code annoté + données + questionnaires + tout document permettant la reproduction |
+
+## Bloc B — Validité interne et externe
+
+### Définition (Krippendorff, 2013)
+
+> « La validité réside dans le fait que la qualité des résultats de la recherche nous conduit à les accepter comme vrais, comme parlant du monde réel. Un instrument de mesure est valide s'il mesure ce que son utilisateur prétend qu'il mesure. »
+
+### Validité interne vs. externe
+
+| Type | Question | Bonne pratique |
+|---|---|---|
+| **Interne** | Le design est-il assez rigoureux pour soutenir les conclusions sur **cette étude** ? | Diversifier les sources, tester les explications alternatives |
+| **Externe** | Les résultats sont-ils **généralisables** à d'autres contextes ? | Comparer avec d'autres données ou études |
+
+::: {.callout-important}
+## La validité, c'est multiple
+- **Validité de contenu** : la mesure couvre-t-elle bien tous les aspects du concept ?
+- **Validité de construit** : la mesure se rapporte-t-elle bien au concept théorique ?
+- **Validité interne** : le design exclut-il les explications alternatives ?
+- **Validité externe** : les résultats se généralisent-ils ?
+
+À chaque étape de ta recherche, demande-toi quelle validité est en jeu.
+:::
+
+### Bonnes pratiques générales
+
+- S'assurer que les variables **mesurent bien** les concepts visés.
+- **Tester les explications alternatives**.
+- Comparer ses mesures à des mesures obtenues par **d'autres sources** (triangulation).
+- Utiliser des **mesures déjà établies** (échelles validées de la littérature).
+
+## Bloc C — Causalité vs. corrélation
+
+### Le piège de Coluche
+
+> *« Quand on est malade, il ne faut surtout pas aller à l'hôpital : la probabilité de mourir dans un lit d'hôpital est dix fois plus grande que dans son lit à la maison. »*
+
+L'humour de Coluche illustre toute la difficulté : la **corrélation** entre « être à l'hôpital » et « mourir » ne dit **rien** sur la causalité. Cause cachée : on va à l'hôpital quand on est gravement malade — c'est la maladie qui tue, pas l'hôpital.
+
+### Causalité : au cœur de la science
+
+La démarche scientifique vise à établir des **liens causaux** : X **cause** Y. Mais :
+
+- Les causes sont **multiples** ;
+- Ce qu'on observe dans les données est une **corrélation** ;
+- Le **risque d'interprétation causale abusive** est permanent.
+
+### 4 questions pour évaluer une relation causale
+
+| # | Question | Concept |
+|---|---|---|
+| **1** | **Sens de la relation** : X cause-t-il Y, ou est-ce l'inverse ? Ou une influence réciproque ? | Causalité inversée |
+| **2** | **Causes concurrentes** : existe-t-il une variable Z qui influence à la fois X et Y ? | Variable confondante (cofondante) |
+| **3** | **Sélection de l'échantillon** : la sélection des cas est-elle liée à la VD ? | Biais de sélection |
+| **4** | **Niveau d'analyse** : le niveau auquel on analyse correspond-il à celui de la théorie ? | **Erreur écologique** |
+
+::: {.callout-tip collapse="true"}
+## En simple
+- **Causalité inversée** : « Les pompiers causent les incendies » (parce qu'on les voit toujours là). Non : c'est l'incendie qui les fait venir.
+- **Cause concurrente** : « Les ventes de glaces causent les noyades. » Non : c'est la **chaleur** qui fait grimper les deux.
+- **Biais de sélection** : étudier la dépression chez les personnes en psychiatrie ne dit rien de la population — l'échantillon est sélectionné par la VD.
+- **Erreur écologique** : « Les pays riches ont plus de divorces, donc les riches divorcent plus. » Pas forcément : c'est peut-être une moyenne agrégée trompeuse.
+:::
+
+### Bonnes pratiques pour étayer la causalité
+
+1. **Modèle théorique solide** basé sur la littérature.
+2. **Hypothèses bien formulées et justifiées**.
+3. **Condition temporelle** : X doit **précéder** Y dans le temps.
+4. **Exclure les autres causes** : variables omises, biais de sélection, niveau d'analyse erroné.
+5. **Modèle d'analyse approprié** : régression avec variables de contrôle, ou design expérimental.
+
+## Bloc D — Incertitude
+
+### Qu'est-ce que l'incertitude scientifique ?
+
+L'incertitude est une **mesure quantitative de la variabilité des données**. Toutes les mesures contiennent une erreur. Toutes les données ont une **gamme de valeurs attendues**, jamais une valeur ponctuelle parfaite.
+
+**Incertitude ≠ doute sur les résultats.** Indiquer l'incertitude, c'est **être transparent** sur la confiance qu'on accorde à la mesure.
+
+### Bonnes pratiques : toujours indiquer
+
+| Mesure | Définition |
+|---|---|
+| **Niveau de confiance** | Probabilité que l'échantillon reflète la population (souvent 95 % ou 99 %) |
+| **Marge d'erreur** | Écart toléré entre échantillon et population (souvent en %) |
+| **Écart-type** | Dispersion autour de la moyenne (S6) |
+| **Intervalle de confiance (IC)** | Étendue contenant le paramètre de population à un certain degré de certitude (souvent 95 %) |
+
+::: {.callout-important}
+## Lecture d'un IC
+Un IC à 95 % de [3.2 ; 5.8] signifie : *si je répète l'étude un grand nombre de fois, 95 % des intervalles calculés contiendront la vraie valeur du paramètre.*
+
+**Astuce** : si l'IC d'une différence contient **0**, la différence n'est **pas significative** (0 = « pas de différence » reste plausible).
+:::
+
+## Bloc E — Objectivité vs. objectivation
+
+### Deux postures
+
+| Posture | Définition |
+|---|---|
+| **Objectivité (état)** | Le monde a des propriétés objectives en attente d'être dévoilées. La recherche **détecte du réel**. |
+| **Objectivation (processus)** | La recherche **construit** sa représentation du monde en construisant le sujet connaissant. C'est une **construction sociale** de la réalité. |
+
+### Danger de l'objectivité naïve
+
+Quand on traite des catégories sociales comme « objectives » (genre, classe, ethnie), on risque de :
+
+- **Naturaliser** ce qui résulte des relations de pouvoir.
+- Exercer une **violence symbolique** sur les individus catégorisés (les enfermer dans une case).
+
+### Bonnes pratiques
+
+| Pratique | Logique |
+|---|---|
+| **Noter ses a priori** au début de la recherche | Conscience réflexive |
+| **Questionner ses concepts**, hypothèses, mesures | Remise en question |
+| **Discuter et collaborer** | Triangulation des points de vue |
+| **Se re-mettre en question** sans s'auto-saboter | Équilibre |
+
+## Bloc F — Présentation des résultats
+
+### Structure type d'un papier de recherche
+
+| Section | Contenu |
+|---|---|
+| **1. Univariée** | Description de la VD (et VI) : tableau ou graphique + explication claire |
+| **2. Bi-/multivariée** | Tableau ou graphique + explication + interprétation des hypothèses au fil ou en bloc |
+| **3. Réponse à la QR** | Synthèse : la QR est-elle résolue ? Avec quelles nuances ? |
+
+Deux **options** d'organisation :
+
+- **Option I** : interpréter au fur et à mesure (hypothèses validées/invalidées à mesure de la présentation).
+- **Option II** : présenter tous les résultats, puis revenir sur chaque hypothèse pour conclure.
+
+### Conseils généraux
+
+| Conseil | Détail |
+|---|---|
+| **Penser au·à la lecteur·ice** | Message clair, précis, compréhensible |
+| **Seulement les résultats importants** | Le reste va en **annexes** |
+| **Référer aux concepts**, pas aux noms de variables | Pas de `VAR1`, `VAR2` — parler de « l'attitude populiste » |
+| **Indiquer l'incertitude** systématiquement |  |
+| **Numéroter et titrer** tous les tableaux et graphiques |  |
+
+### Règles pour les tableaux
+
+| Règle |
+|---|
+| Indiquer les **totaux 100 %** pour les proportions |
+| Indiquer l'**incertitude** (SE, IC, écart-type) |
+| **Pas** de noms de variables techniques |
+| **Note** sous le tableau avec seuils de significativité : `* p < .05, ** p < .01, *** p < .001` |
+| Style sobre : pas d'effets 3D, usage **restrictif** des couleurs |
+
+### Tableaux types
+
+| Type d'analyse | Contenu |
+|---|---|
+| **Univariée — fréquences** | Catégorie, Fréquence (N), Pourcentage (%), Total |
+| **Univariée — description quanti** | Concept, Moyenne, Écart-type, Étendue, Observations |
+| **Bivariée — croisé** | VI en colonnes, VD en lignes, % en colonnes |
+| **Bivariée — moyennes** | VI en colonnes, Moyenne, Écart-type, Observations |
+| **Régression linéaire** | Modèles en colonnes, VI en lignes, Coefficients (SE), Niveau de signif., Constante, N, R² |
+| **Régression logistique** | Idem + colonne **Odds Ratio**, Pseudo-R² |
+
+### Règles pour les graphiques
+
+| Règle |
+|---|
+| **Graphique adapté** à l'analyse (barres pour quali, histogramme pour quanti, scatterplot pour 2 quanti) |
+| **Représenter l'incertitude** (barres d'erreur, IC) |
+| **Pas** de noms de variables |
+| **Échelle entière** : représenter toute l'étendue (sinon distorsion) |
+| **Distance constante** entre points de l'axe |
+| **Sens de lecture usuel** (plus petit au plus grand, plus ancien au plus récent) |
+| Style sobre |
+
+::: {.callout-warning}
+## Les pièges visuels classiques
+- **Axe Y tronqué** : faire commencer à 80 au lieu de 0 → un déclin de 5 % paraît dramatique.
+- **Axe Y inversé** : montrer la mortalité de haut en bas → une **baisse** apparaît comme une **hausse**.
+- **Axe X disproportionnel** : compresser ou étirer le temps → un événement récent semble représenter une tendance longue.
+
+À l'examen, sois capable de **repérer ces manipulations** dans un graphique présenté.
+:::
+
+## Bloc G — Le pipeline de recherche, vue d'ensemble
+
+Le cours boucle sur le pipeline du S1, en associant chaque étape à une séance :
+
+| Étape | Séances du cours |
+|---|---|
+| 1. Identification de l'objet | (Méthodes I) |
+| 2. Problématisation + QR | S1 |
+| 2 bis. Hypothèses | S1 |
+| 3. Opérationnalisation | S2 |
+| 4. Collecte | S3 – S5 |
+| 5. Analyse | S6 – S8 |
+| 6. Dissémination | **S9** |
+
+::: {.callout-note}
+## Récapitulatif Ch.9
+- **Reproductibilité** ≠ réplicabilité ≠ robustesse. Document méta, code annoté, données partagées.
+- **Validité interne** (rigueur du design) vs. **externe** (généralisation).
+- **Corrélation ≠ causalité**. 4 questions à se poser : sens, causes concurrentes, sélection, niveau d'analyse.
+- **Incertitude** : toujours indiquer niveau de confiance, marge d'erreur, IC, écart-type.
+- **Objectivité (état) vs. objectivation (processus)** : être conscient·e que la recherche **construit** sa réalité.
+- **Présenter ses résultats** : penser au lecteur, structurer (uni → bi/multi → conclusion), tableaux/graphiques sobres avec incertitude.
+- Pipeline complet : objet → QR → hypothèses → opérationnalisation → collecte → analyse → dissémination.
+:::
