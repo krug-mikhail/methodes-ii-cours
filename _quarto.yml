@@ -44,11 +44,15 @@ website:
       - text: "Examens blancs (interactifs)"
         menu:
           - href: examen_blanc_1.html
-            text: "Examen 1 · Contrôle I (20 q)"
+            text: "Examen 1 · Contrôle I (20 q, QCM)"
           - href: examen_blanc_2.html
-            text: "Examen 2 · Contrôle II (8 q)"
+            text: "Examen 2 · Contrôle II (8 q, QCM)"
           - href: examen_blanc_3.html
-            text: "Examen 3 · S7-S8-S9 (25 q)"
+            text: "Examen 3 · S7-S8-S9 (25 q, QCM)"
+          - href: examen_blanc_difficile.qmd
+            text: "Examen 4 · Difficile (type examen final, 20 q ouvertes)"
+          - href: examen_blanc_corse.qmd
+            text: "Examen 5 · Corsé (difficile++, 20 q ouvertes)"
   sidebar:
     style: docked
     search: true
@@ -71,6 +75,8 @@ website:
           - synthese.qmd
           - glossaire.qmd
           - examens_blancs.qmd
+          - examen_blanc_difficile.qmd
+          - examen_blanc_corse.qmd
 
 execute:
   enabled: false
