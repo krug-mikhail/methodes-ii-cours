@@ -35,6 +35,8 @@ website:
         text: "Synthèse"
       - href: glossaire.qmd
         text: Glossaire
+      - href: examens_blancs.qmd
+        text: "Examens blancs (Q&R)"
   sidebar:
     style: docked
     search: true
@@ -56,6 +58,7 @@ website:
         contents:
           - synthese.qmd
           - glossaire.qmd
+          - examens_blancs.qmd
 
 execute:
   enabled: false

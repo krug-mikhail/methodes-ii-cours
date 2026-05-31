@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Contrôles intermédiaires : Questions &amp; Réponses – Méthodes II — Cours (théorie)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Méthodes II — Cours (théorie)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-séances" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Séances</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-séances">    
+        <li>
+    <a class="dropdown-item" href="./00_S1_Introduction.html">
+ <span class="dropdown-text">S1 · Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./01_S2_Donnees_quantitatives.html">
+ <span class="dropdown-text">S2 · Données quantitatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./02_S3_Sources_donnees.html">
+ <span class="dropdown-text">S3 · Sources de données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./03_S4_Preparation_donnees.html">
+ <span class="dropdown-text">S4 · Préparation des données</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./04_S5_Analyse_contenu.html">
+ <span class="dropdown-text">S5 · Analyse de contenu</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./05_S6_Uni_bi_multi.html">
+ <span class="dropdown-text">S6 · Uni-/bi-/multivariées</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./06_S7_Inferentielles_I.html">
+ <span class="dropdown-text">S7 · Inférentielles I</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./07_S8_Inferentielles_II.html">
+ <span class="dropdown-text">S8 · Inférentielles II</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./08_S9_Qualite_communication.html">
+ <span class="dropdown-text">S9 · Qualité &amp; communication</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./09_S10_Conclusion.html">
+ <span class="dropdown-text">S10 · Conclusion</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./synthese.html"> 
+<span class="menu-text">Synthèse</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./glossaire.html"> 
+<span class="menu-text">Glossaire</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./examens_blancs.html"> 
+<span class="menu-text">Examens blancs (Q&amp;R)</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./synthese.html">Outils de révision</a></li><li class="breadcrumb-item"><a href="./examens_blancs.html">Contrôles intermédiaires : Questions &amp; Réponses</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Méthodes II — Cours (théorie)</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Séances du cours</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./00_S1_Introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S1 - Introduction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01_S2_Donnees_quantitatives.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S2 - Données quantitatives</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02_S3_Sources_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S3 - Sources de données</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03_S4_Preparation_donnees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S4 - Préparation des données d’enquête</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_S5_Analyse_contenu.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S5 - Analyse de contenu quantitative</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_S6_Uni_bi_multi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S6 - Analyses uni-, bi- et multivariées</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_S7_Inferentielles_I.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S7 - Analyses inférentielles I</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_S8_Inferentielles_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S8 - Analyses inférentielles II</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_S9_Qualite_communication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S9 - Qualité et communication des résultats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_S10_Conclusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">S10 - Conclusion et mixed methods</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Outils de révision</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./synthese.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Synthèse</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./glossaire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Glossaire</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./examens_blancs.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Contrôles intermédiaires : Questions &amp; Réponses</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#contrôle-intermédiaire-i-20-questions" id="toc-contrôle-intermédiaire-i-20-questions" class="nav-link active" data-scroll-target="#contrôle-intermédiaire-i-20-questions"><span class="header-section-number">1</span> Contrôle intermédiaire I — 20 questions</a></li>
+  <li><a href="#contrôle-intermédiaire-ii-8-questions" id="toc-contrôle-intermédiaire-ii-8-questions" class="nav-link" data-scroll-target="#contrôle-intermédiaire-ii-8-questions"><span class="header-section-number">2</span> Contrôle intermédiaire II — 8 questions</a></li>
+  <li><a href="#récapitulatif-transversal-des-deux-contrôles" id="toc-récapitulatif-transversal-des-deux-contrôles" class="nav-link" data-scroll-target="#récapitulatif-transversal-des-deux-contrôles"><span class="header-section-number">3</span> Récapitulatif transversal des deux contrôles</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./synthese.html">Outils de révision</a></li><li class="breadcrumb-item"><a href="./examens_blancs.html">Contrôles intermédiaires : Questions &amp; Réponses</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Contrôles intermédiaires : Questions &amp; Réponses</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+À propos
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Les <strong>28 questions</strong> des deux contrôles intermédiaires Moodle (SP 2026), avec leurs réponses correctes et une courte explication quand utile. Fais <code>Ctrl/Cmd + F</code> pour chercher un terme précis.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Conseil de révision
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cache la réponse avec ta main, tente la question d’abord. Si tu rates, repère le concept (recodage, échantillonnage, biais, types d’hypothèses, niveaux de mesure…) et révise la section correspondante du cours.</p>
+</div>
+</div>
+<section id="contrôle-intermédiaire-i-20-questions" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="contrôle-intermédiaire-i-20-questions"><span class="header-section-number">1</span> Contrôle intermédiaire I — 20 questions</h2>
+<p>Sources : recodage, types d’études, échantillonnage, qualité de la mesure, biais, types de variables, codage, types de questions, hypothèses, pondération, fiabilité/validité, recherche bibliographique, intervalle de confiance.</p>
+<hr>
+<p><strong>Q1.</strong> Vrai ou faux ? Lorsque l’on recode des variables, il faut éviter d’écraser une variable existante mais plutôt créer plusieurs versions d’une variable.</p>
+<p>→ <strong>Réponse : Vrai.</strong> On garde toujours la variable d’origine et on crée une <strong>nouvelle</strong> colonne ; ça permet de revenir en arrière, vérifier le recodage, et documenter les étapes (réplicabilité).</p>
+<hr>
+<p><strong>Q2.</strong> Relie la démarche pour établir les catégories d’unité de codage avec sa définition.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Démarche</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Inductive</strong></td>
+<td>à partir du matériel à analyser, sur la base d’une pré-analyse</td>
+</tr>
+<tr class="even">
+<td><strong>Hybride</strong></td>
+<td>à partir des concepts théoriques et de leur opérationnalisation, ensuite plusieurs reformulations et tests</td>
+</tr>
+<tr class="odd">
+<td><strong>Déductive</strong></td>
+<td>à partir des concepts théoriques et de leur opérationnalisation</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>Astuce mnémo</strong> : <em>Inductive</em> part <strong>des données</strong> ↑ ; <em>Déductive</em> part <strong>de la théorie</strong> ↓ ; <em>Hybride</em> part de la théorie mais <strong>itère</strong> sur les données.</p>
+<hr>
+<p><strong>Q3.</strong> Vrai ou faux ? Une étude transversale se base sur des données récoltées à plusieurs dates.</p>
+<p>→ <strong>Réponse : Faux.</strong> Une étude <strong>transversale</strong> = <strong>1 seule date</strong> (photographie à un moment T). Une étude récoltée à plusieurs dates est dite <strong>longitudinale</strong>.</p>
+<hr>
+<p><strong>Q4.</strong> Quel type d’échantillon correspond à chacune des situations ?</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situation</th>
+<th>Type d’échantillon</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sélectionne aléatoirement des joueurs parmi l’effectif de <strong>chaque équipe</strong> de la LNA en début de saison</td>
+<td><strong>Échantillonnage stratifié</strong></td>
+</tr>
+<tr class="even">
+<td>Sélectionne aléatoirement 20 familles par <strong>chaque canton</strong> suisse</td>
+<td><strong>Échantillonnage stratifié</strong></td>
+</tr>
+<tr class="odd">
+<td>Sélectionne <strong>tou·te·s</strong> les salarié·e·s de <strong>3 assurances choisies</strong> aléatoirement</td>
+<td><strong>Échantillonnage par grappes</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — distinguer stratifié vs grappes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Stratifié</strong> = on découpe la population en sous-groupes (strates) et on tire <strong>aléatoirement</strong> dans chaque strate. Les strates servent à garantir la représentativité (genre, canton, âge…).</li>
+<li><strong>Grappes</strong> = on tire des <strong>groupes entiers</strong> au hasard (écoles, classes, entreprises), puis on prend <strong>tou·te·s les individus</strong> dedans. Plus rapide, mais moins représentatif.</li>
+<li><strong>Quotas</strong> ≠ aléatoire : on fixe des <strong>proportions</strong> à respecter et l’enquêteur choisit librement (non probabiliste).</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q5.</strong> Complète le texte sur les sondages.</p>
+<blockquote class="blockquote">
+<p><strong>[L’erreur d’échantillonnage]</strong> apparaît lorsqu’il y a une différence entre le paramètre que l’on trouve dans un échantillon et le paramètre que l’on trouverait si on avait interrogé l’ensemble de la population. Solution : <strong>[augmenter la taille de l’échantillon]</strong>.</p>
+<p><strong>[L’erreur de validité]</strong> survient en cas de différence entre le concept censé être mesuré et ce que la question mesure. Solution : <strong>[travailler sur l’opérationnalisation]</strong>.</p>
+<p><strong>[Le biais de non-réponse]</strong> arrive lorsque des participant·e·s refusent de participer ou de répondre à une question spécifique. Solution : <strong>[réduire la complexité et la longueur du questionnaire]</strong>.</p>
+</blockquote>
+<hr>
+<p><strong>Q6.</strong> Complète le texte sur la qualité d’une question.</p>
+<blockquote class="blockquote">
+<p>Pour qu’une question dans un questionnaire soit de qualité, il faut qu’elle soit <strong>[objective]</strong> (comprise de la même manière par tout le monde), <strong>[fiable]</strong> (la question produit le même résultat lorsqu’on la répète), et <strong>[valide]</strong> (mesure ce qui doit être mesuré).</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — objective vs fiable vs valide
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Objective</strong> = chacun comprend la question de la même façon (formulation claire, sans ambiguïté).</li>
+<li><strong>Fiable</strong> = répétée plusieurs fois, on obtient le même résultat (constance).</li>
+<li><strong>Valide</strong> = mesure réellement le concept (pertinence).</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q7.</strong> Complète le texte sur les biais.</p>
+<blockquote class="blockquote">
+<p><strong>[La désirabilité sociale]</strong> induit une distorsion systématique des réponses dû à l’(in)acceptabilité sociale de certaines réponses. Solution : <strong>[enquêter en ligne ou par écrit]</strong> (anonymat).</p>
+<p><strong>[Le biais de réponse « centriste »]</strong> survient parce que les répondant·e·s ont tendance à choisir l’option « du milieu ». Solution : <strong>[changer de catégories de réponses ou d’inverser les réponses]</strong>.</p>
+<p><strong>[L’acquiescence]</strong> arrive parce que les répondant·e·s ont plus tendance à dire oui. Solution : <strong>[formuler les questions « à sens inverse »]</strong>.</p>
+</blockquote>
+<hr>
+<p><strong>Q8.</strong> Les échelles de Likert…</p>
+<ul>
+<li><ol type="a">
+<li>permettent de mesurer le nombre de pas effectués</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>permettent de mesurer l’âge ou le salaire</li>
+</ol></li>
+<li><strong>c.&nbsp;permettent de mesurer les attitudes ou les comportements</strong> ← bonne réponse</li>
+</ul>
+<hr>
+<p><strong>Q9.</strong> Dans un questionnaire, on pose la question de la fréquence de consommation de TikTok. Le·la répondant·e a le choix entre « moins de 30 min/jour », « 30 min à 2h/jour », « 3 à 4h/jour » et « plus de 4h/jour ». Quel type de variable ?</p>
+<ul>
+<li><ol type="a">
+<li>nominale</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>discrète</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>continue</li>
+</ol></li>
+<li><strong>d.&nbsp;ordinale</strong> ← bonne réponse</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — pourquoi ordinale et pas continue ?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Les catégories sont <strong>classées</strong> (de moins à plus de TikTok) → c’est ordinal. Mais les <strong>distances</strong> entre catégories ne sont pas constantes (« 30 min à 2h » couvre 1h30, « 3 à 4h » couvre 1h). Donc pas intervalle, pas continue.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q10.</strong> Les différentes catégories d’une unité de codage…</p>
+<ul>
+<li><strong>a. peuvent perdre en information si elles sont trop peu détaillées</strong> ← bonne réponse</li>
+<li><strong>b. doivent être mutuellement exclusives</strong> ← bonne réponse</li>
+<li><ol start="3" type="a">
+<li>peuvent être incomplètes</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>doivent comprendre le plus de détails possible</li>
+</ol></li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Règle des catégories de codage
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Exhaustives</strong> (toute observation a une catégorie) + <strong>mutuellement exclusives</strong> (jamais 2 catégories à la fois) + niveau de détail <strong>équilibré</strong> (ni trop générique, ni trop détaillé).</p>
+</div>
+</div>
+<hr>
+<p><strong>Q11.</strong> Étude pour estimer le rythme cardiaque d’adolescents jouant à un jeu vidéo via montres connectées : on récolte des faits…</p>
+<ul>
+<li><strong>a. objectifs</strong> ← bonne réponse</li>
+<li><strong>b. observés de manière directe</strong> ← bonne réponse</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — directe vs indirecte
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Direct</strong> = la donnée est captée à la source (capteur, mesure physique). Ici la montre mesure le rythme cardiaque.</li>
+<li><strong>Indirect</strong> = la donnée passe par un intermédiaire (questionnaire, observation rapportée). Ex : demander « estimez votre rythme cardiaque ».</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q12.</strong> « Combien de fois avez-vous mangé des produits bio ces 7 derniers jours ? » est une question…</p>
+<ul>
+<li><ol type="a">
+<li>d’attitude</li>
+</ol></li>
+<li><strong>b. de comportement</strong> ← bonne réponse</li>
+<li><ol start="3" type="a">
+<li>socio-démographique</li>
+</ol></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — attitude vs comportement vs socio-démo
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Attitude</strong> = opinion, perception, sentiment (« que pensez-vous du bio ? »).</li>
+<li><strong>Comportement</strong> = action observable (« combien de fois avez-vous mangé bio ? »).</li>
+<li><strong>Socio-démo</strong> = caractéristiques de l’individu (âge, sexe, niveau de formation, canton).</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q13.</strong> Type d’hypothèses (à compléter).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Formulation</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>« Plus une personne est âgée, moins elle se sent compétente d’utiliser les NTI. »</td>
+<td><strong>Hypothèse de relation</strong></td>
+</tr>
+<tr class="even">
+<td>« L’influence de l’âge sur le sentiment de compétence est moins importante pour les personnes avec un haut niveau de formation. »</td>
+<td><strong>Hypothèse d’interaction</strong></td>
+</tr>
+<tr class="odd">
+<td>« Si une personne est âgée, alors elle ne se sent pas compétente d’utiliser les NTI. »</td>
+<td><strong>Hypothèse de différence</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — distinguer les 3 types
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Relation</strong> = « plus / moins X, plus / moins Y » (corrélation, gradation).</li>
+<li><strong>Différence</strong> = « si X, alors Y » (catégorisation tranchée).</li>
+<li><strong>Interaction</strong> = « l’effet de X sur Y dépend de Z » (modération par une 3e variable).</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q14.</strong> Les données portant sur l’ensemble de la population sont des données…</p>
+<ul>
+<li><ol type="a">
+<li>transversales</li>
+</ol></li>
+<li><strong>b. exhaustives</strong> ← bonne réponse</li>
+<li><ol start="3" type="a">
+<li>longitudinales</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>issues d’un échantillon</li>
+</ol></li>
+</ul>
+<p>→ <strong>Astuce</strong> : « exhaustives » = couvrent <strong>toute</strong> la population (recensement, registre civil), pas un échantillon.</p>
+<hr>
+<p><strong>Q15.</strong> Complète le calcul.</p>
+<blockquote class="blockquote">
+<p><strong>Facteur de pondération = proportion dans [la population] / proportion dans [l’échantillon]</strong>.</p>
+</blockquote>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Si les femmes sont 51 % de la population mais seulement 40 % de ton échantillon, leur facteur de pondération est 51/40 = <strong>1.275</strong>. Tu « gonfles » leur poids dans les analyses pour compenser leur sous-représentation.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q16.</strong> Sur le graphique de Krippendorff (2013, p.&nbsp;269) — cible avec point au bord — on est en présence d’un codage avec une…</p>
+<blockquote class="blockquote">
+<p>Une <strong>[fiabilité]</strong> parfaite, mais une <strong>[validité]</strong> imparfaite. C’est-à-dire qu’à mesures répétées, le codage a produit des résultats <strong>[identiques]</strong>, mais que ceux-ci ne sont pas <strong>[représentatifs]</strong> de la réalité.</p>
+</blockquote>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Image mentale
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Imagine une <strong>cible de fléchettes</strong> : - Tous les tirs <strong>groupés</strong> mais <strong>loin du centre</strong> → fiable mais pas valide. - Tirs <strong>éparpillés autour du centre</strong> → valide mais pas fiable. - Tirs <strong>groupés au centre</strong> → fiable ET valide (objectif). - Tirs <strong>éparpillés et loin du centre</strong> → ni fiable ni valide.</p>
+</div>
+</div>
+<hr>
+<p><strong>Q17.</strong> Relie la méthode de traitement des sources documentaires avec sa définition.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Méthode</th>
+<th>Définition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Exploration</strong></td>
+<td>Méthode visant à <strong>formuler des hypothèses</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Vérification</strong></td>
+<td>Méthode basée sur des <strong>hypothèses</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Analyse qualitative</strong></td>
+<td>Méthode visant à <strong>dégager des thèmes et des concepts</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Analyse quantitative</strong></td>
+<td>Méthode visant la <strong>réduction de la complexité, le chiffrage</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Analyse indirecte</strong></td>
+<td>Méthode s’intéressant au <strong>sens latent / caché</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Analyse directe</strong></td>
+<td>Méthode s’intéressant au <strong>sens manifeste</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Q18.</strong> Vrai ou faux ? Pour trouver des articles sur la <strong>monnaie « euro »</strong>, taper <code>euro*</code> dans la barre de recherche. Pour trouver des articles sur l’<strong>Union Européenne</strong>, taper <code>euro</code>.</p>
+<p>→ <strong>Réponse : Faux.</strong> L’<strong>astérisque <code>*</code></strong> est une <strong>troncature</strong> : <code>euro*</code> ramène euro, european, eurozone, euro 2024… → utile pour <strong>élargir</strong> une recherche (Union Européenne, processus d’intégration européenne). Pour la monnaie « euro » uniquement, il faut être plus précis (<code>"euro"</code> entre guillemets, ou <code>euro currency</code>).</p>
+<hr>
+<p><strong>Q19.</strong> Complète la « formule magique » d’une question de recherche quantitative inférentielle.</p>
+<blockquote class="blockquote">
+<p><em>« Dans quelle <strong>[mesure]</strong> est-ce que le phénomène <strong>[X]</strong> <strong>[influence]</strong> le phénomène <strong>[Y]</strong> ? »</em></p>
+<p>Le phénomène <strong>X</strong> est le phénomène <strong>[explicatif]</strong> alors que le phénomène <strong>Y</strong> est le phénomène <strong>[à expliquer]</strong>.</p>
+</blockquote>
+<hr>
+<p><strong>Q20.</strong> Un degré de certitude de <strong>95 %</strong> concernant l’intervalle de confiance signifie que si on répète une mesure <strong>40 fois</strong>, il faut que le paramètre soit couvert par l’intervalle dans :</p>
+<ul>
+<li><ol type="a">
+<li>2 cas</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>tous les cas</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>aucun cas</li>
+</ol></li>
+<li><strong>d.&nbsp;38 cas</strong> ← bonne réponse</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le calcul
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>95 % × 40 = <strong>38</strong>. L’autre 5 % (= 2 cas) sont les répétitions où l’IC <strong>ne couvre PAS</strong> le vrai paramètre — c’est le risque accepté.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contrôle-intermédiaire-ii-8-questions" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="contrôle-intermédiaire-ii-8-questions"><span class="header-section-number">2</span> Contrôle intermédiaire II — 8 questions</h2>
+<p>Sources : recodage, Open Government Data, statistiques descriptives vs inférentielles, étendue, IQR, mode, histogramme vs diagramme en bâtons, lecture d’un tableau de régression (Adam et al., 2026).</p>
+<hr>
+<p><strong>Q1.</strong> Vrai ou faux ? Il est tout à fait admis de recoder des variables pour résoudre des problèmes purement statistiques.</p>
+<p>→ <strong>Réponse : Vrai.</strong> Le recodage est une étape légitime — pour regrouper des catégories peu remplies, transformer une variable continue en classes, créer une variable binaire à partir d’une échelle de Likert, etc. <strong>Tant que</strong> c’est documenté et justifié.</p>
+<hr>
+<p><strong>Q2.</strong> L’<strong>Open Government Data (OGD)</strong> comprend…</p>
+<ul>
+<li><strong>a. des données gratuites</strong> ← bonne réponse</li>
+<li><ol start="2" type="a">
+<li>des données personnelles</li>
+</ol></li>
+<li><strong>c.&nbsp;des données administratives</strong> ← bonne réponse</li>
+<li><ol start="4" type="a">
+<li>des données protégées par le droit d’auteur</li>
+</ol></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+En simple — l’OGD
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Données collectées par l’<strong>administration publique</strong> (statistiques officielles, budgets, registres) mises à disposition <strong>gratuitement</strong> et sans restriction d’usage. Elles excluent : les données personnelles (RGPD), les données sous licence privée, les données classées défense.</p>
+</div>
+</div>
+</div>
+<hr>
+<p><strong>Q3.</strong> Complète le texte.</p>
+<blockquote class="blockquote">
+<p>La <strong>[statistique descriptive]</strong> permet de connaître la <strong>[distribution]</strong> et/ou la <strong>[tendance]</strong> centrale d’une variable dans un échantillon ; la <strong>[statistique inférentielle]</strong> permet de rapporter les résultats à l’ensemble de la <strong>[population]</strong>.</p>
+</blockquote>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Distinction-clé
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Descriptive</strong> = on <strong>décrit ce qu’on observe</strong> dans l’échantillon (moyennes, distributions).</li>
+<li><strong>Inférentielle</strong> = on <strong>généralise</strong> à la population (tests d’hypothèses, IC, régression).</li>
+</ul>
+</div>
+</div>
+<hr>
+<p><strong>Q4.</strong> Quelle est l’<strong>étendue</strong> de la variable avec les valeurs : 4, 7, 9, 2, 0, 5, 5 ?</p>
+<ul>
+<li><ol type="a">
+<li>7</li>
+</ol></li>
+<li><strong>b. 9</strong> ← bonne réponse</li>
+<li><ol start="3" type="a">
+<li>2</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>1</li>
+</ol></li>
+</ul>
+<p>→ <strong>Calcul</strong> : étendue = max − min = <strong>9 − 0 = 9</strong>.</p>
+<hr>
+<p><strong>Q5.</strong> Vrai ou faux ? L’<strong>écart interquartile (IQR)</strong> est l’étendue qui contient 50 % des observations qui se trouvent au centre de la distribution d’une variable.</p>
+<p>→ <strong>Réponse : Vrai.</strong> IQR = Q3 − Q1 ; couvre les 50 % centraux (entre le 25e et le 75e percentile). Robuste aux valeurs extrêmes, contrairement à l’étendue.</p>
+<hr>
+<p><strong>Q6.</strong> Tableau de fréquence — provenance des étudiant·e·s :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Catégorie</th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Suisse romande</td>
+<td>30</td>
+<td>37.5</td>
+<td>30</td>
+</tr>
+<tr class="even">
+<td>Suisse alémanique</td>
+<td>20</td>
+<td>25.0</td>
+<td>50</td>
+</tr>
+<tr class="odd">
+<td>Tessin</td>
+<td>20</td>
+<td>25.0</td>
+<td>70</td>
+</tr>
+<tr class="even">
+<td>Étranger</td>
+<td>10</td>
+<td>12.5</td>
+<td>80</td>
+</tr>
+<tr class="odd">
+<td><strong>Total</strong></td>
+<td><strong>80</strong></td>
+<td><strong>100</strong></td>
+<td><strong>80</strong></td>
+</tr>
+</tbody>
+</table>
+<p>À quoi correspond chaque colonne ? Quelle catégorie représente le <strong>mode</strong> ?</p>
+<p>→ <strong>Réponse :</strong> - Colonne <strong>A</strong> = <strong>effectifs absolus</strong> (compte brut, somme = 80 = total étudiant·e·s). - Colonne <strong>B</strong> = <strong>fréquences relatives en %</strong> (somme = 100). - Colonne <strong>C</strong> = <strong>effectifs cumulés</strong> (chaque ligne = somme des précédentes + actuelle ; finit à 80). - <strong>Mode</strong> = catégorie la plus fréquente = <strong>Suisse romande</strong> (30 étudiant·e·s, 37.5 %).</p>
+<hr>
+<p><strong>Q7.</strong> Quelle est la <strong>principale différence</strong> entre un <strong>histogramme</strong> et un <strong>diagramme en bâtons</strong> ?</p>
+<p>→ <strong>Réponse :</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Histogramme</th>
+<th>Diagramme en bâtons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variables <strong>quantitatives continues</strong> (âge, taille, revenu)</td>
+<td>Variables <strong>qualitatives</strong> (nominales/ordinales) ou <strong>discrètes</strong> (nb d’enfants)</td>
+</tr>
+<tr class="even">
+<td>Barres <strong>collées</strong> (continuité de l’axe)</td>
+<td>Barres <strong>séparées</strong> (catégories indépendantes)</td>
+</tr>
+<tr class="odd">
+<td>Axe X = classes/intervalles</td>
+<td>Axe X = catégories</td>
+</tr>
+<tr class="even">
+<td>Aire = effectif (proportionnel à la largeur × hauteur)</td>
+<td>Hauteur seule = effectif</td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>L’essentiel</strong> : histogramme = continuité (barres collées) ; bâtons = discontinuité (barres séparées).</p>
+<hr>
+<p><strong>Q8. (PIÈGE — l’examen, niveau S8)</strong> Sur la base de l’article <strong>Adam et al.&nbsp;(2026), « How Do Media Contribute to the Dissemination of Conspiracy Beliefs? »</strong> et du tableau de régression linéaire ci-dessous :</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Facteurs prédictifs</th>
+<th>b</th>
+<th>SE</th>
+<th>p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(Constante)</td>
+<td>-0.34</td>
+<td>0.23</td>
+<td>.149</td>
+</tr>
+<tr class="even">
+<td>Attitude populiste</td>
+<td><strong>0.43</strong></td>
+<td>0.05</td>
+<td><strong>&lt;.001</strong></td>
+</tr>
+<tr class="odd">
+<td>Méfiance politique</td>
+<td><strong>0.21</strong></td>
+<td>0.03</td>
+<td><strong>&lt;.001</strong></td>
+</tr>
+<tr class="even">
+<td>Âge</td>
+<td>-0.00</td>
+<td>0.00</td>
+<td>.087</td>
+</tr>
+<tr class="odd">
+<td>Participante femme</td>
+<td>0.03</td>
+<td>0.06</td>
+<td>.560</td>
+</tr>
+<tr class="even">
+<td>Participant·e allemand·e</td>
+<td><strong>0.15</strong></td>
+<td>0.06</td>
+<td><strong>.014</strong></td>
+</tr>
+<tr class="odd">
+<td>Utilisation des médias traditionnels</td>
+<td>-0.07</td>
+<td>0.04</td>
+<td>.125</td>
+</tr>
+<tr class="even">
+<td>Utilisation des médias sociaux</td>
+<td><strong>0.19</strong></td>
+<td>0.04</td>
+<td><strong>&lt;.001</strong></td>
+</tr>
+<tr class="odd">
+<td>Vote pour parti de droite populiste</td>
+<td><strong>0.13</strong></td>
+<td>0.02</td>
+<td><strong>&lt;.001</strong></td>
+</tr>
+<tr class="even">
+<td>Intérêt pour la politique</td>
+<td><strong>-0.08</strong></td>
+<td>0.03</td>
+<td><strong>.004</strong></td>
+</tr>
+<tr class="odd">
+<td>Exposition totale aux médias grand public</td>
+<td>0.01</td>
+<td>0.01</td>
+<td>.468</td>
+</tr>
+<tr class="even">
+<td>Observations</td>
+<td>865</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>R²</td>
+<td><strong>.296</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>→ <strong>Réponse type (à structurer en 3 parties à l’examen) :</strong></p>
+<p><strong>1. Qualité globale du modèle.</strong> Le R² = <strong>0.296</strong> : l’ensemble des facteurs explique environ <strong>30 % de la variance</strong> de l’adhésion aux théories du complot. C’est <strong>modéré</strong> : il reste 70 % de la variance non expliquée par ces facteurs (idéal en sciences sociales : 30–50 %). Mais on a 865 observations → estimations stables.</p>
+<p><strong>2. Facteurs significatifs (p &lt; 0.05).</strong> 7 facteurs sortent significatifs. Sens et magnitude :</p>
+<ul>
+<li><strong>Attitude populiste</strong> (b = +0.43, p &lt; .001) : effet <strong>le plus fort</strong>. +1 unité d’attitude populiste → +0.43 point d’adhésion aux théories du complot.</li>
+<li><strong>Méfiance politique</strong> (b = +0.21, p &lt; .001) : effet positif fort. Plus on se méfie des institutions, plus on adhère.</li>
+<li><strong>Utilisation des médias sociaux</strong> (b = +0.19, p &lt; .001) : exposition aux réseaux sociaux → <strong>augmente</strong> l’adhésion. C’est cohérent avec la littérature sur la désinformation virale.</li>
+<li><strong>Allemand·e</strong> vs Suisse alémanique (b = +0.15, p = .014) : les Allemands adhèrent <strong>un peu plus</strong> aux théories du complot, à profil égal.</li>
+<li><strong>Vote droite populiste</strong> (b = +0.13, p &lt; .001) : voter à droite populiste → +adhésion.</li>
+<li><strong>Intérêt pour la politique</strong> (b = -0.08, p = .004) : <strong>effet négatif</strong>. Plus tu t’intéresses à la politique, <strong>moins</strong> tu adhères aux théories du complot (vraisemblablement : meilleure connaissance, exposition à des sources variées).</li>
+</ul>
+<p><strong>3. Facteurs NON significatifs (p ≥ 0.05).</strong> Âge, genre (femme), médias traditionnels, exposition totale aux médias grand public — <strong>pas d’effet détectable</strong>. Pas qu’ils soient « sans effet », mais le test ne permet pas de conclure.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pièges à éviter à l’examen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Ne pas confondre p-value et taille d’effet</strong>. p très petit → on est sûr qu’il y a un effet ; b grand → l’effet est <strong>important</strong>. Ici : <strong>populisme</strong> est très significatif (p&lt;.001) ET avec l’effet le plus grand (b=0.43) → c’est le facteur <strong>prédominant</strong>.</li>
+<li><strong>Toujours rapporter R²</strong> : sans R², on ne sait pas si le modèle « capture » bien le phénomène.</li>
+<li><strong>Distinguer « non significatif » de « pas d’effet »</strong> : non significatif = manque de preuves, peut-être manque de puissance. Pas « pas d’effet ».</li>
+<li><strong>Sens du coefficient</strong> : signe + = quand X augmente, Y augmente ; signe − = X augmente, Y diminue. Toujours préciser le sens dans l’interprétation.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="récapitulatif-transversal-des-deux-contrôles" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="récapitulatif-transversal-des-deux-contrôles"><span class="header-section-number">3</span> Récapitulatif transversal des deux contrôles</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Les concepts à maîtriser pour l’examen final
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><strong>Recodage</strong> : garder l’original, créer une nouvelle variable, documenter.</li>
+<li><strong>Types d’études</strong> : transversale (1 date) vs longitudinale (plusieurs dates) vs exhaustive (toute la pop).</li>
+<li><strong>Échantillonnage probabiliste</strong> : aléatoire simple, stratifié (par sous-groupes), grappes (groupes entiers), systématique. <strong>Quotas = non probabiliste</strong>.</li>
+<li><strong>Erreurs et biais</strong> : échantillonnage, validité, non-réponse ; désirabilité sociale, centriste, acquiescence.</li>
+<li><strong>Qualité d’une question</strong> : objective, fiable, valide.</li>
+<li><strong>Niveaux de mesure</strong> : nominal, ordinal, intervalle, ratio + variables discrètes vs continues.</li>
+<li><strong>Codage</strong> : catégories exhaustives + mutuellement exclusives ; démarche inductive / déductive / hybride.</li>
+<li><strong>Types de questions</strong> : attitude, comportement, socio-démographique.</li>
+<li><strong>Types d’hypothèses</strong> : relation, différence, interaction.</li>
+<li><strong>Pondération</strong> : facteur = proportion population / proportion échantillon.</li>
+<li><strong>Fiabilité vs validité</strong> : image de la cible de fléchettes.</li>
+<li><strong>Stat descriptive vs inférentielle</strong> : décrire vs généraliser.</li>
+<li><strong>Mesures de tendance et dispersion</strong> : mode, médiane, moyenne ; étendue, IQR, écart-type.</li>
+<li><strong>Visualisation</strong> : histogramme (continu) vs diagramme en bâtons (catégoriel).</li>
+<li><strong>Régression</strong> : lire b, SE, p, R². Distinguer significativité (p) et taille d’effet (b).</li>
+<li><strong>IC 95 %</strong> : si on répète n fois, le paramètre est dans l’IC dans 0.95 × n cas.</li>
+<li><strong>Recherche bibliographique</strong> : troncature <code>*</code> pour élargir.</li>
+</ol>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
