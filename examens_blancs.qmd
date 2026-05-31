@@ -1,18 +1,26 @@
 ---
-title: "Contrôles intermédiaires : Questions & Réponses"
+title: "Examens blancs : Questions & Réponses"
 ---
 
 ::: {.callout-tip}
 ## À propos
-Les **28 questions** des deux contrôles intermédiaires Moodle (SP 2026), avec leurs réponses correctes et une courte explication quand utile. Fais `Ctrl/Cmd + F` pour chercher un terme précis.
+Trois examens blancs pour réviser :
+
+1. **Contrôle intermédiaire I** (officiel, Moodle SP 2026, 20 q) — couvre S1-S5.
+2. **Contrôle intermédiaire II** (officiel, Moodle SP 2026, 8 q) — couvre S6 + un peu S8.
+3. **Examen blanc complémentaire** (25 q) — comble le gap : focus sur **S7 (inférentielles), S8 (régression) et S9 (qualité & communication)** qui ne sont quasi pas couverts par les 2 contrôles officiels.
+
+Fais `Ctrl/Cmd + F` pour chercher un terme précis.
 :::
 
 ::: {.callout-warning}
 ## Conseil de révision
-Cache la réponse avec ta main, tente la question d'abord. Si tu rates, repère le concept (recodage, échantillonnage, biais, types d'hypothèses, niveaux de mesure...) et révise la section correspondante du cours.
+- Cache la réponse avec ta main, tente la question d'abord.
+- Si tu rates, repère le concept (recodage, échantillonnage, biais, régression, réplicabilité...) et révise la section correspondante du cours.
+- **Important** : les contrôles officiels couvrent **S1-S5 très bien, S6 partiellement, S7-S8 superficiellement, et S9 PAS DU TOUT**. L'examen final (60 min, session d'été) demandera certainement des questions sur **S8 et S9** — d'où l'examen blanc 3 ci-dessous.
 :::
 
-## Contrôle intermédiaire I — 20 questions
+## Contrôle intermédiaire I — 20 questions (officiel Moodle)
 
 Sources : recodage, types d'études, échantillonnage, qualité de la mesure, biais, types de variables, codage, types de questions, hypothèses, pondération, fiabilité/validité, recherche bibliographique, intervalle de confiance.
 
@@ -249,7 +257,7 @@ Imagine une **cible de fléchettes** :
 95 % × 40 = **38**. L'autre 5 % (= 2 cas) sont les répétitions où l'IC **ne couvre PAS** le vrai paramètre — c'est le risque accepté.
 :::
 
-## Contrôle intermédiaire II — 8 questions
+## Contrôle intermédiaire II — 8 questions (officiel Moodle)
 
 Sources : recodage, Open Government Data, statistiques descriptives vs inférentielles, étendue, IQR, mode, histogramme vs diagramme en bâtons, lecture d'un tableau de régression (Adam et al., 2026).
 
@@ -380,7 +388,372 @@ Données collectées par l'**administration publique** (statistiques officielles
 4. **Sens du coefficient** : signe + = quand X augmente, Y augmente ; signe − = X augmente, Y diminue. Toujours préciser le sens dans l'interprétation.
 :::
 
-## Récapitulatif transversal des deux contrôles
+## Examen blanc complémentaire — 25 questions (comble le gap : S7-S8-S9)
+
+::: {.callout-important}
+## Pourquoi cet examen blanc en plus
+Les 2 contrôles officiels couvrent **S1-S5 très bien et S6 partiellement**. Mais ils négligent **S7 (analyses inférentielles I), S8 (régression) et S9 (qualité & communication)** — qui pèseront fortement à l'examen final. Cet examen blanc 3 est conçu pour combler ce gap.
+
+**Composition** : 3 q sur S6 (descriptif avancé) · 5 q sur S7 (tests d'hypothèses) · 6 q sur S8 (régression en profondeur) · 7 q sur S9 (qualité, réplicabilité, communication) · 4 q transversales (synthèse).
+:::
+
+### Bloc S6 — Statistiques descriptives (avancé)
+
+**Q1.** Vrai ou faux ? La **moyenne** est plus sensible aux valeurs extrêmes (outliers) que la **médiane**.
+
+→ **Réponse : Vrai.** La moyenne intègre toutes les valeurs : un outlier la « tire » dans sa direction. La médiane (valeur du milieu après tri) ne change pas si on remplace la valeur max par une encore plus grande. Pour des distributions **asymétriques** (revenus, prix immobiliers), on rapporte **médiane + IQR** plutôt que moyenne + écart-type.
+
+---
+
+**Q2.** Une distribution a une **skewness positive** (asymétrie à droite). Cela signifie que…
+
+- a. La queue de distribution est à gauche, la moyenne < médiane
+- **b. La queue de distribution est à droite, la moyenne > médiane** ← bonne réponse
+- c. La distribution est symétrique
+- d. Il y a beaucoup d'outliers négatifs
+
+::: {.callout-tip collapse="true"}
+## En simple — image mentale
+Skewness positive = quelques valeurs très **hautes** tirent la moyenne vers la droite. Ex : distribution des salaires (médiane à 5 000 CHF, moyenne à 9 000 CHF car quelques cadres à 100 000 CHF). La **queue longue** est du côté positif.
+:::
+
+---
+
+**Q3.** À quoi sert une **boîte à moustaches (boxplot)** ?
+
+- a. Visualiser la fréquence d'une variable nominale
+- **b. Visualiser la distribution d'une variable numérique (médiane, quartiles, outliers)** ← bonne réponse
+- c. Visualiser la relation entre 2 variables continues
+- d. Visualiser la corrélation
+
+::: {.callout-tip collapse="true"}
+## Anatomie d'une boîte à moustaches
+- **La boîte** : Q1 (bas) à Q3 (haut) — contient 50 % centraux (IQR).
+- **La ligne dans la boîte** : médiane (Q2).
+- **Les moustaches** : étendues jusqu'à 1.5 × IQR de chaque côté.
+- **Les points isolés au-delà** : outliers potentiels.
+:::
+
+### Bloc S7 — Analyses inférentielles (tests d'hypothèses)
+
+**Q4.** En statistique inférentielle, **H₀** (hypothèse nulle) représente :
+
+- a. La conclusion que la recherche essaie de prouver
+- **b. L'absence d'effet / de différence / de relation — l'hypothèse qu'on cherche à rejeter** ← bonne réponse
+- c. Une hypothèse alternative
+- d. Le résultat le plus probable
+
+::: {.callout-important}
+## Logique du test d'hypothèse
+On **présume H₀ vraie** (« il n'y a rien »). Si les données sont **trop improbables sous H₀** (p < α), on **rejette H₀** et on accepte H₁ (l'effet existe). On ne « prouve » jamais H₀ — on ne fait que ne pas la rejeter.
+:::
+
+---
+
+**Q5.** Vrai ou faux ? Une **erreur de type I** consiste à conclure qu'il y a un effet alors qu'il n'y en a pas.
+
+→ **Réponse : Vrai.** Type I = **faux positif** (rejeter H₀ à tort). Sa probabilité = α (souvent 0.05). Type II = **faux négatif** (ne pas rejeter H₀ alors qu'elle est fausse). Sa probabilité = β. La **puissance** d'un test = 1 − β.
+
+| | H₀ vraie | H₀ fausse |
+|---|---|---|
+| **On rejette H₀** | ❌ Type I (α) | ✅ Correct |
+| **On ne rejette pas H₀** | ✅ Correct | ❌ Type II (β) |
+
+---
+
+**Q6.** Si une **p-value = 0.03** et le seuil α = 0.05, on :
+
+- **a. Rejette H₀ : le résultat est significatif** ← bonne réponse
+- b. Ne rejette pas H₀
+- c. Conclut que H₀ a 3 % de chances d'être vraie
+- d. Le test est invalide
+
+::: {.callout-warning}
+## Piège fréquent
+La p-value **n'est PAS** la probabilité que H₀ soit vraie. C'est la probabilité d'observer **des données aussi extrêmes** (ou plus) **si H₀ était vraie**. Confondre les deux est l'erreur la plus classique.
+:::
+
+---
+
+**Q7.** Quel test utilise-t-on pour comparer **deux groupes** sur une **variable continue** (ex. moyenne du temps passé sur Instagram entre femmes et hommes) ?
+
+- a. Test du chi²
+- **b. Test t de Student** ← bonne réponse
+- c. ANOVA
+- d. Régression logistique
+
+::: {.callout-tip collapse="true"}
+## Quel test pour quel cas ?
+| Question | Variables | Test |
+|---|---|---|
+| Différence de moyenne, 2 groupes | 1 nominale (2 cat.) + 1 continue | **t** |
+| Différence de moyenne, 3+ groupes | 1 nominale + 1 continue | **ANOVA** |
+| Lien entre 2 catégorielles | 2 nominales | **chi²** |
+| Lien entre 2 continues | 2 continues | **corrélation** |
+| Prédire Y à partir de plusieurs X | mixte | **régression** |
+:::
+
+---
+
+**Q8.** Un test du **chi²** permet de tester :
+
+- a. La différence entre deux moyennes
+- **b. L'indépendance / l'association entre deux variables catégorielles** ← bonne réponse
+- c. La force d'une corrélation
+- d. La normalité d'une distribution
+
+→ **Exemple** : « le genre est-il associé au choix d'études ? » → tableau croisé genre × filière → test χ². H₀ : indépendance ; H₁ : association.
+
+### Bloc S8 — Régression linéaire (en profondeur)
+
+**Q9.** Dans `lm(Y ~ X1 + X2 + X3)`, le coefficient de X1 s'interprète comme :
+
+- a. L'effet brut de X1 sur Y
+- **b. L'effet de X1 sur Y, X2 et X3 étant maintenus constants** ← bonne réponse
+- c. La corrélation entre X1 et Y
+- d. La probabilité que X1 influence Y
+
+→ **Formulation à retenir** : « **toutes choses égales par ailleurs** » (ceteris paribus). C'est la grande force de la régression multiple : **isoler l'effet de chaque variable**.
+
+---
+
+**Q10.** Vrai ou faux ? Un **R² élevé** garantit que le modèle est causalement correct.
+
+→ **Réponse : Faux.** R² mesure seulement **la part de variance expliquée**. Une forte corrélation n'implique pas une cause (ex. : ventes de glaces ↔ noyades, R² élevé mais c'est la chaleur, variable cachée). Pour la causalité : design expérimental, contrôle des variables omises, raisonnement théorique.
+
+---
+
+**Q11.** Quelle est la différence entre **R²** et **R² ajusté** ?
+
+- a. Aucune, ils sont égaux
+- b. R² ajusté est toujours plus grand
+- **c. R² ajusté pénalise l'ajout de variables non informatives ; il est utile pour comparer des modèles à nombre de prédicteurs différent** ← bonne réponse
+- d. R² ajusté est utilisé pour la régression logistique
+
+::: {.callout-tip collapse="true"}
+## Pourquoi le R² ajusté ?
+Le R² **augmente toujours** quand on ajoute des variables, même si elles sont inutiles. Pour éviter l'overfitting, le R² ajusté **pénalise** chaque variable ajoutée. Si le R² ajusté **baisse** après ajout d'une variable, c'est qu'elle n'apporte rien.
+:::
+
+---
+
+**Q12.** Une **variable dummy (variable indicatrice)** sert à :
+
+- a. Indiquer une valeur manquante
+- **b. Coder une variable catégorielle (avec k catégories → k-1 dummies)** ← bonne réponse
+- c. Tester la normalité
+- d. Remplacer une variable continue
+
+→ **Exemple** : la variable `genre` (Femme/Homme/Autre) → on crée 2 dummies : `est_femme` (0/1), `est_autre` (0/1). La catégorie omise (Homme) sert de **référence** : tous les coefficients s'interprètent **par rapport à cette catégorie de référence**.
+
+---
+
+**Q13.** Voici un tableau de régression simplifié (extrait fictif) :
+
+| Facteur | b | SE | p |
+|---|---|---|---|
+| (Constante) | 2.1 | 0.40 | <.001 |
+| Heures Instagram / jour | **0.35** | 0.08 | **<.001** |
+| Femme (vs Homme) | 0.45 | 0.20 | **.025** |
+| Âge | -0.02 | 0.03 | .521 |
+| Niveau de formation | -0.15 | 0.06 | **.012** |
+| R² ajusté | 0.42 | | |
+| N | 1 200 | | |
+
+La variable dépendante est le score de dépression (échelle 0-10).
+Identifie les facteurs significatifs et interprète-les.
+
+→ **Réponse type :**
+
+- **Heures Instagram** (b = +0.35, p < .001) : **chaque heure supplémentaire d'Instagram augmente le score de dépression de 0.35 point**, toutes choses égales par ailleurs. Effet significatif et substantiel.
+- **Femme** (b = +0.45, p = .025) : à profil identique, **les femmes ont en moyenne 0.45 point de plus** que les hommes (catégorie de référence). Significatif.
+- **Niveau de formation** (b = -0.15, p = .012) : **chaque niveau de formation supplémentaire diminue la dépression de 0.15 point**. Significatif.
+- **Âge** (b = -0.02, p = .521) : **pas d'effet détectable** (non significatif).
+
+**Qualité du modèle** : R² ajusté = 0.42 → le modèle explique **42 %** de la variance du score de dépression. Bon pour des sciences sociales.
+
+---
+
+**Q14.** Si deux variables prédictives sont **fortement corrélées entre elles** dans une régression multiple, on parle de :
+
+- a. Hétéroscédasticité
+- **b. Multicolinéarité** ← bonne réponse
+- c. Surajustement
+- d. Endogénéité
+
+::: {.callout-warning}
+## Conséquences de la multicolinéarité
+- Les coefficients deviennent **instables** (varient beaucoup entre échantillons).
+- Les **erreurs standards (SE) gonflent** → p-values trop élevées → effets pourtant réels paraissent non significatifs.
+- **Solutions** : enlever une des variables corrélées, créer un indice composite, utiliser une PCA.
+:::
+
+### Bloc S9 — Qualité et communication des résultats (gap principal)
+
+**Q15.** Vrai ou faux ? La **réplicabilité** signifie obtenir les mêmes résultats en réutilisant les mêmes données et le même code.
+
+→ **Réponse : Faux** — c'est la **reproductibilité**. La **réplicabilité** est plus exigeante : refaire une **nouvelle étude** (nouvel échantillon, nouveau codage) et obtenir des résultats **cohérents**. Distinction clé :
+
+| Concept | Définition |
+|---|---|
+| **Reproductibilité computationnelle** | Mêmes données + même code → mêmes résultats. Garantie par : partage du code, des données, environnement. |
+| **Réplicabilité** | **Nouvelle étude** sur le même phénomène → résultats cohérents. Plus exigeant, plus rare. |
+| **Généralisabilité** | Les résultats tiennent dans **d'autres contextes** (autre pays, autre époque). |
+
+---
+
+**Q16.** Qu'est-ce qu'un **pré-enregistrement (preregistration)** ?
+
+- a. Une inscription préalable à l'examen
+- **b. Le dépôt public, AVANT collecte des données, du plan complet de recherche (hypothèses, méthodes, analyses)** ← bonne réponse
+- c. Un test pilote
+- d. Une demande d'autorisation éthique
+
+::: {.callout-tip collapse="true"}
+## Pourquoi pré-enregistrer ?
+Cela évite trois pièges classiques :
+- **HARKing** (Hypothesizing After Results are Known) : inventer les hypothèses APRÈS avoir vu les résultats.
+- **p-hacking** : multiplier les tests pour en trouver un significatif.
+- **Cherry-picking** : ne reporter que les analyses qui marchent.
+
+Plateformes : **OSF (Open Science Framework)**, AsPredicted.
+:::
+
+---
+
+**Q17.** L'**Open Science** repose sur 3 piliers principaux. Lesquels ?
+
+- a. Données ouvertes, articles ouverts, **code ouvert**
+- b. Articles gratuits, hypothèses publiques, échantillon ouvert
+- **c. Données ouvertes (FAIR), code ouvert (reproductibilité), articles ouverts (open access)** ← bonne réponse
+- d. Méthodes secrètes, données partagées, code propriétaire
+
+→ **Principe FAIR pour les données** : **F**indable, **A**ccessible, **I**nteroperable, **R**eusable.
+
+---
+
+**Q18.** Quelle est la principale **mauvaise pratique** dans la présentation graphique ci-dessous ?
+
+> Un graphique en bâtons montre les ventes mensuelles. L'axe Y commence à 95 et finit à 100. Les barres semblent indiquer une **explosion des ventes** entre janvier (96) et juin (99).
+
+- a. Mauvais choix de couleur
+- **b. Axe Y tronqué — l'écart visuel est exagéré par rapport à la différence réelle (3-4 % seulement)** ← bonne réponse
+- c. Pas assez de données
+- d. Légende manquante
+
+::: {.callout-warning}
+## Bonnes pratiques graphiques
+1. **Axes** : commencer à 0 pour les bâtons / histogrammes (sauf justification).
+2. **Échelle** : éviter les ratios d'aspect qui distordent.
+3. **Couleurs** : maximum 6-8, accessibles aux daltoniens, sémantiques.
+4. **Légendes** : titre clair, axes étiquetés, unités explicites.
+5. **Pas de pseudo-3D** sur des bâtons ou camemberts (distord les surfaces).
+6. **Source des données** systématiquement indiquée.
+:::
+
+---
+
+**Q19.** Comment cite-t-on correctement un test t dans un rapport (style APA) ?
+
+- a. « t était grande, p était petite »
+- b. « le test est significatif (p très petit) »
+- **c. « les groupes diffèrent significativement, *t*(45) = 3.12, *p* < .001 »** ← bonne réponse
+- d. « *t* = 3.12 et *p* = 0.0008 »
+
+::: {.callout-tip collapse="true"}
+## Reporting APA — règles d'or
+- **Statistique en italique** (*t*, *p*, *M*, *SD*, *r*, *F*).
+- **Degrés de liberté entre parenthèses** : *t*(df) = valeur, *F*(df1, df2) = valeur.
+- **p-value** : noter `p < .001` plutôt que `p = 0.0000001` ; `p = .03` plutôt que `p = 0.030`.
+- **Effets** : toujours rapporter la **taille d'effet** (d de Cohen, η², r) en plus de la significativité.
+- **Format des nombres** : pas de zéro initial si la valeur est entre 0 et 1 (`.05` pas `0.05`).
+:::
+
+---
+
+**Q20.** Quand on rapporte une **moyenne** dans un texte scientifique, on l'accompagne typiquement de :
+
+- a. La p-value
+- **b. L'écart-type (SD) et la taille de l'échantillon (n)** ← bonne réponse
+- c. La valeur min et max
+- d. La couleur du graphique
+
+→ **Format APA standard** : « *M* = 3.76, *SD* = 0.68, *n* = 142, sur une échelle de 1 à 5. »
+
+---
+
+**Q21.** Vrai ou faux ? Un **résultat non significatif (p > 0.05)** prouve qu'il n'y a pas d'effet.
+
+→ **Réponse : Faux.** **Non significatif ≠ pas d'effet**. Cela peut signifier :
+
+1. L'effet **n'existe pas** (vrai zéro).
+2. L'effet **existe mais l'échantillon est trop petit** (manque de puissance).
+3. L'effet est **noyé dans la variance** (bruit important).
+4. La **mesure** n'est pas assez précise.
+
+→ Pour conclure à l'**équivalence**, on utilise des tests dédiés (TOST, Bayes factor).
+
+### Bloc transversal — synthèse
+
+**Q22.** Place ces étapes d'un projet de recherche dans l'ordre :
+
+A. Collecte des données
+B. Identification de l'objet de recherche
+C. Dissémination des résultats
+D. Opérationnalisation (élaboration de la méthodologie)
+E. Problématisation et question(s) de recherche
+F. Analyse des résultats
+
+→ **Réponse : B → E → D → A → F → C.**
+
+Mémoriser : **Objet → Question → Méthode → Données → Analyse → Communication.**
+
+---
+
+**Q23.** Une chercheuse veut étudier « **l'influence du télétravail sur la satisfaction professionnelle des employés suisses** ». Identifie : type de question, X et Y, type d'hypothèse plausible.
+
+→ **Réponse type :**
+
+- **Type de QR** : **inférentielle** (X influence Y).
+- **X (explicatif)** : pratique du télétravail (binaire ou en % du temps).
+- **Y (à expliquer)** : satisfaction professionnelle (échelle de Likert).
+- **Hypothèse de relation** : « Plus un·e employé·e fait de télétravail, plus sa satisfaction professionnelle est élevée. »
+- **Hypothèse de différence** : « Si un·e employé·e fait du télétravail, alors sa satisfaction sera plus élevée qu'un·e employé·e en présentiel. »
+- **Hypothèse d'interaction** : « L'influence du télétravail sur la satisfaction est plus forte pour les employé·e·s avec enfant·s en bas âge. »
+
+---
+
+**Q24.** Tu mènes une enquête sur les habitudes alimentaires. Identifie les **3 erreurs / biais** dans ce design et propose des solutions :
+
+> Tu interroges les passants devant un magasin bio à Genève, un samedi matin, en leur demandant « Mangez-vous sainement ? Oui / Plutôt oui / Plutôt non / Non ». Tu obtiens 80 % de réponses « Oui » ou « Plutôt oui ».
+
+→ **3 problèmes :**
+
+1. **Biais de sélection (échantillon non représentatif)** : les gens devant un magasin bio sont déjà sensibilisés. Solution : tirer un échantillon **aléatoire** stratifié par canton, ou utiliser un panel comme MoSAiC.
+
+2. **Désirabilité sociale** : « manger sainement » est socialement valorisé → les gens disent « oui » même si c'est faux. Solution : enquête **anonyme en ligne** ; questions sur **comportements** (« combien de fois avez-vous mangé des légumes cette semaine ? ») plutôt que sur **opinions** générales.
+
+3. **Biais centriste / acquiescence** : les catégories « Plutôt oui / Plutôt non » poussent au milieu, et les répondant·e·s ont tendance à dire « oui ». Solution : **inverser certaines questions** dans le questionnaire ; ajouter une option **« Ne sait pas »** ; multiplier les indicateurs.
+
+---
+
+**Q25.** L'examen final approche. Voici ton **workflow type** face à une question d'examen sur la régression :
+
+→ **Démarche en 6 étapes :**
+
+1. **Identifier la variable dépendante (Y)** et les **variables indépendantes (X₁, X₂, ...)**.
+2. **Pour chaque X significatif** (p < 0.05) : noter le **sens** (b > 0 ou < 0) et la **taille** (b en valeur absolue).
+3. **Interpréter** : « toutes choses égales par ailleurs, +1 unité de X → +b unité de Y ».
+4. **Évaluer la qualité du modèle** : **R² (ajusté)** = part de variance expliquée. Comparer à la littérature.
+5. **Discuter les non-significatifs** : pas d'effet détecté, mais possiblement manque de puissance.
+6. **Limites & causalité** : régression = corrélation, pas causalité. Mentionner les **biais possibles** (variables omises, endogénéité, sélection).
+
+::: {.callout-important}
+## Pour la rédaction sur la copie d'examen
+Toujours structurer en **3 paragraphes** : (1) qualité globale du modèle, (2) facteurs significatifs avec interprétation, (3) limites & critique. Cela montre la maîtrise complète.
+:::
+
+## Récapitulatif transversal des trois examens
 
 ::: {.callout-note}
 ## Les concepts à maîtriser pour l'examen final
