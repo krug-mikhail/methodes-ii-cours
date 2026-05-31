@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examen blanc 5 — Corsé (difficile++)</title>
+<style>
+  :root{
+    --acc:#1e40af; --acc2:#1e3a8a; --vert:#15803d; --orange:#c2410c;
+    --fond:#f8fafc; --carte:#fff; --texte:#1f2937; --gris:#6b7280;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--fond);color:var(--texte);line-height:1.55;padding-bottom:120px;
+    -webkit-text-size-adjust:100%}
+  header{background:linear-gradient(135deg,var(--acc),var(--acc2));
+    color:#fff;padding:32px 20px 26px;text-align:center}
+  header h1{font-size:1.5rem;margin-bottom:6px}
+  header p{opacity:.92;font-size:.93rem}
+  .wrap{max-width:820px;margin:0 auto;padding:18px 16px}
+  .intro{background:var(--carte);border-radius:14px;padding:18px 20px;margin:16px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);font-size:.93rem}
+  .intro b{color:var(--acc2)}
+  .nav-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .nav-links a{background:#dbeafe;color:var(--acc2);padding:5px 10px;border-radius:6px;
+    text-decoration:none;font-size:.82rem;font-weight:600}
+  .nav-links a:hover{background:#bfdbfe}
+  .nav-links a.current{background:var(--acc);color:#fff}
+  .section{margin:32px 0 12px;padding:8px 14px;background:var(--acc2);color:#fff;
+    border-radius:8px;font-weight:700;font-size:1rem;letter-spacing:.02em}
+  .case-intro{background:#fef3c7;border-left:4px solid var(--orange);padding:14px 18px;
+    border-radius:8px;margin:12px 0;font-size:.93rem}
+  .case-intro b{color:var(--orange)}
+  .question{background:var(--carte);border-radius:12px;padding:18px;margin:12px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .question.answered{border-left:4px solid var(--vert)}
+  .q-tag{display:inline-block;font-size:.72rem;font-weight:700;
+    background:#dbeafe;color:#1e40af;
+    padding:3px 9px;border-radius:20px;margin-bottom:10px;letter-spacing:.04em}
+  .q-type{display:inline-block;font-size:.7rem;font-weight:600;
+    background:#fef3c7;color:#92400e;padding:2px 8px;border-radius:20px;
+    margin-left:6px;text-transform:uppercase;letter-spacing:.04em}
+  .q-text{font-weight:600;margin-bottom:12px;font-size:.97rem}
+  .q-text code,.expl code{background:#f1f5f9;padding:1px 6px;border-radius:5px;
+    font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.86em}
+  .q-data{background:#e0e7ff;border-left:4px solid var(--acc);padding:9px 13px;
+    border-radius:6px;margin:8px 0;font-size:.9rem;line-height:1.5}
+  .q-data table{width:100%;border-collapse:collapse;margin-top:6px;font-size:.86rem}
+  .q-data th,.q-data td{padding:4px 8px;text-align:left;border-bottom:1px solid #c7d2fe}
+  .q-data th{background:#c7d2fe;font-weight:700}
+  /* QCM / VF */
+  .options{list-style:none}
+  .options li{margin:6px 0}
+  .options label{display:block;border:2px solid #e5e7eb;border-radius:9px;padding:10px 14px;
+    cursor:pointer;transition:.15s;font-size:.93rem}
+  .options label:hover{border-color:var(--acc);background:#eff6ff}
+  .options input[type=radio]{margin-right:8px;cursor:pointer;vertical-align:middle}
+  .options input[type=radio]:checked + .opt-label{font-weight:700;color:var(--acc2)}
+  .options label:has(input:checked){border-color:var(--acc);background:#dbeafe}
+  .opt-letter{font-weight:700;color:var(--acc);margin-right:6px}
+  /* Textarea pour ouvertes */
+  textarea{width:100%;border:2px solid #e5e7eb;border-radius:9px;padding:10px 12px;
+    font-family:inherit;font-size:.93rem;resize:vertical;min-height:80px;
+    background:#fafbfc;color:var(--texte)}
+  textarea:focus{border-color:var(--acc);background:#fff;outline:none}
+  input[type=text]{width:100%;border:2px solid #e5e7eb;border-radius:9px;padding:8px 12px;
+    font-family:inherit;font-size:.93rem;background:#fafbfc}
+  input[type=text]:focus{border-color:var(--acc);background:#fff;outline:none}
+  /* Matching */
+  .matching{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+  .matching-item{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;
+    padding:8px 12px;background:#f8fafc;border-radius:8px}
+  .matching-item .m-left{font-weight:600;font-size:.9rem}
+  .matching-item .m-arrow{color:var(--gris);font-size:1.1rem}
+  .matching-item select{padding:6px 10px;border:2px solid #e5e7eb;border-radius:6px;
+    background:#fff;font-family:inherit;font-size:.88rem;cursor:pointer}
+  .matching-item select:focus{border-color:var(--acc);outline:none}
+  .matching-options{background:#eef2ff;border-radius:6px;padding:8px 12px;
+    margin-top:8px;font-size:.85rem;line-height:1.5}
+  .matching-options b{color:var(--acc2)}
+  /* Hints */
+  .hint{font-size:.82rem;color:var(--gris);margin-top:6px;font-style:italic}
+  /* Final section */
+  .final-section{background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+    border-radius:14px;padding:24px 22px;margin-top:24px;
+    text-align:center;border:2px solid var(--acc)}
+  .final-section h3{color:var(--acc2);margin-bottom:10px;font-size:1.15rem}
+  .final-section .answered-count{font-size:1.1rem;font-weight:700;color:var(--acc2);margin:10px 0}
+  .final-buttons{display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap}
+  .btn{padding:11px 20px;border:none;border-radius:9px;font-size:.95rem;font-weight:700;
+    cursor:pointer;transition:.15s;font-family:inherit}
+  .btn-primary{background:var(--acc);color:#fff}
+  .btn-primary:hover{background:var(--acc2)}
+  .btn-secondary{background:#fff;color:var(--acc);border:2px solid var(--acc)}
+  .btn-secondary:hover{background:#eff6ff}
+  .final-msg{margin-top:14px;font-size:.92rem;color:var(--acc2);line-height:1.5}
+  .final-msg code{background:#fff;padding:2px 6px;border-radius:4px;font-size:.85em}
+  /* Bar */
+  .barre{position:fixed;bottom:0;left:0;right:0;background:#fff;
+    box-shadow:0 -2px 12px rgba(0,0,0,.12);padding:10px 16px;z-index:10}
+  .barre-in{max-width:820px;margin:0 auto;display:flex;align-items:center;
+    justify-content:space-between;gap:12px}
+  .progress{flex:1;height:9px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+  .progress span{display:block;height:100%;width:0;background:var(--acc);transition:.3s}
+  .score{font-weight:700;color:var(--acc2);white-space:nowrap;font-size:.92rem}
+  .reset{background:none;border:1.5px solid #cbd5e1;color:var(--gris);
+    border-radius:8px;padding:6px 12px;font-size:.82rem;cursor:pointer}
+  .reset:hover{border-color:var(--acc);color:var(--acc)}
+  footer{text-align:center;color:var(--gris);font-size:.82rem;padding:24px 16px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Examen blanc 5 — Corsé (difficile++)</h1>
+  <p>20 questions · niveau examen final + · 3 études de cas + pièges + synthèse finale</p>
+</header>
+
+<div class="wrap">
+
+<div class="intro">
+<b>Mode d'emploi.</b> Réponds à toutes les questions directement dans cette page (cases à cocher pour les QCM, dropdowns pour les matchings, textareas pour les ouvertes). <b>Aucun corrigé n'apparaît</b> pendant l'exam.
+
+À la fin, clique sur <b>« Copier mes réponses »</b> ou <b>« Télécharger en .txt »</b> et envoie-moi le résultat dans le chat — je corrige.
+<div class="nav-links">
+  <a href="./examen_blanc_1.html">Exam 1 (QCM)</a>
+  <a href="./examen_blanc_2.html">Exam 2 (QCM)</a>
+  <a href="./examen_blanc_3.html">Exam 3 (QCM)</a>
+  <a href="./examen_blanc_4.html">Exam 4 (Difficile)</a>
+  <a href="./examen_blanc_5.html" class="current">Exam 5 (Corsé)</a>
+</div>
+</div>
+
+<div class="section">Étude de cas 1 · Design méthodologique (Q1-Q4)</div>
+<div class="case-intro"><b>Énoncé.</b> Une équipe de chercheurs de l'UNIFR veut étudier l'impact des cours en ligne pendant le COVID sur les résultats scolaires des étudiant·e·s. Ils interrogent <b>250 étudiant·e·s en sortie de bibliothèque (BP2) pendant 2 jours en mai 2026</b>, avec un questionnaire de 30 questions. Ils trouvent que <b>65 % disent avoir mieux réussi en ligne</b> (auto-évaluation).</div>
+<div class="question" data-q="1" data-type="ouverte">
+<span class="q-tag">Q1</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Identifie <b>4 problèmes méthodologiques</b> de ce design et propose une <b>solution</b> pour chacun.</div>
+<textarea rows="12" placeholder="Ta réponse..."></textarea>
+<div class="hint">~10 lignes — 4 problèmes distincts (sélection, mesure, mémoire, biais de réponse)</div>
+</div>
+<div class="question" data-q="2" data-type="qcm">
+<span class="q-tag">Q2</span><span class="q-type">QCM</span>
+<div class="q-text">Le <b>type d'étude</b> est :</div>
+<ul class="options">
+<li><label><input type="radio" name="q2" value="a"><span class="opt-letter">a.</span><span class="opt-label">Transversale</span></label></li>
+<li><label><input type="radio" name="q2" value="b"><span class="opt-letter">b.</span><span class="opt-label">Longitudinale</span></label></li>
+<li><label><input type="radio" name="q2" value="c"><span class="opt-letter">c.</span><span class="opt-label">Expérimentale randomisée</span></label></li>
+<li><label><input type="radio" name="q2" value="d"><span class="opt-letter">d.</span><span class="opt-label">Ethnographique</span></label></li>
+</ul>
+</div>
+<div class="question" data-q="3" data-type="calc">
+<span class="q-tag">Q3</span><span class="q-type">CALCUL</span>
+<div class="q-text">Calcule l'<b>erreur d'échantillonnage</b> (marge d'erreur à 95 %) avec p = 0.65 et n = 250. Formule : ε = 1.96 × √(p(1-p)/n). Donne l'<b>IC à 95 %</b> et discute la précision.</div>
+<textarea rows="6" placeholder="Tes calculs et résultats..."></textarea>
+
+</div>
+<div class="question" data-q="4" data-type="vf">
+<span class="q-tag">Q4</span><span class="q-type">V/F</span>
+<div class="q-text"><b>Vrai ou faux ?</b> Avec 65 % (n = 250), on peut <b>généraliser</b> à toute la population étudiante de l'UNIFR.</div>
+<ul class="options">
+<li><label><input type="radio" name="q4" value="a"><span class="opt-letter">a.</span><span class="opt-label">Vrai</span></label></li>
+<li><label><input type="radio" name="q4" value="b"><span class="opt-letter">b.</span><span class="opt-label">Faux</span></label></li>
+</ul>
+</div>
+<div class="section">Étude de cas 2 · Analyse de contenu critique (Q5-Q8)</div>
+<div class="case-intro"><b>Énoncé.</b> Tu fais une analyse de contenu de <b>200 tweets sur le climat</b>. Tu codes selon 3 variables : <b>sentiment</b> (positif / négatif / neutre), <b>thématique</b> (politique / scientifique / personnel / économique), <b>niveau de désinformation</b> (échelle 0-3).</div>
+<div class="question" data-q="5" data-type="ouverte">
+<span class="q-tag">Q5</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Construis un <b>mini-codebook</b> pour la variable <b>« sentiment »</b> : définition opérationnelle, 3 catégories avec critères d'inclusion, <b>2 exemples par catégorie</b> + règle pour les cas limites (sarcasme, mixte).</div>
+<textarea rows="12" placeholder="Ta réponse..."></textarea>
+<div class="hint">~10 lignes</div>
+</div>
+<div class="question" data-q="6" data-type="calc">
+<span class="q-tag">Q6</span><span class="q-type">CALCUL</span>
+<div class="q-text">Sur 200 tweets, 2 codeurs s'accordent sur 170 tweets. a) Calcule le <b>% d'accord brut</b>. b) Pourquoi cet indicateur est-il <b>insuffisant</b> ? c) Quel indicateur utiliser à la place ?</div>
+<textarea rows="8" placeholder="Tes calculs et résultats..."></textarea>
+<div class="hint">~6 lignes</div>
+</div>
+<div class="question" data-q="7" data-type="vf">
+<span class="q-tag">Q7</span><span class="q-type">V/F</span>
+<div class="q-text"><b>Vrai ou faux ?</b> Une fiabilité de <b>α = 0.8</b> (alpha de Krippendorff) est suffisante pour publier dans une revue scientifique de communication.</div>
+<ul class="options">
+<li><label><input type="radio" name="q7" value="a"><span class="opt-letter">a.</span><span class="opt-label">Vrai</span></label></li>
+<li><label><input type="radio" name="q7" value="b"><span class="opt-letter">b.</span><span class="opt-label">Faux</span></label></li>
+</ul>
+</div>
+<div class="question" data-q="8" data-type="ouverte">
+<span class="q-tag">Q8</span><span class="q-type">OUVERTE</span>
+<div class="q-text"><b>Critique</b> la variable « <b>niveau de désinformation (0-3)</b> » du codage. Quels problèmes ? Propose une <b>amélioration</b>.</div>
+<textarea rows="8" placeholder="Ta réponse..."></textarea>
+<div class="hint">~6 lignes</div>
+</div>
+<div class="section">Étude de cas 3 · Régression complexe avec interaction (Q9-Q13)</div>
+<div class="case-intro"><b>Énoncé.</b> Tableau de régression : Y = score de bien-être psychologique (0-10), N = 1'200, <b>R² ajusté = 0.34</b>.</div>
+<div class="question" data-q="9" data-type="ouverte">
+<span class="q-tag">Q9</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Interprète le coefficient <b>b = -0.41</b> pour Instagram en 1-2 phrases, en mobilisant le vocabulaire ceteris paribus.</div>
+<div class="q-data"><b>Tableau de régression (utilisé pour Q9-Q13) :</b>
+<table>
+<tr><th>Prédicteur</th><th>b</th><th>SE</th><th>β</th><th>p</th></tr>
+<tr><td>(Constante)</td><td>5.20</td><td>0.34</td><td>—</td><td>&lt;.001</td></tr>
+<tr><td>Heures Instagram / jour</td><td><b>-0.41</b></td><td>0.06</td><td>-0.18</td><td><b>&lt;.001</b></td></tr>
+<tr><td>Heures sport / semaine</td><td>+0.32</td><td>0.05</td><td>+0.15</td><td>&lt;.001</td></tr>
+<tr><td>Soutien social (1-10)</td><td>+0.51</td><td>0.04</td><td><b>+0.34</b></td><td>&lt;.001</td></tr>
+<tr><td>Âge</td><td>-0.02</td><td>0.01</td><td>-0.07</td><td>.04</td></tr>
+<tr><td>Femme (vs Homme)</td><td>-0.45</td><td>0.18</td><td>-0.05</td><td>.013</td></tr>
+<tr><td>Niveau d'études (ord. 1-4)</td><td>+0.12</td><td>0.08</td><td>+0.04</td><td>.14</td></tr>
+<tr style="background:#fef3c7"><td><b>Interaction Instagram × Femme</b></td><td><b>-0.18</b></td><td>0.07</td><td>-0.06</td><td><b>.01</b></td></tr>
+</table></div><textarea rows="4" placeholder="Ta réponse..."></textarea>
+<div class="hint">~3 lignes</div>
+</div>
+<div class="question" data-q="10" data-type="ouverte">
+<span class="q-tag">Q10</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Distingue <b>b</b> (coefficient brut) et <b>β</b> (standardisé). Pourquoi le <b>soutien social a-t-il l'effet relatif le plus fort</b>, alors que son b (0.51) n'est pas le plus grand en valeur absolue ?</div>
+<textarea rows="6" placeholder="Ta réponse..."></textarea>
+<div class="hint">~5 lignes</div>
+</div>
+<div class="question" data-q="11" data-type="qcm">
+<span class="q-tag">Q11</span><span class="q-type">QCM</span>
+<div class="q-text">PIÈGE — Parmi ces affirmations, laquelle est <b>FAUSSE</b> d'après le tableau ?</div>
+<ul class="options">
+<li><label><input type="radio" name="q11" value="a"><span class="opt-letter">a.</span><span class="opt-label">Le modèle explique 34 % de la variance du bien-être psychologique</span></label></li>
+<li><label><input type="radio" name="q11" value="b"><span class="opt-letter">b.</span><span class="opt-label">Le niveau d'études n'a pas d'effet statistiquement significatif</span></label></li>
+<li><label><input type="radio" name="q11" value="c"><span class="opt-letter">c.</span><span class="opt-label">Les femmes ont en moyenne 0.45 point de moins de bien-être</span></label></li>
+<li><label><input type="radio" name="q11" value="d"><span class="opt-letter">d.</span><span class="opt-label">Instagram nuit moins aux femmes qu'aux hommes (interaction négative)</span></label></li>
+</ul>
+</div>
+<div class="question" data-q="12" data-type="ouverte">
+<span class="q-tag">Q12</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Interprète <b>précisément</b> l'<b>interaction Instagram × Femme = -0.18, p = .01</b>. Quelle conclusion <b>différenciée hommes vs femmes</b> ?</div>
+<textarea rows="7" placeholder="Ta réponse..."></textarea>
+<div class="hint">~6 lignes — calcul effet total chez les femmes + interprétation</div>
+</div>
+<div class="question" data-q="13" data-type="ouverte">
+<span class="q-tag">Q13</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Cite <b>3 limites</b> de ce modèle de régression et propose <b>2 améliorations</b> méthodologiques.</div>
+<textarea rows="6" placeholder="Ta réponse..."></textarea>
+<div class="hint">~5 lignes</div>
+</div>
+<div class="section">Section · Pièges classiques (Q14-Q17)</div>
+<div class="question" data-q="14" data-type="qcm">
+<span class="q-tag">Q14</span><span class="q-type">QCM</span>
+<div class="q-text">PIÈGE — Test t #1 : <b>p = 0.001, n = 5'000</b>. Test t #2 : <b>p = 0.04, n = 50</b>. Quelle conclusion ?</div>
+<ul class="options">
+<li><label><input type="radio" name="q14" value="a"><span class="opt-letter">a.</span><span class="opt-label">Le premier test prouve un effet plus fort car p est plus petit</span></label></li>
+<li><label><input type="radio" name="q14" value="b"><span class="opt-letter">b.</span><span class="opt-label">Le deuxième test est fragile</span></label></li>
+<li><label><input type="radio" name="q14" value="c"><span class="opt-letter">c.</span><span class="opt-label">Les deux montrent un effet significatif, mais on ne peut PAS conclure sur la force à partir des p-values seules</span></label></li>
+<li><label><input type="radio" name="q14" value="d"><span class="opt-letter">d.</span><span class="opt-label">Aucun n'est concluant</span></label></li>
+</ul>
+</div>
+<div class="question" data-q="15" data-type="ouverte">
+<span class="q-tag">Q15</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Différencie <b>« test non significatif »</b> et <b>« preuve d'absence d'effet »</b>. Donne un <b>exemple concret</b>.</div>
+<textarea rows="7" placeholder="Ta réponse..."></textarea>
+<div class="hint">~6 lignes — mentionne TOST / Bayes factor</div>
+</div>
+<div class="question" data-q="16" data-type="vf">
+<span class="q-tag">Q16</span><span class="q-type">V/F</span>
+<div class="q-text"><b>Vrai ou faux ?</b> Un <b>R² ajusté plus bas</b> qu'un R² simple signifie que le modèle est <b>mauvais</b>.</div>
+<ul class="options">
+<li><label><input type="radio" name="q16" value="a"><span class="opt-letter">a.</span><span class="opt-label">Vrai</span></label></li>
+<li><label><input type="radio" name="q16" value="b"><span class="opt-letter">b.</span><span class="opt-label">Faux</span></label></li>
+</ul>
+</div>
+<div class="question" data-q="17" data-type="ouverte">
+<span class="q-tag">Q17</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Critique de raisonnement. Un chercheur trouve « <b>les femmes votent plus à gauche (b = +0.3, p < .001)</b> ». Il conclut : <i>« être femme cause un vote de gauche »</i>. Critique cette conclusion en <b>3 points</b>.</div>
+<textarea rows="8" placeholder="Ta réponse..."></textarea>
+<div class="hint">~6 lignes — corrélation/causalité, variables médiatrices, essentialisme</div>
+</div>
+<div class="section">Lecture critique et synthèse (Q18-Q20)</div>
+<div class="question" data-q="18" data-type="ouverte">
+<span class="q-tag">Q18</span><span class="q-type">OUVERTE</span>
+<div class="q-text">Tu reviews un article. Méthode dit : « <i>Nous avons collecté des données auprès de 500 participants via un sondage. La méthode d'échantillonnage et le questionnaire sont disponibles sur demande. Les analyses ont été réalisées avec un logiciel statistique.</i> » Formule <b>au minimum 4 critiques majeures</b> en mobilisant les principes <b>Open Science / FAIR</b>.</div>
+<textarea rows="12" placeholder="Ta réponse..."></textarea>
+<div class="hint">~10 lignes — méthode opaque, code/données non partagés, pas de pré-enregistrement</div>
+</div>
+<div class="question" data-q="19" data-type="qcm">
+<span class="q-tag">Q19</span><span class="q-type">QCM</span>
+<div class="q-text">Une étude rapporte un <b>d de Cohen = 0.2</b>. C'est un effet :</div>
+<ul class="options">
+<li><label><input type="radio" name="q19" value="a"><span class="opt-letter">a.</span><span class="opt-label">Très grand</span></label></li>
+<li><label><input type="radio" name="q19" value="b"><span class="opt-letter">b.</span><span class="opt-label">Grand</span></label></li>
+<li><label><input type="radio" name="q19" value="c"><span class="opt-letter">c.</span><span class="opt-label">Moyen</span></label></li>
+<li><label><input type="radio" name="q19" value="d"><span class="opt-letter">d.</span><span class="opt-label">Petit</span></label></li>
+</ul>
+</div>
+<div class="question" data-q="20" data-type="ouverte">
+<span class="q-tag">Q20</span><span class="q-type">OUVERTE</span>
+<div class="q-text"><b>SYNTHÈSE FINALE.</b> Pour ton <b>travail de bachelor (TB)</b>, tu veux étudier « <b>L'impact du télétravail sur la santé mentale des employés suisses</b> ». Rédige un <b>projet de recherche structuré</b> (1 page max) incluant : <b>a)</b> Question de recherche, <b>b)</b> 2 hypothèses (relation + interaction), <b>c)</b> Méthode (type d'étude, source, échantillonnage, n), <b>d)</b> Variables (Y + 4 X), <b>e)</b> Analyse statistique prévue, <b>f)</b> 2 considérations éthiques, <b>g)</b> 2 pratiques Open Science.</div>
+<textarea rows="25" placeholder="Ta réponse..."></textarea>
+<div class="hint">~15-20 lignes — structure claire, justification de chaque choix</div>
+</div>
+
+
+<div class="final-section">
+<h3>🎓 Fin de l'examen</h3>
+<div class="answered-count">Réponses fournies : <span id="answered-count">0 / 20</span></div>
+<div class="final-msg">Quand tu es prêt·e, choisis l'une des options ci-dessous et envoie-moi le résultat dans le chat.</div>
+<div class="final-buttons">
+  <button class="btn btn-primary" id="copyBtn" onclick="copyAnswers()">📋 Copier mes réponses</button>
+  <button class="btn btn-secondary" onclick="downloadAnswers()">💾 Télécharger en .txt</button>
+</div>
+</div>
+
+<footer>
+Examen blanc Méthodes II · Prof. Feddersen · SP 2026 · UNIFR<br>
+Interactif — envoie tes réponses pour correction
+</footer>
+
+</div>
+
+<div class="barre">
+  <div class="barre-in">
+    <button class="reset" onclick="if(confirm('Effacer toutes tes réponses ?'))location.reload()">Recommencer</button>
+    <div class="progress"><span id="bar"></span></div>
+    <div class="score">Répondues : <span id="score">0 / 20</span></div>
+  </div>
+</div>
+
+<script>
+const EXAM_NUM = 5;
+const TOTAL_Q = 20;
+
+function checkAnswered(q) {
+  var type = q.dataset.type;
+  if (type === 'qcm' || type === 'vf') {
+    return q.querySelector('input[type=radio]:checked') !== null;
+  } else if (type === 'matching') {
+    var sels = q.querySelectorAll('select');
+    return Array.from(sels).every(s => s.value !== '');
+  } else {
+    var ta = q.querySelector('textarea, input[type=text]');
+    return ta && ta.value.trim() !== '';
+  }
+}
+
+function updateProgress() {
+  var answered = 0;
+  document.querySelectorAll('.question').forEach(function(q) {
+    if (checkAnswered(q)) {
+      answered++;
+      q.classList.add('answered');
+    } else {
+      q.classList.remove('answered');
+    }
+  });
+  document.getElementById('score').textContent = answered + ' / ' + TOTAL_Q;
+  document.getElementById('answered-count').textContent = answered + ' / ' + TOTAL_Q;
+  document.getElementById('bar').style.width = (answered / TOTAL_Q * 100) + '%';
+}
+
+document.querySelectorAll('input[type=radio]').forEach(function(r) {
+  r.addEventListener('change', updateProgress);
+});
+document.querySelectorAll('textarea, input[type=text]').forEach(function(t) {
+  t.addEventListener('input', updateProgress);
+});
+document.querySelectorAll('select').forEach(function(s) {
+  s.addEventListener('change', updateProgress);
+});
+
+function collectAnswers() {
+  var lines = [];
+  var header = '=== EXAMEN BLANC ' + EXAM_NUM + ' · MES RÉPONSES ===\n';
+  header += 'Date : ' + new Date().toLocaleString('fr-CH') + '\n';
+  lines.push(header);
+
+  document.querySelectorAll('.question').forEach(function(q) {
+    var num = q.dataset.q;
+    var type = q.dataset.type;
+    var ans = '';
+
+    if (type === 'qcm' || type === 'vf') {
+      var c = q.querySelector('input[type=radio]:checked');
+      ans = c ? c.value : '[non répondu]';
+    } else if (type === 'matching') {
+      var items = [];
+      q.querySelectorAll('.matching-item').forEach(function(mi) {
+        var left = mi.querySelector('.m-left').textContent.trim();
+        var sel = mi.querySelector('select').value;
+        items.push('  ' + left + ' → ' + (sel || '[?]'));
+      });
+      ans = '\n' + items.join('\n');
+    } else {
+      var ta = q.querySelector('textarea, input[type=text]');
+      ans = ta && ta.value.trim() ? ta.value.trim() : '[non répondu]';
+    }
+
+    lines.push('Q' + num + '. ' + ans);
+  });
+
+  return lines.join('\n\n');
+}
+
+function downloadAnswers() {
+  var text = collectAnswers();
+  var blob = new Blob([text], {type: 'text/plain;charset=utf-8'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'mes_reponses_examen_' + EXAM_NUM + '.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function copyAnswers() {
+  var text = collectAnswers();
+  navigator.clipboard.writeText(text).then(function() {
+    var btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copié dans le presse-papier !';
+    btn.style.background = 'var(--vert)';
+    setTimeout(function() {
+      btn.textContent = '📋 Copier mes réponses';
+      btn.style.background = '';
+    }, 2500);
+  }).catch(function() {
+    alert('Impossible de copier. Utilise plutôt « Télécharger en .txt ».');
+  });
+}
+
+updateProgress();
+</script>
+
+</body>
+</html>

@@ -5,6 +5,8 @@ project:
     - "examen_blanc_1.html"
     - "examen_blanc_2.html"
     - "examen_blanc_3.html"
+    - "examen_blanc_4.html"
+    - "examen_blanc_5.html"
 
 website:
   title: "Méthodes II — Cours (théorie)"
@@ -49,10 +51,10 @@ website:
             text: "Examen 2 · Contrôle II (8 q, QCM)"
           - href: examen_blanc_3.html
             text: "Examen 3 · S7-S8-S9 (25 q, QCM)"
-          - href: examen_blanc_difficile.qmd
-            text: "Examen 4 · Difficile (type examen final, 20 q ouvertes)"
-          - href: examen_blanc_corse.qmd
-            text: "Examen 5 · Corsé (difficile++, 20 q ouvertes)"
+          - href: examen_blanc_4.html
+            text: "Examen 4 · Difficile (20 q mix, télécharger pour correction)"
+          - href: examen_blanc_5.html
+            text: "Examen 5 · Corsé (20 q mix, télécharger pour correction)"
   sidebar:
     style: docked
     search: true
@@ -75,8 +77,6 @@ website:
           - synthese.qmd
           - glossaire.qmd
           - examens_blancs.qmd
-          - examen_blanc_difficile.qmd
-          - examen_blanc_corse.qmd
 
 execute:
   enabled: false
