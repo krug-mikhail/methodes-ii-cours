@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Examen blanc 2 — Contrôle intermédiaire II — Corrigé interactif</title>
+<style>
+  :root{
+    --acc:#1e40af; --acc2:#1e3a8a; --vert:#15803d; --rouge:#b91c1c;
+    --fond:#f8fafc; --carte:#fff; --texte:#1f2937; --gris:#6b7280;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--fond);color:var(--texte);line-height:1.55;padding-bottom:84px;
+    -webkit-text-size-adjust:100%}
+  header{background:linear-gradient(135deg,var(--acc),var(--acc2));
+    color:#fff;padding:32px 20px 26px;text-align:center}
+  header h1{font-size:1.5rem;margin-bottom:6px}
+  header p{opacity:.92;font-size:.93rem}
+  .wrap{max-width:820px;margin:0 auto;padding:18px 16px}
+  .intro{background:var(--carte);border-radius:14px;padding:18px 20px;margin:16px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);font-size:.93rem}
+  .intro b{color:var(--acc2)}
+  .nav-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .nav-links a{background:#dbeafe;color:var(--acc2);padding:5px 10px;border-radius:6px;
+    text-decoration:none;font-size:.82rem;font-weight:600}
+  .nav-links a:hover{background:#bfdbfe}
+  .nav-links a.current{background:var(--acc);color:#fff}
+  .section{margin:32px 0 12px;padding:8px 14px;background:var(--acc2);color:#fff;
+    border-radius:8px;font-weight:700;font-size:1rem;letter-spacing:.02em}
+  .question{background:var(--carte);border-radius:12px;padding:18px;margin:12px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.05)}
+  .q-tag{display:inline-block;font-size:.72rem;font-weight:700;
+    background:#dbeafe;color:#1e40af;
+    padding:3px 9px;border-radius:20px;margin-bottom:10px;letter-spacing:.04em}
+  .q-text{font-weight:600;margin-bottom:12px;font-size:.97rem}
+  .q-text code,.expl code{background:#f1f5f9;padding:1px 6px;border-radius:5px;
+    font-family:"SF Mono",Menlo,Consolas,monospace;font-size:.86em}
+  .q-data{background:#e0e7ff;border-left:4px solid var(--acc);padding:9px 13px;
+    border-radius:6px;margin:8px 0;font-size:.9rem;line-height:1.5}
+  .options{list-style:none}
+  .options li{border:2px solid #e5e7eb;border-radius:9px;padding:10px 14px;margin:6px 0;
+    cursor:pointer;transition:.15s;font-size:.93rem}
+  .options li:hover{border-color:var(--acc);background:#eff6ff}
+  .question.done .options li{cursor:default}
+  .question.done .options li:hover{background:transparent}
+  .options li.correct{border-color:var(--vert);background:#f0fdf4;font-weight:600}
+  .options li.correct::before{content:"\2713  ";color:var(--vert);font-weight:800}
+  .options li.wrong{border-color:var(--rouge);background:#fef2f2}
+  .options li.wrong::before{content:"\2717  ";color:var(--rouge);font-weight:800}
+  .opt-letter{font-weight:700;color:var(--acc);margin-right:6px}
+  .expl{display:none;margin-top:12px;padding:11px 14px;border-radius:8px;
+    background:#f1f5f9;border-left:4px solid var(--acc);font-size:.9rem}
+  .expl.show{display:block}
+  .expl b{color:var(--acc2)}
+  .barre{position:fixed;bottom:0;left:0;right:0;background:#fff;
+    box-shadow:0 -2px 12px rgba(0,0,0,.12);padding:10px 16px;z-index:10}
+  .barre-in{max-width:820px;margin:0 auto;display:flex;align-items:center;
+    justify-content:space-between;gap:12px}
+  .progress{flex:1;height:9px;background:#e5e7eb;border-radius:6px;overflow:hidden}
+  .progress span{display:block;height:100%;width:0;background:var(--acc);transition:.3s}
+  .score{font-weight:700;color:var(--acc2);white-space:nowrap;font-size:.92rem}
+  .reset{background:none;border:1.5px solid #cbd5e1;color:var(--gris);
+    border-radius:8px;padding:6px 12px;font-size:.82rem;cursor:pointer}
+  .reset:hover{border-color:var(--acc);color:var(--acc)}
+  .final-msg{display:none;background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+    border:2px solid var(--acc);border-radius:12px;padding:18px;margin:18px 0;
+    text-align:center;font-size:1rem}
+  .final-msg.show{display:block}
+  .final-msg b{color:var(--acc2);font-size:1.2rem}
+  footer{text-align:center;color:var(--gris);font-size:.82rem;padding:24px 16px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Examen blanc 2 — Contrôle intermédiaire II</h1>
+  <p>8 questions officielles Moodle SP 2026 · couvre S6 et la régression</p>
+</header>
+
+<div class="wrap">
+
+<div class="intro">
+<b>Mode d'emploi.</b> Pour chaque question : clique sur ta réponse → la bonne s'affiche en vert, la mauvaise en rouge, et l'explication apparaît. Ton score se calcule automatiquement en bas. Bouton « Recommencer » pour repartir à zéro.
+<div class="nav-links">
+  <a href="./examens_blancs.html">📖 Page Q&R complète</a>
+  <a href="./examen_blanc_1.html">Examen 1 (Contrôle I, 20 q)</a>
+  <a href="./examen_blanc_2.html" class="current">Examen 2 (Contrôle II, 8 q)</a>
+  <a href="./examen_blanc_3.html">Examen 3 (S7-S8-S9, 25 q)</a>
+</div>
+</div>
+
+<div class="section">Section A · Recodage et OGD (Q1-Q2)</div>
+<div class="question"><span class="q-tag">Q1</span>
+<div class="q-text">Vrai ou faux ? Il est tout à fait admis de recoder des variables pour résoudre des problèmes purement statistiques.</div>
+<ul class="options">
+<li data-correct="true"><span class="opt-letter">a.</span> Vrai</li>
+<li data-correct="false"><span class="opt-letter">b.</span> Faux</li>
+</ul>
+<div class="expl"><b>Vrai.</b> Recoder = étape légitime : regrouper des catégories peu remplies, transformer une variable continue en classes, créer une binaire à partir d'une Likert, etc. <b>Tant que c'est documenté et justifié</b>.</div></div>
+<div class="question"><span class="q-tag">Q2</span>
+<div class="q-text">L'<b>Open Government Data (OGD)</b> comprend principalement :</div>
+<ul class="options">
+<li data-correct="false"><span class="opt-letter">a.</span> Données gratuites et personnelles</li>
+<li data-correct="true"><span class="opt-letter">b.</span> Données gratuites et administratives</li>
+<li data-correct="false"><span class="opt-letter">c.</span> Données protégées par droit d'auteur et payantes</li>
+<li data-correct="false"><span class="opt-letter">d.</span> Données privées d'entreprises</li>
+</ul>
+<div class="expl"><b>OGD</b> = données collectées par l'<b>administration publique</b> (stats officielles, budgets, registres), mises à disposition <b>gratuitement</b>. Excluent : données personnelles (RGPD), licences privées, données classées.</div></div>
+<div class="section">Section B · Descriptive vs inférentielle (Q3)</div>
+<div class="question"><span class="q-tag">Q3</span>
+<div class="q-text">La statistique qui permet de connaître la distribution et la tendance centrale d'une variable dans un échantillon est :</div>
+<ul class="options">
+<li data-correct="false"><span class="opt-letter">a.</span> Statistique inférentielle</li>
+<li data-correct="true"><span class="opt-letter">b.</span> Statistique descriptive</li>
+<li data-correct="false"><span class="opt-letter">c.</span> Statistique bayésienne</li>
+<li data-correct="false"><span class="opt-letter">d.</span> Analyse factorielle</li>
+</ul>
+<div class="expl"><b>Descriptive</b> = on <b>décrit ce qu'on observe</b> dans l'échantillon (moyennes, distributions). <b>Inférentielle</b> = on <b>généralise</b> à la population (tests, IC, régression).</div></div>
+<div class="section">Section C · Mesures de dispersion (Q4-Q5)</div>
+<div class="question"><span class="q-tag">Q4</span>
+<div class="q-text">Quelle est l'<b>étendue</b> de la variable avec les valeurs : 4, 7, 9, 2, 0, 5, 5 ?</div>
+<ul class="options">
+<li data-correct="false"><span class="opt-letter">a.</span> 7</li>
+<li data-correct="true"><span class="opt-letter">b.</span> 9</li>
+<li data-correct="false"><span class="opt-letter">c.</span> 2</li>
+<li data-correct="false"><span class="opt-letter">d.</span> 1</li>
+</ul>
+<div class="expl">Étendue = max − min = <b>9 − 0 = 9</b>.</div></div>
+<div class="question"><span class="q-tag">Q5</span>
+<div class="q-text">Vrai ou faux ? L'écart interquartile (IQR) est l'étendue qui contient 50% des observations qui se trouvent au centre de la distribution.</div>
+<ul class="options">
+<li data-correct="true"><span class="opt-letter">a.</span> Vrai</li>
+<li data-correct="false"><span class="opt-letter">b.</span> Faux</li>
+</ul>
+<div class="expl"><b>Vrai.</b> IQR = Q3 − Q1 ; couvre les <b>50% centraux</b> (entre le 25<sup>e</sup> et le 75<sup>e</sup> percentile). Robuste aux valeurs extrêmes, contrairement à l'étendue.</div></div>
+<div class="section">Section D · Visualisation (Q6-Q7)</div>
+<div class="question"><span class="q-tag">Q6</span>
+<div class="q-text">Dans un tableau de fréquence avec 3 colonnes A (effectifs absolus, somme = 80), B (pourcentages, somme = 100) et C (effectifs cumulés, finit à 80) — quelle catégorie représente le <b>mode</b> si la colonne B donne : Suisse romande 37.5, Suisse alémanique 25.0, Tessin 25.0, Étranger 12.5 ?</div>
+<ul class="options">
+<li data-correct="true"><span class="opt-letter">a.</span> Suisse romande</li>
+<li data-correct="false"><span class="opt-letter">b.</span> Suisse alémanique</li>
+<li data-correct="false"><span class="opt-letter">c.</span> Tessin</li>
+<li data-correct="false"><span class="opt-letter">d.</span> Étranger</li>
+</ul>
+<div class="expl"><b>Mode</b> = catégorie la plus fréquente. <b>Suisse romande à 37.5%</b> (soit 30 étudiant·e·s sur 80) est la plus représentée.</div></div>
+<div class="question"><span class="q-tag">Q7</span>
+<div class="q-text">Quelle est la <b>principale différence</b> entre un histogramme et un diagramme en bâtons ?</div>
+<ul class="options">
+<li data-correct="false"><span class="opt-letter">a.</span> L'histogramme est en couleur, pas le diagramme en bâtons</li>
+<li data-correct="true"><span class="opt-letter">b.</span> Les barres de l'histogramme sont collées (variables continues), celles du diagramme en bâtons sont séparées (variables qualitatives ou discrètes)</li>
+<li data-correct="false"><span class="opt-letter">c.</span> L'histogramme se lit horizontalement, le diagramme en bâtons verticalement</li>
+<li data-correct="false"><span class="opt-letter">d.</span> Aucune différence</li>
+</ul>
+<div class="expl"><b>Histogramme</b> = barres collées, axe X continu (âges, revenus). <b>Bâtons</b> = barres séparées, axe X catégoriel (genre, canton, nb d'enfants). La continuité visuelle reflète la nature de la variable.</div></div>
+<div class="section">Section E · Lecture d'un tableau de régression (Q8)</div>
+<div class="question"><span class="q-tag">Q8</span>
+<div class="q-text">Sur la base du tableau de régression d'Adam et al. (2026) sur l'adhésion aux théories du complot (R² = 0.296, N = 865), avec <b>Attitude populiste b = +0.43, p < .001</b> et <b>Intérêt politique b = -0.08, p = .004</b>, quelle interprétation est correcte ?</div>
+<ul class="options">
+<li data-correct="false"><span class="opt-letter">a.</span> L'attitude populiste n'a aucun effet, seule l'utilisation des médias importe</li>
+<li data-correct="true"><span class="opt-letter">b.</span> Le modèle explique 29.6% de la variance ; l'attitude populiste a l'effet le plus fort (+0.43), tandis que l'intérêt pour la politique réduit l'adhésion (-0.08)</li>
+<li data-correct="false"><span class="opt-letter">c.</span> La p-value de l'attitude populiste (< .001) signifie que cet effet est immense</li>
+<li data-correct="false"><span class="opt-letter">d.</span> R² = 0.296 montre que le modèle est mauvais</li>
+</ul>
+<div class="expl">Réponse correcte combine 3 éléments : <b>(1)</b> qualité globale = R² = 29.6% (modéré, bon en sciences sociales), <b>(2)</b> facteur le plus fort = attitude populiste (b = +0.43), <b>(3)</b> facteur inverse = intérêt politique (-0.08). <b>Piège</b> : p très petit ≠ effet grand. Petit p = certitude statistique ; grand b = importance pratique. Toujours distinguer.</div></div>
+
+
+<div class="final-msg" id="final">
+<b>🎓 Examen terminé !</b><br>
+<span id="finaltxt"></span><br>
+<small>Pense à revoir les questions sur lesquelles tu as fait des erreurs avant l'examen final.</small>
+</div>
+
+<footer>
+Examen blanc Méthodes II · Prof. Feddersen · SP 2026 · UNIFR<br>
+Corrigé interactif — bonne révision !
+</footer>
+
+</div>
+
+<div class="barre">
+  <div class="barre-in">
+    <button class="reset" onclick="location.reload()">Recommencer</button>
+    <div class="progress"><span id="bar"></span></div>
+    <div class="score">Score : <span id="score">0 / 8</span></div>
+  </div>
+</div>
+
+<script>
+  var total = document.querySelectorAll('.question').length;
+  var answered = 0, correct = 0;
+  document.getElementById('score').textContent = '0 / ' + total;
+
+  document.querySelectorAll('.options li').forEach(function(opt){
+    opt.addEventListener('click', function(){
+      var q = this.closest('.question');
+      if(q.classList.contains('done')) return;
+      q.classList.add('done');
+      answered++;
+      if(this.dataset.correct === 'true'){
+        this.classList.add('correct');
+        correct++;
+      } else {
+        this.classList.add('wrong');
+        q.querySelectorAll('.options li[data-correct="true"]').forEach(function(c){
+          c.classList.add('correct');
+        });
+      }
+      q.querySelector('.expl').classList.add('show');
+      update();
+    });
+  });
+
+  function update(){
+    document.getElementById('score').textContent = correct + ' / ' + total;
+    document.getElementById('bar').style.width = (answered / total * 100) + '%';
+    if(answered === total){
+      var pct = Math.round(correct / total * 100);
+      var msg = correct + ' / ' + total + ' (' + pct + '%)';
+      if(pct >= 80) msg += ' — excellent !';
+      else if(pct >= 60) msg += ' — bien, quelques points à revoir.';
+      else if(pct >= 40) msg += ' — il reste du travail.';
+      else msg += ' — révise tes chapitres avant l\'examen.';
+      document.getElementById('finaltxt').textContent = msg;
+      document.getElementById('final').classList.add('show');
+    }
+  }
+</script>
+
+</body>
+</html>

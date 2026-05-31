@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "examen_blanc_1.html"
+    - "examen_blanc_2.html"
+    - "examen_blanc_3.html"
 
 website:
   title: "Méthodes II — Cours (théorie)"
@@ -37,6 +41,14 @@ website:
         text: Glossaire
       - href: examens_blancs.qmd
         text: "Examens blancs (Q&R)"
+      - text: "Examens blancs (interactifs)"
+        menu:
+          - href: examen_blanc_1.html
+            text: "Examen 1 · Contrôle I (20 q)"
+          - href: examen_blanc_2.html
+            text: "Examen 2 · Contrôle II (8 q)"
+          - href: examen_blanc_3.html
+            text: "Examen 3 · S7-S8-S9 (25 q)"
   sidebar:
     style: docked
     search: true
